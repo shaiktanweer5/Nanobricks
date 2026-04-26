@@ -1,6 +1,13 @@
        <!DOCTYPE html>
 <html lang="en">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MSKW1ESHK7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-MSKW1ESHK7');
+</script>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -697,7 +704,9 @@ Backed by experienced professionals and modern technologies, we empower startups
 
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/917995720507?text=Hi%20I%20am%20interested%20in%20Nanobricks%20training"
-   class="whatsapp-float" target="_blank">
+   class="whatsapp-float"
+   target="_blank"
+   onclick="trackWhatsAppClick()">
    <i class="bi bi-whatsapp"></i>
 </a>
 
@@ -716,9 +725,25 @@ Backed by experienced professionals and modern technologies, we empower startups
   z-index: 999;
 }
 </style>
+<script>
+function trackWhatsAppClick() {
+  console.log("WhatsApp Clicked");
+
+  // Save count in browser (basic tracking)
+  let count = localStorage.getItem("wa_clicks") || 0;
+  count++;
+  localStorage.setItem("wa_clicks", count);
+
+  console.log("Total Clicks:", count);
+}
+</script>
+
+<a href="https://wa.me/917995720507?text=Hi%20I%20am%20interested%20in%20Nanobricks%20training"
+   class="whatsapp-float"
+   target="_blank"
+   onclick="gtag('event', 'whatsapp_click');">
+   <i class="bi bi-whatsapp"></i>
+</a>
 
 </body>
-</html>
-</body>
-
 </html>
