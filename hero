@@ -53,6 +53,7 @@
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#training">Training</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
@@ -80,8 +81,23 @@
       </div>
     </div>
 
+<div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+  <h1>Empowering Businesses with Cloud & Digital Solutions</h1>
+  <h2>We help startups and enterprises scale with secure, reliable, and modern technology</h2>
+
+  <div>
+    <a href="#about" class="btn-get-started scrollto me-2">Get Started</a>
+    <a href="#contact" class="btn-get-started scrollto">Contact Us</a>
+
+    <p style="margin-top:15px; font-weight:600;">
+      Trusted by professionals | Real-time projects | Industry-ready training
+    </p>
+  </div>
+</div>
+
+
   </section><!-- End Hero -->
-       <a href="#contact" class="btn-get-started scrollto">Contact Us</a>
+       
 
   <main id="main">
 
@@ -219,8 +235,54 @@ Backed by experienced professionals and modern technologies, we empower startups
   </div>
 </section>
 
-   </section><!-- OUR EXPERTISE Section -->      
-   
+   </section><!-- End OUR EXPERTISE Section -->      
+
+
+    <!-- ======= TRUST / CLIENTS Section ======= -->
+
+         <section id="clients" class="clients section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Trusted By</h2>
+      <p>Our expertise aligns with industry leaders</p>
+    </div>
+
+    <div class="row text-center">
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/aws.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/azure.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/gcp.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/dell.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/hp.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/microsoft.png" class="img-fluid" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+         
+    <!-- ======= End TRUST / CLIENTS Section ======= -->     
+
+         
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
@@ -410,6 +472,53 @@ Backed by experienced professionals and modern technologies, we empower startups
       </div>
     </section><!-- End Clients Section -->
 
+
+<!-- Training & Internship Section -->
+
+
+     <section id="training" class="services">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Internship & Training</h2>
+      <p>Launch your career in Cloud & Cybersecurity</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4">
+        <div class="icon-box">
+          <h4>AWS Training</h4>
+          <p>Hands-on training on EC2, S3, IAM, VPC, DevOps & real-time projects</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="icon-box">
+          <h4>Cloud Security</h4>
+          <p>Learn IAM, WIZ, CNAPP, Security Best Practices & Compliance</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="icon-box">
+          <h4>Internship Program</h4>
+          <p>4–6 weeks live internship with real projects, mentorship & certification</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="#contact" class="btn-get-started">Apply Now</a>
+    </div>
+
+  </div>
+</section>    
+         
+<!-- ======= End Training & Internship Section ======= -->
+
+         
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
