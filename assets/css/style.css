@@ -1384,3 +1384,32 @@ section {
     padding: 3px 0;
   }
 }
+
+/*--------------------------------------------------------------
+# Premium UI Upgrade (Custom)
+--------------------------------------------------------------*/
+
+.services .icon-box {
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #33bc3b;
+}
+
+/* Optional: smooth hover effect for all cards */
+.icon-box {
+  transition: all 0.3s ease-in-out;
+}
+
+.services .icon-box:hover .title a {
+  color: #33bc3b;
+}
+
+.services .icon-box:hover .icon i {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
