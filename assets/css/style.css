@@ -1472,3 +1472,25 @@ h2 {
 section {
   padding: 70px 0;
 }
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+section {
+  padding: 70px 0;
+}
