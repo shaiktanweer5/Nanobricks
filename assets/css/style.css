@@ -1632,3 +1632,12 @@ h2 {
   margin-top: 10px;
   font-weight: 700;
 }
+.clients img {
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.clients img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
