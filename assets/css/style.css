@@ -1451,3 +1451,24 @@ section {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+/* =========================
+   PREMIUM TRAINING UI UPGRADE
+========================= */
+
+.card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+section {
+  padding: 70px 0;
+}
