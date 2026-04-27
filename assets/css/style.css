@@ -1521,3 +1521,12 @@ section {
   padding: 12px 20px;
   font-weight: 600;
 }
+.syllabus-card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+}
+
+.syllabus-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
