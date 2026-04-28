@@ -323,6 +323,41 @@ Built inside a real cloud & cybersecurity company • Designed by working engine
 
   <section class="container text-center my-5">
 
+  <h2 class="fw-bold">Program Investment</h2>
+  <p class="text-muted">One-time fee for complete internship experience</p>
+
+  <div class="row justify-content-center mt-4">
+
+    <div class="col-md-4">
+      <div class="p-4 shadow bg-white rounded">
+
+        <h3 style="text-decoration: line-through; color: gray;">₹15,000</h3>
+
+        <h2 class="fw-bold" style="color:#33bc3b;">₹7,999</h2>
+
+        <p class="text-success">Limited time discounted price</p>
+
+        <ul style="text-align:left;">
+          <li>✔ 6 Weeks Internship Program</li>
+          <li>✔ Real Cloud Projects</li>
+          <li>✔ Resume + Interview Prep</li>
+          <li>✔ Mentor Support</li>
+        </ul>
+
+        <a href="https://wa.me/917995720507?text=I%20want%20to%20enroll%20in%20Nanobricks%20Program"
+           class="btn btn-success w-100 mt-3">
+          🚀 Enroll Now
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="container text-center my-5">
+
   <h2 class="fw-bold mb-4">What Students Say</h2>
 
   <div class="row g-4">
@@ -357,13 +392,19 @@ Built inside a real cloud & cybersecurity company • Designed by working engine
   <h2>🚀 Start Your Cloud Career Today</h2>
 
   <p>Limited seats available for next batch</p>
+
+  <!-- 🔥 DYNAMIC SEAT COUNTER -->
+  <p id="seatCounter" style="font-weight:bold; color:#ff6600;">
+    Only 12 seats left
+  </p>
+
   <p style="color:red; font-weight:bold;">
-⚠ Limited seats — batch closes soon
-</p>
+    ⚠ Limited seats — batch closes soon
+  </p>
 
   <a href="https://wa.me/917995720507?text=Hi%20I%20want%20to%20join%20Nanobricks%20training"
      class="btn btn-success btn-lg mt-3">
-    💬 Apply for Internship on WhatsApp
+    💬 Apply Now on WhatsApp
   </a>
 
 </section>
@@ -379,5 +420,18 @@ Built inside a real cloud & cybersecurity company • Designed by working engine
   </a>
 
 </div>
+<script>
+  let seats = 12;
+
+  setInterval(() => {
+    if (seats > 5) {
+      seats--;
+      document.getElementById("seatCounter").innerText =
+        "Only " + seats + " seats left";
+    }
+  }, 8000);
+</script>
+
+  
 </body>
 </html>
