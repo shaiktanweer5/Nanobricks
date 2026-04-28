@@ -1465,10 +1465,6 @@ section {
   box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-h2 {
-  font-weight: 700;
-}
-
 section {
   padding: 70px 0;
 }
@@ -1482,18 +1478,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-.card {
-  transition: all 0.3s ease;
-}
-
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-section {
-  padding: 70px 0;
-}
+
 h1 {
   font-weight: 800;
 }
@@ -1512,9 +1502,6 @@ h2 {
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-section {
-  padding: 70px 0;
-}
 
 .btn-success {
   border-radius: 10px;
@@ -1529,27 +1516,6 @@ section {
 .syllabus-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
-
-section {
-  padding: 70px 0;
-}
-
-h2 {
-  font-weight: 700;
-}
-.hero-section {
-  padding: 100px 20px;
-  color: white;
-  background: linear-gradient(-45deg, #0f172a, #1e293b, #0ea5e9, #22c55e);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-}
-
-@keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
 }
 
 .hero-title {
@@ -1665,73 +1631,9 @@ h2 {
 .hero-buttons .btn {
   margin: 10px;
 }
-.testimonial-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-.sticky-cta {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  z-index: 999;
-}
-
-.cta-wa, .cta-enroll {
-  flex: 1;
-  padding: 12px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.cta-wa {
-  background: #25D366;
-}
-
 .cta-enroll {
   background: #0d6efd;
 }
-<style>
-body { background:#f8f9fa; }
-
-.hero-section {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #0d6efd, #33bc3b);
-  color: #fff;
-}
-
-.hero-title {
-  font-size: 42px;
-  font-weight: 700;
-}
-
-.hero-subtitle {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.hero-badges {
-  margin-top: 15px;
-  font-weight: 500;
-}
-
-.hero-buttons .btn {
-  margin: 10px;
-}
-
-.card {
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.1);
-}
-
-.btn-main {
-  background:#33bc3b;
-  color:#fff;
-}
-</style>
 
 .testimonial-card {
   background: #fff;
@@ -1748,30 +1650,12 @@ body { background:#f8f9fa; }
   z-index: 999;
 }
 
-.cta-wa, .cta-enroll {
-  flex: 1;
-  padding: 12px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-}
-
 .cta-wa {
   background: #25D366;
 }
 
 .cta-enroll {
   background: #0d6efd;
-}
-.sticky-cta {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-  gap: 10px;
 }
 
 .cta-wa, .cta-enroll {
@@ -1793,3 +1677,48 @@ body { background:#f8f9fa; }
   color: white;
 }
 
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 999;
+}
+
+.cta-wa, .cta-enroll {
+  padding: 14px 22px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.cta-wa {
+  background: linear-gradient(135deg, #25D366, #1ebe5d);
+}
+
+.cta-enroll {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+}
+
+.cta-wa:hover, .cta-enroll:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+section {
+  padding: 70px 0;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
