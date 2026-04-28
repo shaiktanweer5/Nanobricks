@@ -1665,3 +1665,9 @@ h2 {
 .hero-buttons .btn {
   margin: 10px;
 }
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
