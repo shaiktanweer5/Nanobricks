@@ -1456,43 +1456,6 @@ section {
 ========================= */
 
 .card {
-  border-radius: 16px;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-}
-
-section {
-  padding: 70px 0;
-}
-
-h1 {
-  font-weight: 800;
-}
-
-h2 {
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
-
-
-h1 {
-  font-weight: 800;
-}
-
-h2 {
-  font-weight: 700;
-}
-
-.card {
   transition: all 0.3s ease;
   border-radius: 16px;
 }
@@ -1518,21 +1481,6 @@ h2 {
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-.hero-title {
-  font-size: 42px;
-  font-weight: 800;
-}
-
-.hero-subtitle {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.hero-badges {
-  margin-top: 15px;
-  font-weight: 600;
-}
-
 .hero-buttons {
   margin-top: 25px;
 }
@@ -1553,15 +1501,6 @@ h2 {
   border-radius: 8px;
   text-decoration: none;
 }
-.sticky-cta {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 999;
-}
 
 .cta-wa, .cta-enroll {
   padding: 12px 18px;
@@ -1569,21 +1508,6 @@ h2 {
   font-weight: 600;
   text-decoration: none;
   color: white;
-}
-
-.cta-wa {
-  background: #25D366;
-}
-
-.cta-enroll {
-  background: #0ea5e9;
-}
-.testimonial-card {
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: 0.3s;
 }
 
 .testimonial-card:hover {
@@ -1638,43 +1562,9 @@ h2 {
 .testimonial-card {
   background: #fff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.sticky-cta {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  z-index: 999;
-}
-
-.cta-wa {
-  background: #25D366;
-}
-
-.cta-enroll {
-  background: #0d6efd;
-}
-
-.cta-wa, .cta-enroll {
-  flex: 1;
-  text-align: center;
-  padding: 12px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.cta-wa {
-  background: #25D366;
-  color: white;
-}
-
-.cta-enroll {
-  background: #0d6efd;
-  color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
 .sticky-cta {
