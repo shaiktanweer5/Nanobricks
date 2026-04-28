@@ -1671,3 +1671,26 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  z-index: 999;
+}
+
+.cta-wa, .cta-enroll {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta-wa {
+  background: #25D366;
+}
+
+.cta-enroll {
+  background: #0d6efd;
+}
