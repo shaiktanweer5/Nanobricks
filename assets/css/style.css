@@ -1601,7 +1601,7 @@ section {
 }
 
 section {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
 h1 {
@@ -1637,4 +1637,56 @@ h2 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.3px;
+}
+/* PREMIUM CARD STYLE */
+.icon-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  border: 1px solid #f1f1f1;
+}
+
+/* HOVER EFFECT */
+.icon-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ICON STYLE */
+.icon-box .icon {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #2ecc71;
+  transition: 0.3s;
+}
+
+.icon-box:hover .icon {
+  transform: scale(1.2);
+}
+
+/* TITLE */
+.icon-box h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.icon-box p {
+  font-size: 14px;
+  color: #666;
+}
+.icon-box:hover h4 {
+  color: #2ecc71;
+}
+<i class="bi bi-diagram-3"></i> 
+.icon-box .icon {
+  width: 60px;
+  height: 60px;
+  background: #eafaf1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
 }
