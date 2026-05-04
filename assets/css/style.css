@@ -596,30 +596,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 0 40px 0;
-  background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-  border-radius: 15px;
-  text-align: center;
-  border-bottom: 3px solid #fff;
-}
 
-.services .icon-box:hover {
-  transform: translateY(-5px);
-  border-color: #33bc3b;
-}
-
-.services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  margin-bottom: 15px;
-  color: #33bc3b;
-}
 
 .services .title {
   font-weight: 700;
@@ -1389,29 +1366,10 @@ section {
 # Premium UI Upgrade (Custom)
 --------------------------------------------------------------*/
 
-.services .icon-box {
-  border-radius: 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-.services .icon-box:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-  border-color: #33bc3b;
-}
 
 /* Optional: smooth hover effect for all cards */
 .icon-box {
   transition: all 0.3s ease-in-out;
-}
-
-.services .icon-box:hover .title a {
-  color: #33bc3b;
-}
-
-.services .icon-box:hover .icon i {
-  transform: scale(1.1);
-  transition: 0.3s;
 }
 
 
@@ -1689,4 +1647,68 @@ h2 {
   justify-content: center;
   border-radius: 50%;
   margin: 0 auto 15px;
+}
+.icon-box {
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.icon-box .icon {
+  font-size: 32px;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+/* FINAL CLEAN ICON BOX */
+.icon-box {
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.icon-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.icon-box .icon {
+  width: 60px;
+  height: 60px;
+  background: #eafaf1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  font-size: 28px;
+  color: #0d6efd;
+  transition: 0.3s;
+}
+
+.icon-box:hover .icon {
+  transform: scale(1.2);
+}
+
+.icon-box h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+.icon-box:hover h4 {
+  color: #2ecc71;
 }
