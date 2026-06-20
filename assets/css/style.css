@@ -1723,3 +1723,12 @@ transition:0.3s;
 transform:translateY(-10px);
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
+#header{
+background:#ffffff;
+box-shadow:0 2px 20px rgba(0,0,0,0.08);
+}
+
+#header.header-scrolled{
+background:#ffffff;
+box-shadow:0 5px 25px rgba(0,0,0,0.12);
+}
