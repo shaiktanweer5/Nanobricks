@@ -1798,3 +1798,43 @@ height:auto;
 display:block;
 
 }
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+@media(max-width:768px){
+
+#hero{
+text-align:center;
+padding-top:120px;
+}
+
+#hero h1{
+font-size:34px;
+}
+
+#hero h2{
+font-size:18px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.navbar ul{
+background:white;
+}
+
+.whatsapp-float{
+
+bottom:15px;
+
+right:15px;
+
+font-size:22px;
+
+}
+
+}
