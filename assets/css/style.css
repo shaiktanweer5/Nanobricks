@@ -345,7 +345,25 @@ h6,
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+.navbar-mobile a{
 
+display:block;
+
+padding:15px;
+
+font-size:17px;
+
+color:#333;
+
+font-weight:600;
+
+}
+
+.navbar-mobile li{
+
+margin-bottom:10px;
+
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
