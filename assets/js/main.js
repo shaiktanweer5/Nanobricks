@@ -1,68 +1,40 @@
 (function () {
   "use strict";
-
-  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-  const navbar = document.querySelector('#navbar');
-
-  if (mobileNavToggle) {
-
-    mobileNavToggle.addEventListener('click', function () {
-
-      navbar.classList.toggle('navbar-mobile');
-
-      this.classList.toggle('bi-list');
-      this.classList.toggle('bi-x');
-
+  // =========================
+  // Mobile Navigation Toggle
+  // =========================
+  const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+  const navbar = document.querySelector("#navbar");
+  if (mobileNavToggle && navbar) {
+    mobileNavToggle.addEventListener("click", function () {
+      navbar.classList.toggle("navbar-mobile");
+      this.classList.toggle("bi-list");
+      this.classList.toggle("bi-x");
     });
-
   }
-
-  let backtotop = document.querySelector('.back-to-top');
-
+  // =========================
+  // Back To Top Button
+  // =========================
+  const backtotop = document.querySelector(".back-to-top");
   if (backtotop) {
-
-    window.addEventListener('scroll', () => {
-
+    window.addEventListener("scroll", function () {
       if (window.scrollY > 100) {
-
-        backtotop.classList.add('active');
-
+        backtotop.classList.add("active");
       } else {
-
-        backtotop.classList.remove('active');
-
+        backtotop.classList.remove("active");
       }
-
     });
-
-  
-  window.addEventListener("load",function(){
-
-let loader=document.getElementById("loader");
-
-if(loader){
-
-loader.style.display="none";
-
-}
-
-});
-
+  }
+  // =========================
+  // Loader Hide After Page Load
+  // =========================
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    if (loader) {
+      loader.style.opacity = "0";
+      setTimeout(function () {
+        loader.style.display = "none";
+      }, 500);
+    }
+  });
 })();
-window.addEventListener("load", function(){
-
-const loader = document.getElementById("loader");
-
-if(loader){
-
-loader.style.opacity="0";
-
-setTimeout(()=>{
-
-loader.style.display="none";
-
-},500);
-
-}
-
-});
