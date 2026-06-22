@@ -1242,6 +1242,41 @@ border-color:#334155;
 margin-top:30px;
 }
 
+#footer{
+
+background:#111;
+
+color:white;
+
+padding-top:60px;
+
+}
+
+#footer p{
+
+color:#bbb;
+
+}
+
+#footer h3,
+
+#footer h4{
+
+color:white;
+
+}
+
+#footer a{
+
+color:#33bc3b;
+
+}
+
+#footer a:hover{
+
+color:white;
+
+}
 .copyright{
 text-align:center;
 color:#94a3b8;
