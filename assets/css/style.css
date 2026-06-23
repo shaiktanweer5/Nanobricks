@@ -1448,25 +1448,29 @@ color:#94a3b8;
   transition: 0.3s;
 }
 
-.sticky-cta {
-position: fixed;
-bottom: 20px;
-leposition:fixed;
-bottom:15px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-gap:10px;
-z-index:999;
+.sticky-cta{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:999;
 }
 
 .cta-wa,
 .cta-enroll{
-
 padding:12px 18px;
 font-size:15px;
 border-radius:30px;
+}
+@media(max-width:768px){
 
+.cta-wa,
+.cta-enroll{
+padding:10px 15px;
+font-size:14px;
+}
 }
 
 .cta-wa {
@@ -1991,5 +1995,31 @@ max-width:250px;
 margin-top:25px;
 
 }
+
+}
+
+.stats{
+
+background:#fff;
+
+padding:60px 0;
+
+}
+
+.stats h2{
+
+font-size:42px;
+
+font-weight:700;
+
+color:#33bc3b;
+
+}
+
+.stats p{
+
+font-size:18px;
+
+color:#444;
 
 }
