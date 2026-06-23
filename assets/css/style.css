@@ -424,11 +424,13 @@ padding-bottom:60px;
     text-align: center;
   }
 
-  #hero .hero-img img {
-    width:100%;
+ #hero img{
     max-width:320px;
+    width:100%;
+    height:auto;
     margin:auto;
-  }
+    display:block;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1661,9 +1663,7 @@ flex-wrap:wrap;
 }
 
 @media(max-width:768px){
-
 .hero-buttons{
-
 flex-direction:column;
 
 }
@@ -1955,4 +1955,41 @@ border-radius:40px;
 color:white;
 font-weight:600;
 box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+@media(max-width:768px){
+
+#hero{
+
+text-align:center;
+
+padding-top:110px;
+
+padding-bottom:50px;
+
+}
+
+#hero h1{
+
+font-size:28px;
+
+line-height:38px;
+
+}
+
+#hero h2{
+
+font-size:16px;
+
+line-height:26px;
+
+}
+
+#hero img{
+
+max-width:250px;
+
+margin-top:25px;
+
+}
+
 }
