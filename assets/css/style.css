@@ -2073,3 +2073,17 @@ font-size:42px;
 color:#33bc3b;
 margin-bottom:20px;
 }
+#industries .icon-box{
+height:100%;
+}
+
+#industries .icon-box:hover{
+background:#33bc3b;
+color:#fff;
+}
+
+#industries .icon-box:hover p,
+#industries .icon-box:hover h4,
+#industries .icon-box:hover i{
+color:#fff;
+}
