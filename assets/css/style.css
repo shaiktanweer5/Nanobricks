@@ -351,26 +351,27 @@ margin-bottom:10px;
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height:auto;
-padding-top:120px;
-padding-bottom:60px;
-  background: #fef8f5;
-  border-bottom: 2px solid #fcebe3;
-  margin: 72px 0 -72px 0;
+  height: auto;
+  min-height: 520px;
+  padding: 70px 0;
+  background: linear-gradient(135deg, #fffaf7 0%, #f3faf5 100%);
+  border-bottom: 1px solid #e7efe9;
+  margin: 72px 0 0 0;
 }
 
 #hero h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  line-height: 56px;
-  color: #4e4039;
+  line-height: 1.18;
+  color: #25372b;
 }
 
 #hero h2 {
-  color: #a08f86;
-  margin: 15px 0 0 0;
-  font-size: 24px;
+  color: #647168;
+  margin: 18px 0 0 0;
+  font-size: 22px;
+  line-height: 1.6;
 }
 
 #hero .btn-get-started {
@@ -397,7 +398,9 @@ padding-bottom:60px;
 
 @media (max-width: 991px) {
   #hero {
-    height: calc(100vh - 72px);
+    height: auto;
+    min-height: auto;
+    padding: 60px 0;
   }
 
   #hero .animated {
@@ -439,13 +442,6 @@ padding-bottom:60px;
     width: 80%;
   }
 }
-
-@media (max-height: 600px) {
-  #hero {
-    height: 120vh;
-  }
-}
-
 @-webkit-keyframes up-down {
   0% {
     transform: translateY(10px);
@@ -870,7 +866,7 @@ color:#94a3b8;
 }
 
 .hero-buttons .btn {
-  margin: 10px;
+  margin: 0;
 }
 .cta-enroll {
   background: #0d6efd;
@@ -1101,7 +1097,7 @@ display:block;
 
 #hero{
 text-align:center;
-padding-top:120px;
+padding:55px 0 45px;
 }
 
 #hero h1{
@@ -1319,9 +1315,7 @@ box-shadow:0 10px 30px rgba(0,0,0,.2);
 
 text-align:center;
 
-padding-top:110px;
-
-padding-bottom:50px;
+padding:55px 0 45px;
 
 }
 
