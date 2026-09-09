@@ -26,10 +26,11 @@ jobs:
       - name: Deploy website to S3
         run: |
           aws s3 sync . s3://nanobricks.in \
-            --delete \
-            --exclude ".git/*" \
-            --exclude ".github/*" \
-            --exclude ".gitignore"
+          --delete \
+          --exclude ".git/*" \
+          --exclude ".github/*" \
+          --exclude ".gitignore" \
+          --exclude "README.md"
 
       - name: Invalidate CloudFront cache
         run: |
