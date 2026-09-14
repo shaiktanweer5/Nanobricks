@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web & Software Development Services | Nanobricks</title>
+
+  <meta name="description"
+        content="Nanobricks provides website development, web applications, business portals, APIs, automation and custom software solutions for businesses and institutions.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://www.nanobricks.in/services/web-software/">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+    :root {
+      --nb-blue: #1267e5;
+      --nb-green: #2fc344;
+      --nb-dark: #111827;
+      --nb-text: #4b5563;
+      --nb-light: #f7f9fc;
+      --nb-border: #e5e7eb;
+      --nb-purple: #7c3aed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--nb-dark);
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .main-navbar {
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid #edf0f4;
+      padding: 15px 0;
+      z-index: 9999;
+    }
+
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--nb-dark) !important;
+      letter-spacing: -0.5px;
+    }
+
+    .navbar-brand span {
+      color: var(--nb-green);
+    }
+
+    .navbar-nav .nav-link {
+      color: #374151;
+      font-weight: 500;
+      margin: 0 6px;
+      padding: 10px 7px !important;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: var(--nb-blue);
+    }
+
+    .nav-cta {
+      background: var(--nb-blue);
+      color: #fff !important;
+      padding: 11px 17px !important;
+      border-radius: 8px;
+      margin-left: 8px;
+    }
+
+    .nav-cta:hover {
+      background: #0d55c7;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 155px 0 95px;
+      background:
+        radial-gradient(circle at top right,
+        rgba(124,58,237,0.11),
+        transparent 35%),
+        linear-gradient(135deg,#f8fbff,#ffffff);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: #f3efff;
+      color: var(--nb-purple);
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      line-height: 1.08;
+      letter-spacing: -2px;
+      font-weight: 800;
+      max-width: 900px;
+    }
+
+    .hero p {
+      margin-top: 24px;
+      max-width: 820px;
+      font-size: 19px;
+      line-height: 1.8;
+      color: var(--nb-text);
+    }
+
+    .hero-actions {
+      margin-top: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-main {
+      background: var(--nb-blue);
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 9px;
+      font-weight: 600;
+      border: 1px solid var(--nb-blue);
+    }
+
+    .btn-main:hover {
+      background: #0d55c7;
+      color: #fff;
+    }
+
+    .btn-secondary-custom {
+      color: var(--nb-dark);
+      padding: 14px 24px;
+      border-radius: 9px;
+      border: 1px solid #cbd5e1;
+      font-weight: 600;
+      background: #fff;
+    }
+
+    .btn-secondary-custom:hover {
+      border-color: var(--nb-blue);
+      color: var(--nb-blue);
+    }
+
+    /* =========================
+       COMMON
+    ========================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-light {
+      background: var(--nb-light);
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--nb-text);
+    }
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .service-card {
+      height: 100%;
+      background: #fff;
+      border: 1px solid var(--nb-border);
+      border-radius: 16px;
+      padding: 32px;
+      transition: all .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 45px rgba(17,24,39,0.08);
+    }
+
+    .icon-box {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: #f3efff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+
+    .icon-box i {
+      color: var(--nb-purple);
+      font-size: 27px;
+    }
+
+    .service-card h3 {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 13px;
+    }
+
+    .service-card p {
+      color: var(--nb-text);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* =========================
+       LIST
+    ========================= */
+
+    .feature-wrapper {
+      background: #fff;
+      border: 1px solid var(--nb-border);
+      border-radius: 18px;
+      padding: 40px;
+      height: 100%;
+    }
+
+    .feature-wrapper h3 {
+      font-weight: 800;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 17px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .check-list i {
+      color: var(--nb-green);
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process-step {
+      background: #fff;
+      border: 1px solid var(--nb-border);
+      border-radius: 16px;
+      padding: 30px;
+      height: 100%;
+    }
+
+    .process-number {
+      width: 42px;
+      height: 42px;
+      background: var(--nb-blue);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .process-step h4 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .process-step p {
+      color: var(--nb-text);
+      line-height: 1.7;
+    }
+
+    /* =========================
+       TECH
+    ========================= */
+
+    .tech-badge {
+      background: #fff;
+      border: 1px solid var(--nb-border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      text-align: center;
+      font-weight: 600;
+      height: 100%;
+    }
+
+    /* =========================
+       ENGAGEMENT
+    ========================= */
+
+    .engagement-card {
+      background: #fff;
+      border: 1px solid var(--nb-border);
+      border-radius: 16px;
+      padding: 32px;
+      height: 100%;
+    }
+
+    .engagement-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .engagement-card p {
+      color: var(--nb-text);
+      line-height: 1.7;
+      min-height: 105px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta-wrapper {
+      padding: 60px;
+      border-radius: 22px;
+      background: linear-gradient(135deg,#6d28d9,#4f46e5);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta-wrapper h2 {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .cta-wrapper p {
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .cta-wrapper .btn {
+      margin-top: 28px;
+      padding: 14px 26px;
+      font-weight: 700;
+    }
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .accordion-item {
+      border: 1px solid var(--nb-border);
+      border-radius: 12px !important;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+
+    .accordion-button {
+      font-weight: 600;
+      padding: 20px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: var(--nb-blue);
+      background: #f5f9ff;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 55px 0 25px;
+    }
+
+    footer h3 {
+      color: #fff;
+      font-weight: 800;
+    }
+
+    footer h5 {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    footer a {
+      color: #d1d5db;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #374151;
+      margin-top: 35px;
+      padding-top: 25px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 991px) {
+
+      .hero {
+        padding: 125px 0 75px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .navbar-nav {
+        padding-top: 15px;
+      }
+
+      .navbar-nav .nav-link {
+        margin: 2px 0;
+      }
+
+      .nav-cta {
+        margin-left: 0;
+        margin-top: 8px;
+        display: inline-block;
+      }
+
+    }
+
+    @media (max-width: 576px) {
+
+      .hero h1 {
+        font-size: 36px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .section-heading h2 {
+        font-size: 31px;
+      }
+
+      .cta-wrapper {
+        padding: 40px 22px;
+      }
+
+      .cta-wrapper h2 {
+        font-size: 30px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar navbar-expand-lg navbar-light main-navbar fixed-top">
+
+  <div class="container">
+
+    <a class="navbar-brand" href="/">
+      Nano<span>bricks</span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMain"
+      aria-controls="navbarMain"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/services/managed-it/">
+            Managed IT
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/services/cloud-services/">
+            Cloud
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/services/cloud-security/">
+            Cloud Security
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/services/devops-automation/">
+            DevOps
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/services/cybersecurity/">
+            Cybersecurity
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active"
+             href="/services/web-software/">
+            Web & Software
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/academy/">
+            Academy
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="/#contact">
+            Contact
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-cta"
+             href="/#enquiry">
+            Request Quote
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      <i class="bi bi-code-slash"></i>
+      Web & Software Solutions
+    </div>
+
+    <h1>
+      Build Digital Solutions That Support Your Business
+    </h1>
+
+    <p>
+      Nanobricks helps businesses and institutions design and build
+      websites, web applications, business portals, APIs and practical
+      software solutions based on real operational requirements.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="/#enquiry"
+         class="btn-main">
+        Discuss Your Project
+      </a>
+
+      <a href="#services"
+         class="btn-secondary-custom">
+        Explore Software Services
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>
+        Software Built Around Your Business Requirements
+      </h2>
+
+      <p>
+        From a professional business website to internal tools
+        and custom web applications, Nanobricks focuses on
+        practical, scalable and maintainable digital solutions.
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-window"></i>
+          </div>
+
+          <h3>Professional Websites</h3>
+
+          <p>
+            Modern, responsive websites designed around
+            your business services, brand and customer needs.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-laptop"></i>
+          </div>
+
+          <h3>Web Applications</h3>
+
+          <p>
+            Browser-based applications for business
+            workflows, portals and digital services.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-gear"></i>
+          </div>
+
+          <h3>Business Automation</h3>
+
+          <p>
+            Reduce repetitive manual work using practical
+            digital workflows and software automation.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services" class="section-light">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>Web & Software Services</h2>
+
+      <p>
+        Flexible development services for startups,
+        growing businesses and institutions.
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-globe"></i>
+          </div>
+
+          <h3>Business Website Development</h3>
+
+          <p>
+            Responsive websites for companies,
+            startups, institutions and professional services.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-layout-text-window"></i>
+          </div>
+
+          <h3>Landing Pages</h3>
+
+          <p>
+            Focused landing pages for campaigns,
+            services, products, programs and lead generation.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-window-stack"></i>
+          </div>
+
+          <h3>Web Applications</h3>
+
+          <p>
+            Custom web applications designed around
+            specific business workflows and user requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-person-workspace"></i>
+          </div>
+
+          <h3>Business Portals</h3>
+
+          <p>
+            Internal or customer-facing portals
+            for information, workflows and digital services.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-braces"></i>
+          </div>
+
+          <h3>API Development</h3>
+
+          <p>
+            API development and integration support
+            for connecting applications and business systems.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-arrow-left-right"></i>
+          </div>
+
+          <h3>System Integration</h3>
+
+          <p>
+            Connect supported platforms and applications
+            to improve information flow and operational efficiency.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-robot"></i>
+          </div>
+
+          <h3>Workflow Automation</h3>
+
+          <p>
+            Automate repetitive business activities
+            using APIs, scripts and custom workflows.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-cloud-arrow-up"></i>
+          </div>
+
+          <h3>Cloud Deployment</h3>
+
+          <p>
+            Deploy supported websites and applications
+            to suitable cloud environments.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="icon-box">
+            <i class="bi bi-tools"></i>
+          </div>
+
+          <h3>Website Maintenance</h3>
+
+          <p>
+            Ongoing updates, backup checks,
+            SSL monitoring and minor content maintenance.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SOLUTIONS
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="row g-5 align-items-stretch">
+
+      <div class="col-lg-6">
+
+        <div class="feature-wrapper">
+
+          <h3>
+            Solutions We Can Build
+          </h3>
+
+          <ul class="check-list">
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Corporate and business websites
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Startup websites
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              College and institution websites
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Customer portals
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Internal business tools
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Lead and enquiry systems
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Dashboard applications
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              API-based integrations
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Workflow automation
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="feature-wrapper">
+
+          <h3>
+            Ideal For
+          </h3>
+
+          <ul class="check-list">
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Startups launching a digital presence
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              SMEs modernizing business websites
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Institutions requiring digital portals
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Businesses replacing manual workflows
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Teams requiring custom internal tools
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Organizations integrating existing systems
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Businesses requiring ongoing website support
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     TECHNOLOGIES
+========================= -->
+
+<section class="section-light">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>Technologies & Platforms</h2>
+
+      <p>
+        Technology choices depend on the project requirements,
+        scalability needs and existing business environment.
+      </p>
+
+    </div>
+
+    <div class="row g-3 justify-content-center">
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          HTML5
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          CSS3
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          JavaScript
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          Bootstrap
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          Python
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          APIs
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          GitHub
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          AWS
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          Azure
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="tech-badge">
+          Google Cloud
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>Our Development Process</h2>
+
+      <p>
+        A simple process designed to keep the solution
+        aligned with the actual business requirement.
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-step">
+
+          <div class="process-number">
+            1
+          </div>
+
+          <h4>
+            Understand
+          </h4>
+
+          <p>
+            Understand business goals,
+            users, features and technical requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-step">
+
+          <div class="process-number">
+            2
+          </div>
+
+          <h4>
+            Design
+          </h4>
+
+          <p>
+            Plan the solution structure,
+            user experience and technical approach.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-step">
+
+          <div class="process-number">
+            3
+          </div>
+
+          <h4>
+            Build
+          </h4>
+
+          <p>
+            Develop, configure and integrate
+            the agreed solution.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-step">
+
+          <div class="process-number">
+            4
+          </div>
+
+          <h4>
+            Deploy & Support
+          </h4>
+
+          <p>
+            Deploy the solution and provide
+            agreed maintenance or ongoing support.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ENGAGEMENT
+========================= -->
+
+<section class="section-light">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>Engagement Options</h2>
+
+      <p>
+        Start with a website project,
+        custom application or ongoing support requirement.
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+
+      <div class="col-lg-4">
+
+        <div class="engagement-card">
+
+          <h3>
+            Website Project
+          </h3>
+
+          <p>
+            Design and development of a professional,
+            responsive business or institutional website.
+          </p>
+
+          <a href="/#enquiry"
+             class="btn btn-outline-primary">
+
+            Request Website Quote
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="engagement-card">
+
+          <h3>
+            Custom Software
+          </h3>
+
+          <p>
+            Build a custom web application,
+            portal or workflow based on
+            your business requirements.
+          </p>
+
+          <a href="/#enquiry"
+             class="btn btn-primary">
+
+            Discuss Your Project
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="engagement-card">
+
+          <h3>
+            Website AMC
+          </h3>
+
+          <p>
+            Ongoing website updates,
+            backup checks, SSL monitoring
+            and minor maintenance support.
+          </p>
+
+          <a href="/#enquiry"
+             class="btn btn-outline-primary">
+
+            Request AMC Quote
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="cta-wrapper">
+
+      <h2>
+        Have a Website or Software Idea?
+      </h2>
+
+      <p>
+        Tell us what your business needs.
+        Nanobricks can help turn the requirement
+        into a practical website, web application
+        or digital solution.
+      </p>
+
+      <a href="/#enquiry"
+         class="btn btn-light btn-lg">
+
+        Discuss Your Project
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="section-light">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+      <p>
+        Common questions about Nanobricks
+        web and software development services.
+      </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-9">
+
+        <div class="accordion"
+             id="softwareFaq">
+
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1">
+
+                Do you build business websites?
+
+              </button>
+
+            </h2>
+
+            <div id="faq1"
+                 class="accordion-collapse collapse show"
+                 data-bs-parent="#softwareFaq">
+
+              <div class="accordion-body">
+
+                Yes. Nanobricks can develop responsive
+                business, startup and institutional websites
+                based on the agreed requirements.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2">
+
+                Can you build custom web applications?
+
+              </button>
+
+            </h2>
+
+            <div id="faq2"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#softwareFaq">
+
+              <div class="accordion-body">
+
+                Yes. Custom web applications,
+                portals and business workflow tools
+                can be developed based on the project scope.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3">
+
+                Do you provide website maintenance?
+
+              </button>
+
+            </h2>
+
+            <div id="faq3"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#softwareFaq">
+
+              <div class="accordion-body">
+
+                Yes. Website AMC services can include
+                agreed content updates, backup checks,
+                SSL monitoring and minor maintenance.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4">
+
+                Can you integrate APIs?
+
+              </button>
+
+            </h2>
+
+            <div id="faq4"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#softwareFaq">
+
+              <div class="accordion-body">
+
+                Yes. API integrations can be implemented
+                for supported systems and platforms
+                based on technical feasibility and scope.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5">
+
+                Can you host applications in the cloud?
+
+              </button>
+
+            </h2>
+
+            <div id="faq5"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#softwareFaq">
+
+              <div class="accordion-body">
+
+                Yes. Supported websites and applications
+                can be deployed to suitable AWS,
+                Azure or Google Cloud environments
+                depending on requirements.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq6">
+
+                How is software development pricing calculated?
+
+              </button>
+
+            </h2>
+
+            <div id="faq6"
+                 class="accordion-collapse collapse"
+                 data-bs-parent="#softwareFaq">
+
+              <div class="accordion-body">
+
+                Pricing depends on project scope,
+                number of pages or features,
+                integrations, hosting requirements,
+                complexity and ongoing support needs.
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="row g-4">
+
+      <div class="col-lg-5">
+
+        <h3>
+          Nanobricks
+        </h3>
+
+        <p class="mt-3">
+
+          Practical technology services for growing businesses,
+          including Managed IT, Cloud, Cloud Security,
+          Cybersecurity, DevOps, Software Solutions
+          and professional technology training.
+
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-3">
+
+        <h5>
+          Services
+        </h5>
+
+        <p class="mb-2">
+          <a href="/services/managed-it/">
+            Managed IT & AMC
+          </a>
+        </p>
+
+        <p class="mb-2">
+          <a href="/services/cloud-services/">
+            Cloud Services
+          </a>
+        </p>
+
+        <p class="mb-2">
+          <a href="/services/cloud-security/">
+            Cloud Security
+          </a>
+        </p>
+
+        <p class="mb-2">
+          <a href="/services/devops-automation/">
+            DevOps & Automation
+          </a>
+        </p>
+
+        <p class="mb-2">
+          <a href="/services/cybersecurity/">
+            Cybersecurity
+          </a>
+        </p>
+
+        <p class="mb-2">
+          <a href="/services/web-software/">
+            Web & Software
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <h5>
+          Contact
+        </h5>
+
+        <p class="mb-2">
+          Hyderabad, Telangana, India
+        </p>
+
+        <p class="mb-2">
+          <a href="mailto:info@nanobricks.in">
+            info@nanobricks.in
+          </a>
+        </p>
+
+        <p class="mb-2">
+          <a href="tel:+917995720507">
+            +91 7995720507
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © 2026 Nanobricks. All Rights Reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
