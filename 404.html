@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Page Not Found | Nanobricks</title>
+
+  <meta name="robots" content="noindex, follow">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+    :root {
+      --nb-blue: #1267e5;
+      --nb-green: #2fc344;
+      --nb-dark: #111827;
+      --nb-text: #4b5563;
+      --nb-border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--nb-dark);
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .main-navbar {
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid #edf0f4;
+      padding: 15px 0;
+      z-index: 9999;
+    }
+
+    .navbar-brand img {
+      height: 42px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #374151;
+      font-weight: 500;
+      margin: 0 7px;
+      padding: 10px 8px !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: var(--nb-blue);
+    }
+
+    .nav-cta {
+      background: var(--nb-blue);
+      color: #fff !important;
+      padding: 11px 18px !important;
+      border-radius: 8px;
+      margin-left: 10px;
+    }
+
+    .error-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at top right,
+        rgba(18,103,229,0.10),
+        transparent 35%),
+        linear-gradient(135deg,#f8fbff,#ffffff);
+      padding: 130px 0 70px;
+    }
+
+    .error-code {
+      font-size: 110px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--nb-blue);
+      letter-spacing: -6px;
+    }
+
+    .error-section h1 {
+      font-size: 42px;
+      font-weight: 800;
+      margin-top: 15px;
+    }
+
+    .error-section p {
+      max-width: 650px;
+      margin: 20px auto 0;
+      color: var(--nb-text);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .error-actions {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-main {
+      background: var(--nb-blue);
+      color: #fff;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .btn-main:hover {
+      background: #0d55c7;
+      color: #fff;
+    }
+
+    .btn-secondary-custom {
+      border: 1px solid #cbd5e1;
+      color: var(--nb-dark);
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      background: #fff;
+    }
+
+    .btn-secondary-custom:hover {
+      color: var(--nb-blue);
+      border-color: var(--nb-blue);
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #d1d5db;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 576px) {
+
+      .error-code {
+        font-size: 82px;
+      }
+
+      .error-section h1 {
+        font-size: 33px;
+      }
+
+      .error-section p {
+        font-size: 16px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light main-navbar fixed-top">
+
+  <div class="container">
+
+    <a class="navbar-brand" href="/">
+      <img
+        src="/assets/img/nano-log.png"
+        alt="Nanobricks">
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMain"
+      aria-controls="navbarMain"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#services">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/academy/">Academy</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-cta" href="/#enquiry">
+            Request IT Assessment
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<section class="error-section">
+
+  <div class="container text-center">
+
+    <div class="error-code">
+      404
+    </div>
+
+    <h1>Page Not Found</h1>
+
+    <p>
+      The page you are looking for may have been moved,
+      renamed or is no longer available.
+      You can return to the Nanobricks homepage or explore
+      our technology services.
+    </p>
+
+    <div class="error-actions">
+
+      <a href="/" class="btn-main">
+        <i class="bi bi-house me-2"></i>
+        Back to Home
+      </a>
+
+      <a href="/#services"
+         class="btn-secondary-custom">
+        Explore Services
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="container">
+
+    <p class="mb-2">
+      © 2026 Nanobricks. All Rights Reserved.
+    </p>
+
+    <p class="mb-0">
+
+      <a href="/privacy-policy/">
+        Privacy Policy
+      </a>
+
+      &nbsp; • &nbsp;
+
+      <a href="/terms/">
+        Terms of Use
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
