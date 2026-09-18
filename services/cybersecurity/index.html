@@ -2,281 +2,143 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
 
-  <title>Cybersecurity Services in Hyderabad | Nanobricks</title>
+  <title>
+    Cybersecurity Services | Nanobricks
+  </title>
 
   <meta name="description"
         content="Nanobricks provides cybersecurity services including security assessments, vulnerability review, IAM review, endpoint security, security hardening, backup readiness and practical remediation support.">
 
-  <meta name="robots" content="index, follow">
-
   <link rel="canonical"
         href="https://www.nanobricks.in/services/cybersecurity/">
 
-  <!-- Bootstrap -->
+  <link href="/assets/img/nano-log.png"
+        rel="icon">
+
+  <link href="/assets/img/nano-log.png"
+        rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <!-- Google Font -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="/assets/css/style.css"
     rel="stylesheet">
 
   <style>
 
-    :root {
-      --nb-blue: #1267e5;
-      --nb-green: #2fc344;
-      --nb-dark: #111827;
-      --nb-text: #4b5563;
-      --nb-light: #f7f9fc;
-      --nb-border: #e5e7eb;
-      --nb-red: #dc3545;
+    .service-hero {
+      margin-top: 72px;
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
+      border-bottom: 1px solid #e7ece9;
     }
 
-    * {
-      box-sizing: border-box;
+    .service-hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 18px;
     }
 
-    html {
-      scroll-behavior: smooth;
+    .service-hero p {
+      font-size: 20px;
+      color: #647168;
+      line-height: 1.7;
+      max-width: 800px;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--nb-dark);
-      background: #ffffff;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    /* =========================
-       NAVBAR
-    ========================= */
-
-    .main-navbar {
-      background: rgba(255,255,255,0.98);
-      border-bottom: 1px solid #edf0f4;
-      padding: 15px 0;
-      z-index: 9999;
-    }
-
-    .navbar-brand {
-      font-size: 28px;
-      font-weight: 800;
-      color: var(--nb-dark) !important;
-      letter-spacing: -0.5px;
-    }
-
-    .navbar-brand span {
-      color: var(--nb-green);
-    }
-
-    .navbar-nav .nav-link {
-      color: #374151;
-      font-weight: 500;
-      margin: 0 7px;
-      padding: 10px 8px !important;
-    }
-
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-      color: var(--nb-blue);
-    }
-
-    .nav-cta {
-      background: var(--nb-blue);
-      color: #fff !important;
-      padding: 11px 18px !important;
-      border-radius: 8px;
-      margin-left: 10px;
-    }
-
-    .nav-cta:hover {
-      background: #0d55c7;
-    }
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
-      padding: 155px 0 95px;
-      background:
-        radial-gradient(circle at top right,
-        rgba(220,53,69,0.10),
-        transparent 35%),
-        linear-gradient(135deg,#f8fbff,#ffffff);
-    }
-
-    .eyebrow {
+    .service-label {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 8px 14px;
-      background: #fff0f1;
-      color: var(--nb-red);
-      border-radius: 50px;
-      font-size: 14px;
+      color: #2fa93a;
       font-weight: 700;
-      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 18px;
     }
 
-    .hero h1 {
-      font-size: 58px;
-      line-height: 1.08;
-      letter-spacing: -2px;
-      font-weight: 800;
-      max-width: 900px;
-    }
-
-    .hero p {
-      margin-top: 24px;
-      max-width: 820px;
-      font-size: 19px;
-      line-height: 1.8;
-      color: var(--nb-text);
-    }
-
-    .hero-actions {
-      margin-top: 35px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn-main {
-      background: var(--nb-blue);
-      color: #fff;
-      padding: 14px 24px;
-      border-radius: 9px;
-      font-weight: 600;
-      border: 1px solid var(--nb-blue);
-    }
-
-    .btn-main:hover {
-      background: #0d55c7;
-      color: #fff;
-    }
-
-    .btn-secondary-custom {
-      color: var(--nb-dark);
-      padding: 14px 24px;
-      border-radius: 9px;
-      border: 1px solid #cbd5e1;
-      font-weight: 600;
+    .hero-icon {
+      width: 180px;
+      height: 180px;
+      margin: auto;
       background: #fff;
-    }
-
-    .btn-secondary-custom:hover {
-      border-color: var(--nb-blue);
-      color: var(--nb-blue);
-    }
-
-    /* =========================
-       COMMON
-    ========================= */
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-light {
-      background: var(--nb-light);
-    }
-
-    .section-heading {
-      max-width: 760px;
-      margin: 0 auto 55px;
-      text-align: center;
-    }
-
-    .section-heading h2 {
-      font-size: 38px;
-      font-weight: 800;
-      letter-spacing: -1px;
-      margin-bottom: 16px;
-    }
-
-    .section-heading p {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--nb-text);
-    }
-
-    /* =========================
-       CARDS
-    ========================= */
-
-    .service-card {
-      height: 100%;
-      background: #fff;
-      border: 1px solid var(--nb-border);
-      border-radius: 16px;
-      padding: 32px;
-      transition: all .25s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 45px rgba(17,24,39,0.08);
-    }
-
-    .icon-box {
-      width: 58px;
-      height: 58px;
-      border-radius: 14px;
-      background: #fff1f2;
+      border-radius: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 22px;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.08);
     }
 
-    .icon-box i {
-      color: var(--nb-red);
-      font-size: 27px;
+    .hero-icon i {
+      font-size: 75px;
+      color: #33bc3b;
+    }
+
+    .service-section {
+      padding: 80px 0;
+    }
+
+    .service-section.alt {
+      background: #f8faf9;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+      transition: 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.07);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #eff9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .service-icon i {
+      color: #2fa93a;
+      font-size: 26px;
     }
 
     .service-card h3 {
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 700;
-      margin-bottom: 13px;
+      color: #25372b;
     }
 
     .service-card p {
-      color: var(--nb-text);
+      color: #647168;
       line-height: 1.7;
-      margin: 0;
-    }
-
-    /* =========================
-       LISTS
-    ========================= */
-
-    .feature-wrapper {
-      background: #fff;
-      border: 1px solid var(--nb-border);
-      border-radius: 18px;
-      padding: 40px;
-      height: 100%;
-    }
-
-    .feature-wrapper h3 {
-      font-weight: 800;
-      font-size: 28px;
-      margin-bottom: 25px;
+      margin-bottom: 0;
     }
 
     .check-list {
@@ -286,220 +148,95 @@
     }
 
     .check-list li {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 17px;
-      color: #374151;
-      line-height: 1.6;
-    }
-
-    .check-list i {
-      color: var(--nb-green);
-      font-size: 20px;
-      flex-shrink: 0;
-    }
-
-    /* =========================
-       PROCESS
-    ========================= */
-
-    .process-step {
-      background: #fff;
-      border: 1px solid var(--nb-border);
-      border-radius: 16px;
-      padding: 30px;
-      height: 100%;
-    }
-
-    .process-number {
-      width: 42px;
-      height: 42px;
-      background: var(--nb-blue);
-      color: #fff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-
-    .process-step h4 {
-      font-weight: 700;
-      font-size: 20px;
-    }
-
-    .process-step p {
-      color: var(--nb-text);
-      line-height: 1.7;
-    }
-
-    /* =========================
-       ENGAGEMENT
-    ========================= */
-
-    .engagement-card {
-      background: #fff;
-      border: 1px solid var(--nb-border);
-      border-radius: 16px;
-      padding: 32px;
-      height: 100%;
-    }
-
-    .engagement-card h3 {
-      font-size: 22px;
-      font-weight: 700;
-    }
-
-    .engagement-card p {
-      color: var(--nb-text);
-      line-height: 1.7;
-      min-height: 105px;
-    }
-
-    /* =========================
-       CTA
-    ========================= */
-
-    .cta-wrapper {
-      padding: 60px;
-      border-radius: 22px;
-      background: linear-gradient(135deg,#111827,#1f2937);
-      color: #fff;
-      text-align: center;
-    }
-
-    .cta-wrapper h2 {
-      font-size: 38px;
-      font-weight: 800;
-      margin-bottom: 18px;
-    }
-
-    .cta-wrapper p {
-      max-width: 750px;
-      margin: auto;
-      line-height: 1.8;
-      color: rgba(255,255,255,0.85);
-    }
-
-    .cta-wrapper .btn {
-      margin-top: 28px;
-      padding: 14px 26px;
-      font-weight: 700;
-    }
-
-    /* =========================
-       FAQ
-    ========================= */
-
-    .accordion-item {
-      border: 1px solid var(--nb-border);
-      border-radius: 12px !important;
+      position: relative;
+      padding-left: 28px;
       margin-bottom: 14px;
-      overflow: hidden;
+      color: #647168;
     }
 
-    .accordion-button {
-      font-weight: 600;
-      padding: 20px;
-    }
-
-    .accordion-button:not(.collapsed) {
-      color: var(--nb-blue);
-      background: #f5f9ff;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      background: #111827;
-      color: #d1d5db;
-      padding: 55px 0 25px;
-    }
-
-    footer h3 {
-      color: #fff;
-      font-weight: 800;
-    }
-
-    footer h5 {
-      color: #fff;
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #2fa93a;
       font-weight: 700;
     }
 
-    footer a {
-      color: #d1d5db;
+    .process-card {
+      background: #fff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 28px;
+      height: 100%;
     }
 
-    footer a:hover {
-      color: #fff;
+    .process-card span {
+      color: #33bc3b;
+      font-weight: 700;
     }
 
-    .footer-bottom {
-      border-top: 1px solid #374151;
-      margin-top: 35px;
-      padding-top: 25px;
-      text-align: center;
-      font-size: 14px;
+    .process-card h3 {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 700;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 991px) {
-
-      .hero {
-        padding: 125px 0 75px;
-      }
-
-      .hero h1 {
-        font-size: 43px;
-      }
-
-      .navbar-nav {
-        padding-top: 15px;
-      }
-
-      .navbar-nav .nav-link {
-        margin: 2px 0;
-      }
-
-      .nav-cta {
-        margin-left: 0;
-        margin-top: 8px;
-        display: inline-block;
-      }
-
+    .process-card p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
     }
 
-    @media (max-width: 576px) {
+    .service-cta {
+      background: #1f6f2b;
+      color: white;
+      padding: 80px 0;
+    }
 
-      .hero h1 {
-        font-size: 36px;
-        letter-spacing: -1px;
+    .service-cta h2 {
+      color: white;
+      font-weight: 700;
+    }
+
+    .service-cta p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+
+    /* FAQ */
+    .faq-section .service-card {
+      height: auto;
+      min-height: 0;
+      margin-bottom: 16px;
+    }
+
+    .faq-section .section-title h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 12px;
+    }
+
+    .faq-section .section-title p {
+      font-size: 17px;
+      font-weight: 400;
+      color: #647168;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+
+      .service-hero h1 {
+        font-size: 34px;
       }
 
-      .hero p {
+      .service-hero p {
         font-size: 17px;
       }
 
-      section {
-        padding: 65px 0;
-      }
-
-      .section-heading h2 {
-        font-size: 31px;
-      }
-
-      .cta-wrapper {
-        padding: 40px 22px;
-      }
-
-      .cta-wrapper h2 {
-        font-size: 30px;
+      .hero-icon {
+        width: 140px;
+        height: 140px;
       }
 
     }
@@ -510,139 +247,193 @@
 
 <body>
 
-<!-- =========================
-     NAVBAR
-========================= -->
 
-<nav class="navbar navbar-expand-lg navbar-light main-navbar fixed-top">
+<!-- HEADER -->
 
-  <div class="container">
+<header id="header"
+        class="fixed-top d-flex align-items-center">
 
-    <a class="navbar-brand" href="/">
-      Nano<span>bricks</span>
-    </a>
+  <div class="container d-flex align-items-center justify-content-between">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarMain"
-      aria-controls="navbarMain"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
+    <div class="logo">
 
-      <span class="navbar-toggler-icon"></span>
+      <a href="/">
 
-    </button>
+        <img
+          src="/assets/img/nano-log.png"
+          alt="Nanobricks"
+          height="40">
 
-    <div class="collapse navbar-collapse" id="navbarMain">
+      </a>
 
-      <ul class="navbar-nav ms-auto align-items-lg-center">
+    </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link"
-             href="/services/managed-it/">
-            Managed IT
+    <nav id="navbar"
+         class="navbar">
+
+      <ul>
+
+        <li>
+          <a href="/">
+            Home
           </a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link"
-             href="/services/cloud-services/">
-            Cloud
+        <li class="dropdown">
+
+          <a class="active"
+             href="/#services">
+
+            <span>
+              Services
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/services/managed-it/">
+                Managed IT & AMC
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-services/">
+                Cloud Services
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-security/">
+                Cloud Security
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/devops-automation/">
+                DevOps & Automation
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cybersecurity/">
+                Cybersecurity
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/web-software/">
+                Web & Software
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <a href="/#industries">
+            Industries
           </a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link"
-             href="/services/cloud-security/">
-            Cloud Security
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link"
-             href="/services/devops-automation/">
-            DevOps
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active"
-             href="/services/cybersecurity/">
-            Cybersecurity
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link"
-             href="/academy/">
+        <li>
+          <a href="/academy/">
             Academy
           </a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link"
-             href="/#contact">
+        <li>
+          <a href="/#contact">
             Contact
           </a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link nav-cta"
-             href="/#enquiry">
-            Request Security Review
+        <li>
+
+          <a class="getstarted"
+             href="/#it-assessment">
+
+            Request IT Assessment
+
           </a>
+
         </li>
 
       </ul>
 
-    </div>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav>
 
   </div>
 
-</nav>
+</header>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
-<section class="hero">
+<section class="service-hero">
 
   <div class="container">
 
-    <div class="eyebrow">
-      <i class="bi bi-shield-lock"></i>
-      Cybersecurity Services
-    </div>
+    <div class="row align-items-center gy-4">
 
-    <h1>
-      Protect Your Business With Practical Cybersecurity
-    </h1>
+      <div class="col-lg-8">
 
-    <p>
-      Nanobricks helps businesses identify security risks,
-      strengthen access controls, improve endpoint and infrastructure
-      security, review vulnerabilities and implement practical
-      remediation measures.
-    </p>
+        <div class="service-label">
 
-    <div class="hero-actions">
+          <i class="bi bi-shield-lock"></i>
 
-      <a href="/#enquiry"
-         class="btn-main">
-        Request Security Review
-      </a>
+          Nanobricks Technology Services
 
-      <a href="#services"
-         class="btn-secondary-custom">
-        Explore Cybersecurity Services
-      </a>
+        </div>
+
+        <h1>
+          Cybersecurity Services
+        </h1>
+
+        <p>
+
+          Identify security risks, strengthen access controls,
+          improve endpoint and infrastructure security,
+          prioritize vulnerabilities and implement practical remediation.
+
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+
+          <a href="/#it-assessment"
+             class="btn btn-success btn-lg">
+
+            Request Security Assessment
+
+          </a>
+
+          <a href="#cybersecurity-services"
+             class="btn btn-outline-dark btn-lg">
+
+            Explore Cybersecurity Services
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 text-center">
+
+        <div class="hero-icon">
+
+          <i class="bi bi-shield-lock"></i>
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -651,84 +442,94 @@
 </section>
 
 
-<!-- =========================
-     INTRO
-========================= -->
+<main>
 
-<section>
+
+<!-- INTRO -->
+
+<section class="service-section">
 
   <div class="container">
 
-    <div class="section-heading">
+    <div class="section-title">
 
       <h2>
         Cybersecurity Built Around Real Business Risks
       </h2>
 
       <p>
-        Security should help protect your systems, users and data
-        without creating unnecessary complexity. Nanobricks focuses
-        on identifying practical risks and helping organizations
-        improve their security posture step by step.
+        Practical security improvements for users, systems, infrastructure and cloud environments.
       </p>
 
     </div>
 
-    <div class="row g-4">
+    <div class="row gy-4">
 
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4">
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-search"></i>
           </div>
 
-          <h3>Identify Risks</h3>
+          <h3>
+            Identify Risks
+          </h3>
 
           <p>
-            Review security controls, access, exposure and
-            configuration weaknesses that may increase business risk.
+
+            Review access, security controls,
+            exposure and configuration weaknesses
+            that may increase business risk.
+
           </p>
 
         </div>
 
       </div>
 
-
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4">
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-shield-check"></i>
           </div>
 
-          <h3>Improve Security</h3>
+          <h3>
+            Improve Security
+          </h3>
 
           <p>
-            Strengthen identity, endpoint, cloud and infrastructure
-            security through practical hardening activities.
+
+            Strengthen identity, endpoints,
+            infrastructure and security configurations
+            through practical improvements.
+
           </p>
 
         </div>
 
       </div>
 
-
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4">
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-arrow-repeat"></i>
           </div>
 
-          <h3>Review Regularly</h3>
+          <h3>
+            Review Regularly
+          </h3>
 
           <p>
-            Security environments change continuously.
+
+            Security environments continuously change.
             Periodic reviews help identify new risks and gaps.
+
           </p>
 
         </div>
@@ -742,41 +543,46 @@
 </section>
 
 
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
-<section id="services" class="section-light">
+<section id="cybersecurity-services"
+         class="service-section alt">
 
   <div class="container">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-      <h2>Cybersecurity Services</h2>
+      <h2>
+        Cybersecurity Services
+      </h2>
 
       <p>
-        Security assessments and improvement services can be
-        tailored based on your business environment and requirements.
+        Security assessments and improvement services based on your environment and requirements.
       </p>
 
     </div>
 
-    <div class="row g-4">
+    <div class="row gy-4">
 
 
       <div class="col-lg-4 col-md-6">
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-clipboard-check"></i>
           </div>
 
-          <h3>Security Assessment</h3>
+          <h3>
+            Security Assessment
+          </h3>
 
           <p>
-            Review current security controls, infrastructure,
-            access, configurations and business risks.
+
+            Review current security controls,
+            infrastructure, access, configurations
+            and important business risks.
+
           </p>
 
         </div>
@@ -788,15 +594,19 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-person-lock"></i>
           </div>
 
-          <h3>Identity & Access Review</h3>
+          <h3>
+            Identity & Access Review
+          </h3>
 
           <p>
-            Review user access, privileged accounts,
+
+            Review user access, administrator accounts,
             MFA, roles and excessive permissions.
+
           </p>
 
         </div>
@@ -808,15 +618,20 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-bug"></i>
           </div>
 
-          <h3>Vulnerability Review</h3>
+          <h3>
+            Vulnerability Review
+          </h3>
 
           <p>
-            Review identified vulnerabilities and help
-            prioritize practical remediation activities.
+
+            Review identified vulnerabilities
+            and prioritize practical remediation
+            based on risk and exposure.
+
           </p>
 
         </div>
@@ -828,15 +643,20 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-laptop"></i>
           </div>
 
-          <h3>Endpoint Security Review</h3>
+          <h3>
+            Endpoint Security Review
+          </h3>
 
           <p>
-            Review device protection, update practices,
-            endpoint configuration and basic security controls.
+
+            Review device protection,
+            update practices and endpoint
+            security configurations.
+
           </p>
 
         </div>
@@ -848,15 +668,20 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-hdd-network"></i>
           </div>
 
-          <h3>Network Security Review</h3>
+          <h3>
+            Network Security Review
+          </h3>
 
           <p>
-            Review firewall rules, network exposure,
-            segmentation and unnecessary open access.
+
+            Review firewall rules,
+            network exposure, segmentation
+            and unnecessary open access.
+
           </p>
 
         </div>
@@ -868,15 +693,20 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-lock"></i>
           </div>
 
-          <h3>Security Hardening</h3>
+          <h3>
+            Security Hardening
+          </h3>
 
           <p>
-            Improve system, cloud, identity and
-            infrastructure configurations based on agreed findings.
+
+            Improve operating systems,
+            access controls, cloud services
+            and infrastructure configurations.
+
           </p>
 
         </div>
@@ -888,15 +718,20 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-database-check"></i>
           </div>
 
-          <h3>Backup & Recovery Review</h3>
+          <h3>
+            Backup & Recovery Review
+          </h3>
 
           <p>
-            Review backup coverage, recovery readiness
-            and protection of important business information.
+
+            Review backup coverage,
+            recovery readiness and protection
+            of important business information.
+
           </p>
 
         </div>
@@ -908,15 +743,20 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-journal-check"></i>
           </div>
 
-          <h3>Security Configuration Review</h3>
+          <h3>
+            Security Configuration Review
+          </h3>
 
           <p>
-            Review important system and platform
-            configuration settings against practical security expectations.
+
+            Review important system
+            and platform configuration settings
+            against practical security expectations.
+
           </p>
 
         </div>
@@ -928,15 +768,20 @@
 
         <div class="service-card">
 
-          <div class="icon-box">
+          <div class="service-icon">
             <i class="bi bi-people"></i>
           </div>
 
-          <h3>Security Awareness Guidance</h3>
+          <h3>
+            Security Awareness Guidance
+          </h3>
 
           <p>
-            Practical guidance for users and teams
-            around passwords, phishing, access and common security risks.
+
+            Practical guidance for users
+            around phishing, passwords,
+            access and common security risks.
+
           </p>
 
         </div>
@@ -950,69 +795,57 @@
 </section>
 
 
-<!-- =========================
-     REVIEW AREAS
-========================= -->
+<!-- REVIEW AREAS -->
 
-<section>
+<section class="service-section">
 
   <div class="container">
 
-    <div class="row g-5 align-items-stretch">
-
+    <div class="row gy-5 align-items-stretch">
 
       <div class="col-lg-6">
 
-        <div class="feature-wrapper">
+        <div class="service-card">
 
           <h3>
             What We Can Review
           </h3>
 
-          <ul class="check-list">
+          <ul class="check-list mt-4">
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               User and administrator access
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               MFA and authentication controls
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Endpoint protection
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Operating system and software patching
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Firewall and network exposure
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Cloud security configuration
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Backup and recovery readiness
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Vulnerability findings
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Security logging and monitoring
             </li>
 
@@ -1022,49 +855,41 @@
 
       </div>
 
-
       <div class="col-lg-6">
 
-        <div class="feature-wrapper">
+        <div class="service-card">
 
           <h3>
             Ideal For
           </h3>
 
-          <ul class="check-list">
+          <ul class="check-list mt-4">
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Small and medium businesses
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Startups improving security controls
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Organizations without a dedicated security team
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Businesses preparing for customer security reviews
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Teams addressing vulnerability findings
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Organizations improving access controls
             </li>
 
             <li>
-              <i class="bi bi-check-circle-fill"></i>
               Businesses moving workloads to cloud environments
             </li>
 
@@ -1081,223 +906,395 @@
 </section>
 
 
-<!-- =========================
-     PROCESS
-========================= -->
+<!-- PROCESS -->
 
-<section class="section-light">
+<section class="service-section alt">
 
   <div class="container">
 
-    <div class="section-heading">
-
-      <h2>Our Security Approach</h2>
-
-      <p>
-        A practical process focused on identifying meaningful
-        risks and prioritizing remediation.
-      </p>
-
-    </div>
-
-    <div class="row g-4">
-
-
-      <div class="col-lg-3 col-md-6">
-
-        <div class="process-step">
-
-          <div class="process-number">1</div>
-
-          <h4>Understand</h4>
-
-          <p>
-            Understand your environment, business systems,
-            users and security requirements.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-3 col-md-6">
-
-        <div class="process-step">
-
-          <div class="process-number">2</div>
-
-          <h4>Assess</h4>
-
-          <p>
-            Review agreed security controls,
-            configurations and risk areas.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-3 col-md-6">
-
-        <div class="process-step">
-
-          <div class="process-number">3</div>
-
-          <h4>Prioritize</h4>
-
-          <p>
-            Identify the most important findings
-            based on risk and business impact.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-3 col-md-6">
-
-        <div class="process-step">
-
-          <div class="process-number">4</div>
-
-          <h4>Improve</h4>
-
-          <p>
-            Implement or support agreed remediation
-            and security improvement activities.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     ENGAGEMENT OPTIONS
-========================= -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Engagement Options</h2>
-
-      <p>
-        Start with a focused security review or
-        engage Nanobricks for remediation support.
-      </p>
-
-    </div>
-
-    <div class="row g-4">
-
-
-      <div class="col-lg-4">
-
-        <div class="engagement-card">
-
-          <h3>Security Assessment</h3>
-
-          <p>
-            Review the agreed business environment
-            and identify security weaknesses and
-            improvement opportunities.
-          </p>
-
-          <a href="/#enquiry"
-             class="btn btn-outline-primary">
-            Request Assessment
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <div class="engagement-card">
-
-          <h3>Security Hardening</h3>
-
-          <p>
-            Support implementation of agreed
-            security configuration improvements,
-            IAM changes and system hardening.
-          </p>
-
-          <a href="/#enquiry"
-             class="btn btn-primary">
-            Discuss Hardening
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <div class="engagement-card">
-
-          <h3>Periodic Security Review</h3>
-
-          <p>
-            Scheduled reviews to identify new
-            configuration risks and security
-            improvement opportunities.
-          </p>
-
-          <a href="/#enquiry"
-             class="btn btn-outline-primary">
-            Request Quote
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="section-light">
-
-  <div class="container">
-
-    <div class="cta-wrapper">
+    <div class="section-title">
 
       <h2>
-        Not Sure Where Your Security Gaps Are?
+        Our Security Approach
       </h2>
 
       <p>
-        Tell us about your users, devices, cloud environment,
-        infrastructure and security concerns. Nanobricks can help
-        identify practical areas to improve.
+        A practical process focused on identifying meaningful risks and prioritizing remediation.
       </p>
 
-      <a href="/#enquiry"
+    </div>
+
+    <div class="row gy-4 text-center">
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Understand
+          </h3>
+
+          <p>
+
+            Understand users, systems,
+            infrastructure and security requirements.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Assess
+          </h3>
+
+          <p>
+
+            Review agreed security controls,
+            configurations and key risk areas.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Prioritize
+          </h3>
+
+          <p>
+
+            Identify the most important findings
+            based on risk and business impact.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Improve
+          </h3>
+
+          <p>
+
+            Implement or support agreed
+            remediation and security improvements.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ENGAGEMENT -->
+
+<section class="service-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Ways to Engage Nanobricks
+      </h2>
+
+      <p>
+        Start with an assessment or engage us for remediation and improvement support.
+      </p>
+
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-clipboard-data"></i>
+          </div>
+
+          <h3>
+            Security Assessment
+          </h3>
+
+          <p>
+
+            Review the agreed environment
+            and identify security weaknesses
+            and improvement opportunities.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-tools"></i>
+          </div>
+
+          <h3>
+            Security Hardening
+          </h3>
+
+          <p>
+
+            Support implementation of agreed
+            configuration improvements, access changes
+            and system hardening.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-arrow-repeat"></i>
+          </div>
+
+          <h3>
+            Periodic Security Review
+          </h3>
+
+          <p>
+
+            Scheduled reviews to identify
+            new risks, configuration gaps
+            and improvement opportunities.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="service-section alt faq-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+      <p>
+        Common questions about Nanobricks Cybersecurity Services.
+      </p>
+
+    </div>
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-9">
+
+
+        <div class="service-card mb-3">
+
+          <h3>
+            What does a cybersecurity assessment include?
+          </h3>
+
+          <p>
+
+            The exact scope depends on your environment,
+            but it may include identity, access,
+            endpoints, networking, vulnerabilities,
+            backups, cloud configuration and security controls.
+
+          </p>
+
+        </div>
+
+
+        <div class="service-card mb-3">
+
+          <h3>
+            Can you help fix security findings?
+          </h3>
+
+          <p>
+
+            Yes. Nanobricks can support agreed remediation
+            activities such as access improvements,
+            configuration changes and security hardening.
+
+          </p>
+
+        </div>
+
+
+        <div class="service-card mb-3">
+
+          <h3>
+            Do you support cloud security?
+          </h3>
+
+          <p>
+
+            Yes. Nanobricks also provides dedicated
+            cloud security services across AWS,
+            Microsoft Azure and Google Cloud.
+
+          </p>
+
+        </div>
+
+
+        <div class="service-card mb-3">
+
+          <h3>
+            Do you provide vulnerability remediation support?
+          </h3>
+
+          <p>
+
+            Yes. Existing vulnerability findings can be
+            reviewed and prioritized, and remediation
+            support can be provided based on scope.
+
+          </p>
+
+        </div>
+
+
+        <div class="service-card mb-3">
+
+          <h3>
+            Does a security assessment guarantee complete security?
+          </h3>
+
+          <p>
+
+            No. An assessment identifies risks observed
+            within the agreed scope and time period.
+            Security should be continuously reviewed and improved.
+
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <h3>
+            How is cybersecurity pricing calculated?
+          </h3>
+
+          <p>
+
+            Pricing depends on the number of systems,
+            users, environments, assessment depth
+            and remediation requirements.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="service-cta">
+
+  <div class="container text-center">
+
+    <h2>
+      Not Sure Where Your Security Gaps Are?
+    </h2>
+
+    <p>
+
+      Tell us about your users, devices,
+      infrastructure, cloud environment
+      and current security concerns.
+
+    </p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+
+      <a href="/#it-assessment"
          class="btn btn-light btn-lg">
-        Request Cybersecurity Assessment
+
+        Request Security Assessment
+
+      </a>
+
+      <a href="/#enquiry"
+         class="btn btn-outline-light btn-lg">
+
+        Submit Enquiry
+
       </a>
 
     </div>
@@ -1307,298 +1304,30 @@
 </section>
 
 
-<!-- =========================
-     FAQ
-========================= -->
+</main>
 
-<section>
+
+<!-- FOOTER -->
+
+<footer id="footer"
+        style="background:#111827;color:#fff;padding:60px 0 20px;">
 
   <div class="container">
 
-    <div class="section-heading">
+    <div class="row gy-4">
 
-      <h2>Frequently Asked Questions</h2>
+      <div class="col-lg-4">
 
-      <p>
-        Common questions about Nanobricks
-        cybersecurity services.
-      </p>
+        <h3 style="color:#fff;">
+          Nanobricks
+        </h3>
 
-    </div>
+        <p>
 
-    <div class="row justify-content-center">
-
-      <div class="col-lg-9">
-
-        <div class="accordion"
-             id="cyberFaq">
-
-
-          <div class="accordion-item">
-
-            <h2 class="accordion-header">
-
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq1">
-
-                What does a cybersecurity assessment include?
-
-              </button>
-
-            </h2>
-
-            <div id="faq1"
-                 class="accordion-collapse collapse show"
-                 data-bs-parent="#cyberFaq">
-
-              <div class="accordion-body">
-
-                The exact assessment depends on the agreed scope,
-                but it may include identity and access, endpoints,
-                network exposure, vulnerabilities, backups,
-                cloud configuration and security controls.
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="accordion-item">
-
-            <h2 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq2">
-
-                Can you help fix security findings?
-
-              </button>
-
-            </h2>
-
-            <div id="faq2"
-                 class="accordion-collapse collapse"
-                 data-bs-parent="#cyberFaq">
-
-              <div class="accordion-body">
-
-                Yes. Nanobricks can support agreed remediation
-                activities such as access improvements,
-                configuration changes and security hardening.
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="accordion-item">
-
-            <h2 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq3">
-
-                Do you support cloud security?
-
-              </button>
-
-            </h2>
-
-            <div id="faq3"
-                 class="accordion-collapse collapse"
-                 data-bs-parent="#cyberFaq">
-
-              <div class="accordion-body">
-
-                Yes. Nanobricks also provides dedicated cloud
-                security services across AWS, Azure and Google Cloud.
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="accordion-item">
-
-            <h2 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq4">
-
-                Do you provide vulnerability remediation support?
-
-              </button>
-
-            </h2>
-
-            <div id="faq4"
-                 class="accordion-collapse collapse"
-                 data-bs-parent="#cyberFaq">
-
-              <div class="accordion-body">
-
-                Yes. Existing vulnerability findings can be
-                reviewed and prioritized, and remediation support
-                can be provided based on the agreed scope.
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="accordion-item">
-
-            <h2 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq5">
-
-                Does a security assessment guarantee complete security?
-
-              </button>
-
-            </h2>
-
-            <div id="faq5"
-                 class="accordion-collapse collapse"
-                 data-bs-parent="#cyberFaq">
-
-              <div class="accordion-body">
-
-                No. A security assessment identifies risks observed
-                within the agreed scope and time period. Security
-                should be continuously reviewed and improved.
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="accordion-item">
-
-            <h2 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq6">
-
-                How is cybersecurity pricing calculated?
-
-              </button>
-
-            </h2>
-
-            <div id="faq6"
-                 class="accordion-collapse collapse"
-                 data-bs-parent="#cyberFaq">
-
-              <div class="accordion-body">
-
-                Pricing depends on the number of systems, users,
-                cloud environments, assessment depth and
-                remediation requirements.
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-  <div class="container">
-
-    <div class="row g-4">
-
-      <div class="col-lg-5">
-
-        <h3>Nanobricks</h3>
-
-        <p class="mt-3">
           Technology services for growing businesses,
-          including Managed IT, Cloud, Cloud Security,
-          DevOps, Cybersecurity, Software Solutions
-          and professional training.
-        </p>
+          including Managed IT, Cloud, Cybersecurity,
+          DevOps, Software Solutions and Professional Training.
 
-      </div>
-
-
-      <div class="col-lg-3">
-
-        <h5>Services</h5>
-
-        <p class="mb-2">
-          <a href="/services/managed-it/">
-            Managed IT & AMC
-          </a>
-        </p>
-
-        <p class="mb-2">
-          <a href="/services/cloud-services/">
-            Cloud Services
-          </a>
-        </p>
-
-        <p class="mb-2">
-          <a href="/services/cloud-security/">
-            Cloud Security
-          </a>
-        </p>
-
-        <p class="mb-2">
-          <a href="/services/devops-automation/">
-            DevOps & Automation
-          </a>
-        </p>
-
-        <p class="mb-2">
-          <a href="/services/cybersecurity/">
-            Cybersecurity
-          </a>
         </p>
 
       </div>
@@ -1606,31 +1335,112 @@
 
       <div class="col-lg-4">
 
-        <h5>Contact</h5>
+        <h4 style="color:#fff;">
+          Quick Links
+        </h4>
 
-        <p class="mb-2">
+        <ul style="list-style:none;padding-left:0;line-height:2;">
+
+          <li>
+            <a href="/" style="color:#ddd;">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="/#services" style="color:#ddd;">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="/#industries" style="color:#ddd;">
+              Industries
+            </a>
+          </li>
+
+          <li>
+            <a href="/academy/" style="color:#ddd;">
+              Academy
+            </a>
+          </li>
+
+          <li>
+            <a href="/#contact" style="color:#ddd;">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <h4 style="color:#fff;">
+          Contact
+        </h4>
+
+        <p>
+
+          <a href="tel:+917995720507"
+             style="color:#ddd;">
+
+            +91 7995720507
+
+          </a>
+
+        </p>
+
+        <p>
+
+          <a href="mailto:info@nanobricks.in"
+             style="color:#ddd;">
+
+            info@nanobricks.in
+
+          </a>
+
+        </p>
+
+        <p>
           Hyderabad, Telangana, India
         </p>
 
-        <p class="mb-2">
-          <a href="mailto:info@nanobricks.in">
-            info@nanobricks.in
-          </a>
-        </p>
+        <p>
 
-        <p class="mb-2">
-          <a href="tel:+917995720507">
-            +91 7995720507
+          <a href="/privacy-policy/"
+             style="color:#ddd;">
+
+            Privacy Policy
+
           </a>
+
+          &nbsp; • &nbsp;
+
+          <a href="/terms/"
+             style="color:#ddd;">
+
+            Terms of Use
+
+          </a>
+
         </p>
 
       </div>
 
     </div>
 
-    <div class="footer-bottom">
+    <hr style="border-color:#374151;margin:40px 0 20px;">
 
-      © 2026 Nanobricks. All Rights Reserved.
+    <div class="text-center">
+
+      <p style="color:#999;margin-bottom:0;">
+
+        © 2026 Nanobricks. All Rights Reserved.
+
+      </p>
 
     </div>
 
@@ -1639,11 +1449,37 @@
 </footer>
 
 
-<!-- Bootstrap JavaScript -->
+<!-- WHATSAPP -->
+
+<a
+  href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Cybersecurity%20services"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener">
+
+  <i class="bi bi-whatsapp"></i>
+
+</a>
+
+
+<!-- BACK TO TOP -->
+
+<a href="#"
+   class="back-to-top d-flex align-items-center justify-content-center">
+
+  <i class="bi bi-arrow-up-short"></i>
+
+</a>
+
 
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
+
+<script
+  src="/assets/js/main.js">
+</script>
+
 
 </body>
 
