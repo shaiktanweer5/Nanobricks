@@ -1,855 +1,1115 @@
 <!DOCTYPE html>
 <html lang="en">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MSKW1ESHK7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-MSKW1ESHK7');
-</script>
 <head>
+
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
 
-  <title>Nanobricks | Managed IT, Cloud, Software & Technology Services Hyderabad</title>
+  <title>
+    Nanobricks | Managed IT, Cloud, Cybersecurity & Software Services
+  </title>
 
-<meta name="description"
-content="Nanobricks provides Managed IT Services, IT AMC, Cloud Solutions, Software Development, Cybersecurity, Microsoft 365, Google Workspace and professional technology training in Hyderabad.">
+  <meta name="description"
+        content="Nanobricks provides Managed IT, Cloud Services, Cloud Security, DevOps, Cybersecurity, Web & Software Solutions and professional technology training in Hyderabad.">
 
-<meta name="keywords"
-content="Managed IT Services Hyderabad, IT AMC Hyderabad, Cloud Services Hyderabad, AWS Consulting, Azure Consulting, GCP Consulting, Software Development Hyderabad, Cybersecurity Services, Microsoft 365 Support, Google Workspace Support, IT Support Hyderabad, Nanobricks">
+  <meta name="keywords"
+        content="Managed IT Services Hyderabad, IT AMC Hyderabad, Cloud Services Hyderabad, AWS Consulting, Azure Consulting, GCP Consulting, Cloud Security, Cybersecurity Services, DevOps Services, Software Development Hyderabad, Microsoft 365 Support, Google Workspace Support, Nanobricks">
 
-  <!-- Favicons -->
-  <link href="assets/img/nano-log.png" rel="icon">
-  <link href="assets/img/nano-log.png" rel="apple-touch-icon">
+  <link rel="canonical"
+        href="https://www.nanobricks.in/">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="/assets/img/nano-log.png"
+        rel="icon">
 
-  <!-- Vendor CSS Files -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/img/nano-log.png"
+        rel="apple-touch-icon">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <link
+    href="/assets/css/style.css"
+    rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MSKW1ESHK7">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-MSKW1ESHK7');
+  </script>
+
+  <style>
+
+    .home-section {
+      padding: 80px 0;
+    }
+
+    .home-section.alt {
+      background: #f8faf9;
+    }
+
+    .home-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+      transition: 0.25s;
+    }
+
+    .home-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.07);
+    }
+
+    .home-card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #eff9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .home-card-icon i {
+      color: #2fa93a;
+      font-size: 26px;
+    }
+
+    .home-card h3,
+    .home-card h4 {
+      color: #25372b;
+      font-weight: 700;
+    }
+
+    .home-card p {
+      color: #647168;
+      line-height: 1.7;
+    }
+
+    .process-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 26px;
+      height: 100%;
+      text-align: center;
+    }
+
+    .process-card i {
+      font-size: 38px;
+      color: #33bc3b;
+    }
+
+    .process-card h4 {
+      margin-top: 16px;
+      font-weight: 700;
+      color: #25372b;
+    }
+
+    .process-card p {
+      color: #647168;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .technology-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 12px;
+      padding: 20px;
+      font-weight: 700;
+      text-align: center;
+      height: 100%;
+      color: #25372b;
+    }
+
+    .assessment-box {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 16px;
+      padding: 38px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+    }
+
+    .cta-section {
+      background: #1f6f2b;
+      color: #ffffff;
+      padding: 80px 0;
+    }
+
+    .cta-section h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+
+    .sticky-cta {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .sticky-cta a {
+      border-radius: 50px;
+      padding: 10px 18px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 5px 18px rgba(0,0,0,.16);
+    }
+
+    .cta-call {
+      background: #ffffff;
+      color: #1f6f2b;
+      border: 1px solid #1f6f2b;
+    }
+
+    .cta-wa {
+      background: #25D366;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+
+      .sticky-cta {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .sticky-cta a {
+        font-size: 14px;
+        padding: 9px 14px;
+      }
+
+    }
+
+  </style>
 
 </head>
 
+
 <body>
-<!-- Loader -->
-<!--
-<div id="loader">
-<div class="loader-content">
-<div class="loader-logo">N</div>
-<h3>Nanobricks</h3>
-<p>Loading...</p>
-</div>
-</div>
-  -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        <a href="/"><img src="assets/img/nano-log.png" alt="Nanobricks" height="40"></a>
-      </div>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li class="dropdown">
-  <a href="#">
-    <span>Services</span>
-    <i class="bi bi-chevron-down"></i>
-  </a>
 
-  <ul>
+<!-- HEADER -->
 
-    <li>
-      <a href="/services/managed-it/">
-        Managed IT & AMC
+<header id="header"
+        class="fixed-top d-flex align-items-center">
+
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+
+      <a href="/">
+
+        <img
+          src="/assets/img/nano-log.png"
+          alt="Nanobricks"
+          height="40">
+
       </a>
-    </li>
 
-    <li>
-      <a href="/services/cloud-services/">
-        Cloud Services
-      </a>
-    </li>
-
-    <li>
-      <a href="/services/cloud-security/">
-        Cloud Security
-      </a>
-    </li>
-
-    <li>
-      <a href="/services/devops-automation/">
-        DevOps & Automation
-      </a>
-    </li>
-
-    <li>
-      <a href="/services/cybersecurity/">
-        Cybersecurity
-      </a>
-    </li>
-
-    <li>
-      <a href="/services/web-software/">
-        Web & Software
-      </a>
-    </li>
-
-  </ul>
-</li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="/academy/">Academy</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-              <a class="getstarted scrollto" href="#it-assessment">
-                Request IT Assessment
-              </a>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
     </div>
-  </header><!-- End Header -->
 
-  <section id="hero" class="d-flex align-items-center">
+
+    <nav id="navbar"
+         class="navbar">
+
+      <ul>
+
+        <li>
+          <a href="/">
+            Home
+          </a>
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="#services">
+
+            <span>
+              Services
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+
+          <ul>
+
+            <li>
+              <a href="/services/managed-it/">
+                Managed IT & AMC
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-services/">
+                Cloud Services
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-security/">
+                Cloud Security
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/devops-automation/">
+                DevOps & Automation
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cybersecurity/">
+                Cybersecurity
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/web-software/">
+                Web & Software
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li>
+          <a href="#industries">
+            Industries
+          </a>
+        </li>
+
+
+        <li>
+          <a href="/academy/">
+            Academy
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#contact">
+            Contact
+          </a>
+        </li>
+
+
+        <li>
+
+          <a class="getstarted scrollto"
+             href="#it-assessment">
+
+            Request IT Assessment
+
+          </a>
+
+        </li>
+
+      </ul>
+
+
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section id="hero"
+         class="d-flex align-items-center">
 
   <div class="container">
+
     <div class="row gy-4 align-items-center">
+
 
       <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-        <h1>Cloud, Managed IT & Technology Solutions</h1>
+        <h1>
+          Cloud, Managed IT & Technology Solutions
+        </h1>
 
         <h2>
-          Helping businesses manage, secure and modernize their technology
-          through Cloud Services, IT Managed Services, Software Solutions
-          and Professional Support.
+
+          Helping businesses manage, secure and modernize
+          technology through Managed IT, Cloud, Cybersecurity,
+          DevOps and Software Solutions.
+
         </h2>
+
 
         <div class="hero-buttons">
 
-          <a href="/services/managed-it/" class="btn btn-success">
-            Explore Managed Services
+          <a href="/services/managed-it/"
+             class="btn btn-success">
+
+            Explore Managed IT
+
           </a>
 
-          <a href="#it-assessment" class="btn btn-outline-dark">
-  Request IT Assessment
-</a>
+
+          <a href="#it-assessment"
+             class="btn btn-outline-dark">
+
+            Request IT Assessment
+
+          </a>
 
         </div>
 
-        <p class="mt-2" style="font-size:13px;">
-          Cloud â€¢ IT AMC â€¢ Managed Services â€¢ Cybersecurity â€¢ Software â€¢ Training
+
+        <p class="mt-3"
+           style="font-size:14px;color:#647168;">
+
+          Managed IT • Cloud • Security • DevOps • Software • Academy
+
         </p>
 
       </div>
 
+
       <div class="col-lg-6 text-center">
+
         <img
-          src="assets/img/nano-logo.jpg"
+          src="/assets/img/nano-logo.jpg"
           class="img-fluid animated"
-          alt="Nanobricks Cloud and Managed IT Solutions">
+          alt="Nanobricks Technology Services">
+
       </div>
 
+
     </div>
+
   </div>
 
 </section>
-       
-<section id="solutions" class="py-5 bg-light">
+
+
+<main id="main">
+
+
+<!-- PRIMARY SERVICES -->
+
+<section id="services"
+         class="home-section alt">
 
   <div class="container">
 
     <div class="section-title">
-      <h2>What We Do</h2>
+
+      <h2>
+        Technology Services
+      </h2>
+
       <p>
-        Practical technology services for businesses, startups and institutions.
+        Practical technology services designed around real business requirements.
       </p>
+
     </div>
+
 
     <div class="row gy-4">
 
-      <!-- Managed IT -->
-      <div class="col-lg-3 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card">
+
+          <div class="home-card-icon">
             <i class="bi bi-tools"></i>
           </div>
 
-          <h4>Managed IT & AMC</h4>
+          <h3>
+            Managed IT & AMC
+          </h3>
 
           <p>
-            IT maintenance, software updates, patch coordination,
-            endpoint support, monitoring and preventive maintenance.
+
+            Endpoint support, patching, servers,
+            cloud operations, backup checks,
+            business email and ongoing IT support.
+
           </p>
 
-          <a href="/services/managed-it/" class="read-more">
-            Learn More <i class="bi bi-arrow-right"></i>
+          <a href="/services/managed-it/"
+             class="read-more">
+
+            Learn More
+            <i class="bi bi-arrow-right"></i>
+
           </a>
 
         </div>
+
       </div>
 
-      <!-- Cloud Services -->
-      <div class="col-lg-3 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card">
+
+          <div class="home-card-icon">
             <i class="bi bi-cloud"></i>
           </div>
 
-          <h4>Cloud Services</h4>
+          <h3>
+            Cloud Services
+          </h3>
 
           <p>
-            Cloud consulting, migration, infrastructure and operational
-            support across AWS, Azure and Google Cloud.
+
+            Assessment, migration, architecture,
+            operations and optimization across AWS,
+            Microsoft Azure and Google Cloud.
+
           </p>
 
-          <a href="/services/cloud-services/" class="read-more">
-            Learn More <i class="bi bi-arrow-right"></i>
+          <a href="/services/cloud-services/"
+             class="read-more">
+
+            Learn More
+            <i class="bi bi-arrow-right"></i>
+
           </a>
 
         </div>
+
       </div>
 
-      <!-- Software Solutions -->
-      <div class="col-lg-3 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card">
+
+          <div class="home-card-icon">
+            <i class="bi bi-cloud-lock"></i>
+          </div>
+
+          <h3>
+            Cloud Security
+          </h3>
+
+          <p>
+
+            Cloud security assessments, IAM,
+            CNAPP/CSPM reviews, misconfiguration analysis,
+            hardening and remediation support.
+
+          </p>
+
+          <a href="/services/cloud-security/"
+             class="read-more">
+
+            Learn More
+            <i class="bi bi-arrow-right"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card">
+
+          <div class="home-card-icon">
+            <i class="bi bi-git"></i>
+          </div>
+
+          <h3>
+            DevOps & Automation
+          </h3>
+
+          <p>
+
+            CI/CD pipelines, Terraform,
+            Infrastructure as Code, containers
+            and cloud deployment automation.
+
+          </p>
+
+          <a href="/services/devops-automation/"
+             class="read-more">
+
+            Learn More
+            <i class="bi bi-arrow-right"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card">
+
+          <div class="home-card-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+
+          <h3>
+            Cybersecurity
+          </h3>
+
+          <p>
+
+            Security assessments, vulnerability reviews,
+            access controls, endpoint security,
+            hardening and remediation support.
+
+          </p>
+
+          <a href="/services/cybersecurity/"
+             class="read-more">
+
+            Learn More
+            <i class="bi bi-arrow-right"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card">
+
+          <div class="home-card-icon">
             <i class="bi bi-code-slash"></i>
           </div>
 
-          <h4>Software Solutions</h4>
+          <h3>
+            Web & Software
+          </h3>
 
           <p>
-            Business websites, web applications, APIs,
-            automation and custom digital solutions.
+
+            Business websites, web applications,
+            APIs, portals, workflow automation
+            and custom software solutions.
+
           </p>
-          <a href="/services/web-software/" class="read-more">
-              Learn More <i class="bi bi-arrow-right"></i>
+
+          <a href="/services/web-software/"
+             class="read-more">
+
+            Learn More
+            <i class="bi bi-arrow-right"></i>
+
           </a>
 
         </div>
+
       </div>
 
-      <!-- Academy -->
-      <div class="col-lg-3 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about"
+         class="about home-section">
+
+  <div class="container">
+
+    <div class="row justify-content-between gy-5">
+
+
+      <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+
+        <img
+          src="/assets/img/about-img.svg"
+          class="img-fluid"
+          alt="About Nanobricks">
+
+      </div>
+
+
+      <div class="col-lg-6 pt-lg-0">
+
+        <h3>
+          About Nanobricks
+        </h3>
+
+        <p>
+
+          Nanobricks is a Hyderabad-based technology services company
+          providing Managed IT, Cloud, Cloud Security, Cybersecurity,
+          DevOps and Software Solutions for businesses and institutions.
+
+        </p>
+
+        <p>
+
+          Through Nanobricks Academy, we also deliver practical
+          technology training for students, professionals,
+          colleges and organizations.
+
+        </p>
+
+
+        <div class="row gy-4 mt-2">
+
+
+          <div class="col-md-6">
+
+            <i class="bi bi-check-circle"></i>
+
+            <h4>
+              Why Nanobricks
+            </h4>
+
+            <ul>
+              <li>Practical Technology Solutions</li>
+              <li>Cloud-First Expertise</li>
+              <li>Flexible Support Models</li>
+              <li>Business-Focused Approach</li>
+            </ul>
+
+          </div>
+
+
+          <div class="col-md-6">
+
+            <i class="bi bi-box-seam"></i>
+
+            <h4>
+              Core Values
+            </h4>
+
+            <ul>
+              <li>Commitment</li>
+              <li>Excellence</li>
+              <li>Innovation</li>
+              <li>Continuous Improvement</li>
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INDUSTRIES -->
+
+<section id="industries"
+         class="home-section alt">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Who We Work With
+      </h2>
+
+      <p>
+        Flexible technology services for growing businesses, startups and institutions.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card text-center">
+
+          <div class="home-card-icon mx-auto">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+
+          <h4>
+            Startups & SMEs
+          </h4>
+
+          <p>
+            Cloud infrastructure, software solutions, managed IT and technology support.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card text-center">
+
+          <div class="home-card-icon mx-auto">
             <i class="bi bi-mortarboard"></i>
           </div>
 
-          <h4>Nanobricks Academy</h4>
+          <h4>
+            Education & Institutions
+          </h4>
 
           <p>
-            Cloud, AI, cybersecurity and DevOps programs
-            for colleges, professionals and organizations.
+            Cloud services, IT support, workshops and professional training.
           </p>
 
-          <a href="/academy/" class="read-more">
-            Explore Academy <i class="bi bi-arrow-right"></i>
-          </a>
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card text-center">
+
+          <div class="home-card-icon mx-auto">
+            <i class="bi bi-briefcase"></i>
+          </div>
+
+          <h4>
+            Professional Services
+          </h4>
+
+          <p>
+            Managed IT, productivity platforms, cloud services and ongoing support.
+          </p>
 
         </div>
+
       </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card text-center">
+
+          <div class="home-card-icon mx-auto">
+            <i class="bi bi-house-door"></i>
+          </div>
+
+          <h4>
+            Real Estate
+          </h4>
+
+          <p>
+            Websites, cloud solutions, productivity platforms and IT support.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card text-center">
+
+          <div class="home-card-icon mx-auto">
+            <i class="bi bi-shop"></i>
+          </div>
+
+          <h4>
+            Retail & Hospitality
+          </h4>
+
+          <p>
+            Digital solutions, websites, infrastructure and technology support.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="home-card text-center">
+
+          <div class="home-card-icon mx-auto">
+            <i class="bi bi-building"></i>
+          </div>
+
+          <h4>
+            Growing Businesses
+          </h4>
+
+          <p>
+            Cloud adoption, security, managed IT and technology consulting.
+          </p>
+
+        </div>
+
+      </div>
+
 
     </div>
 
   </div>
 
 </section>
-  
 
-  <section id="managed-services" class="py-5">
+
+<!-- PROCESS -->
+
+<section id="process"
+         class="home-section">
 
   <div class="container">
 
     <div class="section-title">
 
-      <h2>Managed IT & AMC Services</h2>
+      <h2>
+        Our Process
+      </h2>
 
       <p>
-        Reliable ongoing technology support for businesses
-        that need professional IT management without maintaining
-        a large internal IT team.
+        A practical approach from assessment through ongoing improvement.
       </p>
 
     </div>
+
 
     <div class="row gy-4">
 
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
-            <i class="bi bi-laptop"></i>
-          </div>
+      <div class="col-lg-2 col-md-4">
 
-          <h4>Endpoint Support</h4>
+        <div class="process-card">
+
+          <i class="bi bi-chat-dots"></i>
+
+          <h4>
+            Assess
+          </h4>
 
           <p>
-            Support for business laptops, desktops,
-            operating systems and common business applications.
+            Understand technology, users and requirements.
           </p>
 
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
-            <i class="bi bi-arrow-repeat"></i>
-          </div>
+      <div class="col-lg-2 col-md-4">
 
-          <h4>Patch & Software Updates</h4>
+        <div class="process-card">
+
+          <i class="bi bi-lightbulb"></i>
+
+          <h4>
+            Plan
+          </h4>
 
           <p>
-            Planned operating system and software update coordination
-            with maintenance windows and business impact consideration.
+            Define a practical solution and approach.
           </p>
 
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
-            <i class="bi bi-server"></i>
-          </div>
+      <div class="col-lg-2 col-md-4">
 
-          <h4>Server & Infrastructure Support</h4>
+        <div class="process-card">
+
+          <i class="bi bi-code-slash"></i>
+
+          <h4>
+            Implement
+          </h4>
 
           <p>
-            Routine server administration, infrastructure checks,
-            monitoring and maintenance support.
+            Configure, deploy or improve the solution.
           </p>
 
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
-            <i class="bi bi-cloud-check"></i>
-          </div>
+      <div class="col-lg-2 col-md-4">
 
-          <h4>Cloud Operations</h4>
+        <div class="process-card">
+
+          <i class="bi bi-shield-check"></i>
+
+          <h4>
+            Secure
+          </h4>
 
           <p>
-            AWS, Azure and GCP monitoring, administration,
-            backup coordination and operational support.
+            Review access, configuration and security controls.
           </p>
 
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
-            <i class="bi bi-envelope-check"></i>
-          </div>
+      <div class="col-lg-2 col-md-4">
 
-          <h4>Microsoft 365 & Google Workspace</h4>
+        <div class="process-card">
+
+          <i class="bi bi-cloud-check"></i>
+
+          <h4>
+            Manage
+          </h4>
 
           <p>
-            User administration, business email configuration,
-            onboarding, offboarding and security configuration.
+            Provide operational and maintenance support.
           </p>
 
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
 
-          <div class="icon">
-            <i class="bi bi-shield-check"></i>
-          </div>
+      <div class="col-lg-2 col-md-4">
 
-          <h4>Backup & Security Checks</h4>
+        <div class="process-card">
+
+          <i class="bi bi-arrow-up-circle"></i>
+
+          <h4>
+            Improve
+          </h4>
 
           <p>
-            Backup monitoring, access reviews and routine
-            security configuration checks.
+            Continuously review and improve the environment.
           </p>
 
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
-
-          <div class="icon">
-            <i class="bi bi-globe"></i>
-          </div>
-
-          <h4>Website AMC</h4>
-
-          <p>
-            Website updates, backup checks, SSL monitoring,
-            domain support and minor content maintenance.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
-
-          <div class="icon">
-            <i class="bi bi-headset"></i>
-          </div>
-
-          <h4>Remote IT Support</h4>
-
-          <p>
-            Remote troubleshooting and technical assistance
-            for day-to-day business IT issues.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box">
-
-          <div class="icon">
-            <i class="bi bi-calendar-check"></i>
-          </div>
-
-          <h4>Monthly & Annual Support Plans</h4>
-
-          <p>
-            Flexible managed service plans based on users,
-            devices, infrastructure and support requirements.
-          </p>
-
-        </div>
-      </div>
-
-    </div>
-
-    <div class="text-center mt-5">
-
-      <h4>Need Ongoing IT Support?</h4>
-
-      <p>
-        Tell us about your users, devices and infrastructure.
-        We'll recommend a suitable support plan.
-      </p>
-
-      <a href="/services/managed-it/" class="btn btn-success btn-lg">
-  Explore Managed IT & AMC
-</a>
 
     </div>
 
   </div>
 
 </section>
- 
-  <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
 
-        <div class="row justify-content-between">
-          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-5 pt-lg-0">
-          <h3>About Nanobricks</h3>
-            <p>
-              Nanobricks is a Hyderabad-based technology services company
-              providing Managed IT, Cloud, Cybersecurity, DevOps and Software
-              Solutions for businesses and institutions.
+<!-- IT ASSESSMENT -->
 
-              Through Nanobricks Academy, we also deliver practical technology
-              training for students, professionals, colleges and organizations.
-            </p>
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <i class="bi bi-receipt"></i>
-               <h4>Why Nanobricks</h4>
-
-<ul>
-  <li>Practical Technology Solutions</li>
-  <li>Cloud-First Expertise</li>
-  <li>Flexible Support Models</li>
-  <li>Business-Focused Approach</li>
-</ul>
-              </div>
-              <div class="col-md-6">
-                <i class="bi bi-box-seam"></i>
-                <h4>Core Values</h4>
-                <p>We believe in:</p>
-<ul>
-  <li>Commitment</li>
-  <li>Diversity</li>
-  <li>Excellence</li>
-  <li>Innovation</li>
-</ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-  
-<section id="services" class="services">
+<section id="it-assessment"
+         class="home-section alt">
 
   <div class="container">
 
     <div class="section-title">
 
-      <h2>Technology Services</h2>
+      <h2>
+        Request an IT Assessment
+      </h2>
 
       <p>
-        Cloud, software, security and digital solutions
-        designed around real business requirements.
+
+        Tell us about your technology environment.
+        We can help identify practical opportunities
+        to improve support, cloud operations, security and IT management.
+
       </p>
 
     </div>
 
-    <div class="row gy-4">
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-
-          <h4>Cloud & DevOps</h4>
-
-          <p>
-            AWS, Azure, GCP, Terraform, CI/CD,
-            containers and infrastructure automation.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-
-          <h4>Software Development</h4>
-
-          <p>
-            Business websites, web applications,
-            APIs, portals and custom software solutions.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-
-          <h4>Cybersecurity</h4>
-
-          <p>
-            Cloud security, IAM, security reviews,
-            vulnerability management and configuration assessments.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-
-          <h4>Cloud Migration</h4>
-
-          <p>
-            Planning and migration support for workloads
-            moving to AWS, Azure and Google Cloud.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-
-          <h4>Business Productivity</h4>
-
-          <p>
-            Microsoft 365 and Google Workspace
-            setup, administration and business email solutions.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="icon-box">
-
-          <h4>Backup & Business Continuity</h4>
-
-<p>
-  Backup planning, monitoring, recovery readiness
-  and business continuity support for critical systems and data.
-</p>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- ======= Industries Section ======= -->
-<section id="industries" class="services py-5 bg-light">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Who We Work With</h2>
-      <p>
-        Flexible technology services for growing businesses,
-        startups and institutions.
-      </p>
-    </div>
-
-    <div class="row gy-4">
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box text-center">
-          <i class="bi bi-rocket-takeoff" style="font-size:40px;"></i>
-          <h4>Startups & SMEs</h4>
-          <p>
-            Cloud infrastructure, software solutions,
-            managed IT and technology consulting.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box text-center">
-          <i class="bi bi-mortarboard" style="font-size:40px;"></i>
-          <h4>Education & Institutions</h4>
-          <p>
-            Cloud solutions, IT support,
-            workshops and professional training programs.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box text-center">
-          <i class="bi bi-briefcase" style="font-size:40px;"></i>
-          <h4>Professional Services</h4>
-          <p>
-            Managed IT, business email,
-            cloud services and ongoing technology support.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box text-center">
-          <i class="bi bi-house-door" style="font-size:40px;"></i>
-          <h4>Real Estate</h4>
-          <p>
-            Websites, cloud services,
-            productivity platforms and IT support.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box text-center">
-          <i class="bi bi-shop" style="font-size:40px;"></i>
-          <h4>Retail & Hospitality</h4>
-          <p>
-            Digital solutions, infrastructure,
-            websites and managed technology support.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box text-center">
-          <i class="bi bi-building" style="font-size:40px;"></i>
-          <h4>Growing Businesses</h4>
-          <p>
-            Cloud adoption, security,
-            technology consulting and managed IT services.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="text-center mt-5">
-      <a href="#contact" class="btn btn-success btn-lg">
-        Discuss Your Requirement
-      </a>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ======= Our Process Section ======= -->
-
-<section id="process" class="py-5 bg-light">
-
-<div class="container">
-
-<div class="section-title text-center">
-
-<h2>Our Process</h2>
-
-<p>
-We follow a structured approach to deliver reliable technology solutions.
-</p>
-
-</div>
-
-<div class="row text-center gy-4">
-
-<div class="col-lg-2 col-md-4">
-
-<div class="icon-box">
-
-<i class="bi bi-chat-dots" style="font-size:42px;color:#33bc3b;"></i>
-
-<h5 class="mt-3">Assess</h5>
-
-<p>Understand your technology, users, systems and business requirements.</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-2 col-md-4">
-
-<div class="icon-box">
-
-<i class="bi bi-lightbulb" style="font-size:42px;color:#33bc3b;"></i>
-
-<h5 class="mt-3">Plan</h5>
-
-<p>Design a practical solution based on your requirements.</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-2 col-md-4">
-
-<div class="icon-box">
-
-<i class="bi bi-code-slash" style="font-size:42px;color:#33bc3b;"></i>
-
-<h5 class="mt-3">Implement</h5>
-
-<p>Configure, deploy or improve the required technology solution.</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-2 col-md-4">
-
-<div class="icon-box">
-
-<i class="bi bi-check2-circle" style="font-size:42px;color:#33bc3b;"></i>
-
-<h5 class="mt-3">Secure</h5>
-
-<p>Review access, configuration, backups and security requirements.</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-2 col-md-4">
-
-<div class="icon-box">
-
-<i class="bi bi-cloud-upload" style="font-size:42px;color:#33bc3b;"></i>
-
-<h5 class="mt-3">Manage</h5>
-
-<p>Provide monitoring, maintenance and ongoing operational support.</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-2 col-md-4">
-
-<div class="icon-box">
-
-<i class="bi bi-headset" style="font-size:42px;color:#33bc3b;"></i>
-
-<h5 class="mt-3">Improve</h5>
-
-<p>Review performance and continuously improve the technology environment.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ======= IT Assessment Section ======= -->
-<section id="it-assessment" class="py-5">
-
-  <div class="container">
-
-    <div class="section-title text-center">
-      <h2>Request an IT Assessment</h2>
-
-      <p>
-        Tell us about your current technology environment and business requirements.
-        Nanobricks can help identify practical opportunities to improve support,
-        cloud operations, security, backups and IT management.
-      </p>
-    </div>
 
     <div class="row justify-content-center">
 
-      <div class="col-lg-8">
+      <div class="col-lg-9">
 
-        <div class="icon-box text-center">
+        <div class="assessment-box text-center">
 
-          <h4>What We Can Review</h4>
+          <h4>
+            What We Can Review
+          </h4>
 
           <p>
-            Users & Devices â€¢ Cloud Infrastructure â€¢ Business Email â€¢
-            Backups â€¢ Security â€¢ Websites â€¢ Servers â€¢ IT Support Requirements
+
+            Users & Devices • Cloud Infrastructure • Business Email •
+            Backups • Security • Websites • Servers • IT Support Requirements
+
           </p>
 
           <p>
-            After understanding your environment, we can recommend suitable
-            services, project support or an ongoing Managed IT / AMC plan.
+
+            After understanding your environment,
+            Nanobricks can recommend suitable project services
+            or an ongoing Managed IT / AMC plan.
+
           </p>
 
-          <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20request%20an%20IT%20assessment"
-             class="btn btn-success btn-lg"
-             target="_blank">
+
+          <a
+            href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20request%20an%20IT%20assessment"
+            class="btn btn-success btn-lg"
+            target="_blank"
+            rel="noopener">
+
             Request IT Assessment
+
           </a>
 
         </div>
@@ -861,137 +1121,263 @@ We follow a structured approach to deliver reliable technology solutions.
   </div>
 
 </section>
-<!-- End IT Assessment Section -->
 
-<!-- ======= Enquiry Form Section ======= -->
-<section id="enquiry" class="py-5 bg-light">
+
+<!-- ENQUIRY -->
+
+<section id="enquiry"
+         class="home-section">
 
   <div class="container">
 
-    <div class="section-title text-center">
-      <h2>Tell Us What You Need</h2>
+    <div class="section-title">
+
+      <h2>
+        Tell Us What You Need
+      </h2>
+
       <p>
-        Share your requirement and Nanobricks will get back to you
-        to understand how we can help.
+        Share your requirement and Nanobricks will get back to you.
       </p>
+
     </div>
+
 
     <div class="row justify-content-center">
 
       <div class="col-lg-8">
 
-        <div class="info">
+        <div class="assessment-box">
 
           <form
-  id="nanobricks-enquiry-form"
-  action="https://script.google.com/macros/s/AKfycbwXjfovv0o1-Z7ob3aCN9PyiizjxE69xQyMyA8mks5z_dNmq7qzaUtrt5BF1NSTKrHn/exec"
-  method="POST"
-  target="enquiry-response-frame">
+            id="nanobricks-enquiry-form"
+            action="https://script.google.com/macros/s/AKfycbwXjfovv0o1-Z7ob3aCN9PyiizjxE69xQyMyA8mks5z_dNmq7qzaUtrt5BF1NSTKrHn/exec"
+            method="POST"
+            target="enquiry-response-frame">
+
 
             <div class="row gy-3">
 
+
               <div class="col-md-6">
-                <label class="form-label">Name *</label>
+
+                <label class="form-label">
+                  Name *
+                </label>
+
                 <input
                   type="text"
                   name="name"
                   class="form-control"
                   required>
+
               </div>
 
+
               <div class="col-md-6">
-                <label class="form-label">Company / College</label>
+
+                <label class="form-label">
+                  Company / College
+                </label>
+
                 <input
                   type="text"
                   name="organization"
                   class="form-control">
+
               </div>
 
+
               <div class="col-md-6">
-                <label class="form-label">Phone *</label>
+
+                <label class="form-label">
+                  Phone *
+                </label>
+
                 <input
                   type="tel"
                   name="phone"
                   class="form-control"
                   required>
+
               </div>
 
+
               <div class="col-md-6">
-                <label class="form-label">Email *</label>
+
+                <label class="form-label">
+                  Email *
+                </label>
+
                 <input
                   type="email"
                   name="email"
                   class="form-control"
                   required>
+
               </div>
 
+
               <div class="col-md-6">
-                <label class="form-label">Enquiry Type *</label>
+
+                <label class="form-label">
+                  Enquiry Type *
+                </label>
 
                 <select
                   name="enquiryType"
                   class="form-select"
                   required>
 
-                  <option value="">Select Enquiry Type</option>
-                  <option value="Business Services">Business Services</option>
-                  <option value="Academy Training">Academy Training</option>
-                  <option value="College / Institution">College / Institution</option>
-                  <option value="Partnership / Other">Partnership / Other</option>
+                  <option value="">
+                    Select Enquiry Type
+                  </option>
+
+                  <option value="Business Services">
+                    Business Services
+                  </option>
+
+                  <option value="Academy Training">
+                    Academy Training
+                  </option>
+
+                  <option value="College / Institution">
+                    College / Institution
+                  </option>
+
+                  <option value="Partnership / Other">
+                    Partnership / Other
+                  </option>
 
                 </select>
+
               </div>
 
+
               <div class="col-md-6">
-                <label class="form-label">Service / Program *</label>
+
+                <label class="form-label">
+                  Service / Program *
+                </label>
 
                 <select
                   name="service"
                   class="form-select"
                   required>
 
-                  <option value="">Select Service / Program</option>
+                  <option value="">
+                    Select Service / Program
+                  </option>
 
-                  <option value="Managed IT / AMC">Managed IT / AMC</option>
-                  <option value="Cloud Services">Cloud Services</option>
-                  <option value="Cloud Security">Cloud Security</option>
-                  <option value="DevOps / Automation">DevOps / Automation</option>
-                  <option value="Cybersecurity">Cybersecurity</option>
-                  <option value="Software / Web Development">Software / Web Development</option>
-                  <option value="Business IT Setup">Business IT Setup</option>
-                  <option value="Backup & Business Continuity">Backup & Business Continuity</option>
+                  <option value="Managed IT / AMC">
+                    Managed IT / AMC
+                  </option>
 
-                  <option value="Cloud Computing Training">Cloud Computing Training</option>
-                  <option value="AWS & DevOps Training">AWS & DevOps Training</option>
-                  <option value="Cloud Security Training">Cloud Security Training</option>
-                  <option value="Cybersecurity Training">Cybersecurity Training</option>
-                  <option value="Python & Automation">Python & Automation</option>
-                  <option value="AI & Emerging Technologies">AI & Emerging Technologies</option>
+                  <option value="Cloud Services">
+                    Cloud Services
+                  </option>
 
-                  <option value="College Workshop">College Workshop</option>
-                  <option value="Internship Program">Internship Program</option>
+                  <option value="Cloud Security">
+                    Cloud Security
+                  </option>
 
-                  <option value="Other">Other</option>
+                  <option value="DevOps / Automation">
+                    DevOps / Automation
+                  </option>
+
+                  <option value="Cybersecurity">
+                    Cybersecurity
+                  </option>
+
+                  <option value="Software / Web Development">
+                    Web & Software Development
+                  </option>
+
+                  <option value="Business IT Setup">
+                    Business IT Setup
+                  </option>
+
+                  <option value="Backup & Business Continuity">
+                    Backup & Business Continuity
+                  </option>
+
+                  <option value="IT Consulting">
+                    IT Consulting
+                  </option>
+
+                  <option value="Cloud Computing Training">
+                    Cloud Computing Training
+                  </option>
+
+                  <option value="AWS & DevOps Training">
+                    AWS & DevOps Training
+                  </option>
+
+                  <option value="Cloud Security Training">
+                    Cloud Security Training
+                  </option>
+
+                  <option value="Cybersecurity Training">
+                    Cybersecurity Training
+                  </option>
+
+                  <option value="Python & Automation">
+                    Python & Automation
+                  </option>
+
+                  <option value="AI & Emerging Technologies">
+                    AI & Emerging Technologies
+                  </option>
+
+                  <option value="College Workshop">
+                    College Workshop
+                  </option>
+
+                  <option value="Internship Program">
+                    Internship Program
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
 
                 </select>
+
               </div>
 
+
               <div class="col-md-6">
-                <label class="form-label">Preferred Contact</label>
+
+                <label class="form-label">
+                  Preferred Contact
+                </label>
 
                 <select
                   name="preferredContact"
                   class="form-select">
 
-                  <option value="WhatsApp">WhatsApp</option>
-                  <option value="Phone Call">Phone Call</option>
-                  <option value="Email">Email</option>
+                  <option value="WhatsApp">
+                    WhatsApp
+                  </option>
+
+                  <option value="Phone Call">
+                    Phone Call
+                  </option>
+
+                  <option value="Email">
+                    Email
+                  </option>
 
                 </select>
+
               </div>
 
+
               <div class="col-12">
-                <label class="form-label">Requirement *</label>
+
+                <label class="form-label">
+                  Requirement *
+                </label>
 
                 <textarea
                   name="message"
@@ -999,7 +1385,9 @@ We follow a structured approach to deliver reliable technology solutions.
                   class="form-control"
                   placeholder="Tell us briefly about your requirement..."
                   required></textarea>
+
               </div>
+
 
               <div class="col-12 text-center mt-4">
 
@@ -1013,6 +1401,7 @@ We follow a structured approach to deliver reliable technology solutions.
 
               </div>
 
+
               <div
                 id="enquiry-success"
                 class="alert alert-success mt-3"
@@ -1023,9 +1412,11 @@ We follow a structured approach to deliver reliable technology solutions.
 
               </div>
 
+
             </div>
 
           </form>
+
 
           <iframe
             name="enquiry-response-frame"
@@ -1041,269 +1432,497 @@ We follow a structured approach to deliver reliable technology solutions.
   </div>
 
 </section>
-<!-- End Enquiry Form Section -->
 
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact section-bg">
+
+<!-- TECHNOLOGIES -->
+
+<section class="home-section alt">
+
   <div class="container">
 
     <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>Let's Build Something Great Together</p>
+
+      <h2>
+        Technologies We Work With
+      </h2>
+
+      <p>
+        Technology choices depend on your business and project requirements.
+      </p>
+
     </div>
 
-   <div class="row gy-4">
 
-      <!-- LEFT: Contact Info -->
-      <div class="col-lg-5 d-flex align-items-stretch">
-        <div class="info">
+    <div class="row gy-3 justify-content-center">
 
-          <div class="address">
-            <i class="bi bi-geo-alt"></i>
-            <h4>Location</h4>
-            <p>Hyderabad, India</p>
-          </div>
 
-          <div class="email">
-            <i class="bi bi-envelope"></i>
-            <h4>Email</h4>
-            <p>info@nanobricks.in</p>
-          </div>
-
-          <div class="phone">
-            <i class="bi bi-phone"></i>
-            <h4>Call / WhatsApp</h4>
-            <p>+91 7995720507</p>
-          </div>
-
-          <div class="social-links">
-            <a href="https://wa.me/917995720507?text=Hi%20I%20want%20details%20about%20your%20services%20and%20training" target="_blank">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-          </div>
-
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="technology-card">
+          AWS
         </div>
       </div>
 
-      <!-- RIGHT: CTA BOX -->
-      <div class="col-lg-7 d-flex align-items-stretch">
-        <div class="info" style="border-top: 3px solid #25D366;">
-
-          <h4>Get in Touch With Nanobricks</h4>
-
-          <p>
-            Looking for managed IT support, cloud services, software solutions
-or professional training? Tell us what you need and our team
-will help you identify the right solution.
-          </p>
-
-          <br>
-
-    <a href="#enquiry"
-   class="btn btn-success mb-2"
-   style="width:100%;">
-  Submit Enquiry
-</a>
-
-<a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20a%20Nanobricks%20service%20requirement"
-   class="btn btn-outline-success"
-   style="width:100%;"
-   target="_blank">
-  ðŸ’¬ Chat on WhatsApp
-</a>
-
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="technology-card">
+          Microsoft Azure
         </div>
       </div>
 
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="technology-card">
+          Google Cloud
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="technology-card">
+          Terraform
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="technology-card">
+          Docker
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <div class="technology-card">
+          Kubernetes
+        </div>
+      </div>
+
+
     </div>
+
   </div>
-</section><!-- End Contact Us Section --><!-- End Contact Us Section -->
 
-  </main><!-- End #main -->
+</section>
 
-  <section class="cta text-center">
+
+<!-- CONTACT -->
+
+<section id="contact"
+         class="contact home-section">
+
   <div class="container">
 
-<h2>Need Reliable Technology Support for Your Business?</h2>
+    <div class="section-title">
 
-<p>
-  Managed IT â€¢ Cloud Services â€¢ Software Solutions â€¢ Cybersecurity â€¢ Academy
-</p>
-    <a href="#enquiry" class="btn btn-success mt-3">
-  Submit Enquiry
-</a>
+      <h2>
+        Contact Nanobricks
+      </h2>
+
+      <p>
+        Tell us what you need and we will help identify a suitable solution.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-5">
+
+        <div class="assessment-box h-100">
+
+
+          <div class="mb-4">
+
+            <i class="bi bi-geo-alt"></i>
+
+            <h4>
+              Location
+            </h4>
+
+            <p>
+              Hyderabad, Telangana, India
+            </p>
+
+          </div>
+
+
+          <div class="mb-4">
+
+            <i class="bi bi-envelope"></i>
+
+            <h4>
+              Email
+            </h4>
+
+            <p>
+
+              <a href="mailto:info@nanobricks.in">
+                info@nanobricks.in
+              </a>
+
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <i class="bi bi-phone"></i>
+
+            <h4>
+              Call / WhatsApp
+            </h4>
+
+            <p>
+
+              <a href="tel:+917995720507">
+                +91 7995720507
+              </a>
+
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-7">
+
+        <div class="assessment-box h-100">
+
+          <h4>
+            Get in Touch With Nanobricks
+          </h4>
+
+          <p>
+
+            Looking for Managed IT, Cloud,
+            Security, DevOps, Software Solutions
+            or professional training?
+
+          </p>
+
+          <p>
+
+            Submit your requirement or contact us directly on WhatsApp.
+
+          </p>
+
+
+          <a href="#enquiry"
+             class="btn btn-success w-100 mb-3">
+
+            Submit Enquiry
+
+          </a>
+
+
+          <a
+            href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20a%20Nanobricks%20service%20requirement"
+            class="btn btn-outline-success w-100"
+            target="_blank"
+            rel="noopener">
+
+            <i class="bi bi-whatsapp"></i>
+            Chat on WhatsApp
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
 
   </div>
+
 </section>
 
-  <section class="clients py-5 bg-light">
-<div class="container text-center">
 
-<h2>Technologies We Work With</h2>
+<!-- CTA -->
 
-<div class="row mt-4">
+<section class="cta-section">
 
-<div class="col"><span class="badge bg-light text-dark p-3">AWS</span></div>
-<div class="col"><span class="badge bg-light text-dark p-3">Azure</span></div>
-<div class="col"><span class="badge bg-light text-dark p-3">Google Cloud</span></div>
-<div class="col"><span class="badge bg-light text-dark p-3">Docker</span></div>
-<div class="col"><span class="badge bg-light text-dark p-3">Kubernetes</span></div>
+  <div class="container text-center">
 
-</div>
+    <h2>
+      Need Reliable Technology Support?
+    </h2>
 
-</div>
+    <p>
+      Managed IT • Cloud • Security • DevOps • Software • Professional Training
+    </p>
+
+    <a href="#enquiry"
+       class="btn btn-light btn-lg mt-3">
+
+      Submit Enquiry
+
+    </a>
+
+  </div>
+
 </section>
 
-<!-- ======= Footer ======= -->
 
-<footer id="footer" style="background:#111827;color:#fff;padding:60px 0 20px;">
-<div class="container">
-<div class="row gy-4">
+</main>
 
-  <!-- Company -->
-<div class="col-lg-3 col-md-6">
-<h3 style="color:#fff;">Nanobricks</h3>
-<p>
-  Technology services for growing businesses, including Managed IT,
-  Cloud, Cybersecurity, Software Solutions and Professional Training.
-</p>
-<ul style="list-style:none;padding-left:0;line-height:2;">
-    <li>â˜ï¸ Cloud Solutions</li>
-    <li>ðŸ’» Software Development</li>
-    <li>ðŸ”’ Cyber Security</li>
-    <li>ðŸ› ï¸ Managed IT & AMC</li>
-    <li>âš™ï¸ DevOps Consulting</li>
-    <li>ðŸŽ“ Academy & Corporate Training</li>
-</ul>
-</div>
 
-<!-- Quick Links -->
-<div class="col-lg-3 col-md-6">
-<h4 style="color:#fff;">Quick Links</h4>
-<ul style="list-style:none;padding-left:0;line-height:2;">
-    <li><a href="/" style="color:#ddd;">Home</a></li>
-    <li><a href="#services" style="color:#ddd;">Services</a></li>
-    <li><a href="/services/managed-it/" style="color:#ddd;">Managed IT & AMC</a></li>
-    <li><a href="#industries" style="color:#ddd;">Industries</a></li>
-    <li><a href="/academy/" style="color:#ddd;">Academy</a></li>
-    <li><a href="#it-assessment" style="color:#ddd;">IT Assessment</a></li>
-    <li><a href="#enquiry" style="color:#ddd;">Enquiry</a></li>
-    <li><a href="#contact" style="color:#ddd;">Contact</a></li>
-    <li><a href="/privacy-policy/" style="color:#ddd;">Privacy Policy</a>
-</li>
+<!-- FOOTER -->
 
-<li>
-  <a href="/terms/" style="color:#ddd;">
-    Terms of Use
-  </a>
-</li>
-</ul>
-</div>
+<footer id="footer"
+        style="background:#111827;color:#fff;padding:60px 0 20px;">
 
-<!-- Our Services -->
-<div class="col-lg-3 col-md-6">
-<h4 style="color:#fff;">Our Services</h4>
-<ul style="list-style:none;padding-left:0;line-height:2;">
-    <li>Managed IT Services</li>
-    <li>AMC Support</li>
-    <li>Cloud Solutions</li>
-    <li>Software Development</li>
-    <li>Cybersecurity</li>
-    <li>Cloud Migration</li>
-    <li>Microsoft 365 & Workspace</li>
-    <li>Academy & Training</li>
-</ul>
-</div>
+  <div class="container">
 
-<!-- Contact -->
-<div class="col-lg-3 col-md-6">
-<h4 style="color:#fff;">Contact Us</h4>
-<p>ðŸ“ž <a href="tel:+917995720507" style="color:#ddd;">+91 7995720507</a></p>
-<p>ðŸ“§ <a href="mailto:info@nanobricks.in" style="color:#ddd;">info@nanobricks.in</a></p>
-<p>ðŸ“ Hyderabad, Telangana, India</p>
-<p>ðŸŸ¢ <a href="https://wa.me/917995720507" target="_blank" style="color:#25D366;">Chat on WhatsApp</a></p>
+    <div class="row gy-4">
 
-  <div style="margin-top:15px;">
-<div class="social-links mt-4">
-<a href="https://www.linkedin.com/company/nanobricks" target="_blank" style="color:white;font-size:22px;margin-right:15px;"> <i class="bi bi-linkedin"></i></a>
-</div>
-</div>
-</div>
-</div>
 
-<hr style="border-color:#374151;margin:40px 0 20px;">
+      <div class="col-lg-4">
 
-<div class="text-center">
+        <h3 style="color:#fff;">
+          Nanobricks
+        </h3>
 
-<p style="margin-bottom:8px;"><strong>Ready To Transform Your Business?</strong></p>
-<p style="color:#ccc;"> Managed IT â€¢ Cloud â€¢ Software â€¢ Cybersecurity â€¢ DevOps â€¢ Professional Training</p>
-<p style="color:#999;margin-top:20px;">Â© 2026 Nanobricks. All Rights Reserved.</p>
-</div>
-</div>
+        <p>
+
+          Technology services for growing businesses,
+          including Managed IT, Cloud, Cybersecurity,
+          DevOps, Software Solutions and Professional Training.
+
+        </p>
+
+        <a
+          href="https://www.linkedin.com/company/nanobricks"
+          target="_blank"
+          rel="noopener"
+          style="color:#fff;font-size:22px;">
+
+          <i class="bi bi-linkedin"></i>
+
+        </a>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <h4 style="color:#fff;">
+          Quick Links
+        </h4>
+
+        <ul style="list-style:none;padding-left:0;line-height:2;">
+
+          <li>
+            <a href="/" style="color:#ddd;">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#services" style="color:#ddd;">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="#industries" style="color:#ddd;">
+              Industries
+            </a>
+          </li>
+
+          <li>
+            <a href="/academy/" style="color:#ddd;">
+              Academy
+            </a>
+          </li>
+
+          <li>
+            <a href="#it-assessment" style="color:#ddd;">
+              IT Assessment
+            </a>
+          </li>
+
+          <li>
+            <a href="#enquiry" style="color:#ddd;">
+              Enquiry
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact" style="color:#ddd;">
+              Contact
+            </a>
+          </li>
+
+          <li>
+            <a href="/privacy-policy/" style="color:#ddd;">
+              Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a href="/terms/" style="color:#ddd;">
+              Terms of Use
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <h4 style="color:#fff;">
+          Contact
+        </h4>
+
+        <p>
+
+          <a href="tel:+917995720507"
+             style="color:#ddd;">
+
+            +91 7995720507
+
+          </a>
+
+        </p>
+
+        <p>
+
+          <a href="mailto:info@nanobricks.in"
+             style="color:#ddd;">
+
+            info@nanobricks.in
+
+          </a>
+
+        </p>
+
+        <p>
+          Hyderabad, Telangana, India
+        </p>
+
+        <p>
+
+          <a
+            href="https://wa.me/917995720507"
+            target="_blank"
+            rel="noopener"
+            style="color:#25D366;">
+
+            <i class="bi bi-whatsapp"></i>
+            Chat on WhatsApp
+
+          </a>
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <hr style="border-color:#374151;margin:40px 0 20px;">
+
+
+    <div class="text-center">
+
+      <p style="color:#999;margin-bottom:0;">
+
+        © 2026 Nanobricks. All Rights Reserved.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
 </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- BACK TO TOP -->
 
-<style>
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 24px;
-  padding: 12px 16px;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  z-index: 999;
-}
-</style>
-<script>
-function trackWhatsAppClick() {
-  console.log("WhatsApp Clicked");
+<a href="#"
+   class="back-to-top d-flex align-items-center justify-content-center">
 
-  // Save count in browser (basic tracking)
-  let count = localStorage.getItem("wa_clicks") || 0;
-  count++;
-  localStorage.setItem("wa_clicks", count);
+  <i class="bi bi-arrow-up-short"></i>
 
-  console.log("Total Clicks:", count);
-}
-</script>
+</a>
 
-<!-- Sticky Buttons Start -->
+
+<!-- STICKY CONTACT -->
+
 <div class="sticky-cta">
-<a href="tel:+917995720507" class="cta-enroll">ðŸ“ž Call</a>
 
-<a href="https://wa.me/917995720507?text=Hi%20I%20am%20interested%20in%20Nanobricks%20services"
-   class="cta-wa"
-   target="_blank"
-   onclick="gtag('event','whatsapp_click');">ðŸ’¬ WhatsApp</a>
-</div><!-- Sticky Buttons End -->
-<script>
-document
-  .getElementById("nanobricks-enquiry-form")
-  .addEventListener("submit", function () {
+  <a href="tel:+917995720507"
+     class="cta-call">
 
-    const form = this;
-    const message = document.getElementById("enquiry-success");
+    <i class="bi bi-telephone"></i>
+    Call
 
-    setTimeout(function () {
+  </a>
 
-      message.style.display = "block";
-      form.reset();
 
-    }, 1200);
+  <a
+    href="https://wa.me/917995720507?text=Hi%20I%20am%20interested%20in%20Nanobricks%20services"
+    class="cta-wa"
+    target="_blank"
+    rel="noopener"
+    onclick="gtag('event','whatsapp_click');">
 
-  });
+    <i class="bi bi-whatsapp"></i>
+    WhatsApp
+
+  </a>
+
+</div>
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
-</body>
-</html>
 
+<script
+  src="/assets/js/main.js">
+</script>
+
+
+<script>
+
+  const enquiryForm =
+    document.getElementById("nanobricks-enquiry-form");
+
+  if (enquiryForm) {
+
+    enquiryForm.addEventListener("submit", function () {
+
+      const form = this;
+
+      const message =
+        document.getElementById("enquiry-success");
+
+      setTimeout(function () {
+
+        if (message) {
+          message.style.display = "block";
+        }
+
+        form.reset();
+
+      }, 1200);
+
+    });
+
+  }
+
+</script>
+
+
+</body>
+
+</html>
