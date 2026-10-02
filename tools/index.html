@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="index, follow">
+
+  <title>
+    Free Technology Tools | Nanobricks
+  </title>
+
+  <meta name="description"
+        content="Explore free technology tools from Nanobricks including Windows endpoint assessment, security utilities, PDF tools, image tools and cloud security tools.">
+
+  <meta name="keywords"
+        content="Nanobricks Tools, Free IT Tools, Windows Endpoint Assessment, Security Tools, Cloud Security Tools, PDF Tools, Image Tools, Technology Utilities">
+
+  <link rel="canonical"
+        href="https://www.nanobricks.in/tools/">
+
+  <!-- Favicons -->
+  <link href="/assets/img/nano-log.png"
+        rel="icon">
+
+  <link href="/assets/img/nano-log.png"
+        rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link
+    href="/assets/css/style.css"
+    rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MSKW1ESHK7">
+  </script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-MSKW1ESHK7');
+
+  </script>
+
+  <style>
+
+    /* =========================
+       TOOLS PAGE
+    ========================= */
+
+    #header .logo img {
+      max-height: 44px;
+      width: auto;
+    }
+
+
+    .tools-hero {
+      padding: 150px 0 90px;
+      background:
+        linear-gradient(
+          135deg,
+          #f4fbf5 0%,
+          #ffffff 55%,
+          #f6faf7 100%
+        );
+    }
+
+
+    .tools-hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 20px;
+    }
+
+
+    .tools-hero p {
+      font-size: 19px;
+      color: #647168;
+      line-height: 1.8;
+      max-width: 760px;
+    }
+
+
+    .tools-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 15px;
+      background: #edf8ef;
+      color: #1f6f2b;
+      border: 1px solid #d8eddc;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+
+    .tools-section {
+      padding: 80px 0;
+    }
+
+
+    .tools-section-alt {
+      background: #f8faf9;
+    }
+
+
+    .tools-card {
+      background: #ffffff;
+      border: 1px solid #e5ece7;
+      border-radius: 16px;
+      padding: 30px;
+      height: 100%;
+      transition: 0.25s ease;
+      position: relative;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+    }
+
+
+    .tools-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 38px rgba(0,0,0,0.08);
+    }
+
+
+    .tools-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: #eff9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+
+
+    .tools-icon i {
+      color: #2fa93a;
+      font-size: 28px;
+    }
+
+
+    .tools-card h3 {
+      font-size: 21px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 14px;
+    }
+
+
+    .tools-card p {
+      color: #647168;
+      line-height: 1.75;
+      margin-bottom: 22px;
+    }
+
+
+    .tools-link {
+      color: #1f6f2b;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+
+    .tools-link:hover {
+      color: #2fa93a;
+    }
+
+
+    .status-badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 30px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+
+    .status-live {
+      background: #e8f7eb;
+      color: #1f6f2b;
+    }
+
+
+    .status-soon {
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+
+
+    .why-tools {
+      background: #ffffff;
+      border: 1px solid #e5ece7;
+      border-radius: 16px;
+      padding: 32px;
+      height: 100%;
+    }
+
+
+    .why-tools i {
+      color: #2fa93a;
+      font-size: 30px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+
+    .why-tools h4 {
+      font-weight: 700;
+      color: #25372b;
+    }
+
+
+    .why-tools p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+
+    .tools-cta {
+      background: #1f6f2b;
+      color: #ffffff;
+      padding: 80px 0;
+    }
+
+
+    .tools-cta h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+
+    .tools-cta p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+
+
+    .footer-link {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+
+    .footer-link:hover {
+      color: #ffffff;
+    }
+
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 54px;
+      height: 54px;
+      background: #25D366;
+      color: #ffffff;
+      font-size: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+      z-index: 999;
+    }
+
+
+    .whatsapp-float:hover {
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+
+    @media (max-width: 768px) {
+
+      .tools-hero {
+        padding: 125px 0 65px;
+      }
+
+      .tools-hero h1 {
+        font-size: 36px;
+      }
+
+      .tools-hero p {
+        font-size: 17px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header id="header"
+        class="fixed-top d-flex align-items-center">
+
+  <div class="container d-flex align-items-center justify-content-between">
+
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+      <a href="/">
+
+        <img
+          src="/assets/img/nano-log.png"
+          alt="Nanobricks"
+          height="40">
+
+      </a>
+
+    </div>
+
+
+    <!-- Navigation -->
+
+    <nav id="navbar"
+         class="navbar">
+
+      <ul>
+
+
+        <!-- Home -->
+
+        <li>
+
+          <a href="/">
+            Home
+          </a>
+
+        </li>
+
+
+        <!-- Services -->
+
+        <li class="dropdown">
+
+          <a href="#">
+
+            <span>
+              Services
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+
+          <ul>
+
+            <li>
+              <a href="/services/managed-it/">
+                Managed IT & AMC
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-services/">
+                Cloud Services
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-security/">
+                Cloud Security
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/devops-automation/">
+                DevOps & Automation
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cybersecurity/">
+                Cybersecurity
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/web-software/">
+                Web & Software
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <!-- Tools -->
+
+        <li class="dropdown">
+
+          <a class="active"
+             href="/tools/">
+
+            <span>
+              Tools
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+
+          <ul>
+
+            <li>
+
+              <a href="/tools/endpoint-assessment/">
+                Endpoint Assessment
+              </a>
+
+            </li>
+
+            <li>
+
+              <a href="/tools/#pdf-tools">
+                PDF Tools
+              </a>
+
+            </li>
+
+            <li>
+
+              <a href="/tools/#image-tools">
+                Image Tools
+              </a>
+
+            </li>
+
+            <li>
+
+              <a href="/tools/#cloud-security-tools">
+                Cloud Security Tools
+              </a>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <!-- About -->
+
+        <li>
+
+          <a href="/#about">
+            About
+          </a>
+
+        </li>
+
+
+        <!-- Academy -->
+
+        <li>
+
+          <a href="/academy/">
+            Academy
+          </a>
+
+        </li>
+
+
+        <!-- Contact -->
+
+        <li>
+
+          <a href="/#contact">
+            Contact
+          </a>
+
+        </li>
+
+
+        <!-- CTA -->
+
+        <li>
+
+          <a class="getstarted"
+             href="/#enquiry">
+
+            Talk to Us
+
+          </a>
+
+        </li>
+
+      </ul>
+
+
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="tools-hero">
+
+  <div class="container">
+
+    <div class="row align-items-center gy-5">
+
+
+      <div class="col-lg-7">
+
+        <div class="tools-badge">
+
+          <i class="bi bi-tools"></i>
+
+          Free Technology Utilities
+
+        </div>
+
+
+        <h1>
+          Practical Technology Tools
+          From Nanobricks
+        </h1>
+
+
+        <p>
+
+          A growing collection of lightweight tools designed
+          to help businesses, IT teams, professionals and
+          technology users assess, understand and improve
+          their technology environments.
+
+        </p>
+
+
+        <div class="mt-4">
+
+          <a href="#tools"
+             class="btn btn-success btn-lg me-2">
+
+            Explore Tools
+
+          </a>
+
+          <a href="/#contact"
+             class="btn btn-outline-dark btn-lg">
+
+            Contact Nanobricks
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5 text-center">
+
+        <i class="bi bi-grid-3x3-gap"
+           style="font-size:150px;color:#2fa93a;opacity:.85;">
+        </i>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<main id="main">
+
+
+<!-- =========================
+     TOOLS
+========================= -->
+
+<section id="tools"
+         class="tools-section tools-section-alt">
+
+  <div class="container">
+
+
+    <div class="section-title">
+
+      <h2>
+        Nanobricks Tools
+      </h2>
+
+      <p>
+
+        Simple utilities focused on practical IT,
+        productivity and security requirements.
+
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <!-- Endpoint Assessment -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="tools-card">
+
+          <span class="status-badge status-live">
+            Available Now
+          </span>
+
+
+          <div class="tools-icon">
+
+            <i class="bi bi-pc-display"></i>
+
+          </div>
+
+
+          <h3>
+            Windows Endpoint Assessment
+          </h3>
+
+
+          <p>
+
+            Assess Windows endpoint configuration,
+            operating system information, memory,
+            disk health, Defender, firewall,
+            Windows Update, Microsoft Office and
+            local account settings.
+
+          </p>
+
+
+          <a href="/tools/endpoint-assessment/"
+             class="tools-link">
+
+            Open Endpoint Assessment
+
+            <i class="bi bi-arrow-right"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PDF Tools -->
+
+      <div class="col-lg-4 col-md-6"
+           id="pdf-tools">
+
+        <div class="tools-card">
+
+          <span class="status-badge status-soon">
+            Coming Soon
+          </span>
+
+
+          <div class="tools-icon">
+
+            <i class="bi bi-file-earmark-pdf"></i>
+
+          </div>
+
+
+          <h3>
+            PDF Tools
+          </h3>
+
+
+          <p>
+
+            Useful browser-based utilities for
+            common PDF tasks with a focus on
+            simple workflows and privacy-friendly
+            processing where possible.
+
+          </p>
+
+
+          <span class="text-muted fw-semibold">
+            In Development
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- Image Tools -->
+
+      <div class="col-lg-4 col-md-6"
+           id="image-tools">
+
+        <div class="tools-card">
+
+          <span class="status-badge status-soon">
+            Coming Soon
+          </span>
+
+
+          <div class="tools-icon">
+
+            <i class="bi bi-image"></i>
+
+          </div>
+
+
+          <h3>
+            Image Tools
+          </h3>
+
+
+          <p>
+
+            Lightweight utilities for common
+            image conversion, optimization and
+            resizing tasks directly from the
+            Nanobricks tools platform.
+
+          </p>
+
+
+          <span class="text-muted fw-semibold">
+            In Development
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- Cloud Security -->
+
+      <div class="col-lg-4 col-md-6"
+           id="cloud-security-tools">
+
+        <div class="tools-card">
+
+          <span class="status-badge status-soon">
+            Planned
+          </span>
+
+
+          <div class="tools-icon">
+
+            <i class="bi bi-cloud-lock"></i>
+
+          </div>
+
+
+          <h3>
+            Cloud Security Tools
+          </h3>
+
+
+          <p>
+
+            Practical cloud security utilities
+            designed around configuration review,
+            security posture awareness and
+            common cloud security checks.
+
+          </p>
+
+
+          <span class="text-muted fw-semibold">
+            Planned
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- IT Utilities -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="tools-card">
+
+          <span class="status-badge status-soon">
+            Planned
+          </span>
+
+
+          <div class="tools-icon">
+
+            <i class="bi bi-terminal"></i>
+
+          </div>
+
+
+          <h3>
+            IT Utilities
+          </h3>
+
+
+          <p>
+
+            Small tools for system administration,
+            infrastructure, troubleshooting and
+            everyday IT operations.
+
+          </p>
+
+
+          <span class="text-muted fw-semibold">
+            Planned
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- More -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="tools-card">
+
+          <span class="status-badge status-soon">
+            Growing Collection
+          </span>
+
+
+          <div class="tools-icon">
+
+            <i class="bi bi-plus-circle"></i>
+
+          </div>
+
+
+          <h3>
+            More Free Utilities
+          </h3>
+
+
+          <p>
+
+            Nanobricks Tools will continue to
+            expand with practical utilities based
+            on common technology and business
+            requirements.
+
+          </p>
+
+
+          <span class="text-muted fw-semibold">
+            More Coming Soon
+          </span>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WHY NANOBRICKS TOOLS
+========================= -->
+
+<section class="tools-section">
+
+  <div class="container">
+
+
+    <div class="section-title">
+
+      <h2>
+        Built for Practical Use
+      </h2>
+
+      <p>
+
+        Nanobricks Tools focuses on useful,
+        straightforward technology utilities.
+
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-4">
+
+        <div class="why-tools">
+
+          <i class="bi bi-lightning-charge"></i>
+
+          <h4>
+            Simple
+          </h4>
+
+          <p>
+
+            Designed to solve specific technology
+            tasks without unnecessary complexity.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="why-tools">
+
+          <i class="bi bi-shield-check"></i>
+
+          <h4>
+            Security Conscious
+          </h4>
+
+          <p>
+
+            Security and privacy are considered
+            when designing utilities and how
+            information is processed.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="why-tools">
+
+          <i class="bi bi-building"></i>
+
+          <h4>
+            Business Focused
+          </h4>
+
+          <p>
+
+            Tools are designed around practical
+            requirements faced by businesses,
+            IT teams and professionals.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="tools-cta">
+
+  <div class="container text-center">
+
+    <h2>
+      Need Help Beyond the Free Tools?
+    </h2>
+
+    <p>
+
+      Nanobricks provides Managed IT, Cloud,
+      Cybersecurity, DevOps and technology
+      consulting services for businesses.
+
+    </p>
+
+
+    <a href="/#contact"
+       class="btn btn-light btn-lg mt-3">
+
+      Contact Nanobricks
+
+    </a>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer id="footer"
+        style="background:#111827;color:#fff;padding:60px 0 20px;">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+
+      <!-- Nanobricks -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <h3 style="color:#fff;">
+          Nanobricks
+        </h3>
+
+
+        <p>
+
+          Technology services for growing businesses,
+          including Managed IT, Cloud, Cybersecurity,
+          DevOps, Software Solutions and practical
+          technology tools.
+
+        </p>
+
+
+        <a
+          href="https://www.linkedin.com/company/nanobricks"
+          target="_blank"
+          rel="noopener"
+          style="color:#fff;font-size:22px;">
+
+          <i class="bi bi-linkedin"></i>
+
+        </a>
+
+      </div>
+
+
+      <!-- Quick Links -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <h4 style="color:#fff;">
+          Quick Links
+        </h4>
+
+
+        <ul style="list-style:none;padding-left:0;line-height:2.1;">
+
+          <li>
+
+            <a href="/"
+               class="footer-link">
+
+              Home
+
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="/#services"
+               class="footer-link">
+
+              Services
+
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="/tools/"
+               class="footer-link">
+
+              Tools
+
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="/tools/endpoint-assessment/"
+               class="footer-link">
+
+              Endpoint Assessment
+
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="/academy/"
+               class="footer-link">
+
+              Academy
+
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <a href="/#contact"
+               class="footer-link">
+
+              Contact
+
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Contact -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <h4 style="color:#fff;">
+          Contact
+        </h4>
+
+
+        <p>
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507"
+             class="footer-link">
+
+            +91 7995720507
+
+          </a>
+
+        </p>
+
+
+        <p>
+
+          <i class="bi bi-envelope"></i>
+
+          <a href="mailto:info@nanobricks.in"
+             class="footer-link">
+
+            info@nanobricks.in
+
+          </a>
+
+        </p>
+
+
+        <p>
+
+          <i class="bi bi-geo-alt"></i>
+
+          Hyderabad, Telangana, India
+
+        </p>
+
+
+        <p>
+
+          <a href="/privacy-policy/"
+             class="footer-link">
+
+            Privacy Policy
+
+          </a>
+
+          &nbsp; • &nbsp;
+
+          <a href="/terms/"
+             class="footer-link">
+
+            Terms of Use
+
+          </a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <hr style="border-color:#374151;margin:40px 0 20px;">
+
+
+    <div class="text-center">
+
+      <p style="color:#999;margin-bottom:0;">
+
+        © 2026 Nanobricks. All Rights Reserved.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- Back to top -->
+
+<a href="#"
+   class="back-to-top d-flex align-items-center justify-content-center">
+
+  <i class="bi bi-arrow-up-short"></i>
+
+</a>
+
+
+<!-- WhatsApp -->
+
+<a
+  href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20technology%20services"
+  target="_blank"
+  rel="noopener"
+  class="whatsapp-float"
+  aria-label="Chat with Nanobricks on WhatsApp">
+
+  <i class="bi bi-whatsapp"></i>
+
+</a>
+
+
+<!-- Bootstrap JS -->
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Main JS -->
+
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
