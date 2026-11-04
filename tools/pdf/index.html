@@ -12,20 +12,23 @@
         content="index, follow">
 
   <title>
-    Free PDF Tools | Merge, Split, Rotate & Convert PDFs | Nanobricks
+    Free PDF Tools Online | Merge, Split, Rotate & Convert PDF | Nanobricks
   </title>
 
   <meta name="description"
-        content="Free browser-based PDF tools from Nanobricks. Merge PDFs, split PDFs, rotate pages, remove pages, reorder pages, convert images to PDF and PDF pages to images.">
+        content="Use free PDF tools from Nanobricks to merge PDFs, split PDF pages, rotate PDFs, remove or reorder pages, convert images to PDF and PDF pages to PNG. Browser-based processing with no Nanobricks upload server.">
+
+  <meta name="keywords"
+        content="free PDF tools, merge PDF, split PDF, rotate PDF, remove PDF pages, reorder PDF pages, image to PDF, JPG to PDF, PNG to PDF, PDF to PNG, browser PDF tools">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/tools/pdf/">
 
   <meta property="og:title"
-        content="Free PDF Tools | Nanobricks">
+        content="Free PDF Tools Online | Nanobricks">
 
   <meta property="og:description"
-        content="Free browser-based PDF utilities for merging, splitting, rotating, reorganizing and converting PDF files.">
+        content="Merge, split, rotate, reorganize and convert PDF files using free browser-based PDF tools from Nanobricks.">
 
   <meta property="og:url"
         content="https://www.nanobricks.in/tools/pdf/">
@@ -35,6 +38,15 @@
 
   <meta property="og:image"
         content="https://www.nanobricks.in/assets/img/nano-log.png">
+
+  <meta name="twitter:card"
+        content="summary">
+
+  <meta name="twitter:title"
+        content="Free PDF Tools Online | Nanobricks">
+
+  <meta name="twitter:description"
+        content="Free browser-based tools to merge, split, rotate, reorder and convert PDF files.">
 
   <link href="/assets/img/nano-log.png"
         rel="icon">
@@ -84,6 +96,101 @@
   </script>
 
 
+  <!-- Software Application Schema -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nanobricks PDF Tools",
+    "url": "https://www.nanobricks.in/tools/pdf/",
+    "description": "Free browser-based PDF tools to merge PDFs, split pages, rotate PDFs, remove or reorder pages, convert images to PDF and convert PDF pages to PNG images.",
+    "applicationCategory": "WebApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires a modern web browser with JavaScript enabled.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nanobricks",
+      "url": "https://www.nanobricks.in/"
+    },
+    "featureList": [
+      "Merge PDF files",
+      "Split PDF into individual pages",
+      "Rotate PDF pages",
+      "Remove PDF pages",
+      "Reorder PDF pages",
+      "Convert JPG and PNG images to PDF",
+      "Convert PDF pages to PNG images"
+    ]
+  }
+  </script>
+
+
+  <!-- FAQ Schema -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are Nanobricks PDF Tools free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The current Nanobricks PDF Tools are free to use and do not require a Nanobricks account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my PDF files uploaded to Nanobricks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The current version performs its PDF operations using JavaScript in the browser and does not send selected PDF or image files to a Nanobricks backend for document processing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I merge multiple PDF files?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Select two or more PDF files using the Merge PDF tool and Nanobricks PDF Tools will create a single merged PDF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I split a PDF into individual pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Split PDF tool creates an individual PDF file for each page and provides the results as a ZIP file."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I convert images to PDF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Nanobricks PDF Tools supports JPG and PNG images and can combine selected images into one PDF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I convert PDF pages to images?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The PDF to Images tool renders PDF pages as PNG images and downloads them together in a ZIP file."
+        }
+      }
+    ]
+  }
+  </script>
+
+
   <style>
 
     body {
@@ -127,13 +234,13 @@
       font-weight: 800;
       line-height: 1.12;
       color: #25372b;
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
     }
 
 
     .pdf-hero .lead {
-      max-width: 780px;
+      max-width: 830px;
       margin: 22px auto 0;
       color: #647168;
       font-size: 19px;
@@ -189,7 +296,7 @@
 
     .section-title p {
       color: #647168;
-      max-width: 760px;
+      max-width: 800px;
       margin: 12px auto 0;
       line-height: 1.7;
     }
@@ -237,6 +344,7 @@
     }
 
 
+    .tool-card h3,
     .tool-card h4 {
       font-weight: 700;
       color: #25372b;
@@ -282,10 +390,11 @@
     }
 
 
-    .workspace-header h3 {
+    .workspace-header h2 {
       margin: 0;
       color: #25372b;
       font-weight: 800;
+      font-size: 29px;
     }
 
 
@@ -320,7 +429,8 @@
     }
 
 
-    .upload-area h5 {
+    .upload-area h3 {
+      font-size: 20px;
       font-weight: 700;
       margin-top: 14px;
       color: #25372b;
@@ -450,6 +560,37 @@
     }
 
 
+    .seo-tool-card {
+      background: #ffffff;
+      border: 1px solid #e5ebe6;
+      border-radius: 16px;
+      padding: 28px;
+      height: 100%;
+    }
+
+
+    .seo-tool-card i {
+      color: #2fa93a;
+      font-size: 29px;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+
+    .seo-tool-card h3 {
+      font-size: 21px;
+      font-weight: 800;
+      color: #25372b;
+    }
+
+
+    .seo-tool-card p {
+      color: #647168;
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
+
+
     .privacy-box {
       background: #eff9f1;
       border-left: 4px solid #2fa93a;
@@ -459,7 +600,7 @@
     }
 
 
-    .privacy-box h3 {
+    .privacy-box h2 {
       font-weight: 800;
       color: #25372b;
     }
@@ -501,6 +642,37 @@
     }
 
 
+    .faq-item {
+      border-bottom: 1px solid #e8ece9;
+      padding: 24px 0;
+    }
+
+
+    .faq-item:first-child {
+      padding-top: 0;
+    }
+
+
+    .faq-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+
+    .faq-item h3 {
+      color: #25372b;
+      font-weight: 700;
+      font-size: 19px;
+    }
+
+
+    .faq-item p {
+      color: #647168;
+      margin-bottom: 0;
+      line-height: 1.75;
+    }
+
+
     .cta-section {
       background: #1f6f2b;
       color: #ffffff;
@@ -519,6 +691,17 @@
       max-width: 720px;
       margin: 12px auto 0;
       font-size: 18px;
+    }
+
+
+    .footer-link {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+
+    .footer-link:hover {
+      color: #ffffff;
     }
 
 
@@ -746,22 +929,23 @@
 
       <i class="bi bi-file-earmark-pdf"></i>
 
-      Free Browser-Based PDF Utilities
+      Free Browser-Based PDF Tools
 
     </div>
 
 
     <h1>
-      Simple PDF Tools.
-      No Complicated Software.
+      Free PDF Tools to Merge, Split, Rotate and Convert PDFs
     </h1>
 
 
     <p class="lead">
 
-      Merge, split, rotate, reorganize and convert PDF files
-      directly from your browser using the free
-      Nanobricks PDF Tools.
+      Use Nanobricks PDF Tools to merge PDF files,
+      split PDFs into individual pages,
+      rotate PDF pages, remove or reorder pages,
+      convert JPG and PNG images to PDF,
+      and convert PDF pages to PNG images.
 
     </p>
 
@@ -772,7 +956,7 @@
 
       <i class="bi bi-tools me-2"></i>
 
-      Use PDF Tools
+      Use Free PDF Tools
 
     </a>
 
@@ -817,11 +1001,11 @@
     <div class="section-title">
 
       <h2>
-        Choose a PDF Tool
+        Choose a Free PDF Tool
       </h2>
 
       <p>
-        Select what you want to do.
+        Select the PDF task you want to perform.
         Your processing workspace will appear below.
       </p>
 
@@ -840,13 +1024,13 @@
             <i class="bi bi-files"></i>
           </div>
 
-          <h4>
+          <h3>
             Merge PDF
-          </h4>
+          </h3>
 
           <p>
             Combine multiple PDF files
-            into one document.
+            into one PDF document.
           </p>
 
         </div>
@@ -863,13 +1047,13 @@
             <i class="bi bi-scissors"></i>
           </div>
 
-          <h4>
+          <h3>
             Split PDF
-          </h4>
+          </h3>
 
           <p>
-            Split a PDF into
-            individual page files.
+            Split one PDF into
+            individual PDF page files.
           </p>
 
         </div>
@@ -886,12 +1070,12 @@
             <i class="bi bi-arrow-clockwise"></i>
           </div>
 
-          <h4>
+          <h3>
             Rotate PDF
-          </h4>
+          </h3>
 
           <p>
-            Rotate all pages
+            Rotate PDF pages
             by 90°, 180° or 270°.
           </p>
 
@@ -909,13 +1093,13 @@
             <i class="bi bi-trash3"></i>
           </div>
 
-          <h4>
-            Remove Pages
-          </h4>
+          <h3>
+            Remove PDF Pages
+          </h3>
 
           <p>
-            Remove selected pages
-            from a PDF.
+            Remove unwanted pages
+            from a PDF document.
           </p>
 
         </div>
@@ -932,13 +1116,13 @@
             <i class="bi bi-arrow-down-up"></i>
           </div>
 
-          <h4>
-            Reorder Pages
-          </h4>
+          <h3>
+            Reorder PDF Pages
+          </h3>
 
           <p>
-            Create a PDF using
-            your preferred page order.
+            Rearrange PDF pages
+            into your preferred order.
           </p>
 
         </div>
@@ -955,13 +1139,13 @@
             <i class="bi bi-images"></i>
           </div>
 
-          <h4>
+          <h3>
             Images to PDF
-          </h4>
+          </h3>
 
           <p>
             Convert JPG and PNG images
-            into one PDF.
+            into a single PDF.
           </p>
 
         </div>
@@ -978,13 +1162,13 @@
             <i class="bi bi-file-image"></i>
           </div>
 
-          <h4>
-            PDF to Images
-          </h4>
+          <h3>
+            PDF to PNG
+          </h3>
 
           <p>
             Convert every PDF page
-            into PNG images.
+            into a PNG image.
           </p>
 
         </div>
@@ -1017,9 +1201,9 @@
 
         <div>
 
-          <h3 id="workspaceTitle">
+          <h2 id="workspaceTitle">
             Merge PDF
-          </h3>
+          </h2>
 
           <p id="workspaceDescription">
             Select two or more PDF files to combine.
@@ -1035,9 +1219,9 @@
 
         <i class="bi bi-cloud-arrow-up"></i>
 
-        <h5 id="uploadTitle">
+        <h3 id="uploadTitle">
           Choose PDF files
-        </h5>
+        </h3>
 
         <p id="uploadHelp">
           Select files from your computer.
@@ -1114,7 +1298,237 @@
 </section>
 
 
+<!-- SEO CONTENT -->
+
 <section class="pdf-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Free Online PDF Tools from Nanobricks
+      </h2>
+
+      <p>
+
+        Nanobricks PDF Tools provides simple browser-based
+        utilities for common PDF tasks without requiring
+        additional desktop software or a Nanobricks account.
+
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-files"></i>
+
+          <h3>
+            Merge PDF Files Online
+          </h3>
+
+          <p>
+
+            The Merge PDF tool lets you select multiple
+            PDF files and combine their pages into
+            one PDF document. It can be useful when
+            reports, forms, invoices or other PDF documents
+            need to be combined into a single file.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-scissors"></i>
+
+          <h3>
+            Split PDF into Individual Pages
+          </h3>
+
+          <p>
+
+            Use the Split PDF tool to separate
+            one PDF into individual page-level PDF files.
+            The generated files are packaged together
+            in a ZIP download for easier handling.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-arrow-clockwise"></i>
+
+          <h3>
+            Rotate PDF Pages
+          </h3>
+
+          <p>
+
+            Rotate all pages in a PDF by
+            90 degrees, 180 degrees or 270 degrees.
+            This is useful when scanned documents
+            or exported PDF pages appear sideways
+            or upside down.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-trash3"></i>
+
+          <h3>
+            Remove Pages from a PDF
+          </h3>
+
+          <p>
+
+            Enter the page numbers you want to remove
+            and create a new PDF without those pages.
+            This can help remove blank pages,
+            unnecessary attachments or unwanted sections.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-arrow-down-up"></i>
+
+          <h3>
+            Reorder PDF Pages
+          </h3>
+
+          <p>
+
+            Rearrange the order of pages in a PDF
+            by entering the required page sequence.
+            The tool generates a new PDF using
+            the page order you specify.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-images"></i>
+
+          <h3>
+            Convert JPG and PNG Images to PDF
+          </h3>
+
+          <p>
+
+            Select one or more JPG or PNG images
+            and combine them into a PDF document.
+            Each selected image becomes a page
+            in the generated PDF.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-file-image"></i>
+
+          <h3>
+            Convert PDF Pages to PNG Images
+          </h3>
+
+          <p>
+
+            The PDF to PNG tool renders each PDF page
+            as a PNG image. All generated images
+            are packaged into a ZIP file
+            for convenient download.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="seo-tool-card">
+
+          <i class="bi bi-browser-chrome"></i>
+
+          <h3>
+            Browser-Based PDF Processing
+          </h3>
+
+          <p>
+
+            The current Nanobricks PDF Tools
+            perform document operations using JavaScript
+            running in your browser.
+            No separate desktop PDF application
+            is required for these basic tasks.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PRIVACY -->
+
+<section class="pdf-section alt">
 
   <div class="container">
 
@@ -1125,13 +1539,13 @@
 
         <div class="privacy-box">
 
-          <h3>
+          <h2>
 
             <i class="bi bi-shield-lock me-2"></i>
 
-            Privacy-First Processing
+            Privacy-First PDF Processing
 
-          </h3>
+          </h2>
 
 
           <div class="privacy-feature">
@@ -1145,9 +1559,11 @@
               </strong>
 
               <p>
-                PDF operations are performed
+
+                The current PDF operations are performed
                 using JavaScript running
                 in your web browser.
+
               </p>
 
             </div>
@@ -1166,9 +1582,12 @@
               </strong>
 
               <p>
-                This version does not send your selected
-                PDF or image files to a Nanobricks backend
+
+                This version does not send
+                the selected PDF or image files
+                to a Nanobricks backend
                 for document processing.
+
               </p>
 
             </div>
@@ -1187,8 +1606,11 @@
               </strong>
 
               <p>
-                No Nanobricks account is required
-                to use these PDF tools.
+
+                You do not need to register
+                or sign in to a Nanobricks account
+                to use these tools.
+
               </p>
 
             </div>
@@ -1204,37 +1626,38 @@
 
         <div class="notice-box h-100">
 
-          <h4 class="fw-bold">
+          <h3 class="fw-bold">
 
             <i class="bi bi-info-circle me-2"></i>
 
             Important
 
-          </h4>
+          </h3>
 
 
           <p>
 
             This version uses third-party
             open-source JavaScript libraries
-            delivered through a public CDN.
+            delivered through public CDN infrastructure.
 
           </p>
 
 
           <p>
 
-            Document processing is implemented
-            locally in the browser and this page
-            does not intentionally upload
-            the selected files to Nanobricks.
+            Document processing itself is implemented
+            locally in the browser and the page
+            does not intentionally upload selected
+            documents to Nanobricks.
 
           </p>
 
 
           <p class="mb-0">
 
-            Avoid processing highly sensitive documents
+            Avoid processing highly sensitive
+            or confidential documents on any web-based tool
             unless permitted by your organization's
             security and data-handling policies.
 
@@ -1243,6 +1666,269 @@
         </div>
 
       </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="pdf-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+      <p>
+        Common questions about the free Nanobricks PDF Tools.
+      </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-9">
+
+        <div class="seo-tool-card">
+
+
+          <div class="faq-item">
+
+            <h3>
+              Are Nanobricks PDF Tools free?
+            </h3>
+
+            <p>
+
+              Yes. The current PDF tools are free to use
+              and do not require a Nanobricks account.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Are my PDF files uploaded to Nanobricks?
+            </h3>
+
+            <p>
+
+              The current version performs its PDF operations
+              using JavaScript in your browser
+              and does not send selected PDF or image files
+              to a Nanobricks backend for document processing.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Can I merge multiple PDF files?
+            </h3>
+
+            <p>
+
+              Yes. Select two or more PDF files
+              using the Merge PDF tool.
+              The selected PDF pages are combined
+              into one new PDF document.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Can I split one PDF into multiple PDFs?
+            </h3>
+
+            <p>
+
+              Yes. The Split PDF tool creates
+              one PDF file for each page
+              and downloads the resulting files
+              together in a ZIP archive.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Can I remove selected pages from a PDF?
+            </h3>
+
+            <p>
+
+              Yes. Enter the page numbers you want to remove
+              and the tool will generate
+              a new PDF containing the remaining pages.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Can I change the order of PDF pages?
+            </h3>
+
+            <p>
+
+              Yes. Enter every page number
+              in the sequence you want,
+              and Nanobricks PDF Tools
+              will generate a reordered PDF.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Can I convert JPG or PNG images to PDF?
+            </h3>
+
+            <p>
+
+              Yes. The Images to PDF tool
+              accepts JPG and PNG images
+              and creates one PDF containing
+              the selected images.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Can I convert PDF pages to images?
+            </h3>
+
+            <p>
+
+              Yes. The PDF to PNG tool
+              renders each PDF page as a PNG image
+              and packages the images
+              into a ZIP file.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Do I need to install software?
+            </h3>
+
+            <p>
+
+              No additional Nanobricks desktop software
+              is required for these PDF tools.
+              They run from a modern web browser
+              with JavaScript enabled.
+
+            </p>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <h3>
+              Are password-protected PDFs supported?
+            </h3>
+
+            <p>
+
+              Password-protected or encrypted PDFs
+              may not work with the current version.
+              Support for encrypted documents
+              is not currently part of this release.
+
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INTERNAL LINKS -->
+
+<section class="pdf-section alt">
+
+  <div class="container text-center">
+
+    <h2 class="fw-bold">
+      Explore More Free Nanobricks Tools
+    </h2>
+
+
+    <p class="text-muted mt-3">
+
+      Nanobricks is building practical technology tools
+      for businesses, IT professionals and everyday users.
+
+    </p>
+
+
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+
+      <a
+        href="/tools/"
+        class="btn btn-outline-success btn-lg">
+
+        <i class="bi bi-grid me-2"></i>
+
+        View All Tools
+
+      </a>
+
+
+      <a
+        href="/tools/endpoint-assessment/"
+        class="btn btn-outline-success btn-lg">
+
+        <i class="bi bi-pc-display me-2"></i>
+
+        Windows Endpoint Assessment
+
+      </a>
 
     </div>
 
@@ -1317,6 +2003,17 @@
 
         </p>
 
+
+        <a
+          href="https://www.linkedin.com/company/nanobricks"
+          target="_blank"
+          rel="noopener"
+          style="color:#fff;font-size:22px;">
+
+          <i class="bi bi-linkedin"></i>
+
+        </a>
+
       </div>
 
 
@@ -1331,42 +2028,56 @@
 
           <li>
             <a href="/"
-               style="color:#ddd;text-decoration:none;">
+               class="footer-link">
               Home
             </a>
           </li>
 
           <li>
             <a href="/tools/"
-               style="color:#ddd;text-decoration:none;">
+               class="footer-link">
               All Tools
             </a>
           </li>
 
           <li>
             <a href="/tools/endpoint-assessment/"
-               style="color:#ddd;text-decoration:none;">
+               class="footer-link">
               Endpoint Assessment
             </a>
           </li>
 
           <li>
             <a href="/tools/pdf/"
-               style="color:#ddd;text-decoration:none;">
-              PDF Tools
+               class="footer-link">
+              Free PDF Tools
+            </a>
+          </li>
+
+          <li>
+            <a href="/company-story/"
+               class="footer-link">
+              Company Story
+            </a>
+          </li>
+
+          <li>
+            <a href="/media/"
+               class="footer-link">
+              Media & Press
             </a>
           </li>
 
           <li>
             <a href="/privacy-policy/"
-               style="color:#ddd;text-decoration:none;">
+               class="footer-link">
               Privacy Policy
             </a>
           </li>
 
           <li>
             <a href="/terms/"
-               style="color:#ddd;text-decoration:none;">
+               class="footer-link">
               Terms of Use
             </a>
           </li>
@@ -1387,7 +2098,7 @@
 
           <a
             href="mailto:info@nanobricks.in"
-            style="color:#ddd;text-decoration:none;">
+            class="footer-link">
 
             info@nanobricks.in
 
@@ -1400,7 +2111,7 @@
 
           <a
             href="tel:+917995720507"
-            style="color:#ddd;text-decoration:none;">
+            class="footer-link">
 
             +91 7995720507
 
@@ -1434,6 +2145,15 @@
   </div>
 
 </footer>
+
+
+<a
+  href="#"
+  class="back-to-top d-flex align-items-center justify-content-center">
+
+  <i class="bi bi-arrow-up-short"></i>
+
+</a>
 
 
 <div class="sticky-cta">
@@ -1487,7 +2207,7 @@
 
     merge: {
       title: 'Merge PDF',
-      description: 'Select two or more PDF files to combine.',
+      description: 'Select two or more PDF files to combine into one PDF.',
       icon: 'bi-files',
       accept: 'application/pdf',
       multiple: true,
@@ -1496,7 +2216,7 @@
 
     split: {
       title: 'Split PDF',
-      description: 'Split one PDF into individual PDF pages.',
+      description: 'Split one PDF into individual PDF page files.',
       icon: 'bi-scissors',
       accept: 'application/pdf',
       multiple: false,
@@ -1513,7 +2233,7 @@
     },
 
     remove: {
-      title: 'Remove Pages',
+      title: 'Remove PDF Pages',
       description: 'Remove selected pages from your PDF.',
       icon: 'bi-trash3',
       accept: 'application/pdf',
@@ -1522,7 +2242,7 @@
     },
 
     reorder: {
-      title: 'Reorder Pages',
+      title: 'Reorder PDF Pages',
       description: 'Create a new PDF using your preferred page order.',
       icon: 'bi-arrow-down-up',
       accept: 'application/pdf',
@@ -1540,12 +2260,12 @@
     },
 
     pdfToImages: {
-      title: 'PDF to Images',
-      description: 'Convert every PDF page into PNG images.',
+      title: 'PDF to PNG',
+      description: 'Convert every PDF page into a PNG image.',
       icon: 'bi-file-image',
       accept: 'application/pdf',
       multiple: false,
-      button: 'Convert to Images'
+      button: 'Convert to PNG'
     }
 
   };
@@ -2019,7 +2739,7 @@
           </select>
 
           <small class="text-muted d-block mt-2">
-            Higher quality creates larger image files.
+            Higher quality creates larger PNG files.
           </small>
 
         </div>
