@@ -1,0 +1,3253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="robots"
+        content="index, follow">
+
+  <title>
+    Free PDF Tools | Merge, Split, Rotate & Convert PDFs | Nanobricks
+  </title>
+
+  <meta name="description"
+        content="Free browser-based PDF tools from Nanobricks. Merge PDFs, split PDFs, rotate pages, remove pages, reorder pages, convert images to PDF and PDF pages to images.">
+
+  <link rel="canonical"
+        href="https://www.nanobricks.in/tools/pdf/">
+
+  <meta property="og:title"
+        content="Free PDF Tools | Nanobricks">
+
+  <meta property="og:description"
+        content="Free browser-based PDF utilities for merging, splitting, rotating, reorganizing and converting PDF files.">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/tools/pdf/">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:image"
+        content="https://www.nanobricks.in/assets/img/nano-log.png">
+
+  <link href="/assets/img/nano-log.png"
+        rel="icon">
+
+  <link href="/assets/img/nano-log.png"
+        rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700|Raleway:500,600,700,800"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <link
+    href="/assets/css/style.css"
+    rel="stylesheet">
+
+
+  <!-- Google Analytics -->
+
+  <script async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MSKW1ESHK7">
+  </script>
+
+  <script>
+
+    window.dataLayer =
+      window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag(
+      'config',
+      'G-MSKW1ESHK7'
+    );
+
+  </script>
+
+
+  <style>
+
+    body {
+      background: #ffffff;
+      color: #25372b;
+    }
+
+
+    .pdf-hero {
+      padding: 145px 0 85px;
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(47,169,58,.10),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          #f4fbf5 0%,
+          #ffffff 100%
+        );
+    }
+
+
+    .pdf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #eaf7ec;
+      color: #1f6f2b;
+      padding: 8px 15px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+
+    .pdf-hero h1 {
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 1.12;
+      color: #25372b;
+      max-width: 900px;
+      margin: auto;
+    }
+
+
+    .pdf-hero .lead {
+      max-width: 780px;
+      margin: 22px auto 0;
+      color: #647168;
+      font-size: 19px;
+      line-height: 1.75;
+    }
+
+
+    .privacy-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 28px;
+      margin-top: 28px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #56645b;
+    }
+
+
+    .privacy-strip span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+
+    .privacy-strip i {
+      color: #2fa93a;
+    }
+
+
+    .pdf-section {
+      padding: 80px 0;
+    }
+
+
+    .pdf-section.alt {
+      background: #f8faf9;
+    }
+
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+
+    .section-title h2 {
+      font-weight: 800;
+      color: #25372b;
+    }
+
+
+    .section-title p {
+      color: #647168;
+      max-width: 760px;
+      margin: 12px auto 0;
+      line-height: 1.7;
+    }
+
+
+    .tool-card {
+      background: #ffffff;
+      border: 1px solid #e5ebe6;
+      border-radius: 16px;
+      padding: 28px;
+      height: 100%;
+      cursor: pointer;
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,.035);
+    }
+
+
+    .tool-card:hover {
+      transform: translateY(-4px);
+      border-color: #b9dabe;
+      box-shadow: 0 14px 32px rgba(0,0,0,.07);
+    }
+
+
+    .tool-card.active {
+      border: 2px solid #2fa93a;
+      background: #f7fcf7;
+    }
+
+
+    .tool-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #eaf7ec;
+      color: #249432;
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+
+    .tool-card h4 {
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 10px;
+    }
+
+
+    .tool-card p {
+      color: #647168;
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+
+
+    .workspace {
+      background: #ffffff;
+      border: 1px solid #e5ebe6;
+      border-radius: 20px;
+      padding: 38px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.055);
+    }
+
+
+    .workspace-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+
+    .workspace-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: #eaf7ec;
+      color: #229331;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      flex-shrink: 0;
+    }
+
+
+    .workspace-header h3 {
+      margin: 0;
+      color: #25372b;
+      font-weight: 800;
+    }
+
+
+    .workspace-header p {
+      color: #647168;
+      margin: 4px 0 0;
+    }
+
+
+    .upload-area {
+      border: 2px dashed #bfd4c2;
+      border-radius: 16px;
+      padding: 42px 25px;
+      text-align: center;
+      background: #fafcfb;
+      transition:
+        border-color .2s ease,
+        background .2s ease;
+    }
+
+
+    .upload-area:hover,
+    .upload-area.dragging {
+      border-color: #2fa93a;
+      background: #f2faf3;
+    }
+
+
+    .upload-area i {
+      font-size: 44px;
+      color: #2fa93a;
+    }
+
+
+    .upload-area h5 {
+      font-weight: 700;
+      margin-top: 14px;
+      color: #25372b;
+    }
+
+
+    .upload-area p {
+      color: #738078;
+      margin-bottom: 18px;
+    }
+
+
+    .file-list {
+      margin-top: 20px;
+    }
+
+
+    .file-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid #e5ebe6;
+      background: #fafcfb;
+      padding: 13px 15px;
+      border-radius: 10px;
+      margin-bottom: 9px;
+    }
+
+
+    .file-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+    }
+
+
+    .file-info i {
+      color: #d84b4b;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+
+    .file-info span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+
+    .file-size {
+      color: #8a948e;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+
+    .options-box {
+      margin-top: 24px;
+      padding: 22px;
+      background: #f8faf9;
+      border: 1px solid #e5ebe6;
+      border-radius: 13px;
+    }
+
+
+    .options-box label {
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 7px;
+    }
+
+
+    .form-control,
+    .form-select {
+      border-color: #dce4de;
+      padding: 11px 13px;
+    }
+
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: #2fa93a;
+      box-shadow: 0 0 0 .2rem rgba(47,169,58,.12);
+    }
+
+
+    .process-btn {
+      min-width: 190px;
+      padding: 12px 24px;
+      font-weight: 700;
+    }
+
+
+    .status-box {
+      display: none;
+      margin-top: 22px;
+      padding: 15px 18px;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+
+
+    .status-box.info {
+      display: block;
+      background: #edf6ff;
+      color: #245d89;
+      border: 1px solid #cde5f7;
+    }
+
+
+    .status-box.success {
+      display: block;
+      background: #eaf8ed;
+      color: #1c7130;
+      border: 1px solid #c9e8cf;
+    }
+
+
+    .status-box.error {
+      display: block;
+      background: #fff0f0;
+      color: #a52727;
+      border: 1px solid #f1cccc;
+    }
+
+
+    .privacy-box {
+      background: #eff9f1;
+      border-left: 4px solid #2fa93a;
+      padding: 28px;
+      border-radius: 12px;
+      height: 100%;
+    }
+
+
+    .privacy-box h3 {
+      font-weight: 800;
+      color: #25372b;
+    }
+
+
+    .privacy-feature {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+
+    .privacy-feature i {
+      color: #2fa93a;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+
+    .privacy-feature strong {
+      display: block;
+      color: #25372b;
+    }
+
+
+    .privacy-feature p {
+      color: #647168;
+      margin: 3px 0 0;
+      line-height: 1.6;
+    }
+
+
+    .notice-box {
+      background: #fff9e8;
+      border-left: 4px solid #e0a000;
+      padding: 23px;
+      border-radius: 10px;
+      color: #66561a;
+    }
+
+
+    .cta-section {
+      background: #1f6f2b;
+      color: #ffffff;
+      padding: 75px 0;
+    }
+
+
+    .cta-section h2 {
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+
+    .cta-section p {
+      color: rgba(255,255,255,.88);
+      max-width: 720px;
+      margin: 12px auto 0;
+      font-size: 18px;
+    }
+
+
+    .sticky-cta {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+    }
+
+
+    .sticky-cta a {
+      padding: 10px 17px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 5px 18px rgba(0,0,0,.15);
+    }
+
+
+    .cta-wa {
+      background: #25D366;
+      color: #ffffff;
+    }
+
+
+    @media (max-width: 768px) {
+
+      .pdf-hero {
+        padding: 120px 0 65px;
+      }
+
+      .pdf-hero h1 {
+        font-size: 36px;
+      }
+
+      .pdf-section {
+        padding: 60px 0;
+      }
+
+      .workspace {
+        padding: 24px 18px;
+      }
+
+      .upload-area {
+        padding: 32px 16px;
+      }
+
+      .sticky-cta {
+        right: 12px;
+        bottom: 12px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header id="header"
+        class="fixed-top d-flex align-items-center">
+
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+
+      <a href="/">
+
+        <img
+          src="/assets/img/nano-log.png"
+          alt="Nanobricks"
+          height="40">
+
+      </a>
+
+    </div>
+
+
+    <nav id="navbar"
+         class="navbar">
+
+      <ul>
+
+        <li>
+          <a href="/">
+            Home
+          </a>
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/#services">
+
+            <span>
+              Services
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/services/managed-it/">
+                Managed IT & AMC
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-services/">
+                Cloud Services
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-security/">
+                Cloud Security
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/devops-automation/">
+                DevOps & Automation
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cybersecurity/">
+                Cybersecurity
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/web-software/">
+                Web & Software
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/tools/"
+             class="active">
+
+            <span>
+              Tools
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/tools/">
+                All Tools
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/endpoint-assessment/">
+                Endpoint Assessment
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/pdf/">
+                PDF Tools
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li>
+          <a href="/#about">
+            About
+          </a>
+        </li>
+
+
+        <li>
+          <a href="/academy/">
+            Academy
+          </a>
+        </li>
+
+
+        <li>
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<section class="pdf-hero">
+
+  <div class="container text-center">
+
+    <div class="pdf-badge">
+
+      <i class="bi bi-file-earmark-pdf"></i>
+
+      Free Browser-Based PDF Utilities
+
+    </div>
+
+
+    <h1>
+      Simple PDF Tools.
+      No Complicated Software.
+    </h1>
+
+
+    <p class="lead">
+
+      Merge, split, rotate, reorganize and convert PDF files
+      directly from your browser using the free
+      Nanobricks PDF Tools.
+
+    </p>
+
+
+    <a
+      href="#pdf-tools"
+      class="btn btn-success btn-lg mt-4">
+
+      <i class="bi bi-tools me-2"></i>
+
+      Use PDF Tools
+
+    </a>
+
+
+    <div class="privacy-strip">
+
+      <span>
+        <i class="bi bi-check-circle-fill"></i>
+        Free to use
+      </span>
+
+      <span>
+        <i class="bi bi-laptop"></i>
+        Browser-based processing
+      </span>
+
+      <span>
+        <i class="bi bi-cloud-slash"></i>
+        No Nanobricks upload server
+      </span>
+
+      <span>
+        <i class="bi bi-person-x"></i>
+        No account required
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<main id="main">
+
+
+<section class="pdf-section"
+         id="pdf-tools">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Choose a PDF Tool
+      </h2>
+
+      <p>
+        Select what you want to do.
+        Your processing workspace will appear below.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="tool-card"
+             data-tool="merge">
+
+          <div class="tool-icon">
+            <i class="bi bi-files"></i>
+          </div>
+
+          <h4>
+            Merge PDF
+          </h4>
+
+          <p>
+            Combine multiple PDF files
+            into one document.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="tool-card"
+             data-tool="split">
+
+          <div class="tool-icon">
+            <i class="bi bi-scissors"></i>
+          </div>
+
+          <h4>
+            Split PDF
+          </h4>
+
+          <p>
+            Split a PDF into
+            individual page files.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="tool-card"
+             data-tool="rotate">
+
+          <div class="tool-icon">
+            <i class="bi bi-arrow-clockwise"></i>
+          </div>
+
+          <h4>
+            Rotate PDF
+          </h4>
+
+          <p>
+            Rotate all pages
+            by 90°, 180° or 270°.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="tool-card"
+             data-tool="remove">
+
+          <div class="tool-icon">
+            <i class="bi bi-trash3"></i>
+          </div>
+
+          <h4>
+            Remove Pages
+          </h4>
+
+          <p>
+            Remove selected pages
+            from a PDF.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="tool-card"
+             data-tool="reorder">
+
+          <div class="tool-icon">
+            <i class="bi bi-arrow-down-up"></i>
+          </div>
+
+          <h4>
+            Reorder Pages
+          </h4>
+
+          <p>
+            Create a PDF using
+            your preferred page order.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="tool-card"
+             data-tool="imagesToPdf">
+
+          <div class="tool-icon">
+            <i class="bi bi-images"></i>
+          </div>
+
+          <h4>
+            Images to PDF
+          </h4>
+
+          <p>
+            Convert JPG and PNG images
+            into one PDF.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="tool-card"
+             data-tool="pdfToImages">
+
+          <div class="tool-icon">
+            <i class="bi bi-file-image"></i>
+          </div>
+
+          <h4>
+            PDF to Images
+          </h4>
+
+          <p>
+            Convert every PDF page
+            into PNG images.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="pdf-section alt">
+
+  <div class="container">
+
+    <div class="workspace">
+
+      <div class="workspace-header">
+
+        <div class="workspace-icon">
+
+          <i id="workspaceIcon"
+             class="bi bi-files"></i>
+
+        </div>
+
+
+        <div>
+
+          <h3 id="workspaceTitle">
+            Merge PDF
+          </h3>
+
+          <p id="workspaceDescription">
+            Select two or more PDF files to combine.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="upload-area"
+           id="uploadArea">
+
+        <i class="bi bi-cloud-arrow-up"></i>
+
+        <h5 id="uploadTitle">
+          Choose PDF files
+        </h5>
+
+        <p id="uploadHelp">
+          Select files from your computer.
+        </p>
+
+
+        <button
+          type="button"
+          class="btn btn-success"
+          id="chooseFilesBtn">
+
+          <i class="bi bi-folder2-open me-2"></i>
+
+          Choose Files
+
+        </button>
+
+
+        <input
+          type="file"
+          id="fileInput"
+          accept="application/pdf"
+          multiple
+          hidden>
+
+      </div>
+
+
+      <div id="fileList"
+           class="file-list">
+      </div>
+
+
+      <div id="toolOptions">
+      </div>
+
+
+      <div class="d-flex flex-wrap gap-2 mt-4">
+
+        <button
+          type="button"
+          id="processBtn"
+          class="btn btn-success process-btn">
+
+          <i class="bi bi-gear me-2"></i>
+
+          Merge PDFs
+
+        </button>
+
+
+        <button
+          type="button"
+          id="clearBtn"
+          class="btn btn-outline-secondary">
+
+          <i class="bi bi-x-circle me-2"></i>
+
+          Clear
+
+        </button>
+
+      </div>
+
+
+      <div id="statusBox"
+           class="status-box">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="pdf-section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-7">
+
+        <div class="privacy-box">
+
+          <h3>
+
+            <i class="bi bi-shield-lock me-2"></i>
+
+            Privacy-First Processing
+
+          </h3>
+
+
+          <div class="privacy-feature">
+
+            <i class="bi bi-laptop"></i>
+
+            <div>
+
+              <strong>
+                Processing happens in your browser
+              </strong>
+
+              <p>
+                PDF operations are performed
+                using JavaScript running
+                in your web browser.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="privacy-feature">
+
+            <i class="bi bi-cloud-slash"></i>
+
+            <div>
+
+              <strong>
+                No Nanobricks document upload server
+              </strong>
+
+              <p>
+                This version does not send your selected
+                PDF or image files to a Nanobricks backend
+                for document processing.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="privacy-feature">
+
+            <i class="bi bi-person-x"></i>
+
+            <div>
+
+              <strong>
+                No account required
+              </strong>
+
+              <p>
+                No Nanobricks account is required
+                to use these PDF tools.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5">
+
+        <div class="notice-box h-100">
+
+          <h4 class="fw-bold">
+
+            <i class="bi bi-info-circle me-2"></i>
+
+            Important
+
+          </h4>
+
+
+          <p>
+
+            This version uses third-party
+            open-source JavaScript libraries
+            delivered through a public CDN.
+
+          </p>
+
+
+          <p>
+
+            Document processing is implemented
+            locally in the browser and this page
+            does not intentionally upload
+            the selected files to Nanobricks.
+
+          </p>
+
+
+          <p class="mb-0">
+
+            Avoid processing highly sensitive documents
+            unless permitted by your organization's
+            security and data-handling policies.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cta-section">
+
+  <div class="container text-center">
+
+    <h2>
+      Need Business IT Help?
+    </h2>
+
+
+    <p>
+
+      Nanobricks provides Managed IT,
+      Cloud, Cybersecurity,
+      endpoint assessment
+      and technology consulting
+      for growing businesses.
+
+    </p>
+
+
+    <a
+      href="https://wa.me/917995720507?text=Hi%20Nanobricks%2C%20I%20would%20like%20to%20discuss%20an%20IT%20requirement."
+      target="_blank"
+      rel="noopener"
+      class="btn btn-light btn-lg mt-4">
+
+      <i class="bi bi-whatsapp me-2"></i>
+
+      Talk to Nanobricks
+
+    </a>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<footer id="footer"
+        style="background:#111827;color:#fff;padding:60px 0 20px;">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-4">
+
+        <h3 style="color:#fff;">
+          Nanobricks
+        </h3>
+
+        <p style="color:#ddd;">
+
+          Technology services for growing businesses,
+          including Managed IT,
+          Cloud,
+          Cybersecurity,
+          DevOps,
+          Software Solutions
+          and IT Consulting.
+
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <h4 style="color:#fff;">
+          Quick Links
+        </h4>
+
+
+        <ul style="list-style:none;padding-left:0;line-height:2;">
+
+          <li>
+            <a href="/"
+               style="color:#ddd;text-decoration:none;">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="/tools/"
+               style="color:#ddd;text-decoration:none;">
+              All Tools
+            </a>
+          </li>
+
+          <li>
+            <a href="/tools/endpoint-assessment/"
+               style="color:#ddd;text-decoration:none;">
+              Endpoint Assessment
+            </a>
+          </li>
+
+          <li>
+            <a href="/tools/pdf/"
+               style="color:#ddd;text-decoration:none;">
+              PDF Tools
+            </a>
+          </li>
+
+          <li>
+            <a href="/privacy-policy/"
+               style="color:#ddd;text-decoration:none;">
+              Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a href="/terms/"
+               style="color:#ddd;text-decoration:none;">
+              Terms of Use
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <h4 style="color:#fff;">
+          Contact
+        </h4>
+
+
+        <p>
+
+          <a
+            href="mailto:info@nanobricks.in"
+            style="color:#ddd;text-decoration:none;">
+
+            info@nanobricks.in
+
+          </a>
+
+        </p>
+
+
+        <p>
+
+          <a
+            href="tel:+917995720507"
+            style="color:#ddd;text-decoration:none;">
+
+            +91 7995720507
+
+          </a>
+
+        </p>
+
+
+        <p style="color:#ddd;">
+          Hyderabad, Telangana, India
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <hr style="border-color:#374151;margin:40px 0 20px;">
+
+
+    <div class="text-center">
+
+      <p style="color:#999;margin-bottom:0;">
+
+        © 2026 Nanobricks. All Rights Reserved.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<div class="sticky-cta">
+
+  <a
+    href="https://wa.me/917995720507?text=Hi%20Nanobricks%2C%20I%20am%20interested%20in%20your%20IT%20services."
+    target="_blank"
+    rel="noopener"
+    class="cta-wa">
+
+    <i class="bi bi-whatsapp"></i>
+
+    WhatsApp
+
+  </a>
+
+</div>
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script
+  src="/assets/js/main.js">
+</script>
+
+
+<script type="module">
+
+  import {
+    PDFDocument,
+    degrees
+  } from 'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/+esm';
+
+
+  import JSZip
+  from 'https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm';
+
+
+  import * as pdfjsLib
+  from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@6.5.438/build/pdf.mjs';
+
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    'https://cdn.jsdelivr.net/npm/pdfjs-dist@6.5.438/build/pdf.worker.mjs';
+
+
+  const tools = {
+
+    merge: {
+      title: 'Merge PDF',
+      description: 'Select two or more PDF files to combine.',
+      icon: 'bi-files',
+      accept: 'application/pdf',
+      multiple: true,
+      button: 'Merge PDFs'
+    },
+
+    split: {
+      title: 'Split PDF',
+      description: 'Split one PDF into individual PDF pages.',
+      icon: 'bi-scissors',
+      accept: 'application/pdf',
+      multiple: false,
+      button: 'Split PDF'
+    },
+
+    rotate: {
+      title: 'Rotate PDF',
+      description: 'Rotate all pages in a PDF.',
+      icon: 'bi-arrow-clockwise',
+      accept: 'application/pdf',
+      multiple: false,
+      button: 'Rotate PDF'
+    },
+
+    remove: {
+      title: 'Remove Pages',
+      description: 'Remove selected pages from your PDF.',
+      icon: 'bi-trash3',
+      accept: 'application/pdf',
+      multiple: false,
+      button: 'Remove Pages'
+    },
+
+    reorder: {
+      title: 'Reorder Pages',
+      description: 'Create a new PDF using your preferred page order.',
+      icon: 'bi-arrow-down-up',
+      accept: 'application/pdf',
+      multiple: false,
+      button: 'Reorder Pages'
+    },
+
+    imagesToPdf: {
+      title: 'Images to PDF',
+      description: 'Convert JPG or PNG images into one PDF.',
+      icon: 'bi-images',
+      accept: 'image/jpeg,image/png',
+      multiple: true,
+      button: 'Create PDF'
+    },
+
+    pdfToImages: {
+      title: 'PDF to Images',
+      description: 'Convert every PDF page into PNG images.',
+      icon: 'bi-file-image',
+      accept: 'application/pdf',
+      multiple: false,
+      button: 'Convert to Images'
+    }
+
+  };
+
+
+  let currentTool = 'merge';
+
+  let selectedFiles = [];
+
+
+  const toolCards =
+    document.querySelectorAll(
+      '.tool-card[data-tool]'
+    );
+
+  const fileInput =
+    document.getElementById(
+      'fileInput'
+    );
+
+  const chooseFilesBtn =
+    document.getElementById(
+      'chooseFilesBtn'
+    );
+
+  const uploadArea =
+    document.getElementById(
+      'uploadArea'
+    );
+
+  const fileList =
+    document.getElementById(
+      'fileList'
+    );
+
+  const workspaceTitle =
+    document.getElementById(
+      'workspaceTitle'
+    );
+
+  const workspaceDescription =
+    document.getElementById(
+      'workspaceDescription'
+    );
+
+  const workspaceIcon =
+    document.getElementById(
+      'workspaceIcon'
+    );
+
+  const uploadTitle =
+    document.getElementById(
+      'uploadTitle'
+    );
+
+  const uploadHelp =
+    document.getElementById(
+      'uploadHelp'
+    );
+
+  const processBtn =
+    document.getElementById(
+      'processBtn'
+    );
+
+  const clearBtn =
+    document.getElementById(
+      'clearBtn'
+    );
+
+  const toolOptions =
+    document.getElementById(
+      'toolOptions'
+    );
+
+  const statusBox =
+    document.getElementById(
+      'statusBox'
+    );
+
+
+  function formatBytes(bytes) {
+
+    if (bytes === 0) {
+      return '0 Bytes';
+    }
+
+    const units = [
+      'Bytes',
+      'KB',
+      'MB',
+      'GB'
+    ];
+
+    const index =
+      Math.floor(
+        Math.log(bytes) /
+        Math.log(1024)
+      );
+
+    return (
+      parseFloat(
+        (
+          bytes /
+          Math.pow(1024, index)
+        ).toFixed(2)
+      ) +
+      ' ' +
+      units[index]
+    );
+
+  }
+
+
+  function setStatus(
+    message,
+    type = 'info'
+  ) {
+
+    statusBox.className =
+      'status-box ' + type;
+
+    statusBox.textContent =
+      message;
+
+  }
+
+
+  function clearStatus() {
+
+    statusBox.className =
+      'status-box';
+
+    statusBox.textContent =
+      '';
+
+  }
+
+
+  function downloadBlob(
+    blob,
+    filename
+  ) {
+
+    const url =
+      URL.createObjectURL(blob);
+
+    const link =
+      document.createElement('a');
+
+    link.href =
+      url;
+
+    link.download =
+      filename;
+
+    document.body.appendChild(
+      link
+    );
+
+    link.click();
+
+    link.remove();
+
+    setTimeout(
+      () =>
+        URL.revokeObjectURL(url),
+      5000
+    );
+
+  }
+
+
+  function downloadBytes(
+    bytes,
+    filename,
+    mime = 'application/pdf'
+  ) {
+
+    const blob =
+      new Blob(
+        [bytes],
+        {
+          type: mime
+        }
+      );
+
+    downloadBlob(
+      blob,
+      filename
+    );
+
+  }
+
+
+  function renderFiles() {
+
+    fileList.innerHTML =
+      '';
+
+
+    selectedFiles.forEach(
+      (file, index) => {
+
+        const item =
+          document.createElement(
+            'div'
+          );
+
+        item.className =
+          'file-item';
+
+
+        const info =
+          document.createElement(
+            'div'
+          );
+
+        info.className =
+          'file-info';
+
+
+        const icon =
+          document.createElement(
+            'i'
+          );
+
+        icon.className =
+          file.type.startsWith(
+            'image/'
+          )
+            ? 'bi bi-image'
+            : 'bi bi-file-earmark-pdf';
+
+
+        const name =
+          document.createElement(
+            'span'
+          );
+
+        name.textContent =
+          file.name;
+
+
+        info.appendChild(
+          icon
+        );
+
+        info.appendChild(
+          name
+        );
+
+
+        const right =
+          document.createElement(
+            'div'
+          );
+
+        right.className =
+          'd-flex align-items-center gap-2';
+
+
+        const size =
+          document.createElement(
+            'span'
+          );
+
+        size.className =
+          'file-size';
+
+        size.textContent =
+          formatBytes(
+            file.size
+          );
+
+
+        const removeButton =
+          document.createElement(
+            'button'
+          );
+
+        removeButton.type =
+          'button';
+
+        removeButton.className =
+          'btn btn-sm btn-outline-danger';
+
+        removeButton.innerHTML =
+          '<i class="bi bi-x"></i>';
+
+
+        removeButton.addEventListener(
+          'click',
+          () => {
+
+            selectedFiles.splice(
+              index,
+              1
+            );
+
+            renderFiles();
+
+            clearStatus();
+
+          }
+        );
+
+
+        right.appendChild(
+          size
+        );
+
+        right.appendChild(
+          removeButton
+        );
+
+
+        item.appendChild(
+          info
+        );
+
+        item.appendChild(
+          right
+        );
+
+        fileList.appendChild(
+          item
+        );
+
+      }
+    );
+
+  }
+
+
+  function renderOptions() {
+
+    toolOptions.innerHTML =
+      '';
+
+
+    if (
+      currentTool ===
+      'rotate'
+    ) {
+
+      toolOptions.innerHTML = `
+
+        <div class="options-box">
+
+          <label for="rotationAngle">
+            Rotation
+          </label>
+
+          <select
+            id="rotationAngle"
+            class="form-select">
+
+            <option value="90">
+              90° clockwise
+            </option>
+
+            <option value="180">
+              180°
+            </option>
+
+            <option value="270">
+              270° clockwise
+            </option>
+
+          </select>
+
+        </div>
+
+      `;
+
+    }
+
+
+    if (
+      currentTool ===
+      'remove'
+    ) {
+
+      toolOptions.innerHTML = `
+
+        <div class="options-box">
+
+          <label for="removePages">
+            Pages to remove
+          </label>
+
+          <input
+            id="removePages"
+            class="form-control"
+            type="text"
+            placeholder="Example: 2,4,7">
+
+          <small class="text-muted d-block mt-2">
+            Enter page numbers separated by commas.
+          </small>
+
+        </div>
+
+      `;
+
+    }
+
+
+    if (
+      currentTool ===
+      'reorder'
+    ) {
+
+      toolOptions.innerHTML = `
+
+        <div class="options-box">
+
+          <label for="pageOrder">
+            New page order
+          </label>
+
+          <input
+            id="pageOrder"
+            class="form-control"
+            type="text"
+            placeholder="Example: 3,1,2,4">
+
+          <small class="text-muted d-block mt-2">
+            Enter every page number in the order
+            you want them in the new PDF.
+          </small>
+
+        </div>
+
+      `;
+
+    }
+
+
+    if (
+      currentTool ===
+      'pdfToImages'
+    ) {
+
+      toolOptions.innerHTML = `
+
+        <div class="options-box">
+
+          <label for="imageScale">
+            Image quality
+          </label>
+
+          <select
+            id="imageScale"
+            class="form-select">
+
+            <option value="1.5">
+              Standard
+            </option>
+
+            <option value="2"
+                    selected>
+              High
+            </option>
+
+            <option value="3">
+              Very High
+            </option>
+
+          </select>
+
+          <small class="text-muted d-block mt-2">
+            Higher quality creates larger image files.
+          </small>
+
+        </div>
+
+      `;
+
+    }
+
+  }
+
+
+  function activateTool(
+    toolName
+  ) {
+
+    currentTool =
+      toolName;
+
+    selectedFiles =
+      [];
+
+    clearStatus();
+
+    renderFiles();
+
+
+    toolCards.forEach(
+      card => {
+
+        card.classList.toggle(
+          'active',
+          card.dataset.tool ===
+            toolName
+        );
+
+      }
+    );
+
+
+    const config =
+      tools[toolName];
+
+
+    workspaceTitle.textContent =
+      config.title;
+
+    workspaceDescription.textContent =
+      config.description;
+
+    workspaceIcon.className =
+      'bi ' +
+      config.icon;
+
+    processBtn.innerHTML =
+      '<i class="bi bi-gear me-2"></i>' +
+      config.button;
+
+    fileInput.accept =
+      config.accept;
+
+    fileInput.multiple =
+      config.multiple;
+
+
+    if (
+      toolName ===
+      'imagesToPdf'
+    ) {
+
+      uploadTitle.textContent =
+        'Choose JPG or PNG images';
+
+      uploadHelp.textContent =
+        'Images will be placed into the PDF in the selected order.';
+
+    } else if (
+      config.multiple
+    ) {
+
+      uploadTitle.textContent =
+        'Choose PDF files';
+
+      uploadHelp.textContent =
+        'Select two or more PDF files.';
+
+    } else {
+
+      uploadTitle.textContent =
+        'Choose a PDF file';
+
+      uploadHelp.textContent =
+        'Select one PDF from your computer.';
+
+    }
+
+
+    renderOptions();
+
+
+    document
+      .querySelector(
+        '.workspace'
+      )
+      .scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+
+  }
+
+
+  toolCards.forEach(
+    card => {
+
+      card.addEventListener(
+        'click',
+        () => {
+
+          activateTool(
+            card.dataset.tool
+          );
+
+          if (
+            typeof gtag ===
+            'function'
+          ) {
+
+            gtag(
+              'event',
+              'pdf_tool_selected',
+              {
+                tool:
+                  card.dataset.tool
+              }
+            );
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+  chooseFilesBtn.addEventListener(
+    'click',
+    () => {
+
+      fileInput.click();
+
+    }
+  );
+
+
+  fileInput.addEventListener(
+    'change',
+    event => {
+
+      const incoming =
+        Array.from(
+          event.target.files
+        );
+
+
+      if (
+        !tools[currentTool]
+          .multiple
+      ) {
+
+        selectedFiles =
+          incoming.slice(
+            0,
+            1
+          );
+
+      } else {
+
+        selectedFiles =
+          incoming;
+
+      }
+
+
+      renderFiles();
+
+      clearStatus();
+
+      fileInput.value =
+        '';
+
+    }
+  );
+
+
+  uploadArea.addEventListener(
+    'dragover',
+    event => {
+
+      event.preventDefault();
+
+      uploadArea.classList.add(
+        'dragging'
+      );
+
+    }
+  );
+
+
+  uploadArea.addEventListener(
+    'dragleave',
+    () => {
+
+      uploadArea.classList.remove(
+        'dragging'
+      );
+
+    }
+  );
+
+
+  uploadArea.addEventListener(
+    'drop',
+    event => {
+
+      event.preventDefault();
+
+      uploadArea.classList.remove(
+        'dragging'
+      );
+
+
+      let incoming =
+        Array.from(
+          event.dataTransfer.files
+        );
+
+
+      const accept =
+        tools[currentTool]
+          .accept;
+
+
+      if (
+        accept.includes(
+          'pdf'
+        )
+      ) {
+
+        incoming =
+          incoming.filter(
+            file =>
+              file.type ===
+              'application/pdf'
+          );
+
+      } else {
+
+        incoming =
+          incoming.filter(
+            file =>
+              file.type ===
+                'image/jpeg' ||
+              file.type ===
+                'image/png'
+          );
+
+      }
+
+
+      if (
+        !tools[currentTool]
+          .multiple
+      ) {
+
+        incoming =
+          incoming.slice(
+            0,
+            1
+          );
+
+      }
+
+
+      selectedFiles =
+        incoming;
+
+      renderFiles();
+
+      clearStatus();
+
+    }
+  );
+
+
+  clearBtn.addEventListener(
+    'click',
+    () => {
+
+      selectedFiles =
+        [];
+
+      renderFiles();
+
+      clearStatus();
+
+    }
+  );
+
+
+  async function mergePdfs() {
+
+    if (
+      selectedFiles.length <
+      2
+    ) {
+
+      throw new Error(
+        'Please select at least two PDF files.'
+      );
+
+    }
+
+
+    const mergedPdf =
+      await PDFDocument.create();
+
+
+    for (
+      const file
+      of selectedFiles
+    ) {
+
+      const bytes =
+        await file.arrayBuffer();
+
+      const sourcePdf =
+        await PDFDocument.load(
+          bytes
+        );
+
+      const pages =
+        await mergedPdf.copyPages(
+          sourcePdf,
+          sourcePdf.getPageIndices()
+        );
+
+
+      pages.forEach(
+        page =>
+          mergedPdf.addPage(
+            page
+          )
+      );
+
+    }
+
+
+    const output =
+      await mergedPdf.save();
+
+
+    downloadBytes(
+      output,
+      'nanobricks-merged.pdf'
+    );
+
+  }
+
+
+  async function splitPdf() {
+
+    if (
+      selectedFiles.length !==
+      1
+    ) {
+
+      throw new Error(
+        'Please select one PDF file.'
+      );
+
+    }
+
+
+    const bytes =
+      await selectedFiles[0]
+        .arrayBuffer();
+
+    const sourcePdf =
+      await PDFDocument.load(
+        bytes
+      );
+
+    const total =
+      sourcePdf.getPageCount();
+
+
+    const zip =
+      new JSZip();
+
+
+    for (
+      let index = 0;
+      index < total;
+      index++
+    ) {
+
+      const pagePdf =
+        await PDFDocument.create();
+
+      const [page] =
+        await pagePdf.copyPages(
+          sourcePdf,
+          [index]
+        );
+
+      pagePdf.addPage(
+        page
+      );
+
+
+      const output =
+        await pagePdf.save();
+
+
+      zip.file(
+        `page-${index + 1}.pdf`,
+        output
+      );
+
+    }
+
+
+    const zipBlob =
+      await zip.generateAsync({
+        type: 'blob'
+      });
+
+
+    downloadBlob(
+      zipBlob,
+      'nanobricks-split-pages.zip'
+    );
+
+  }
+
+
+  async function rotatePdf() {
+
+    if (
+      selectedFiles.length !==
+      1
+    ) {
+
+      throw new Error(
+        'Please select one PDF file.'
+      );
+
+    }
+
+
+    const rotation =
+      parseInt(
+        document.getElementById(
+          'rotationAngle'
+        ).value,
+        10
+      );
+
+
+    const bytes =
+      await selectedFiles[0]
+        .arrayBuffer();
+
+
+    const pdfDoc =
+      await PDFDocument.load(
+        bytes
+      );
+
+
+    pdfDoc
+      .getPages()
+      .forEach(
+        page => {
+
+          const existing =
+            page.getRotation()
+              .angle;
+
+          page.setRotation(
+            degrees(
+              (
+                existing +
+                rotation
+              ) % 360
+            )
+          );
+
+        }
+      );
+
+
+    const output =
+      await pdfDoc.save();
+
+
+    downloadBytes(
+      output,
+      'nanobricks-rotated.pdf'
+    );
+
+  }
+
+
+  function parsePageNumbers(
+    text
+  ) {
+
+    return text
+      .split(',')
+      .map(
+        value =>
+          parseInt(
+            value.trim(),
+            10
+          )
+      )
+      .filter(
+        value =>
+          Number.isInteger(
+            value
+          )
+      );
+
+  }
+
+
+  async function removePages() {
+
+    if (
+      selectedFiles.length !==
+      1
+    ) {
+
+      throw new Error(
+        'Please select one PDF file.'
+      );
+
+    }
+
+
+    const input =
+      document.getElementById(
+        'removePages'
+      ).value;
+
+
+    const pagesToRemove =
+      parsePageNumbers(
+        input
+      );
+
+
+    if (
+      pagesToRemove.length ===
+      0
+    ) {
+
+      throw new Error(
+        'Enter at least one page number to remove.'
+      );
+
+    }
+
+
+    const bytes =
+      await selectedFiles[0]
+        .arrayBuffer();
+
+    const sourcePdf =
+      await PDFDocument.load(
+        bytes
+      );
+
+    const total =
+      sourcePdf.getPageCount();
+
+
+    const removeSet =
+      new Set(
+        pagesToRemove.map(
+          page =>
+            page - 1
+        )
+      );
+
+
+    for (
+      const index
+      of removeSet
+    ) {
+
+      if (
+        index < 0 ||
+        index >= total
+      ) {
+
+        throw new Error(
+          `Page ${index + 1} does not exist. This PDF has ${total} pages.`
+        );
+
+      }
+
+    }
+
+
+    const keep =
+      sourcePdf
+        .getPageIndices()
+        .filter(
+          index =>
+            !removeSet.has(
+              index
+            )
+        );
+
+
+    if (
+      keep.length === 0
+    ) {
+
+      throw new Error(
+        'You cannot remove every page from the PDF.'
+      );
+
+    }
+
+
+    const outputPdf =
+      await PDFDocument.create();
+
+
+    const copiedPages =
+      await outputPdf.copyPages(
+        sourcePdf,
+        keep
+      );
+
+
+    copiedPages.forEach(
+      page =>
+        outputPdf.addPage(
+          page
+        )
+    );
+
+
+    const output =
+      await outputPdf.save();
+
+
+    downloadBytes(
+      output,
+      'nanobricks-pages-removed.pdf'
+    );
+
+  }
+
+
+  async function reorderPages() {
+
+    if (
+      selectedFiles.length !==
+      1
+    ) {
+
+      throw new Error(
+        'Please select one PDF file.'
+      );
+
+    }
+
+
+    const order =
+      parsePageNumbers(
+        document.getElementById(
+          'pageOrder'
+        ).value
+      );
+
+
+    if (
+      order.length === 0
+    ) {
+
+      throw new Error(
+        'Enter the page order.'
+      );
+
+    }
+
+
+    const bytes =
+      await selectedFiles[0]
+        .arrayBuffer();
+
+    const sourcePdf =
+      await PDFDocument.load(
+        bytes
+      );
+
+    const total =
+      sourcePdf.getPageCount();
+
+
+    if (
+      order.length !==
+      total
+    ) {
+
+      throw new Error(
+        `Please enter all ${total} page numbers exactly once.`
+      );
+
+    }
+
+
+    const unique =
+      new Set(
+        order
+      );
+
+
+    if (
+      unique.size !==
+      total
+    ) {
+
+      throw new Error(
+        'Each page number must appear exactly once.'
+      );
+
+    }
+
+
+    for (
+      const page
+      of order
+    ) {
+
+      if (
+        page < 1 ||
+        page > total
+      ) {
+
+        throw new Error(
+          `Page ${page} does not exist. This PDF has ${total} pages.`
+        );
+
+      }
+
+    }
+
+
+    const indices =
+      order.map(
+        page =>
+          page - 1
+      );
+
+
+    const outputPdf =
+      await PDFDocument.create();
+
+
+    const copiedPages =
+      await outputPdf.copyPages(
+        sourcePdf,
+        indices
+      );
+
+
+    copiedPages.forEach(
+      page =>
+        outputPdf.addPage(
+          page
+        )
+    );
+
+
+    const output =
+      await outputPdf.save();
+
+
+    downloadBytes(
+      output,
+      'nanobricks-reordered.pdf'
+    );
+
+  }
+
+
+  async function imagesToPdf() {
+
+    if (
+      selectedFiles.length ===
+      0
+    ) {
+
+      throw new Error(
+        'Please select at least one JPG or PNG image.'
+      );
+
+    }
+
+
+    const outputPdf =
+      await PDFDocument.create();
+
+
+    for (
+      const file
+      of selectedFiles
+    ) {
+
+      const bytes =
+        await file.arrayBuffer();
+
+
+      let embeddedImage;
+
+
+      if (
+        file.type ===
+        'image/png'
+      ) {
+
+        embeddedImage =
+          await outputPdf.embedPng(
+            bytes
+          );
+
+      } else if (
+        file.type ===
+        'image/jpeg'
+      ) {
+
+        embeddedImage =
+          await outputPdf.embedJpg(
+            bytes
+          );
+
+      } else {
+
+        throw new Error(
+          'Only JPG and PNG images are supported.'
+        );
+
+      }
+
+
+      const dimensions =
+        embeddedImage.scale(
+          1
+        );
+
+
+      const page =
+        outputPdf.addPage([
+          dimensions.width,
+          dimensions.height
+        ]);
+
+
+      page.drawImage(
+        embeddedImage,
+        {
+          x: 0,
+          y: 0,
+          width:
+            dimensions.width,
+          height:
+            dimensions.height
+        }
+      );
+
+    }
+
+
+    const output =
+      await outputPdf.save();
+
+
+    downloadBytes(
+      output,
+      'nanobricks-images.pdf'
+    );
+
+  }
+
+
+  async function canvasToBlob(
+    canvas
+  ) {
+
+    return new Promise(
+      (
+        resolve,
+        reject
+      ) => {
+
+        canvas.toBlob(
+          blob => {
+
+            if (
+              blob
+            ) {
+
+              resolve(
+                blob
+              );
+
+            } else {
+
+              reject(
+                new Error(
+                  'Unable to create image.'
+                )
+              );
+
+            }
+
+          },
+          'image/png'
+        );
+
+      }
+    );
+
+  }
+
+
+  async function pdfToImages() {
+
+    if (
+      selectedFiles.length !==
+      1
+    ) {
+
+      throw new Error(
+        'Please select one PDF file.'
+      );
+
+    }
+
+
+    const scale =
+      parseFloat(
+        document.getElementById(
+          'imageScale'
+        ).value
+      );
+
+
+    const bytes =
+      new Uint8Array(
+        await selectedFiles[0]
+          .arrayBuffer()
+      );
+
+
+    const pdfDocument =
+      await pdfjsLib
+        .getDocument({
+          data: bytes
+        })
+        .promise;
+
+
+    const zip =
+      new JSZip();
+
+
+    for (
+      let number = 1;
+      number <=
+        pdfDocument.numPages;
+      number++
+    ) {
+
+      setStatus(
+        `Rendering page ${number} of ${pdfDocument.numPages}...`,
+        'info'
+      );
+
+
+      const page =
+        await pdfDocument.getPage(
+          number
+        );
+
+
+      const viewport =
+        page.getViewport({
+          scale
+        });
+
+
+      const canvas =
+        document.createElement(
+          'canvas'
+        );
+
+
+      const context =
+        canvas.getContext(
+          '2d'
+        );
+
+
+      canvas.width =
+        Math.ceil(
+          viewport.width
+        );
+
+      canvas.height =
+        Math.ceil(
+          viewport.height
+        );
+
+
+      await page.render({
+        canvasContext:
+          context,
+        viewport
+      }).promise;
+
+
+      const blob =
+        await canvasToBlob(
+          canvas
+        );
+
+
+      zip.file(
+        `page-${number}.png`,
+        blob
+      );
+
+    }
+
+
+    setStatus(
+      'Preparing ZIP download...',
+      'info'
+    );
+
+
+    const zipBlob =
+      await zip.generateAsync({
+        type: 'blob'
+      });
+
+
+    downloadBlob(
+      zipBlob,
+      'nanobricks-pdf-images.zip'
+    );
+
+  }
+
+
+  async function processCurrentTool() {
+
+    processBtn.disabled =
+      true;
+
+
+    const originalButton =
+      processBtn.innerHTML;
+
+
+    processBtn.innerHTML =
+      '<span class="spinner-border spinner-border-sm me-2"></span>Processing...';
+
+
+    setStatus(
+      'Processing your file locally in the browser...',
+      'info'
+    );
+
+
+    try {
+
+      if (
+        currentTool ===
+        'merge'
+      ) {
+
+        await mergePdfs();
+
+      } else if (
+        currentTool ===
+        'split'
+      ) {
+
+        await splitPdf();
+
+      } else if (
+        currentTool ===
+        'rotate'
+      ) {
+
+        await rotatePdf();
+
+      } else if (
+        currentTool ===
+        'remove'
+      ) {
+
+        await removePages();
+
+      } else if (
+        currentTool ===
+        'reorder'
+      ) {
+
+        await reorderPages();
+
+      } else if (
+        currentTool ===
+        'imagesToPdf'
+      ) {
+
+        await imagesToPdf();
+
+      } else if (
+        currentTool ===
+        'pdfToImages'
+      ) {
+
+        await pdfToImages();
+
+      }
+
+
+      setStatus(
+        'Done. Your processed file has been prepared for download.',
+        'success'
+      );
+
+
+      if (
+        typeof gtag ===
+        'function'
+      ) {
+
+        gtag(
+          'event',
+          'pdf_tool_completed',
+          {
+            tool:
+              currentTool
+          }
+        );
+
+      }
+
+    } catch (
+      error
+    ) {
+
+      console.error(
+        error
+      );
+
+
+      let message =
+        error.message ||
+        'Unable to process the file.';
+
+
+      if (
+        message
+          .toLowerCase()
+          .includes(
+            'encrypted'
+          )
+      ) {
+
+        message =
+          'This PDF appears to be password-protected or encrypted. Password-protected PDFs are not supported in this version.';
+
+      }
+
+
+      setStatus(
+        message,
+        'error'
+      );
+
+    } finally {
+
+      processBtn.disabled =
+        false;
+
+      processBtn.innerHTML =
+        originalButton;
+
+    }
+
+  }
+
+
+  processBtn.addEventListener(
+    'click',
+    processCurrentTool
+  );
+
+
+  activateTool(
+    'merge'
+  );
+
+</script>
+
+
+</body>
+
+</html>
