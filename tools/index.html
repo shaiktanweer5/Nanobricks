@@ -13,64 +13,63 @@
   </title>
 
   <meta name="description"
-        content="Explore free technology tools from Nanobricks including Windows endpoint assessment, security utilities, PDF tools, image tools and cloud security tools.">
+        content="Explore free technology tools from Nanobricks including Windows endpoint assessment, browser-based PDF tools and upcoming image, IT and cloud security utilities.">
 
   <meta name="keywords"
-        content="Nanobricks Tools, Free IT Tools, Windows Endpoint Assessment, Security Tools, Cloud Security Tools, PDF Tools, Image Tools, Technology Utilities">
+        content="Nanobricks Tools, Free IT Tools, Windows Endpoint Assessment, PDF Tools, Cloud Security Tools, Image Tools, Technology Utilities">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/tools/">
 
-  <!-- Favicons -->
   <link href="/assets/img/nano-log.png"
         rel="icon">
 
   <link href="/assets/img/nano-log.png"
         rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
     rel="stylesheet">
 
-  <!-- Bootstrap -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <!-- Main CSS -->
   <link
     href="/assets/css/style.css"
     rel="stylesheet">
 
+
   <!-- Google Analytics -->
+
   <script async
           src="https://www.googletagmanager.com/gtag/js?id=G-MSKW1ESHK7">
   </script>
 
   <script>
 
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer =
+      window.dataLayer || [];
 
     function gtag() {
       dataLayer.push(arguments);
     }
 
     gtag('js', new Date());
-    gtag('config', 'G-MSKW1ESHK7');
+
+    gtag(
+      'config',
+      'G-MSKW1ESHK7'
+    );
 
   </script>
 
-  <style>
 
-    /* =========================
-       TOOLS PAGE
-    ========================= */
+  <style>
 
     #header .logo img {
       max-height: 44px;
@@ -81,6 +80,11 @@
     .tools-hero {
       padding: 150px 0 90px;
       background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(47,169,58,.09),
+          transparent 30%
+        ),
         linear-gradient(
           135deg,
           #f4fbf5 0%,
@@ -92,9 +96,10 @@
 
     .tools-hero h1 {
       font-size: 48px;
-      font-weight: 700;
+      font-weight: 800;
       color: #25372b;
       margin-bottom: 20px;
+      line-height: 1.15;
     }
 
 
@@ -115,7 +120,7 @@
       color: #1f6f2b;
       border: 1px solid #d8eddc;
       border-radius: 50px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 14px;
       margin-bottom: 22px;
     }
@@ -131,21 +136,41 @@
     }
 
 
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+
+    .section-title h2 {
+      font-weight: 800;
+      color: #25372b;
+    }
+
+
+    .section-title p {
+      color: #647168;
+      max-width: 760px;
+      margin: 12px auto 0;
+      line-height: 1.7;
+    }
+
+
     .tools-card {
       background: #ffffff;
       border: 1px solid #e5ece7;
       border-radius: 16px;
       padding: 30px;
       height: 100%;
-      transition: 0.25s ease;
+      transition: .25s ease;
       position: relative;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
     }
 
 
     .tools-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 16px 38px rgba(0,0,0,0.08);
+      box-shadow: 0 16px 38px rgba(0,0,0,.08);
     }
 
 
@@ -255,7 +280,7 @@
 
     .tools-cta h2 {
       color: #ffffff;
-      font-weight: 700;
+      font-weight: 800;
     }
 
 
@@ -290,7 +315,7 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+      box-shadow: 0 5px 18px rgba(0,0,0,.18);
       z-index: 999;
     }
 
@@ -325,17 +350,11 @@
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header id="header"
         class="fixed-top d-flex align-items-center">
 
   <div class="container d-flex align-items-center justify-content-between">
 
-
-    <!-- Logo -->
 
     <div class="logo">
 
@@ -351,15 +370,11 @@
     </div>
 
 
-    <!-- Navigation -->
-
     <nav id="navbar"
          class="navbar">
 
       <ul>
 
-
-        <!-- Home -->
 
         <li>
 
@@ -370,11 +385,9 @@
         </li>
 
 
-        <!-- Services -->
-
         <li class="dropdown">
 
-          <a href="#">
+          <a href="/#services">
 
             <span>
               Services
@@ -428,8 +441,6 @@
         </li>
 
 
-        <!-- Tools -->
-
         <li class="dropdown">
 
           <a class="active"
@@ -447,43 +458,39 @@
           <ul>
 
             <li>
+              <a href="/tools/">
+                All Tools
+              </a>
+            </li>
 
+            <li>
               <a href="/tools/endpoint-assessment/">
                 Endpoint Assessment
               </a>
-
             </li>
 
             <li>
-
-              <a href="/tools/#pdf-tools">
+              <a href="/tools/pdf/">
                 PDF Tools
               </a>
-
             </li>
 
             <li>
-
               <a href="/tools/#image-tools">
                 Image Tools
               </a>
-
             </li>
 
             <li>
-
               <a href="/tools/#cloud-security-tools">
                 Cloud Security Tools
               </a>
-
             </li>
 
           </ul>
 
         </li>
 
-
-        <!-- About -->
 
         <li>
 
@@ -494,8 +501,6 @@
         </li>
 
 
-        <!-- Academy -->
-
         <li>
 
           <a href="/academy/">
@@ -504,8 +509,6 @@
 
         </li>
 
-
-        <!-- Contact -->
 
         <li>
 
@@ -516,12 +519,10 @@
         </li>
 
 
-        <!-- CTA -->
-
         <li>
 
           <a class="getstarted"
-             href="/#enquiry">
+             href="/#contact">
 
             Talk to Us
 
@@ -540,10 +541,6 @@
 
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
 
 <section class="tools-hero">
 
@@ -573,8 +570,8 @@
 
           A growing collection of lightweight tools designed
           to help businesses, IT teams, professionals and
-          technology users assess, understand and improve
-          their technology environments.
+          everyday users complete common technology tasks
+          simply and efficiently.
 
         </p>
 
@@ -618,10 +615,6 @@
 <main id="main">
 
 
-<!-- =========================
-     TOOLS
-========================= -->
-
 <section id="tools"
          class="tools-section tools-section-alt">
 
@@ -636,7 +629,7 @@
 
       <p>
 
-        Simple utilities focused on practical IT,
+        Free utilities focused on practical IT,
         productivity and security requirements.
 
       </p>
@@ -672,11 +665,11 @@
 
           <p>
 
-            Assess Windows endpoint configuration,
+            Review Windows endpoint configuration,
             operating system information, memory,
-            disk health, Defender, firewall,
-            Windows Update, Microsoft Office and
-            local account settings.
+            disk capacity, Microsoft Defender,
+            Firewall, Windows Update,
+            Microsoft Office and local accounts.
 
           </p>
 
@@ -702,8 +695,8 @@
 
         <div class="tools-card">
 
-          <span class="status-badge status-soon">
-            Coming Soon
+          <span class="status-badge status-live">
+            Available Now
           </span>
 
 
@@ -715,23 +708,28 @@
 
 
           <h3>
-            PDF Tools
+            Free PDF Tools
           </h3>
 
 
           <p>
 
-            Useful browser-based utilities for
-            common PDF tasks with a focus on
-            simple workflows and privacy-friendly
-            processing where possible.
+            Merge, split, rotate, remove and reorder
+            PDF pages, convert JPG or PNG images to PDF,
+            and convert PDF pages to PNG images
+            directly in your browser.
 
           </p>
 
 
-          <span class="text-muted fw-semibold">
-            In Development
-          </span>
+          <a href="/tools/pdf/"
+             class="tools-link">
+
+            Open PDF Tools
+
+            <i class="bi bi-arrow-right"></i>
+
+          </a>
 
         </div>
 
@@ -765,9 +763,8 @@
           <p>
 
             Lightweight utilities for common
-            image conversion, optimization and
-            resizing tasks directly from the
-            Nanobricks tools platform.
+            image conversion, optimization,
+            resizing and related image tasks.
 
           </p>
 
@@ -808,9 +805,9 @@
           <p>
 
             Practical cloud security utilities
-            designed around configuration review,
-            security posture awareness and
-            common cloud security checks.
+            focused on configuration review,
+            security posture awareness
+            and common cloud security checks.
 
           </p>
 
@@ -849,9 +846,9 @@
 
           <p>
 
-            Small tools for system administration,
-            infrastructure, troubleshooting and
-            everyday IT operations.
+            Small utilities for system administration,
+            networking, infrastructure,
+            troubleshooting and everyday IT operations.
 
           </p>
 
@@ -890,10 +887,9 @@
 
           <p>
 
-            Nanobricks Tools will continue to
-            expand with practical utilities based
-            on common technology and business
-            requirements.
+            Nanobricks Tools will continue to expand
+            with practical utilities based on common
+            technology and business requirements.
 
           </p>
 
@@ -913,10 +909,6 @@
 
 </section>
 
-
-<!-- =========================
-     WHY NANOBRICKS TOOLS
-========================= -->
 
 <section class="tools-section">
 
@@ -1017,10 +1009,6 @@
 </section>
 
 
-<!-- =========================
-     CTA
-========================= -->
-
 <section class="tools-cta">
 
   <div class="container text-center">
@@ -1053,10 +1041,6 @@
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer id="footer"
         style="background:#111827;color:#fff;padding:60px 0 20px;">
 
@@ -1064,8 +1048,6 @@
 
     <div class="row gy-4">
 
-
-      <!-- Nanobricks -->
 
       <div class="col-lg-4 col-md-6">
 
@@ -1078,8 +1060,8 @@
 
           Technology services for growing businesses,
           including Managed IT, Cloud, Cybersecurity,
-          DevOps, Software Solutions and practical
-          technology tools.
+          DevOps, Software Solutions
+          and practical technology tools.
 
         </p>
 
@@ -1096,8 +1078,6 @@
 
       </div>
 
-
-      <!-- Quick Links -->
 
       <div class="col-lg-4 col-md-6">
 
@@ -1158,6 +1138,18 @@
 
           <li>
 
+            <a href="/tools/pdf/"
+               class="footer-link">
+
+              PDF Tools
+
+            </a>
+
+          </li>
+
+
+          <li>
+
             <a href="/academy/"
                class="footer-link">
 
@@ -1183,8 +1175,6 @@
 
       </div>
 
-
-      <!-- Contact -->
 
       <div class="col-lg-4 col-md-6">
 
@@ -1273,8 +1263,6 @@
 </footer>
 
 
-<!-- Back to top -->
-
 <a href="#"
    class="back-to-top d-flex align-items-center justify-content-center">
 
@@ -1282,8 +1270,6 @@
 
 </a>
 
-
-<!-- WhatsApp -->
 
 <a
   href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20technology%20services"
@@ -1297,14 +1283,10 @@
 </a>
 
 
-<!-- Bootstrap JS -->
-
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
 
-
-<!-- Main JS -->
 
 <script src="/assets/js/main.js"></script>
 
