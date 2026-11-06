@@ -7,21 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
 
-  <title>
-    Nanobricks Media & Press Kit | Company Information
-  </title>
+  <title>Nanobricks Media & Press Kit | Company Information</title>
 
   <meta name="description"
-        content="Official Nanobricks media and press resources including company information, company profile, technology services, Windows Endpoint Assessment V3.0.1 and media contact details.">
+        content="Official Nanobricks media and press resources including company information, technology services, company profile, technology tools and media contact details.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/media/">
 
-  <link href="/assets/img/nano-log.png"
-        rel="icon">
+  <meta property="og:title"
+        content="Nanobricks Media & Press Kit">
 
-  <link href="/assets/img/nano-log.png"
-        rel="apple-touch-icon">
+  <meta property="og:description"
+        content="Official company information, technology services, company resources and media contact details for Nanobricks.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/media/">
+
+  <meta property="og:image"
+        content="https://www.nanobricks.in/assets/img/nano-log.png">
+
+  <link href="/assets/img/nano-log.png" rel="icon">
+  <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
@@ -35,10 +45,8 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <link
-    href="/assets/css/style.css"
-    rel="stylesheet">
-
+  <link href="/assets/css/style.css"
+        rel="stylesheet">
 
   <style>
 
@@ -48,22 +56,54 @@
     }
 
     .media-hero {
-      padding: 150px 0 90px;
-      background: linear-gradient(135deg, #f4fbf5 0%, #ffffff 100%);
+      margin-top: 72px;
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
+      border-bottom: 1px solid #e7ece9;
+    }
+
+    .media-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #2fa93a;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 18px;
     }
 
     .media-hero h1 {
       font-size: 48px;
-      font-weight: 800;
-      color: #1f6f2b;
-      line-height: 1.15;
+      font-weight: 700;
+      color: #25372b;
+      line-height: 1.18;
+      margin-bottom: 18px;
     }
 
     .media-hero p {
-      font-size: 19px;
-      line-height: 1.8;
       color: #647168;
-      max-width: 760px;
+      font-size: 19px;
+      line-height: 1.75;
+      max-width: 800px;
+    }
+
+    .hero-logo-box {
+      width: 220px;
+      height: 220px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 60px rgba(0,0,0,.08);
+      padding: 28px;
+    }
+
+    .hero-logo-box img {
+      max-width: 100%;
+      height: auto;
     }
 
     .media-section {
@@ -74,71 +114,90 @@
       background: #f8faf9;
     }
 
-    .media-section h2 {
-      font-weight: 800;
-      color: #25372b;
-      margin-bottom: 22px;
+    .media-content {
+      max-width: 920px;
+      margin: auto;
     }
 
-    .media-section p {
+    .media-content p {
       color: #647168;
       line-height: 1.8;
       font-size: 17px;
     }
 
-    .media-card {
+    .media-card,
+    .fact-card,
+    .resource-card {
       background: #ffffff;
       border: 1px solid #e6ece7;
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 30px;
       height: 100%;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+      transition: .25s ease;
     }
 
-    .media-card i {
-      font-size: 34px;
+    .media-card:hover,
+    .resource-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,.07);
+    }
+
+    .media-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #eff9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .media-icon i {
       color: #2fa93a;
-      margin-bottom: 15px;
-      display: inline-block;
+      font-size: 26px;
     }
 
-    .media-card h4 {
+    .media-card h3,
+    .resource-card h3 {
+      font-size: 20px;
       font-weight: 700;
       color: #25372b;
+      margin-bottom: 12px;
     }
 
-    .media-card p {
-      font-size: 15px;
+    .media-card p,
+    .resource-card p,
+    .fact-card p {
+      color: #647168;
+      line-height: 1.7;
       margin-bottom: 0;
     }
 
     .fact-card {
-      background: #ffffff;
-      border: 1px solid #e6ece7;
-      border-radius: 14px;
-      padding: 24px;
-      height: 100%;
+      padding: 25px;
     }
 
-    .fact-card h5 {
-      font-weight: 700;
+    .fact-card h4 {
       color: #25372b;
-    }
-
-    .resource-card {
-      background: #ffffff;
-      border: 1px solid #e6ece7;
-      border-radius: 16px;
-      padding: 28px;
-      height: 100%;
-    }
-
-    .resource-card h4 {
+      font-size: 16px;
       font-weight: 700;
+      margin-bottom: 10px;
     }
 
-    .resource-card p {
-      font-size: 15px;
+    .quote-box {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-left: 4px solid #2fa93a;
+      border-radius: 0 14px 14px 0;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      color: #25372b;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.7;
     }
 
     .contact-box {
@@ -148,37 +207,180 @@
       padding: 40px;
     }
 
-    .contact-box h2,
+    .contact-box h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
     .contact-box p {
+      color: rgba(255,255,255,.9);
+      line-height: 1.75;
+    }
+
+    .media-cta {
+      background: #1f6f2b;
+      color: #ffffff;
+      padding: 80px 0;
+    }
+
+    .media-cta h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .media-cta p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+
+    /* PREMIUM FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      background: #1f6f2b;
+      border-color: #1f6f2b;
       color: #ffffff;
     }
 
-    .contact-box p {
-      opacity: .92;
+    .footer-heading {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 4px 0 17px;
     }
 
-    .quote-box {
-      border-left: 4px solid #2fa93a;
-      padding: 20px 24px;
-      background: #f8faf9;
-      border-radius: 0 12px 12px 0;
-      font-size: 18px;
-      line-height: 1.7;
-      color: #25372b;
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
     }
 
-    @media (max-width: 768px) {
+    .footer-links-grid a,
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
-      .media-hero {
-        padding: 120px 0 70px;
-      }
+    .footer-links-grid a:hover,
+    .footer-contact-item a:hover {
+      color: #ffffff;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-item i {
+      color: #49c354;
+    }
+
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer-whatsapp:hover {
+      background: #25D366;
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media(max-width:768px) {
 
       .media-hero h1 {
-        font-size: 36px;
+        font-size: 34px;
       }
 
-      .media-section {
-        padding: 60px 0;
+      .media-hero p {
+        font-size: 17px;
+      }
+
+      .hero-logo-box {
+        width: 160px;
+        height: 160px;
+      }
+
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
       }
 
     }
@@ -187,11 +389,8 @@
 
 </head>
 
-
 <body>
 
-
-<!-- HEADER -->
 
 <header id="header"
         class="fixed-top d-flex align-items-center">
@@ -202,10 +401,9 @@
 
       <a href="/">
 
-        <img
-          src="/assets/img/nano-log.png"
-          alt="Nanobricks"
-          height="40">
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
 
       </a>
 
@@ -218,22 +416,141 @@
       <ul>
 
         <li>
-          <a href="/">
-            Home
-          </a>
+          <a href="/">Home</a>
         </li>
 
-        <li>
+
+        <li class="dropdown">
+
           <a href="/#services">
-            Services
+
+            <span>Services</span>
+            <i class="bi bi-chevron-down"></i>
+
           </a>
+
+          <ul>
+
+            <li>
+              <a href="/services/managed-it/">
+                Managed IT & AMC
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/business-it-setup/">
+                Business IT Setup
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-services/">
+                Cloud Services
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-security/">
+                Cloud Security
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/devops-automation/">
+                DevOps & Automation
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cybersecurity/">
+                Cybersecurity
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/web-software/">
+                Web & Software
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/backup-continuity/">
+                Backup & Continuity
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/it-consulting/">
+                IT Consulting
+              </a>
+            </li>
+
+          </ul>
+
         </li>
 
-        <li>
+
+        <li class="dropdown">
+
           <a href="/tools/">
-            Tools
+
+            <span>Tools</span>
+            <i class="bi bi-chevron-down"></i>
+
           </a>
+
+          <ul>
+
+            <li>
+              <a href="/tools/">
+                All Tools
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/endpoint-assessment/">
+                Endpoint Assessment
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/pdf/">
+                PDF Tools
+              </a>
+            </li>
+
+          </ul>
+
         </li>
+
+
+        <li class="dropdown">
+
+          <a href="/case-studies/">
+
+            <span>Case Studies</span>
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/case-studies/">
+                All Case Studies
+              </a>
+            </li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
 
         <li>
           <a href="/#about">
@@ -241,18 +558,13 @@
           </a>
         </li>
 
+
         <li>
           <a href="/company-story/">
             Company Story
           </a>
         </li>
 
-        <li>
-          <a class="active"
-             href="/media/">
-            Media
-          </a>
-        </li>
 
         <li>
           <a href="/academy/">
@@ -260,10 +572,23 @@
           </a>
         </li>
 
+
         <li>
           <a href="/#contact">
             Contact
           </a>
+        </li>
+
+
+        <li>
+
+          <a class="getstarted"
+             href="/#it-assessment">
+
+            Request IT Assessment
+
+          </a>
+
         </li>
 
       </ul>
@@ -277,53 +602,48 @@
 </header>
 
 
-<main>
-
-
-<!-- HERO -->
-
 <section class="media-hero">
 
   <div class="container">
 
-    <div class="row gy-4 align-items-center">
+    <div class="row align-items-center gy-4">
 
       <div class="col-lg-8">
 
-        <p style="font-weight:700;color:#2fa93a;margin-bottom:12px;">
-          MEDIA & PRESS
-        </p>
+        <div class="media-label">
+
+          <i class="bi bi-newspaper"></i>
+          Media & Press
+
+        </div>
 
         <h1>
           Nanobricks Media & Press Kit
         </h1>
 
-        <p class="mt-4">
+        <p>
 
           Official company information, media resources,
-          technology updates and downloadable material for
-          journalists, partners, collaborators and organizations
-          interested in Nanobricks.
+          technology updates and downloadable material for journalists,
+          organizations, collaborators and others interested in Nanobricks.
 
         </p>
 
 
-        <div class="mt-4">
+        <div class="d-flex flex-wrap gap-3 mt-4">
 
-          <a
-            href="/assets/docs/Nanobricks-Company-Profile.pdf"
-            class="btn btn-success btn-lg me-2"
-            target="_blank"
-            rel="noopener">
+          <a href="/assets/docs/Nanobricks-Company-Profile.pdf"
+             class="btn btn-success btn-lg"
+             target="_blank"
+             rel="noopener">
 
             <i class="bi bi-file-earmark-pdf me-2"></i>
-            Download Company Profile
+            Company Profile
 
           </a>
 
-          <a
-            href="/company-story/"
-            class="btn btn-outline-success btn-lg">
+          <a href="/company-story/"
+             class="btn btn-outline-dark btn-lg">
 
             Read Our Story
 
@@ -336,11 +656,12 @@
 
       <div class="col-lg-4 text-center">
 
-        <img
-          src="/assets/img/nano-log.png"
-          alt="Nanobricks IT Solutions"
-          class="img-fluid"
-          style="max-width:260px;">
+        <div class="hero-logo-box">
+
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks">
+
+        </div>
 
       </div>
 
@@ -351,48 +672,47 @@
 </section>
 
 
-<!-- COMPANY OVERVIEW -->
+<main>
+
 
 <section class="media-section">
 
   <div class="container">
 
-    <div class="row justify-content-center">
+    <div class="media-content">
 
-      <div class="col-lg-9">
+      <div class="section-title">
 
         <h2>
           About Nanobricks
         </h2>
 
-        <p>
-
-          Nanobricks IT Solutions is a Hyderabad-based technology
-          services company helping small and growing businesses
-          build, secure, modernize and manage their technology
-          environments.
-
-        </p>
-
-        <p>
-
-          Our services span Managed IT, Cloud Services,
-          Cloud Security, Cybersecurity, DevOps & Automation,
-          Business IT Infrastructure, Microsoft 365,
-          Google Workspace, Web & Software Solutions
-          and IT Consulting.
-
-        </p>
-
-        <p>
-
-          Nanobricks also develops practical technology tools
-          designed to help businesses better understand
-          and improve their IT environments.
-
-        </p>
-
       </div>
+
+      <p>
+
+        Nanobricks is a Hyderabad-based technology services company
+        helping small and growing businesses build, secure, modernize
+        and manage their technology environments.
+
+      </p>
+
+      <p>
+
+        Our services span Managed IT, Business IT Setup,
+        Cloud Services, Cloud Security, Cybersecurity,
+        DevOps & Automation, Backup & Continuity,
+        Web & Software Solutions and IT Consulting.
+
+      </p>
+
+      <p>
+
+        Nanobricks also develops practical technology tools designed
+        to help businesses and users understand, assess and work with
+        technology more effectively.
+
+      </p>
 
     </div>
 
@@ -401,13 +721,11 @@
 </section>
 
 
-<!-- COMPANY FACTS -->
-
 <section class="media-section alt">
 
   <div class="container">
 
-    <div class="text-center mb-5">
+    <div class="section-title">
 
       <h2>
         Company Facts
@@ -420,19 +738,18 @@
     </div>
 
 
-    <div class="row gy-4">
-
+    <div class="row gy-4 justify-content-center">
 
       <div class="col-lg-3 col-md-6">
 
         <div class="fact-card">
 
-          <h5>
+          <h4>
             Company
-          </h5>
+          </h4>
 
           <p>
-            Nanobricks IT Solutions
+            Nanobricks
           </p>
 
         </div>
@@ -444,9 +761,9 @@
 
         <div class="fact-card">
 
-          <h5>
+          <h4>
             Location
-          </h5>
+          </h4>
 
           <p>
             Hyderabad, Telangana, India
@@ -461,12 +778,12 @@
 
         <div class="fact-card">
 
-          <h5>
-            Founded
-          </h5>
+          <h4>
+            Industry
+          </h4>
 
           <p>
-            2022
+            Technology Services & IT Consulting
           </p>
 
         </div>
@@ -478,18 +795,17 @@
 
         <div class="fact-card">
 
-          <h5>
-            Industry
-          </h5>
+          <h4>
+            Website
+          </h4>
 
           <p>
-            IT Services and IT Consulting
+            www.nanobricks.in
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -498,20 +814,18 @@
 </section>
 
 
-<!-- CORE AREAS -->
-
 <section class="media-section">
 
   <div class="container">
 
-    <div class="text-center mb-5">
+    <div class="section-title">
 
       <h2>
-        Core Areas
+        Core Technology Areas
       </h2>
 
       <p>
-        The technology areas Nanobricks focuses on.
+        Technology areas represented across Nanobricks services and solutions.
       </p>
 
     </div>
@@ -519,20 +833,21 @@
 
     <div class="row gy-4">
 
-
       <div class="col-lg-4 col-md-6">
 
         <div class="media-card">
 
-          <i class="bi bi-tools"></i>
+          <div class="media-icon">
+            <i class="bi bi-tools"></i>
+          </div>
 
-          <h4>
+          <h3>
             Managed IT
-          </h4>
+          </h3>
 
           <p>
-            IT operations, endpoint support, patching,
-            backups, business systems and ongoing support.
+            Endpoint support, IT operations, business systems,
+            patching, maintenance and technology support.
           </p>
 
         </div>
@@ -544,16 +859,17 @@
 
         <div class="media-card">
 
-          <i class="bi bi-cloud"></i>
+          <div class="media-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
 
-          <h4>
-            Cloud
-          </h4>
+          <h3>
+            Cloud Services
+          </h3>
 
           <p>
-            Cloud assessment, architecture, migration,
-            operations and optimization across AWS,
-            Microsoft Azure and Google Cloud.
+            Cloud assessment, migration, architecture and operations
+            across AWS, Microsoft Azure and Google Cloud.
           </p>
 
         </div>
@@ -565,16 +881,39 @@
 
         <div class="media-card">
 
-          <i class="bi bi-shield-lock"></i>
+          <div class="media-icon">
+            <i class="bi bi-cloud-lock"></i>
+          </div>
 
-          <h4>
+          <h3>
+            Cloud Security
+          </h3>
+
+          <p>
+            Cloud security posture, IAM, CNAPP/CSPM,
+            configuration review and remediation guidance.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="media-card">
+
+          <div class="media-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+
+          <h3>
             Cybersecurity
-          </h4>
+          </h3>
 
           <p>
-            Security assessments, cloud security,
-            endpoint security, IAM, hardening
-            and remediation support.
+            Security assessments, endpoint security,
+            access reviews, hardening and risk reduction.
           </p>
 
         </div>
@@ -586,15 +925,17 @@
 
         <div class="media-card">
 
-          <i class="bi bi-git"></i>
+          <div class="media-icon">
+            <i class="bi bi-git"></i>
+          </div>
 
-          <h4>
+          <h3>
             DevOps & Automation
-          </h4>
+          </h3>
 
           <p>
-            CI/CD, Terraform, Infrastructure as Code,
-            containers and deployment automation.
+            CI/CD, Infrastructure as Code, Terraform,
+            containers and technology automation.
           </p>
 
         </div>
@@ -606,42 +947,22 @@
 
         <div class="media-card">
 
-          <i class="bi bi-building-gear"></i>
+          <div class="media-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
 
-          <h4>
-            Business IT
-          </h4>
-
-          <p>
-            Microsoft 365, Google Workspace,
-            business IT setup, infrastructure
-            and technology consulting.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="media-card">
-
-          <i class="bi bi-code-slash"></i>
-
-          <h4>
+          <h3>
             Web & Software
-          </h4>
+          </h3>
 
           <p>
-            Business websites, web applications,
-            portals, APIs and workflow automation.
+            Business websites, applications, APIs,
+            portals and workflow automation solutions.
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -650,67 +971,79 @@
 </section>
 
 
-<!-- FEATURED PRODUCT -->
-
 <section class="media-section alt">
 
   <div class="container">
 
-    <div class="row justify-content-center">
+    <div class="section-title">
 
-      <div class="col-lg-10">
+      <h2>
+        Nanobricks Technology Tools
+      </h2>
 
-        <div class="media-card">
+      <p>
+        Practical utilities designed around real technology needs.
+      </p>
 
-          <p style="font-weight:700;color:#2fa93a;">
-            FEATURED RELEASE
-          </p>
+    </div>
 
-          <h2>
-            Nanobricks Windows Endpoint Assessment V3.0.1
-          </h2>
 
-          <p>
+    <div class="row gy-4 justify-content-center">
 
-            Nanobricks Windows Endpoint Assessment is a free
-            Windows utility designed to give businesses and
-            IT teams a simple view of endpoint configuration
-            and basic security posture.
+      <div class="col-lg-5">
 
-          </p>
+        <div class="resource-card">
 
-          <p>
+          <div class="media-icon">
+            <i class="bi bi-pc-display-horizontal"></i>
+          </div>
 
-            The utility reviews Windows version, processor,
-            RAM, disk capacity, Microsoft Defender,
-            real-time protection, Windows Firewall,
-            pending Windows Updates, Microsoft Office,
-            local users and administrator accounts.
-
-          </p>
+          <h3>
+            Windows Endpoint Assessment
+          </h3>
 
           <p>
 
-            Results are presented using a simple
-            <strong>PASS / REVIEW / FAIL</strong> model
-            and the application generates a customer-friendly
-            HTML assessment report.
+            A lightweight Windows endpoint assessment utility
+            for reviewing selected system, security and readiness areas.
 
           </p>
+
+          <a href="/tools/endpoint-assessment/"
+             class="btn btn-outline-success mt-4">
+
+            Explore Endpoint Assessment
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5">
+
+        <div class="resource-card">
+
+          <div class="media-icon">
+            <i class="bi bi-file-earmark-pdf"></i>
+          </div>
+
+          <h3>
+            PDF Tools
+          </h3>
 
           <p>
 
-            The tool is intended as a practical baseline assessment.
-            It is not positioned as a replacement for enterprise
-            vulnerability management, EDR or endpoint management platforms.
+            Browser-based utilities to merge, split, rotate,
+            reorder and convert PDF documents.
 
           </p>
 
-          <a
-            href="/tools/endpoint-assessment/"
-            class="btn btn-success">
+          <a href="/tools/pdf/"
+             class="btn btn-outline-success mt-4">
 
-            View Endpoint Assessment
+            Explore PDF Tools
 
           </a>
 
@@ -720,42 +1053,15 @@
 
     </div>
 
-  </div>
 
-</section>
+    <div class="text-center mt-4">
 
+      <a href="/tools/"
+         class="btn btn-success">
 
-<!-- PRESS BOILERPLATE -->
+        View All Nanobricks Tools
 
-<section class="media-section">
-
-  <div class="container">
-
-    <div class="row justify-content-center">
-
-      <div class="col-lg-9">
-
-        <h2>
-          Press Boilerplate
-        </h2>
-
-        <p>
-          Journalists and partners may use the following short company description:
-        </p>
-
-        <div class="quote-box">
-
-          Nanobricks IT Solutions is a Hyderabad-based technology
-          services company focused on Cloud, Cybersecurity,
-          Managed IT, DevOps and business technology solutions.
-          Nanobricks helps small and growing businesses assess,
-          modernize, secure and manage their IT environments
-          while also developing practical technology tools such
-          as its Windows Endpoint Assessment utility.
-
-        </div>
-
-      </div>
+      </a>
 
     </div>
 
@@ -764,20 +1070,18 @@
 </section>
 
 
-<!-- STORY ANGLES -->
-
-<section class="media-section alt">
+<section class="media-section">
 
   <div class="container">
 
-    <div class="text-center mb-5">
+    <div class="section-title">
 
       <h2>
-        Potential Story Angles
+        Company Resources
       </h2>
 
       <p>
-        Areas that may be relevant for interviews, articles and collaborations.
+        Useful resources for media, organizations and collaborators.
       </p>
 
     </div>
@@ -785,115 +1089,28 @@
 
     <div class="row gy-4">
 
-
       <div class="col-lg-4">
 
         <div class="resource-card">
 
-          <h4>
-            Practical IT for Small Businesses
-          </h4>
+          <div class="media-icon">
+            <i class="bi bi-file-earmark-pdf"></i>
+          </div>
 
-          <p>
-            How growing businesses can improve visibility,
-            security and technology operations without
-            building large internal IT teams.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <div class="resource-card">
-
-          <h4>
-            Building Useful Security Tools
-          </h4>
-
-          <p>
-            The journey from identifying an endpoint
-            assessment problem to releasing a practical
-            Windows assessment utility.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <div class="resource-card">
-
-          <h4>
-            Cloud & Security for Growing Businesses
-          </h4>
-
-          <p>
-            Practical approaches to cloud adoption,
-            identity, endpoint security and infrastructure
-            for small and growing organizations.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- MEDIA RESOURCES -->
-
-<section class="media-section">
-
-  <div class="container">
-
-    <div class="text-center mb-5">
-
-      <h2>
-        Media Resources
-      </h2>
-
-      <p>
-        Official Nanobricks resources available for reference.
-      </p>
-
-    </div>
-
-
-    <div class="row gy-4">
-
-
-      <div class="col-lg-4">
-
-        <div class="resource-card">
-
-          <i class="bi bi-file-earmark-pdf"
-             style="font-size:34px;color:#2fa93a;"></i>
-
-          <h4 class="mt-3">
+          <h3>
             Company Profile
-          </h4>
+          </h3>
 
           <p>
-            Download the official Nanobricks company profile.
+            Download an overview of Nanobricks, our technology services and business focus.
           </p>
 
-          <a
-            href="/assets/docs/Nanobricks-Company-Profile.pdf"
-            class="btn btn-outline-success"
-            target="_blank"
-            rel="noopener">
+          <a href="/assets/docs/Nanobricks-Company-Profile.pdf"
+             target="_blank"
+             rel="noopener"
+             class="btn btn-outline-success mt-4">
 
-            Download PDF
+            Download Profile
 
           </a>
 
@@ -906,22 +1123,22 @@
 
         <div class="resource-card">
 
-          <i class="bi bi-book"
-             style="font-size:34px;color:#2fa93a;"></i>
+          <div class="media-icon">
+            <i class="bi bi-buildings"></i>
+          </div>
 
-          <h4 class="mt-3">
+          <h3>
             Company Story
-          </h4>
+          </h3>
 
           <p>
-            Learn why Nanobricks exists and how we approach technology.
+            Learn why Nanobricks exists, what we do and how we approach practical technology problems.
           </p>
 
-          <a
-            href="/company-story/"
-            class="btn btn-outline-success">
+          <a href="/company-story/"
+             class="btn btn-outline-success mt-4">
 
-            Read Story
+            Read Company Story
 
           </a>
 
@@ -934,31 +1151,28 @@
 
         <div class="resource-card">
 
-          <i class="bi bi-linkedin"
-             style="font-size:34px;color:#2fa93a;"></i>
+          <div class="media-icon">
+            <i class="bi bi-journal-check"></i>
+          </div>
 
-          <h4 class="mt-3">
-            LinkedIn
-          </h4>
+          <h3>
+            Case Studies
+          </h3>
 
           <p>
-            Follow company updates, technology posts and releases.
+            Explore practical examples of technology work delivered by Nanobricks.
           </p>
 
-          <a
-            href="https://www.linkedin.com/company/nanobricks"
-            class="btn btn-outline-success"
-            target="_blank"
-            rel="noopener">
+          <a href="/case-studies/"
+             class="btn btn-outline-success mt-4">
 
-            Visit LinkedIn
+            View Case Studies
 
           </a>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -967,9 +1181,30 @@
 </section>
 
 
-<!-- MEDIA CONTACT -->
-
 <section class="media-section alt">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        How Nanobricks Describes Its Work
+      </h2>
+
+    </div>
+
+    <div class="quote-box">
+
+      “We pay attention to every minute detail to solve the problem.”
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="media-section">
 
   <div class="container">
 
@@ -985,8 +1220,9 @@
 
           <p>
 
-            For interviews, media enquiries, technology collaborations,
-            partnerships or company information, contact Nanobricks.
+            For media enquiries, technology collaborations,
+            business partnerships or company information,
+            contact Nanobricks.
 
           </p>
 
@@ -999,15 +1235,15 @@
 
           <p class="mb-1">
 
-            <strong>Website:</strong>
-            www.nanobricks.in
+            <strong>Location:</strong>
+            Hyderabad, Telangana, India
 
           </p>
 
           <p class="mb-0">
 
-            <strong>Location:</strong>
-            Hyderabad, Telangana, India
+            <strong>Website:</strong>
+            www.nanobricks.in
 
           </p>
 
@@ -1016,11 +1252,9 @@
 
         <div class="col-lg-4 text-lg-end">
 
-          <a
-            href="mailto:info@nanobricks.in?subject=Media%20or%20Partnership%20Enquiry"
-            class="btn btn-light btn-lg">
+          <a href="mailto:info@nanobricks.in"
+             class="btn btn-light btn-lg">
 
-            <i class="bi bi-envelope me-2"></i>
             Contact Nanobricks
 
           </a>
@@ -1036,170 +1270,177 @@
 </section>
 
 
+<section class="media-cta">
+
+  <div class="container text-center">
+
+    <h2>
+      Learn More About Nanobricks
+    </h2>
+
+    <p>
+      Explore our company story, technology services and practical work.
+    </p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+
+      <a href="/company-story/"
+         class="btn btn-light btn-lg">
+
+        Company Story
+
+      </a>
+
+      <a href="/#services"
+         class="btn btn-outline-light btn-lg">
+
+        Explore Services
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 </main>
 
 
-<!-- FOOTER -->
-
 <footer id="footer"
-        style="background:#111827;color:#fff;padding:60px 0 20px;">
+        class="footer-premium">
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="row gy-4 align-items-start">
 
+      <div class="col-lg-4 col-md-6">
 
-      <div class="col-lg-4">
+        <a href="/"
+           class="footer-brand">
 
-        <h3 style="color:#fff;">
-          Nanobricks
-        </h3>
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks"
+               class="footer-logo">
 
-        <p style="color:#ddd;">
+          <span>
+            Nanobricks
+          </span>
 
-          Technology services for growing businesses,
-          including Managed IT, Cloud, Cybersecurity,
-          DevOps, Software Solutions and IT Consulting.
+        </a>
+
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
 
         </p>
 
-        <a
-          href="https://www.linkedin.com/company/nanobricks"
-          target="_blank"
-          rel="noopener"
-          style="color:#fff;font-size:22px;">
+        <div class="footer-social">
 
-          <i class="bi bi-linkedin"></i>
+          <a href="https://www.linkedin.com/company/nanobricks"
+             target="_blank"
+             rel="noopener"
+             aria-label="Nanobricks LinkedIn">
+
+            <i class="bi bi-linkedin"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5 col-md-6">
+
+        <h4 class="footer-heading">
+          Explore
+        </h4>
+
+        <div class="footer-links-grid">
+
+          <a href="/#services">Services</a>
+          <a href="/case-studies/">Case Studies</a>
+
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+
+          <a href="/#it-assessment">IT Assessment</a>
+          <a href="/#contact">Contact</a>
+
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-12">
+
+        <h4 class="footer-heading">
+          Contact
+        </h4>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-geo-alt"></i>
+
+          <span>
+            Hyderabad, Telangana, India
+          </span>
+
+        </div>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507">
+            +91 79957 20507
+          </a>
+
+        </div>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-envelope"></i>
+
+          <a href="mailto:info@nanobricks.in">
+            info@nanobricks.in
+          </a>
+
+        </div>
+
+        <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks"
+           class="footer-whatsapp"
+           target="_blank"
+           rel="noopener">
+
+          <i class="bi bi-whatsapp"></i>
+          WhatsApp
 
         </a>
 
       </div>
 
-
-      <div class="col-lg-4">
-
-        <h4 style="color:#fff;">
-          Quick Links
-        </h4>
-
-        <ul style="list-style:none;padding-left:0;line-height:2;">
-
-          <li>
-            <a href="/"
-               style="color:#ddd;text-decoration:none;">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a href="/#services"
-               style="color:#ddd;text-decoration:none;">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a href="/company-story/"
-               style="color:#ddd;text-decoration:none;">
-              Company Story
-            </a>
-          </li>
-
-          <li>
-            <a href="/media/"
-               style="color:#ddd;text-decoration:none;">
-              Media & Press
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="/assets/docs/Nanobricks-Company-Profile.pdf"
-              target="_blank"
-              rel="noopener"
-              style="color:#ddd;text-decoration:none;">
-
-              Company Profile
-
-            </a>
-          </li>
-
-          <li>
-            <a href="/tools/"
-               style="color:#ddd;text-decoration:none;">
-              Tools
-            </a>
-          </li>
-
-          <li>
-            <a href="/academy/"
-               style="color:#ddd;text-decoration:none;">
-              Academy
-            </a>
-          </li>
-
-          <li>
-            <a href="/#contact"
-               style="color:#ddd;text-decoration:none;">
-              Contact
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <h4 style="color:#fff;">
-          Contact
-        </h4>
-
-        <p>
-          Hyderabad, Telangana, India
-        </p>
-
-        <p>
-
-          <a
-            href="tel:+917995720507"
-            style="color:#ddd;text-decoration:none;">
-
-            +91 7995720507
-
-          </a>
-
-        </p>
-
-        <p>
-
-          <a
-            href="mailto:info@nanobricks.in"
-            style="color:#ddd;text-decoration:none;">
-
-            info@nanobricks.in
-
-          </a>
-
-        </p>
-
-      </div>
-
-
     </div>
 
 
-    <hr style="border-color:#374151;margin:40px 0 20px;">
+    <div class="footer-bottom">
 
-
-    <div class="text-center">
-
-      <p style="color:#999;margin-bottom:0;">
-
+      <span>
         © 2026 Nanobricks. All Rights Reserved.
+      </span>
 
-      </p>
+      <span>
+        Media & Press • Hyderabad, India
+      </span>
 
     </div>
 
@@ -1208,13 +1449,27 @@
 </footer>
 
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
+<a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener">
 
-<script
-  src="/assets/js/main.js">
-</script>
+  <i class="bi bi-whatsapp"></i>
+
+</a>
+
+
+<a href="#"
+   class="back-to-top d-flex align-items-center justify-content-center">
+
+  <i class="bi bi-arrow-up-short"></i>
+
+</a>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="/assets/js/main.js"></script>
 
 
 </body>
