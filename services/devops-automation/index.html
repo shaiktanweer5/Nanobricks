@@ -12,16 +12,25 @@
   </title>
 
   <meta name="description"
-        content="Nanobricks provides DevOps and automation services including CI/CD pipelines, Terraform, Infrastructure as Code, Docker, Kubernetes and cloud deployment automation across AWS, Azure and Google Cloud.">
+        content="Nanobricks provides DevOps and automation services including CI/CD pipelines, Terraform, Infrastructure as Code, Docker, Kubernetes, DevSecOps and cloud deployment automation across AWS, Azure and Google Cloud.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/services/devops-automation/">
 
-  <link href="/assets/img/nano-log.png"
-        rel="icon">
+  <meta property="og:title"
+        content="DevOps & Automation Services | Nanobricks">
 
-  <link href="/assets/img/nano-log.png"
-        rel="apple-touch-icon">
+  <meta property="og:description"
+        content="CI/CD, Terraform, Infrastructure as Code, Docker, Kubernetes, DevSecOps and cloud deployment automation services.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/services/devops-automation/">
+
+  <link href="/assets/img/nano-log.png" rel="icon">
+  <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
@@ -35,9 +44,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <link
-    href="/assets/css/style.css"
-    rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
   <style>
 
@@ -59,7 +66,7 @@
       font-size: 20px;
       color: #647168;
       line-height: 1.7;
-      max-width: 800px;
+      max-width: 820px;
     }
 
     .service-label {
@@ -82,7 +89,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 18px 60px rgba(0,0,0,0.08);
+      box-shadow: 0 18px 60px rgba(0,0,0,.08);
     }
 
     .hero-icon i {
@@ -98,19 +105,36 @@
       background: #f8faf9;
     }
 
-    .service-card {
+    .service-card,
+    .related-card {
       background: #fff;
       border: 1px solid #e6ece7;
       border-radius: 14px;
       padding: 30px;
       height: 100%;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
-      transition: 0.25s;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+      transition: .25s ease;
     }
 
-    .service-card:hover {
+    .service-card:hover,
+    .related-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 16px 35px rgba(0,0,0,0.07);
+      box-shadow: 0 16px 35px rgba(0,0,0,.07);
+    }
+
+    .service-card h3,
+    .related-card h3 {
+      color: #25372b;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .service-card p,
+    .related-card p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
     }
 
     .service-icon {
@@ -129,18 +153,6 @@
       font-size: 26px;
     }
 
-    .service-card h3 {
-      font-size: 20px;
-      font-weight: 700;
-      color: #25372b;
-    }
-
-    .service-card p {
-      color: #647168;
-      line-height: 1.7;
-      margin-bottom: 0;
-    }
-
     .check-list {
       list-style: none;
       padding: 0;
@@ -149,9 +161,10 @@
 
     .check-list li {
       position: relative;
-      padding-left: 28px;
+      padding-left: 30px;
       margin-bottom: 14px;
       color: #647168;
+      line-height: 1.6;
     }
 
     .check-list li::before {
@@ -179,6 +192,7 @@
       border-radius: 14px;
       padding: 28px;
       height: 100%;
+      text-align: center;
     }
 
     .process-card span {
@@ -188,6 +202,7 @@
 
     .process-card h3 {
       margin-top: 10px;
+      color: #25372b;
       font-size: 20px;
       font-weight: 700;
     }
@@ -198,14 +213,65 @@
       margin-bottom: 0;
     }
 
+    .devops-focus-box {
+      background: #fff;
+      border: 1px solid #e6ece7;
+      border-radius: 18px;
+      padding: 38px;
+      box-shadow: 0 12px 36px rgba(0,0,0,.05);
+    }
+
+    .devops-focus-box h2 {
+      color: #25372b;
+      font-weight: 700;
+    }
+
+    .devops-focus-box p {
+      color: #647168;
+      line-height: 1.75;
+    }
+
+    .devops-highlight {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .devops-highlight h4 {
+      color: #25372b;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .devops-highlight p {
+      color: #5e6d63;
+      margin-bottom: 11px;
+    }
+
+    .devops-highlight i {
+      color: #33bc3b;
+      margin-right: 8px;
+    }
+
+    .faq-section .service-card {
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    .faq-section .service-card:hover {
+      transform: none;
+    }
+
     .service-cta {
       background: #1f6f2b;
-      color: white;
+      color: #fff;
       padding: 80px 0;
     }
 
     .service-cta h2 {
-      color: white;
+      color: #fff;
       font-weight: 700;
     }
 
@@ -214,28 +280,134 @@
       font-size: 18px;
     }
 
-    /* FAQ */
-    .faq-section .service-card {
-      height: auto;
-      min-height: 0;
+    /* PREMIUM FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
       margin-bottom: 16px;
     }
 
-    .faq-section .section-title h2 {
-      font-size: 32px;
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
       font-weight: 700;
-      color: #25372b;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      background: #1f6f2b;
+      border-color: #1f6f2b;
+      color: #fff;
+    }
+
+    .footer-heading {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 4px 0 17px;
+    }
+
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a,
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links-grid a:hover,
+    .footer-contact-item a:hover {
+      color: #fff;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
       margin-bottom: 12px;
     }
 
-    .faq-section .section-title p {
-      font-size: 17px;
-      font-weight: 400;
-      color: #647168;
-      margin-bottom: 0;
+    .footer-contact-item i {
+      color: #49c354;
     }
 
-    @media (max-width: 768px) {
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer-whatsapp:hover {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media(max-width:768px) {
 
       .service-hero h1 {
         font-size: 34px;
@@ -250,6 +422,14 @@
         height: 140px;
       }
 
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
     }
 
   </style>
@@ -259,52 +439,38 @@
 <body>
 
 
-<!-- HEADER -->
-
-<header id="header"
-        class="fixed-top d-flex align-items-center">
+<header id="header" class="fixed-top d-flex align-items-center">
 
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
 
       <a href="/">
-
-        <img
-          src="/assets/img/nano-log.png"
-          alt="Nanobricks"
-          height="40">
-
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
       </a>
 
     </div>
 
 
-    <nav id="navbar"
-         class="navbar">
+    <nav id="navbar" class="navbar">
 
       <ul>
 
         <li>
-          <a href="/">
-            Home
-          </a>
+          <a href="/">Home</a>
         </li>
 
 
         <li class="dropdown">
 
-          <a class="active"
-             href="/#services">
+          <a class="active" href="/#services">
 
-            <span>
-              Services
-            </span>
-
+            <span>Services</span>
             <i class="bi bi-chevron-down"></i>
 
           </a>
-
 
           <ul>
 
@@ -327,7 +493,8 @@
             </li>
 
             <li>
-              <a href="/services/devops-automation/">
+              <a class="active"
+                 href="/services/devops-automation/">
                 DevOps & Automation
               </a>
             </li>
@@ -349,26 +516,77 @@
         </li>
 
 
-        <li>
-          <a href="/#industries">
-            Industries
+        <li class="dropdown">
+
+          <a href="/tools/">
+
+            <span>Tools</span>
+            <i class="bi bi-chevron-down"></i>
+
           </a>
+
+          <ul>
+
+            <li>
+              <a href="/tools/">All Tools</a>
+            </li>
+
+            <li>
+              <a href="/tools/endpoint-assessment/">
+                Endpoint Assessment
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/pdf/">
+                PDF Tools
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/case-studies/">
+
+            <span>Case Studies</span>
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/case-studies/">
+                All Case Studies
+              </a>
+            </li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
+              </a>
+            </li>
+
+          </ul>
+
         </li>
 
 
         <li>
-          <a href="/academy/">
-            Academy
-          </a>
+          <a href="/#about">About</a>
         </li>
-
 
         <li>
-          <a href="/#contact">
-            Contact
-          </a>
+          <a href="/academy/">Academy</a>
         </li>
 
+        <li>
+          <a href="/#contact">Contact</a>
+        </li>
 
         <li>
 
@@ -383,7 +601,6 @@
 
       </ul>
 
-
       <i class="bi bi-list mobile-nav-toggle"></i>
 
     </nav>
@@ -393,39 +610,32 @@
 </header>
 
 
-<!-- HERO -->
-
 <section class="service-hero">
 
   <div class="container">
 
     <div class="row align-items-center gy-4">
 
-
       <div class="col-lg-8">
 
         <div class="service-label">
 
           <i class="bi bi-git"></i>
-
           Nanobricks Technology Services
 
         </div>
-
 
         <h1>
           DevOps & Automation
         </h1>
 
-
         <p>
 
-          Improve software delivery, automate infrastructure
-          and build repeatable deployment workflows using CI/CD,
-          Terraform, containers and cloud automation.
+          Improve software delivery, automate infrastructure and build
+          repeatable deployment workflows using CI/CD, Terraform,
+          containers, Kubernetes and cloud automation.
 
         </p>
-
 
         <div class="d-flex flex-wrap gap-3 mt-4">
 
@@ -435,7 +645,6 @@
             Discuss DevOps Requirement
 
           </a>
-
 
           <a href="#devops-services"
              class="btn btn-outline-dark btn-lg">
@@ -452,13 +661,10 @@
       <div class="col-lg-4 text-center">
 
         <div class="hero-icon">
-
           <i class="bi bi-git"></i>
-
         </div>
 
       </div>
-
 
     </div>
 
@@ -469,8 +675,6 @@
 
 <main>
 
-
-<!-- INTRO -->
 
 <section class="service-section">
 
@@ -490,7 +694,6 @@
 
 
     <div class="row gy-4">
-
 
       <div class="col-lg-4">
 
@@ -563,15 +766,12 @@
 
       </div>
 
-
     </div>
 
   </div>
 
 </section>
 
-
-<!-- DEVOPS SERVICES -->
 
 <section id="devops-services"
          class="service-section alt">
@@ -585,14 +785,13 @@
       </h2>
 
       <p>
-        Practical implementation and automation services based on your applications, cloud platforms and workflows.
+        Practical automation based on your applications, cloud platforms and workflows.
       </p>
 
     </div>
 
 
     <div class="row gy-4">
-
 
       <div class="col-lg-4 col-md-6">
 
@@ -607,10 +806,7 @@
           </h3>
 
           <p>
-
-            Repository organization, branching guidance
-            and practical source-control workflows.
-
+            Repository organization, branching guidance and practical source-control workflows.
           </p>
 
         </div>
@@ -631,10 +827,7 @@
           </h3>
 
           <p>
-
-            Automated build, testing and deployment workflows
-            for consistent application delivery.
-
+            Automated build, testing and deployment workflows for consistent application delivery.
           </p>
 
         </div>
@@ -655,10 +848,7 @@
           </h3>
 
           <p>
-
-            Repeatable infrastructure provisioning using
-            Terraform and Infrastructure as Code practices.
-
+            Repeatable infrastructure provisioning using Terraform and Infrastructure as Code practices.
           </p>
 
         </div>
@@ -679,10 +869,7 @@
           </h3>
 
           <p>
-
-            Containerization support for modern
-            application packaging and deployment workflows.
-
+            Containerization support for modern application packaging and deployment workflows.
           </p>
 
         </div>
@@ -703,10 +890,7 @@
           </h3>
 
           <p>
-
-            Kubernetes deployment and configuration assistance
-            based on the agreed technical scope.
-
+            Kubernetes deployment and configuration assistance based on the agreed technical scope.
           </p>
 
         </div>
@@ -727,10 +911,7 @@
           </h3>
 
           <p>
-
-            Automate infrastructure and application deployment
-            workflows across major cloud platforms.
-
+            Automate infrastructure and application deployment workflows across major cloud platforms.
           </p>
 
         </div>
@@ -751,10 +932,7 @@
           </h3>
 
           <p>
-
-            Automate repetitive operational and deployment
-            tasks using practical scripting and tooling.
-
+            Automate repetitive operational and deployment tasks using practical scripting and tooling.
           </p>
 
         </div>
@@ -775,10 +953,7 @@
           </h3>
 
           <p>
-
-            Improve consistency across development,
-            testing and production environments.
-
+            Improve consistency across development, testing and production environments.
           </p>
 
         </div>
@@ -799,16 +974,12 @@
           </h3>
 
           <p>
-
-            Improve access controls, secrets handling
-            and security considerations within delivery workflows.
-
+            Improve access controls, secrets handling and security considerations within delivery workflows.
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -817,14 +988,124 @@
 </section>
 
 
-<!-- WHAT WE AUTOMATE -->
-
 <section class="service-section">
 
   <div class="container">
 
-    <div class="row gy-5 align-items-stretch">
+    <div class="devops-focus-box">
 
+      <div class="row gy-4 align-items-center">
+
+        <div class="col-lg-7">
+
+          <div class="service-label">
+
+            <i class="bi bi-arrow-repeat"></i>
+            Automation First
+
+          </div>
+
+          <h2>
+            Replace Manual Work With Repeatable Workflows
+          </h2>
+
+          <p>
+
+            Manual deployments and infrastructure changes become harder
+            to control as applications and cloud environments grow.
+
+          </p>
+
+          <p>
+
+            Nanobricks can help introduce practical automation through
+            CI/CD pipelines, Infrastructure as Code, containerization
+            and repeatable cloud deployment workflows.
+
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+
+            <a href="/#it-assessment"
+               class="btn btn-success">
+
+              Discuss DevOps Automation
+
+            </a>
+
+            <a href="/services/cloud-security/"
+               class="btn btn-outline-success">
+
+              Explore Cloud Security
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+          <div class="devops-highlight">
+
+            <h4>
+              Automation Areas
+            </h4>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Build & deployment
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              CI/CD pipelines
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Terraform deployments
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Infrastructure provisioning
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Container workflows
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Cloud deployments
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Operational scripting
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="service-section alt">
+
+  <div class="container">
+
+    <div class="row gy-5">
 
       <div class="col-lg-6">
 
@@ -834,40 +1115,16 @@
             What We Can Help Automate
           </h3>
 
-
           <ul class="check-list mt-4">
 
-            <li>
-              Application build and deployment workflows
-            </li>
-
-            <li>
-              Infrastructure provisioning
-            </li>
-
-            <li>
-              Terraform deployments
-            </li>
-
-            <li>
-              Development and test environments
-            </li>
-
-            <li>
-              CI/CD pipeline execution
-            </li>
-
-            <li>
-              Container build and deployment
-            </li>
-
-            <li>
-              Repeatable cloud deployments
-            </li>
-
-            <li>
-              Routine operational tasks
-            </li>
+            <li>Application build and deployment workflows</li>
+            <li>Infrastructure provisioning</li>
+            <li>Terraform deployments</li>
+            <li>Development and test environments</li>
+            <li>CI/CD pipeline execution</li>
+            <li>Container build and deployment</li>
+            <li>Repeatable cloud deployments</li>
+            <li>Routine operational tasks</li>
 
           </ul>
 
@@ -884,43 +1141,21 @@
             Ideal For
           </h3>
 
-
           <ul class="check-list mt-4">
 
-            <li>
-              Startups building their first deployment workflow
-            </li>
-
-            <li>
-              Teams currently deploying applications manually
-            </li>
-
-            <li>
-              Organizations adopting Terraform
-            </li>
-
-            <li>
-              Cloud teams requiring repeatable environments
-            </li>
-
-            <li>
-              Development teams adopting CI/CD
-            </li>
-
-            <li>
-              Businesses modernizing application delivery
-            </li>
-
-            <li>
-              Teams moving workloads to cloud environments
-            </li>
+            <li>Startups building their first deployment workflow</li>
+            <li>Teams currently deploying applications manually</li>
+            <li>Organizations adopting Terraform</li>
+            <li>Cloud teams requiring repeatable environments</li>
+            <li>Development teams adopting CI/CD</li>
+            <li>Businesses modernizing application delivery</li>
+            <li>Teams moving workloads to cloud environments</li>
 
           </ul>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -929,9 +1164,7 @@
 </section>
 
 
-<!-- TECHNOLOGIES -->
-
-<section class="service-section alt">
+<section class="service-section">
 
   <div class="container">
 
@@ -950,76 +1183,45 @@
 
     <div class="row gy-3 justify-content-center">
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          AWS
-        </div>
+        <div class="tech-card">AWS</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Microsoft Azure
-        </div>
+        <div class="tech-card">Microsoft Azure</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Google Cloud
-        </div>
+        <div class="tech-card">Google Cloud</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Terraform
-        </div>
+        <div class="tech-card">Terraform</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Git
-        </div>
+        <div class="tech-card">Git</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          GitHub
-        </div>
+        <div class="tech-card">GitHub</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Docker
-        </div>
+        <div class="tech-card">Docker</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Kubernetes
-        </div>
+        <div class="tech-card">Kubernetes</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          CI/CD
-        </div>
+        <div class="tech-card">CI/CD</div>
       </div>
 
-
       <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Linux
-        </div>
+        <div class="tech-card">Linux</div>
       </div>
-
 
     </div>
 
@@ -1028,9 +1230,7 @@
 </section>
 
 
-<!-- PROCESS -->
-
-<section class="service-section">
+<section class="service-section alt">
 
   <div class="container">
 
@@ -1041,32 +1241,24 @@
       </h2>
 
       <p>
-        Focused on practical automation and repeatable delivery rather than unnecessary complexity.
+        Practical automation and repeatable delivery without unnecessary complexity.
       </p>
 
     </div>
 
 
-    <div class="row gy-4 text-center">
-
+    <div class="row gy-4">
 
       <div class="col-lg-3 col-md-6">
 
         <div class="process-card">
 
-          <span>
-            01
-          </span>
+          <span>01</span>
 
-          <h3>
-            Assess
-          </h3>
+          <h3>Assess</h3>
 
           <p>
-
-            Understand applications, infrastructure,
-            repositories and current deployment workflows.
-
+            Understand applications, infrastructure, repositories and deployment workflows.
           </p>
 
         </div>
@@ -1078,19 +1270,12 @@
 
         <div class="process-card">
 
-          <span>
-            02
-          </span>
+          <span>02</span>
 
-          <h3>
-            Design
-          </h3>
+          <h3>Design</h3>
 
           <p>
-
-            Identify practical automation opportunities
-            and define the appropriate workflow.
-
+            Identify practical automation opportunities and define the appropriate workflow.
           </p>
 
         </div>
@@ -1102,19 +1287,12 @@
 
         <div class="process-card">
 
-          <span>
-            03
-          </span>
+          <span>03</span>
 
-          <h3>
-            Implement
-          </h3>
+          <h3>Implement</h3>
 
           <p>
-
-            Configure pipelines, Infrastructure as Code,
-            containers and automation based on scope.
-
+            Configure pipelines, Infrastructure as Code, containers and automation based on scope.
           </p>
 
         </div>
@@ -1126,25 +1304,17 @@
 
         <div class="process-card">
 
-          <span>
-            04
-          </span>
+          <span>04</span>
 
-          <h3>
-            Improve
-          </h3>
+          <h3>Improve</h3>
 
           <p>
-
-            Review workflows and identify
-            further automation and reliability improvements.
-
+            Review workflows and identify further automation and reliability improvements.
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -1153,9 +1323,7 @@
 </section>
 
 
-<!-- ENGAGEMENT -->
-
-<section class="service-section alt">
+<section class="service-section">
 
   <div class="container">
 
@@ -1174,7 +1342,6 @@
 
     <div class="row gy-4">
 
-
       <div class="col-lg-4">
 
         <div class="service-card">
@@ -1188,10 +1355,7 @@
           </h3>
 
           <p>
-
-            Review repositories, deployment workflows
-            and infrastructure to identify automation opportunities.
-
+            Review repositories, deployment workflows and infrastructure to identify automation opportunities.
           </p>
 
         </div>
@@ -1212,10 +1376,7 @@
           </h3>
 
           <p>
-
-            Build or improve automated pipelines
-            for application build, test and deployment workflows.
-
+            Build or improve automated pipelines for application build, test and deployment workflows.
           </p>
 
         </div>
@@ -1236,16 +1397,12 @@
           </h3>
 
           <p>
-
-            Terraform and Infrastructure as Code support
-            for repeatable cloud infrastructure deployment.
-
+            Terraform and Infrastructure as Code support for repeatable cloud infrastructure deployment.
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -1254,9 +1411,116 @@
 </section>
 
 
-<!-- FAQ -->
+<section class="service-section alt">
 
-<section class="service-section alt faq-section">
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Related Nanobricks Services
+      </h2>
+
+      <p>
+        Connect DevOps automation with cloud infrastructure and security.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
+          <h3>
+            Cloud Services
+          </h3>
+
+          <p>
+            Architecture, migration, operations and cloud infrastructure support.
+          </p>
+
+          <a href="/services/cloud-services/"
+             class="btn btn-outline-success mt-4">
+
+            Explore Cloud Services
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-cloud-lock"></i>
+          </div>
+
+          <h3>
+            Cloud Security
+          </h3>
+
+          <p>
+            Integrate cloud security, IAM, posture and DevSecOps considerations.
+          </p>
+
+          <a href="/services/cloud-security/"
+             class="btn btn-outline-success mt-4">
+
+            Explore Cloud Security
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+
+          <h3>
+            Cybersecurity
+          </h3>
+
+          <p>
+            Broader security assessments, vulnerabilities and security improvement support.
+          </p>
+
+          <a href="/services/cybersecurity/"
+             class="btn btn-outline-success mt-4">
+
+            Explore Cybersecurity
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="service-section faq-section">
 
   <div class="container">
 
@@ -1277,84 +1541,66 @@
 
       <div class="col-lg-9">
 
-
-        <div class="service-card mb-3">
+        <div class="service-card">
 
           <h3>
             What DevOps services does Nanobricks provide?
           </h3>
 
           <p>
-
-            Nanobricks supports CI/CD pipelines, Terraform,
-            Infrastructure as Code, containerization,
-            cloud automation and related DevOps workflows.
-
+            Nanobricks supports CI/CD pipelines, Terraform, Infrastructure as Code, containerization, cloud automation and related DevOps workflows.
           </p>
 
         </div>
 
 
-        <div class="service-card mb-3">
+        <div class="service-card">
 
           <h3>
             Can you build a CI/CD pipeline?
           </h3>
 
           <p>
-
-            Yes. CI/CD workflows can be designed
-            and implemented based on your applications,
-            repositories and deployment requirements.
-
+            Yes. CI/CD workflows can be designed and implemented based on your applications, repositories and deployment requirements.
           </p>
 
         </div>
 
 
-        <div class="service-card mb-3">
+        <div class="service-card">
 
           <h3>
             Do you support Terraform?
           </h3>
 
           <p>
-
-            Yes. Terraform can be used to create repeatable
-            Infrastructure as Code workflows for supported environments.
-
+            Yes. Terraform can be used to create repeatable Infrastructure as Code workflows for supported environments.
           </p>
 
         </div>
 
 
-        <div class="service-card mb-3">
+        <div class="service-card">
 
           <h3>
             Do you work with Docker and Kubernetes?
           </h3>
 
           <p>
-
-            Yes. Containerization and Kubernetes implementation
-            support can be provided based on the agreed technical scope.
-
+            Yes. Containerization and Kubernetes implementation support can be provided based on the agreed technical scope.
           </p>
 
         </div>
 
 
-        <div class="service-card mb-3">
+        <div class="service-card">
 
           <h3>
             Which cloud platforms can you work with?
           </h3>
 
           <p>
-
-            DevOps and infrastructure automation can support
-            AWS, Microsoft Azure and Google Cloud.
-
+            DevOps and infrastructure automation can support AWS, Microsoft Azure and Google Cloud.
           </p>
 
         </div>
@@ -1367,15 +1613,10 @@
           </h3>
 
           <p>
-
-            Pricing depends on application count,
-            infrastructure complexity, pipelines,
-            cloud environments and the level of automation required.
-
+            Pricing depends on application count, infrastructure complexity, pipelines, cloud environments and the level of automation required.
           </p>
 
         </div>
-
 
       </div>
 
@@ -1386,8 +1627,6 @@
 </section>
 
 
-<!-- CTA -->
-
 <section class="service-cta">
 
   <div class="container text-center">
@@ -1397,14 +1636,10 @@
     </h2>
 
     <p>
-
-      Tell us about your applications, cloud environment
-      and current deployment process.
-
+      Tell us about your applications, cloud environment and current deployment process.
     </p>
 
-
-    <div class="d-flex justify-content-center flex-wrap gap-3">
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
 
       <a href="/#it-assessment"
          class="btn btn-light btn-lg">
@@ -1412,7 +1647,6 @@
         Discuss DevOps Automation
 
       </a>
-
 
       <a href="/#enquiry"
          class="btn btn-outline-light btn-lg">
@@ -1431,144 +1665,135 @@
 </main>
 
 
-<!-- FOOTER -->
-
 <footer id="footer"
-        style="background:#111827;color:#fff;padding:60px 0 20px;">
+        class="footer-premium">
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="row gy-4 align-items-start">
 
+      <div class="col-lg-4 col-md-6">
 
-      <div class="col-lg-4">
+        <a href="/"
+           class="footer-brand">
 
-        <h3 style="color:#fff;">
-          Nanobricks
-        </h3>
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks"
+               class="footer-logo">
 
-        <p>
+          <span>
+            Nanobricks
+          </span>
 
-          Technology services for growing businesses,
-          including Managed IT, Cloud, Cybersecurity,
-          DevOps, Software Solutions and Professional Training.
+        </a>
+
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
 
         </p>
 
+        <div class="footer-social">
+
+          <a href="https://www.linkedin.com/company/nanobricks"
+             target="_blank"
+             rel="noopener"
+             aria-label="Nanobricks LinkedIn">
+
+            <i class="bi bi-linkedin"></i>
+
+          </a>
+
+        </div>
+
       </div>
 
 
-      <div class="col-lg-4">
+      <div class="col-lg-5 col-md-6">
 
-        <h4 style="color:#fff;">
-          Quick Links
+        <h4 class="footer-heading">
+          Explore
         </h4>
 
-        <ul style="list-style:none;padding-left:0;line-height:2;">
+        <div class="footer-links-grid">
 
-          <li>
-            <a href="/" style="color:#ddd;">
-              Home
-            </a>
-          </li>
+          <a href="/#services">Services</a>
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+          <a href="/#it-assessment">IT Assessment</a>
+          <a href="/#contact">Contact</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
 
-          <li>
-            <a href="/#services" style="color:#ddd;">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a href="/#industries" style="color:#ddd;">
-              Industries
-            </a>
-          </li>
-
-          <li>
-            <a href="/academy/" style="color:#ddd;">
-              Academy
-            </a>
-          </li>
-
-          <li>
-            <a href="/#contact" style="color:#ddd;">
-              Contact
-            </a>
-          </li>
-
-        </ul>
+        </div>
 
       </div>
 
 
-      <div class="col-lg-4">
+      <div class="col-lg-3 col-md-12">
 
-        <h4 style="color:#fff;">
+        <h4 class="footer-heading">
           Contact
         </h4>
 
-        <p>
+        <div class="footer-contact-item">
 
-          <a href="tel:+917995720507"
-             style="color:#ddd;">
+          <i class="bi bi-geo-alt"></i>
 
-            +91 7995720507
+          <span>
+            Hyderabad, Telangana, India
+          </span>
 
+        </div>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507">
+            +91 79957 20507
           </a>
 
-        </p>
+        </div>
 
-        <p>
+        <div class="footer-contact-item">
 
-          <a href="mailto:info@nanobricks.in"
-             style="color:#ddd;">
+          <i class="bi bi-envelope"></i>
 
+          <a href="mailto:info@nanobricks.in">
             info@nanobricks.in
-
           </a>
 
-        </p>
+        </div>
 
-        <p>
-          Hyderabad, Telangana, India
-        </p>
+        <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20DevOps%20and%20Automation%20services"
+           class="footer-whatsapp"
+           target="_blank"
+           rel="noopener">
 
-        <p>
+          <i class="bi bi-whatsapp"></i>
+          WhatsApp
 
-          <a href="/privacy-policy/"
-             style="color:#ddd;">
-
-            Privacy Policy
-
-          </a>
-
-          &nbsp; • &nbsp;
-
-          <a href="/terms/"
-             style="color:#ddd;">
-
-            Terms of Use
-
-          </a>
-
-        </p>
+        </a>
 
       </div>
-
 
     </div>
 
 
-    <hr style="border-color:#374151;margin:40px 0 20px;">
+    <div class="footer-bottom">
 
-
-    <div class="text-center">
-
-      <p style="color:#999;margin-bottom:0;">
-
+      <span>
         © 2026 Nanobricks. All Rights Reserved.
+      </span>
 
-      </p>
+      <span>
+        DevOps & Automation • Hyderabad, India
+      </span>
 
     </div>
 
@@ -1577,20 +1802,15 @@
 </footer>
 
 
-<!-- WHATSAPP -->
-
-<a
-  href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20DevOps%20and%20Automation%20services"
-  class="whatsapp-float"
-  target="_blank"
-  rel="noopener">
+<a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20DevOps%20and%20Automation%20services"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener">
 
   <i class="bi bi-whatsapp"></i>
 
 </a>
 
-
-<!-- BACK TO TOP -->
 
 <a href="#"
    class="back-to-top d-flex align-items-center justify-content-center">
@@ -1600,14 +1820,8 @@
 </a>
 
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-<script
-  src="/assets/js/main.js">
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 
