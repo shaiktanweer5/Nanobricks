@@ -7,16 +7,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
 
-  <title>Business IT Setup Services | Nanobricks</title>
+  <title>
+    Business IT Setup Services | Nanobricks
+  </title>
 
   <meta name="description"
-        content="Nanobricks provides business IT setup services including laptops, user accounts, business email, Microsoft 365, Google Workspace, cloud setup, networking, backups and security configuration.">
+        content="Nanobricks provides business IT setup services including laptops, desktops, user accounts, Microsoft 365, Google Workspace, cloud setup, networking, backups and security configuration in Hyderabad.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/services/business-it-setup/">
 
-  <link href="/assets/img/nano-log.png" rel="icon">
-  <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
+  <meta property="og:title"
+        content="Business IT Setup Services | Nanobricks">
+
+  <meta property="og:description"
+        content="Practical IT setup services for new offices, startups and growing businesses including devices, business email, cloud, networking, backups and security.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/services/business-it-setup/">
+
+  <link href="/assets/img/nano-log.png"
+        rel="icon">
+
+  <link href="/assets/img/nano-log.png"
+        rel="apple-touch-icon">
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
@@ -30,162 +47,430 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <link href="/assets/css/style.css" rel="stylesheet">
+  <link
+    href="/assets/css/style.css"
+    rel="stylesheet">
 
   <style>
 
     .service-hero {
-      margin-top:72px;
-      padding:100px 0 80px;
-      background:linear-gradient(135deg,#f8fbf8,#f3f8ff);
-      border-bottom:1px solid #e7ece9;
+      margin-top: 72px;
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
+      border-bottom: 1px solid #e7ece9;
     }
 
     .service-hero h1 {
-      font-size:48px;
-      font-weight:700;
-      color:#25372b;
+      font-size: 48px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 18px;
     }
 
     .service-hero p {
-      font-size:20px;
-      color:#647168;
-      line-height:1.7;
-      max-width:800px;
+      font-size: 20px;
+      color: #647168;
+      line-height: 1.7;
+      max-width: 800px;
     }
 
     .service-label {
-      color:#2fa93a;
-      font-weight:700;
-      text-transform:uppercase;
-      font-size:14px;
-      margin-bottom:18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #2fa93a;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 18px;
     }
 
     .hero-icon {
-      width:180px;
-      height:180px;
-      margin:auto;
-      background:#fff;
-      border-radius:30px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow:0 18px 60px rgba(0,0,0,.08);
+      width: 180px;
+      height: 180px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 60px rgba(0,0,0,.08);
     }
 
     .hero-icon i {
-      font-size:75px;
-      color:#33bc3b;
+      font-size: 75px;
+      color: #33bc3b;
     }
 
     .service-section {
-      padding:80px 0;
+      padding: 80px 0;
     }
 
     .service-section.alt {
-      background:#f8faf9;
+      background: #f8faf9;
     }
 
     .service-card {
-      background:#fff;
-      border:1px solid #e6ece7;
-      border-radius:14px;
-      padding:30px;
-      height:100%;
-      box-shadow:0 8px 28px rgba(0,0,0,.04);
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+      transition: .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,.07);
     }
 
     .service-icon {
-      width:52px;
-      height:52px;
-      border-radius:12px;
-      background:#eff9f0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      margin-bottom:20px;
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #eff9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
     .service-icon i {
-      color:#2fa93a;
-      font-size:26px;
+      color: #2fa93a;
+      font-size: 26px;
     }
 
     .service-card h3 {
-      font-size:20px;
-      font-weight:700;
-      color:#25372b;
+      font-size: 20px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 12px;
     }
 
     .service-card p {
-      color:#647168;
-      line-height:1.7;
-      margin-bottom:0;
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
     }
 
     .check-list {
-      list-style:none;
-      padding:0;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
     }
 
     .check-list li {
-      position:relative;
-      padding-left:28px;
-      margin-bottom:14px;
-      color:#647168;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 14px;
+      color: #647168;
+      line-height: 1.6;
+    }
+
+    .check-list li:last-child {
+      margin-bottom: 0;
     }
 
     .check-list li::before {
-      content:"✓";
-      position:absolute;
-      left:0;
-      color:#2fa93a;
-      font-weight:700;
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #2fa93a;
+      font-weight: 700;
     }
 
     .process-card {
-      background:#fff;
-      border:1px solid #e6ece7;
-      border-radius:14px;
-      padding:28px;
-      height:100%;
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 28px;
+      height: 100%;
+      text-align: center;
     }
 
     .process-card span {
-      color:#33bc3b;
-      font-weight:700;
+      color: #33bc3b;
+      font-weight: 700;
+      font-size: 14px;
     }
 
     .process-card h3 {
-      margin-top:10px;
-      font-size:20px;
-      font-weight:700;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #25372b;
+    }
+
+    .process-card p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .case-study-box {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 18px;
+      padding: 38px;
+      box-shadow: 0 12px 36px rgba(0,0,0,.05);
+    }
+
+    .case-study-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #2fa93a;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .4px;
+      margin-bottom: 14px;
+    }
+
+    .case-study-box h2 {
+      color: #25372b;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .case-study-box p {
+      color: #647168;
+      line-height: 1.75;
+    }
+
+    .case-highlight {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 26px;
+      height: 100%;
+    }
+
+    .case-highlight h4 {
+      color: #25372b;
+      font-weight: 700;
+      margin-bottom: 18px;
+      font-size: 18px;
+    }
+
+    .case-highlight p {
+      margin-bottom: 11px;
+      color: #5e6d63;
+    }
+
+    .case-highlight p:last-child {
+      margin-bottom: 0;
+    }
+
+    .case-highlight i {
+      color: #33bc3b;
+      margin-right: 8px;
+    }
+
+    .next-step-box {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-radius: 16px;
+      padding: 32px;
+    }
+
+    .next-step-box h3 {
+      color: #25372b;
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .next-step-box p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 20px;
     }
 
     .service-cta {
-      background:#1f6f2b;
-      color:#fff;
-      padding:80px 0;
+      background: #1f6f2b;
+      color: #ffffff;
+      padding: 80px 0;
     }
 
     .service-cta h2 {
-      color:#fff;
+      color: #ffffff;
+      font-weight: 700;
     }
 
-    .faq-section .service-card {
-      height:auto;
-      margin-bottom:16px;
+    .service-cta p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
     }
 
-    @media(max-width:768px) {
+
+    /* PREMIUM COMPACT FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-brand:hover {
+      color: #ffffff;
+    }
+
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+
+    .footer-social a:hover {
+      background: #1f6f2b;
+      border-color: #1f6f2b;
+      color: #ffffff;
+    }
+
+    .footer-heading {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 4px 0 17px;
+    }
+
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links-grid a:hover {
+      color: #ffffff;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-item i {
+      color: #49c354;
+    }
+
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+    }
+
+    .footer-contact-item a:hover {
+      color: #ffffff;
+    }
+
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer-whatsapp:hover {
+      background: #25D366;
+      border-color: #25D366;
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media (max-width: 768px) {
 
       .service-hero h1 {
-        font-size:34px;
+        font-size: 34px;
       }
 
       .service-hero p {
-        font-size:17px;
+        font-size: 17px;
+      }
+
+      .hero-icon {
+        width: 140px;
+        height: 140px;
+      }
+
+      .case-study-box {
+        padding: 26px;
+      }
+
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 6px;
       }
 
     }
@@ -196,51 +481,198 @@
 
 <body>
 
-<header id="header" class="fixed-top d-flex align-items-center">
+
+<!-- HEADER -->
+
+<header id="header"
+        class="fixed-top d-flex align-items-center">
 
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
+
       <a href="/">
-        <img src="/assets/img/nano-log.png" alt="Nanobricks" height="40">
+
+        <img
+          src="/assets/img/nano-log.png"
+          alt="Nanobricks"
+          height="40">
+
       </a>
+
     </div>
 
-    <nav id="navbar" class="navbar">
+
+    <nav id="navbar"
+         class="navbar">
 
       <ul>
 
-        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/">
+            Home
+          </a>
+        </li>
+
 
         <li class="dropdown">
 
-          <a href="/#services">
-            <span>Services</span>
+          <a class="active"
+             href="/#services">
+
+            <span>
+              Services
+            </span>
+
             <i class="bi bi-chevron-down"></i>
+
           </a>
 
           <ul>
-            <li><a href="/services/managed-it/">Managed IT & AMC</a></li>
-            <li><a href="/services/cloud-services/">Cloud Services</a></li>
-            <li><a href="/services/cloud-security/">Cloud Security</a></li>
-            <li><a href="/services/devops-automation/">DevOps & Automation</a></li>
-            <li><a href="/services/cybersecurity/">Cybersecurity</a></li>
-            <li><a href="/services/web-software/">Web & Software</a></li>
+
+            <li>
+              <a href="/services/managed-it/">
+                Managed IT & AMC
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-services/">
+                Cloud Services
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cloud-security/">
+                Cloud Security
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/devops-automation/">
+                DevOps & Automation
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/cybersecurity/">
+                Cybersecurity
+              </a>
+            </li>
+
+            <li>
+              <a href="/services/web-software/">
+                Web & Software
+              </a>
+            </li>
+
           </ul>
 
         </li>
 
-        <li><a href="/#industries">Industries</a></li>
-        <li><a href="/academy/">Academy</a></li>
-        <li><a href="/#contact">Contact</a></li>
+
+        <li class="dropdown">
+
+          <a href="/tools/">
+
+            <span>
+              Tools
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/tools/">
+                All Tools
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/endpoint-assessment/">
+                Endpoint Assessment
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/pdf/">
+                PDF Tools
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/case-studies/">
+
+            <span>
+              Case Studies
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/case-studies/">
+                All Case Studies
+              </a>
+            </li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
 
         <li>
-          <a class="getstarted" href="/#it-assessment">
-            Request IT Assessment
+          <a href="/#about">
+            About
           </a>
         </li>
 
+
+        <li>
+          <a href="/academy/">
+            Academy
+          </a>
+        </li>
+
+
+        <li>
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+
+
+        <li>
+
+          <a class="getstarted"
+             href="/#it-assessment">
+
+            Request IT Assessment
+
+          </a>
+
+        </li>
+
       </ul>
+
 
       <i class="bi bi-list mobile-nav-toggle"></i>
 
@@ -251,43 +683,73 @@
 </header>
 
 
+<!-- HERO -->
+
 <section class="service-hero">
 
   <div class="container">
 
     <div class="row align-items-center gy-4">
 
+
       <div class="col-lg-8">
 
         <div class="service-label">
+
+          <i class="bi bi-building-gear"></i>
+
           Nanobricks Technology Services
+
         </div>
 
-        <h1>Business IT Setup</h1>
+
+        <h1>
+          Business IT Setup Services
+        </h1>
+
 
         <p>
-          Set up the essential technology your business needs,
-          including devices, user accounts, business email,
-          cloud platforms, networking, backups and security.
+
+          Build a professional technology environment for your
+          new office or growing business with properly configured
+          devices, user accounts, business email, cloud platforms,
+          networking, backups and security.
+
         </p>
 
-        <div class="mt-4">
 
-          <a href="/#it-assessment" class="btn btn-success btn-lg">
+        <div class="d-flex flex-wrap gap-3 mt-4">
+
+          <a href="/#it-assessment"
+             class="btn btn-success btn-lg">
+
             Discuss Your IT Setup
+
+          </a>
+
+
+          <a href="/case-studies/small-business-it-standardization/"
+             class="btn btn-outline-dark btn-lg">
+
+            View Real Project
+
           </a>
 
         </div>
 
       </div>
 
+
       <div class="col-lg-4 text-center">
 
         <div class="hero-icon">
+
           <i class="bi bi-building-gear"></i>
+
         </div>
 
       </div>
+
 
     </div>
 
@@ -298,69 +760,176 @@
 
 <main>
 
+
+<!-- SERVICES -->
+
 <section class="service-section alt">
 
   <div class="container">
 
     <div class="section-title">
 
-      <h2>Business IT Setup Services</h2>
+      <h2>
+        Business IT Setup Services
+      </h2>
 
       <p>
-        Practical technology setup for new and growing businesses.
+        Practical technology setup for new offices, startups and growing businesses.
       </p>
 
     </div>
 
+
     <div class="row gy-4">
 
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-laptop"></i></div>
-          <h3>Devices & User Setup</h3>
-          <p>Business laptops, desktops, user accounts and initial configuration.</p>
-        </div>
-      </div>
 
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-envelope"></i></div>
-          <h3>Business Email</h3>
-          <p>Microsoft 365 or Google Workspace setup and user administration.</p>
+
+          <div class="service-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+
+          <h3>
+            Devices & User Setup
+          </h3>
+
+          <p>
+
+            Business laptops, desktops, user accounts,
+            device naming and initial configuration
+            based on your business requirements.
+
+          </p>
+
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-cloud"></i></div>
-          <h3>Cloud Setup</h3>
-          <p>AWS, Azure or Google Cloud environments based on business requirements.</p>
-        </div>
-      </div>
 
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-router"></i></div>
-          <h3>Network Setup</h3>
-          <p>Internet connectivity, Wi-Fi, basic networking and access configuration.</p>
+
+          <div class="service-icon">
+            <i class="bi bi-envelope"></i>
+          </div>
+
+          <h3>
+            Business Email
+          </h3>
+
+          <p>
+
+            Microsoft 365 or Google Workspace setup,
+            user creation, mailbox configuration
+            and business email administration.
+
+          </p>
+
         </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-database-check"></i></div>
-          <h3>Backup Setup</h3>
-          <p>Backup planning, configuration and recovery readiness.</p>
-        </div>
-      </div>
 
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-shield-check"></i></div>
-          <h3>Security Configuration</h3>
-          <p>MFA, access controls, device security and basic hardening.</p>
+
+          <div class="service-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
+          <h3>
+            Cloud Setup
+          </h3>
+
+          <p>
+
+            AWS, Microsoft Azure or Google Cloud environments
+            designed around the requirements of your business.
+
+          </p>
+
         </div>
+
       </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-router"></i>
+          </div>
+
+          <h3>
+            Network & Wi-Fi Setup
+          </h3>
+
+          <p>
+
+            Internet connectivity, Wi-Fi configuration,
+            local network setup and access configuration
+            for business users and systems.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-database-check"></i>
+          </div>
+
+          <h3>
+            Backup Setup
+          </h3>
+
+          <p>
+
+            Backup planning, configuration and recovery-readiness
+            for important business files and systems.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+
+          <h3>
+            Security Configuration
+          </h3>
+
+          <p>
+
+            MFA, access controls, endpoint security,
+            device hardening and practical baseline
+            security configuration.
+
+          </p>
+
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -368,6 +937,8 @@
 
 </section>
 
+
+<!-- IDEAL FOR -->
 
 <section class="service-section">
 
@@ -375,43 +946,383 @@
 
     <div class="row gy-5">
 
+
       <div class="col-lg-6">
 
         <div class="service-card">
 
-          <h3>Ideal For</h3>
+          <div class="service-icon">
+
+            <i class="bi bi-people"></i>
+
+          </div>
+
+          <h3>
+            Ideal For
+          </h3>
+
 
           <ul class="check-list mt-4">
-            <li>New startups</li>
-            <li>Small and medium businesses</li>
-            <li>New offices</li>
-            <li>Growing teams</li>
-            <li>Businesses moving from personal to professional IT systems</li>
-            <li>Companies adopting cloud and business email platforms</li>
+
+            <li>
+              New startups
+            </li>
+
+            <li>
+              Small and medium businesses
+            </li>
+
+            <li>
+              New offices
+            </li>
+
+            <li>
+              Growing teams
+            </li>
+
+            <li>
+              Businesses moving from personal systems to professional IT environments
+            </li>
+
+            <li>
+              Companies adopting cloud and business email platforms
+            </li>
+
           </ul>
 
         </div>
 
       </div>
 
+
       <div class="col-lg-6">
 
         <div class="service-card">
 
-          <h3>What We Can Help Set Up</h3>
+          <div class="service-icon">
+
+            <i class="bi bi-pc-display"></i>
+
+          </div>
+
+          <h3>
+            What We Can Help Set Up
+          </h3>
+
 
           <ul class="check-list mt-4">
-            <li>Employee laptops and desktops</li>
-            <li>User accounts and access</li>
-            <li>Microsoft 365 or Google Workspace</li>
-            <li>Cloud infrastructure</li>
-            <li>Network and Wi-Fi</li>
-            <li>Backups</li>
-            <li>Security controls</li>
-            <li>Website and domain requirements</li>
+
+            <li>
+              Employee laptops and desktops
+            </li>
+
+            <li>
+              User accounts and access
+            </li>
+
+            <li>
+              Microsoft 365 or Google Workspace
+            </li>
+
+            <li>
+              Cloud infrastructure
+            </li>
+
+            <li>
+              Network and Wi-Fi
+            </li>
+
+            <li>
+              Backups
+            </li>
+
+            <li>
+              Security controls
+            </li>
+
+            <li>
+              Website and domain requirements
+            </li>
+
           </ul>
 
         </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HOW WE WORK -->
+
+<section class="service-section alt">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        How We Set Up Your Business IT
+      </h2>
+
+      <p>
+        A practical process from understanding requirements to handover and support.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Assess
+          </h3>
+
+          <p>
+
+            Understand your users, devices,
+            applications, connectivity and business requirements.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Plan
+          </h3>
+
+          <p>
+
+            Define the required systems,
+            accounts, licensing, security
+            and infrastructure approach.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Configure
+          </h3>
+
+          <p>
+
+            Set up devices, accounts,
+            networking, cloud services,
+            backups and security controls.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Support
+          </h3>
+
+          <p>
+
+            Provide handover, troubleshooting
+            and ongoing Managed IT support
+            where required.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CASE STUDY -->
+
+<section class="service-section">
+
+  <div class="container">
+
+    <div class="case-study-box">
+
+      <div class="row align-items-center gy-4">
+
+
+        <div class="col-lg-7">
+
+          <div class="case-study-label">
+
+            <i class="bi bi-journal-check"></i>
+
+            Real Nanobricks Project
+
+          </div>
+
+
+          <h2>
+            Small Business IT Standardization
+          </h2>
+
+
+          <p>
+
+            Nanobricks worked on a small-business office environment
+            with approximately 10 computers where the goal was to
+            create a more consistent and support-ready technology setup.
+
+          </p>
+
+
+          <p>
+
+            The work included Windows configuration, endpoint security,
+            user access, shared business storage, application setup
+            and hardware replacement planning.
+
+          </p>
+
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+
+            <a
+              href="/case-studies/small-business-it-standardization/"
+              class="btn btn-success">
+
+              Read Full Case Study
+
+              <i class="bi bi-arrow-right ms-2"></i>
+
+            </a>
+
+
+            <a
+              href="/case-studies/"
+              class="btn btn-outline-success">
+
+              View All Case Studies
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+          <div class="case-highlight">
+
+            <h4>
+              Project Highlights
+            </h4>
+
+
+            <p>
+
+              <i class="bi bi-check-circle-fill"></i>
+
+              Endpoint standardization
+
+            </p>
+
+
+            <p>
+
+              <i class="bi bi-check-circle-fill"></i>
+
+              Windows 11 Pro baseline
+
+            </p>
+
+
+            <p>
+
+              <i class="bi bi-check-circle-fill"></i>
+
+              Microsoft Defender
+
+            </p>
+
+
+            <p>
+
+              <i class="bi bi-check-circle-fill"></i>
+
+              User access controls
+
+            </p>
+
+
+            <p>
+
+              <i class="bi bi-check-circle-fill"></i>
+
+              Shared business storage
+
+            </p>
+
+
+            <p>
+
+              <i class="bi bi-check-circle-fill"></i>
+
+              Hardware planning
+
+            </p>
+
+          </div>
+
+        </div>
+
 
       </div>
 
@@ -421,97 +1332,322 @@
 
 </section>
 
+
+<!-- ONGOING SUPPORT -->
+
+<section class="service-section alt">
+
+  <div class="container">
+
+    <div class="row align-items-center gy-4">
+
+
+      <div class="col-lg-7">
+
+        <div class="next-step-box">
+
+          <h3>
+            Need Support After the Initial Setup?
+          </h3>
+
+          <p>
+
+            Once your business IT environment is configured,
+            Nanobricks can also provide ongoing Managed IT and AMC
+            support for devices, updates, business email,
+            backups, cloud operations and general IT requirements.
+
+          </p>
+
+          <a
+            href="/services/managed-it/"
+            class="btn btn-success">
+
+            Explore Managed IT & AMC
+
+            <i class="bi bi-arrow-right ms-2"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+
+            <i class="bi bi-headset"></i>
+
+          </div>
+
+          <h3>
+            From Setup to Ongoing Support
+          </h3>
+
+          <p>
+
+            Start with a structured business IT setup and extend
+            into ongoing support as your users, devices and
+            technology environment grow.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
 
 <section class="service-cta">
 
   <div class="container text-center">
 
-    <h2>Setting Up a New Business or Office?</h2>
+    <h2>
+      Setting Up a New Business or Office?
+    </h2>
 
     <p>
-      Tell us about your users, devices and technology requirements.
+
+      Tell us about your users, devices,
+      applications and technology requirements.
+
     </p>
 
-    <a href="/#enquiry" class="btn btn-light btn-lg">
-      Submit Requirement
-    </a>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+
+      <a href="/#it-assessment"
+         class="btn btn-light btn-lg">
+
+        Request IT Assessment
+
+      </a>
+
+
+      <a href="/#enquiry"
+         class="btn btn-outline-light btn-lg">
+
+        Submit Requirement
+
+      </a>
+
+    </div>
 
   </div>
 
 </section>
 
+
 </main>
 
 
+<!-- FOOTER -->
+
 <footer id="footer"
-        style="background:#111827;color:#fff;padding:60px 0 20px;">
+        class="footer-premium">
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="row gy-4 align-items-start">
 
-      <div class="col-lg-4">
-        <h3 style="color:#fff;">Nanobricks</h3>
-        <p>
-          Technology services for growing businesses,
-          including Managed IT, Cloud, Cybersecurity,
-          DevOps, Software Solutions and Professional Training.
-        </p>
-      </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6">
 
-        <h4 style="color:#fff;">Quick Links</h4>
+        <a href="/"
+           class="footer-brand">
 
-        <ul style="list-style:none;padding-left:0;line-height:2;">
-          <li><a href="/" style="color:#ddd;">Home</a></li>
-          <li><a href="/#services" style="color:#ddd;">Services</a></li>
-          <li><a href="/#industries" style="color:#ddd;">Industries</a></li>
-          <li><a href="/academy/" style="color:#ddd;">Academy</a></li>
-          <li><a href="/#contact" style="color:#ddd;">Contact</a></li>
-        </ul>
+          <img
+            src="/assets/img/nano-log.png"
+            alt="Nanobricks"
+            class="footer-logo">
 
-      </div>
+          <span>
+            Nanobricks
+          </span>
 
-      <div class="col-lg-4">
+        </a>
 
-        <h4 style="color:#fff;">Contact</h4>
 
-        <p><a href="tel:+917995720507" style="color:#ddd;">+91 7995720507</a></p>
+        <p class="footer-description">
 
-        <p><a href="mailto:info@nanobricks.in" style="color:#ddd;">info@nanobricks.in</a></p>
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
 
-        <p>Hyderabad, Telangana, India</p>
-
-        <p>
-          <a href="/privacy-policy/" style="color:#ddd;">Privacy Policy</a>
-          &nbsp; • &nbsp;
-          <a href="/terms/" style="color:#ddd;">Terms of Use</a>
         </p>
 
+
+        <div class="footer-social">
+
+          <a
+            href="https://www.linkedin.com/company/nanobricks"
+            target="_blank"
+            rel="noopener"
+            aria-label="Nanobricks LinkedIn">
+
+            <i class="bi bi-linkedin"></i>
+
+          </a>
+
+        </div>
+
       </div>
+
+
+      <div class="col-lg-5 col-md-6">
+
+        <h4 class="footer-heading">
+          Explore
+        </h4>
+
+
+        <div class="footer-links-grid">
+
+          <a href="/#services">
+            Services
+          </a>
+
+          <a href="/case-studies/">
+            Case Studies
+          </a>
+
+          <a href="/tools/">
+            Tools
+          </a>
+
+          <a href="/academy/">
+            Academy
+          </a>
+
+          <a href="/company-story/">
+            Company Story
+          </a>
+
+          <a href="/media/">
+            Media & Press
+          </a>
+
+          <a href="/#it-assessment">
+            IT Assessment
+          </a>
+
+          <a href="/#contact">
+            Contact
+          </a>
+
+          <a href="/privacy-policy/">
+            Privacy Policy
+          </a>
+
+          <a href="/terms/">
+            Terms of Use
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-12">
+
+        <h4 class="footer-heading">
+          Contact
+        </h4>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-geo-alt"></i>
+
+          <span>
+            Hyderabad, Telangana, India
+          </span>
+
+        </div>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507">
+            +91 79957 20507
+          </a>
+
+        </div>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-envelope"></i>
+
+          <a href="mailto:info@nanobricks.in">
+            info@nanobricks.in
+          </a>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Business%20IT%20Setup"
+          class="footer-whatsapp"
+          target="_blank"
+          rel="noopener">
+
+          <i class="bi bi-whatsapp"></i>
+
+          WhatsApp
+
+        </a>
+
+      </div>
+
 
     </div>
 
-    <hr style="border-color:#374151;margin:40px 0 20px;">
 
-    <p class="text-center" style="color:#999;">
-      © 2026 Nanobricks. All Rights Reserved.
-    </p>
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Nanobricks. All Rights Reserved.
+      </span>
+
+      <span>
+        Business IT Services • Hyderabad, India
+      </span>
+
+    </div>
 
   </div>
 
 </footer>
 
 
-<a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Business%20IT%20Setup"
-   class="whatsapp-float"
-   target="_blank"
-   rel="noopener">
+<!-- WHATSAPP -->
+
+<a
+  href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Business%20IT%20Setup"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener">
 
   <i class="bi bi-whatsapp"></i>
 
 </a>
+
+
+<!-- BACK TO TOP -->
 
 <a href="#"
    class="back-to-top d-flex align-items-center justify-content-center">
@@ -521,8 +1657,15 @@
 </a>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script
+  src="/assets/js/main.js">
+</script>
+
 
 </body>
+
 </html>
