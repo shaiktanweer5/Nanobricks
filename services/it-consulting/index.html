@@ -10,10 +10,22 @@
   <title>IT Consulting Services | Nanobricks</title>
 
   <meta name="description"
-        content="Nanobricks provides practical IT consulting for cloud adoption, infrastructure, managed IT, security, software, modernization and technology planning.">
+        content="Nanobricks provides practical IT consulting for cloud adoption, infrastructure, managed IT, cybersecurity, backup, software, automation and technology modernization.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/services/it-consulting/">
+
+  <meta property="og:title"
+        content="IT Consulting Services | Nanobricks">
+
+  <meta property="og:description"
+        content="Practical technology consulting for cloud, infrastructure, managed IT, security, software, automation and modernization.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/services/it-consulting/">
 
   <link href="/assets/img/nano-log.png" rel="icon">
   <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
@@ -35,146 +47,367 @@
   <style>
 
     .service-hero {
-      margin-top:72px;
-      padding:100px 0 80px;
-      background:linear-gradient(135deg,#f8fbf8,#f3f8ff);
-      border-bottom:1px solid #e7ece9;
+      margin-top: 72px;
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
+      border-bottom: 1px solid #e7ece9;
     }
 
     .service-hero h1 {
-      font-size:48px;
-      font-weight:700;
-      color:#25372b;
+      font-size: 48px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 18px;
     }
 
     .service-hero p {
-      font-size:20px;
-      color:#647168;
-      line-height:1.7;
-      max-width:800px;
+      font-size: 20px;
+      color: #647168;
+      line-height: 1.7;
+      max-width: 820px;
     }
 
     .service-label {
-      color:#2fa93a;
-      font-weight:700;
-      text-transform:uppercase;
-      font-size:14px;
-      margin-bottom:18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #2fa93a;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 18px;
     }
 
     .hero-icon {
-      width:180px;
-      height:180px;
-      margin:auto;
-      background:#fff;
-      border-radius:30px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow:0 18px 60px rgba(0,0,0,.08);
+      width: 180px;
+      height: 180px;
+      margin: auto;
+      background: #fff;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 60px rgba(0,0,0,.08);
     }
 
     .hero-icon i {
-      font-size:75px;
-      color:#33bc3b;
+      font-size: 75px;
+      color: #33bc3b;
     }
 
     .service-section {
-      padding:80px 0;
+      padding: 80px 0;
     }
 
     .service-section.alt {
-      background:#f8faf9;
+      background: #f8faf9;
     }
 
-    .service-card {
-      background:#fff;
-      border:1px solid #e6ece7;
-      border-radius:14px;
-      padding:30px;
-      height:100%;
-      box-shadow:0 8px 28px rgba(0,0,0,.04);
+    .service-card,
+    .related-card {
+      background: #fff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+      transition: .25s ease;
+    }
+
+    .service-card:hover,
+    .related-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,.07);
     }
 
     .service-icon {
-      width:52px;
-      height:52px;
-      border-radius:12px;
-      background:#eff9f0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      margin-bottom:20px;
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #eff9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
     .service-icon i {
-      color:#2fa93a;
-      font-size:26px;
+      color: #2fa93a;
+      font-size: 26px;
     }
 
-    .service-card h3 {
-      font-size:20px;
-      font-weight:700;
-      color:#25372b;
+    .service-card h3,
+    .related-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 12px;
     }
 
-    .service-card p {
-      color:#647168;
-      line-height:1.7;
+    .service-card p,
+    .related-card p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
     }
 
     .check-list {
-      list-style:none;
-      padding:0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
     .check-list li {
-      position:relative;
-      padding-left:28px;
-      margin-bottom:14px;
-      color:#647168;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 14px;
+      color: #647168;
+      line-height: 1.6;
     }
 
     .check-list li::before {
-      content:"✓";
-      position:absolute;
-      left:0;
-      color:#2fa93a;
-      font-weight:700;
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #2fa93a;
+      font-weight: 700;
     }
 
     .process-card {
-      background:#fff;
-      border:1px solid #e6ece7;
-      border-radius:14px;
-      padding:28px;
-      height:100%;
+      background: #fff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 28px;
+      height: 100%;
+      text-align: center;
     }
 
     .process-card span {
-      color:#33bc3b;
-      font-weight:700;
+      color: #33bc3b;
+      font-weight: 700;
     }
 
     .process-card h3 {
-      margin-top:10px;
-      font-size:20px;
-      font-weight:700;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #25372b;
+    }
+
+    .process-card p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .consulting-focus-box {
+      background: #fff;
+      border: 1px solid #e6ece7;
+      border-radius: 18px;
+      padding: 38px;
+      box-shadow: 0 12px 36px rgba(0,0,0,.05);
+    }
+
+    .consulting-focus-box h2 {
+      color: #25372b;
+      font-weight: 700;
+    }
+
+    .consulting-focus-box p {
+      color: #647168;
+      line-height: 1.75;
+    }
+
+    .consulting-highlight {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .consulting-highlight h4 {
+      color: #25372b;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .consulting-highlight p {
+      color: #5e6d63;
+      margin-bottom: 11px;
+    }
+
+    .consulting-highlight i {
+      color: #33bc3b;
+      margin-right: 8px;
     }
 
     .service-cta {
-      background:#1f6f2b;
-      color:white;
-      padding:80px 0;
+      background: #1f6f2b;
+      color: #fff;
+      padding: 80px 0;
     }
 
     .service-cta h2 {
-      color:white;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .service-cta p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+
+    /* PREMIUM FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      background: #1f6f2b;
+      border-color: #1f6f2b;
+      color: #fff;
+    }
+
+    .footer-heading {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 4px 0 17px;
+    }
+
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a,
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links-grid a:hover,
+    .footer-contact-item a:hover {
+      color: #fff;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-item i {
+      color: #49c354;
+    }
+
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer-whatsapp:hover {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
     }
 
     @media(max-width:768px) {
-      .service-hero h1 {font-size:34px;}
-      .service-hero p {font-size:17px;}
+
+      .service-hero h1 {
+        font-size: 34px;
+      }
+
+      .service-hero p {
+        font-size: 17px;
+      }
+
+      .hero-icon {
+        width: 140px;
+        height: 140px;
+      }
+
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
     }
 
   </style>
@@ -184,48 +417,111 @@
 <body>
 
 
-<header id="header" class="fixed-top d-flex align-items-center">
+<header id="header"
+        class="fixed-top d-flex align-items-center">
 
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
+
       <a href="/">
-        <img src="/assets/img/nano-log.png" alt="Nanobricks" height="40">
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
       </a>
+
     </div>
+
 
     <nav id="navbar" class="navbar">
 
       <ul>
 
-        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+
 
         <li class="dropdown">
 
-          <a href="/#services">
+          <a class="active" href="/#services">
+
             <span>Services</span>
             <i class="bi bi-chevron-down"></i>
+
           </a>
 
           <ul>
+
             <li><a href="/services/managed-it/">Managed IT & AMC</a></li>
             <li><a href="/services/cloud-services/">Cloud Services</a></li>
             <li><a href="/services/cloud-security/">Cloud Security</a></li>
             <li><a href="/services/devops-automation/">DevOps & Automation</a></li>
             <li><a href="/services/cybersecurity/">Cybersecurity</a></li>
             <li><a href="/services/web-software/">Web & Software</a></li>
+
           </ul>
 
         </li>
 
-        <li><a href="/#industries">Industries</a></li>
+
+        <li class="dropdown">
+
+          <a href="/tools/">
+
+            <span>Tools</span>
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li><a href="/tools/">All Tools</a></li>
+            <li><a href="/tools/endpoint-assessment/">Endpoint Assessment</a></li>
+            <li><a href="/tools/pdf/">PDF Tools</a></li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/case-studies/">
+
+            <span>Case Studies</span>
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li><a href="/case-studies/">All Case Studies</a></li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li><a href="/#about">About</a></li>
         <li><a href="/academy/">Academy</a></li>
         <li><a href="/#contact">Contact</a></li>
 
         <li>
-          <a class="getstarted" href="/#it-assessment">
+
+          <a class="getstarted"
+             href="/#it-assessment">
+
             Request IT Assessment
+
           </a>
+
         </li>
 
       </ul>
@@ -248,27 +544,46 @@
       <div class="col-lg-8">
 
         <div class="service-label">
+
+          <i class="bi bi-lightbulb"></i>
           Nanobricks Technology Services
+
         </div>
 
-        <h1>IT Consulting</h1>
+        <h1>
+          IT Consulting
+        </h1>
 
         <p>
+
           Practical technology guidance for businesses planning
           cloud adoption, infrastructure improvements, security,
           managed IT, software projects or technology modernization.
+
         </p>
 
-        <a href="/#enquiry"
-           class="btn btn-success btn-lg mt-3">
+        <div class="d-flex flex-wrap gap-3 mt-4">
 
-          Discuss Your Requirement
+          <a href="/#it-assessment"
+             class="btn btn-success btn-lg">
 
-        </a>
+            Request IT Assessment
+
+          </a>
+
+          <a href="#consulting-services"
+             class="btn btn-outline-dark btn-lg">
+
+            Explore Consulting Services
+
+          </a>
+
+        </div>
 
       </div>
 
-      <div class="col-lg-4">
+
+      <div class="col-lg-4 text-center">
 
         <div class="hero-icon">
           <i class="bi bi-lightbulb"></i>
@@ -285,13 +600,17 @@
 
 <main>
 
-<section class="service-section alt">
+
+<section id="consulting-services"
+         class="service-section alt">
 
   <div class="container">
 
     <div class="section-title">
 
-      <h2>Technology Consulting Services</h2>
+      <h2>
+        Technology Consulting Services
+      </h2>
 
       <p>
         Practical guidance aligned with business requirements and existing technology.
@@ -299,54 +618,120 @@
 
     </div>
 
+
     <div class="row gy-4">
 
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-cloud"></i></div>
+
+          <div class="service-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
           <h3>Cloud Consulting</h3>
-          <p>Cloud adoption, architecture, migration and operational planning.</p>
+
+          <p>
+            Cloud adoption, architecture, migration and operational planning.
+          </p>
+
         </div>
+
       </div>
 
+
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-tools"></i></div>
+
+          <div class="service-icon">
+            <i class="bi bi-tools"></i>
+          </div>
+
           <h3>Managed IT Planning</h3>
-          <p>Define practical support models for users, devices and infrastructure.</p>
+
+          <p>
+            Define practical support models for users, devices and infrastructure.
+          </p>
+
         </div>
+
       </div>
 
+
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+
+          <div class="service-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+
           <h3>Security Consulting</h3>
-          <p>Identify practical security priorities and improvement opportunities.</p>
+
+          <p>
+            Identify practical security priorities, risks and improvement opportunities.
+          </p>
+
         </div>
+
       </div>
 
+
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-diagram-3"></i></div>
+
+          <div class="service-icon">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+
           <h3>Infrastructure Planning</h3>
-          <p>Review compute, networking, storage, backup and infrastructure requirements.</p>
+
+          <p>
+            Review compute, networking, storage, backup and infrastructure requirements.
+          </p>
+
         </div>
+
       </div>
 
+
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+
+          <div class="service-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+
           <h3>Software Advisory</h3>
-          <p>Review digital requirements before starting software or web projects.</p>
+
+          <p>
+            Review digital requirements before starting software or web projects.
+          </p>
+
         </div>
+
       </div>
 
+
       <div class="col-lg-4 col-md-6">
+
         <div class="service-card">
-          <div class="service-icon"><i class="bi bi-arrow-repeat"></i></div>
+
+          <div class="service-icon">
+            <i class="bi bi-arrow-repeat"></i>
+          </div>
+
           <h3>Technology Modernization</h3>
-          <p>Identify opportunities to improve outdated or manual technology processes.</p>
+
+          <p>
+            Identify opportunities to improve outdated or manual technology processes.
+          </p>
+
         </div>
+
       </div>
 
     </div>
@@ -360,15 +745,105 @@
 
   <div class="container">
 
+    <div class="consulting-focus-box">
+
+      <div class="row align-items-center gy-4">
+
+        <div class="col-lg-7">
+
+          <div class="service-label">
+
+            <i class="bi bi-lightbulb"></i>
+            Practical Technology Decisions
+
+          </div>
+
+          <h2>
+            Start With the Requirement, Not the Technology
+          </h2>
+
+          <p>
+
+            Businesses often know they need better technology,
+            but may not know whether the right next step is cloud,
+            managed IT, security, automation or a new software solution.
+
+          </p>
+
+          <p>
+
+            Nanobricks can review your current environment,
+            understand the business requirement and help identify
+            practical technology options before implementation begins.
+
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+
+            <a href="/#it-assessment"
+               class="btn btn-success">
+
+              Request IT Assessment
+
+            </a>
+
+            <a href="/#enquiry"
+               class="btn btn-outline-success">
+
+              Discuss Requirement
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+          <div class="consulting-highlight">
+
+            <h4>
+              Consulting Areas
+            </h4>
+
+            <p><i class="bi bi-check-circle-fill"></i> Cloud adoption</p>
+            <p><i class="bi bi-check-circle-fill"></i> Managed IT</p>
+            <p><i class="bi bi-check-circle-fill"></i> Security</p>
+            <p><i class="bi bi-check-circle-fill"></i> Infrastructure</p>
+            <p><i class="bi bi-check-circle-fill"></i> Backup & recovery</p>
+            <p><i class="bi bi-check-circle-fill"></i> Software projects</p>
+            <p><i class="bi bi-check-circle-fill"></i> Automation</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="service-section alt">
+
+  <div class="container">
+
     <div class="row gy-5">
 
       <div class="col-lg-6">
 
         <div class="service-card">
 
-          <h3>Consulting Can Cover</h3>
+          <h3>
+            Consulting Can Cover
+          </h3>
 
           <ul class="check-list mt-4">
+
             <li>Current IT environment review</li>
             <li>Cloud adoption</li>
             <li>Managed IT requirements</li>
@@ -377,26 +852,121 @@
             <li>Business email platforms</li>
             <li>Software requirements</li>
             <li>Automation opportunities</li>
+
           </ul>
 
         </div>
 
       </div>
 
+
       <div class="col-lg-6">
 
         <div class="service-card">
 
-          <h3>Ideal For</h3>
+          <h3>
+            Ideal For
+          </h3>
 
           <ul class="check-list mt-4">
+
             <li>Startups planning technology infrastructure</li>
             <li>SMEs modernizing IT</li>
             <li>Businesses evaluating cloud adoption</li>
             <li>Organizations without internal IT architecture expertise</li>
             <li>Companies reviewing security and infrastructure</li>
             <li>Teams planning new digital projects</li>
+
           </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="service-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        How We Work
+      </h2>
+
+      <p>
+        Understand the requirement before recommending technology.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>01</span>
+          <h3>Understand</h3>
+
+          <p>
+            Understand business goals, users and existing technology.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>02</span>
+          <h3>Assess</h3>
+
+          <p>
+            Review current systems, challenges and technology gaps.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>03</span>
+          <h3>Recommend</h3>
+
+          <p>
+            Define practical options aligned with requirements and priorities.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="process-card">
+
+          <span>04</span>
+          <h3>Implement</h3>
+
+          <p>
+            Proceed with an implementation project or managed services when required.
+          </p>
 
         </div>
 
@@ -415,46 +985,94 @@
 
     <div class="section-title">
 
-      <h2>How We Work</h2>
+      <h2>
+        Related Nanobricks Services
+      </h2>
 
       <p>
-        Understand the requirement before recommending technology.
+        Consulting can lead into implementation across our core technology service areas.
       </p>
 
     </div>
 
+
     <div class="row gy-4">
 
-      <div class="col-lg-3 col-md-6">
-        <div class="process-card">
-          <span>01</span>
-          <h3>Understand</h3>
-          <p>Understand business goals, users and existing technology.</p>
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
+          <h3>Cloud Services</h3>
+
+          <p>
+            Cloud assessment, migration, architecture, operations and optimization.
+          </p>
+
+          <a href="/services/cloud-services/"
+             class="btn btn-outline-success mt-4">
+
+            Explore Cloud Services
+
+          </a>
+
         </div>
+
       </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="process-card">
-          <span>02</span>
-          <h3>Assess</h3>
-          <p>Review current systems, challenges and technology gaps.</p>
+
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+
+          <h3>Cybersecurity</h3>
+
+          <p>
+            Security assessments, hardening, vulnerability review and remediation support.
+          </p>
+
+          <a href="/services/cybersecurity/"
+             class="btn btn-outline-success mt-4">
+
+            Explore Cybersecurity
+
+          </a>
+
         </div>
+
       </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="process-card">
-          <span>03</span>
-          <h3>Recommend</h3>
-          <p>Define practical options aligned with requirements and priorities.</p>
-        </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="process-card">
-          <span>04</span>
-          <h3>Implement</h3>
-          <p>Proceed with project or managed services when required.</p>
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-tools"></i>
+          </div>
+
+          <h3>Managed IT & AMC</h3>
+
+          <p>
+            Ongoing support for business users, devices, infrastructure and operations.
+          </p>
+
+          <a href="/services/managed-it/"
+             class="btn btn-outline-success mt-4">
+
+            Explore Managed IT
+
+          </a>
+
         </div>
+
       </div>
 
     </div>
@@ -468,81 +1086,160 @@
 
   <div class="container text-center">
 
-    <h2>Need Help Deciding What Technology You Actually Need?</h2>
+    <h2>
+      Need Help Deciding What Technology You Actually Need?
+    </h2>
 
     <p>
       Start with a requirement discussion and practical technology assessment.
     </p>
 
-    <a href="/#enquiry" class="btn btn-light btn-lg">
-      Talk to Nanobricks
-    </a>
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+
+      <a href="/#it-assessment"
+         class="btn btn-light btn-lg">
+
+        Request IT Assessment
+
+      </a>
+
+      <a href="/#enquiry"
+         class="btn btn-outline-light btn-lg">
+
+        Talk to Nanobricks
+
+      </a>
+
+    </div>
 
   </div>
 
 </section>
 
+
 </main>
 
 
 <footer id="footer"
-        style="background:#111827;color:#fff;padding:60px 0 20px;">
+        class="footer-premium">
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="row gy-4 align-items-start">
 
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6">
 
-        <h3 style="color:#fff;">Nanobricks</h3>
+        <a href="/"
+           class="footer-brand">
 
-        <p>
-          Technology services for growing businesses,
-          including Managed IT, Cloud, Cybersecurity,
-          DevOps, Software Solutions and Professional Training.
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks"
+               class="footer-logo">
+
+          <span>Nanobricks</span>
+
+        </a>
+
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
+
         </p>
+
+        <div class="footer-social">
+
+          <a href="https://www.linkedin.com/company/nanobricks"
+             target="_blank"
+             rel="noopener"
+             aria-label="Nanobricks LinkedIn">
+
+            <i class="bi bi-linkedin"></i>
+
+          </a>
+
+        </div>
 
       </div>
 
-      <div class="col-lg-4">
 
-        <h4 style="color:#fff;">Quick Links</h4>
+      <div class="col-lg-5 col-md-6">
 
-        <ul style="list-style:none;padding-left:0;line-height:2;">
-          <li><a href="/" style="color:#ddd;">Home</a></li>
-          <li><a href="/#services" style="color:#ddd;">Services</a></li>
-          <li><a href="/#industries" style="color:#ddd;">Industries</a></li>
-          <li><a href="/academy/" style="color:#ddd;">Academy</a></li>
-          <li><a href="/#contact" style="color:#ddd;">Contact</a></li>
-        </ul>
+        <h4 class="footer-heading">
+          Explore
+        </h4>
+
+        <div class="footer-links-grid">
+
+          <a href="/#services">Services</a>
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+          <a href="/#it-assessment">IT Assessment</a>
+          <a href="/#contact">Contact</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+
+        </div>
 
       </div>
 
-      <div class="col-lg-4">
 
-        <h4 style="color:#fff;">Contact</h4>
+      <div class="col-lg-3 col-md-12">
 
-        <p><a href="tel:+917995720507" style="color:#ddd;">+91 7995720507</a></p>
+        <h4 class="footer-heading">
+          Contact
+        </h4>
 
-        <p><a href="mailto:info@nanobricks.in" style="color:#ddd;">info@nanobricks.in</a></p>
+        <div class="footer-contact-item">
 
-        <p>Hyderabad, Telangana, India</p>
+          <i class="bi bi-geo-alt"></i>
+          <span>Hyderabad, Telangana, India</span>
 
-        <p>
-          <a href="/privacy-policy/" style="color:#ddd;">Privacy Policy</a>
-          &nbsp; • &nbsp;
-          <a href="/terms/" style="color:#ddd;">Terms of Use</a>
-        </p>
+        </div>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-telephone"></i>
+          <a href="tel:+917995720507">+91 79957 20507</a>
+
+        </div>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-envelope"></i>
+          <a href="mailto:info@nanobricks.in">info@nanobricks.in</a>
+
+        </div>
+
+        <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20IT%20Consulting"
+           class="footer-whatsapp"
+           target="_blank"
+           rel="noopener">
+
+          <i class="bi bi-whatsapp"></i>
+          WhatsApp
+
+        </a>
 
       </div>
 
     </div>
 
-    <hr style="border-color:#374151;margin:40px 0 20px;">
 
-    <p class="text-center" style="color:#999;">
-      © 2026 Nanobricks. All Rights Reserved.
-    </p>
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Nanobricks. All Rights Reserved.
+      </span>
+
+      <span>
+        IT Consulting • Hyderabad, India
+      </span>
+
+    </div>
 
   </div>
 
@@ -558,6 +1255,7 @@
 
 </a>
 
+
 <a href="#"
    class="back-to-top d-flex align-items-center justify-content-center">
 
@@ -570,4 +1268,5 @@
 <script src="/assets/js/main.js"></script>
 
 </body>
+
 </html>
