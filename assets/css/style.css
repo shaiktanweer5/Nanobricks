@@ -1400,3 +1400,162 @@ color:#fff;
 #industries .icon-box:hover i{
 color:#fff;
 }
+/* ==========================================================
+   NANOBRICKS GLOBAL UI FIXES
+   Desktop navigation + floating contact positioning
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   DESKTOP / MOBILE HAMBURGER
+   ---------------------------------------------------------- */
+
+/* Desktop: full navigation is visible, so hide hamburger */
+.mobile-nav-toggle {
+  display: none !important;
+  font-size: 32px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+/* Mobile/tablet: hide desktop menu and show hamburger */
+@media (max-width: 991px) {
+
+  .mobile-nav-toggle {
+    display: block !important;
+  }
+
+}
+
+
+/* ----------------------------------------------------------
+   STICKY CALL / WHATSAPP BUTTONS
+   ---------------------------------------------------------- */
+
+/*
+   Older Nanobricks CSS positioned .sticky-cta in the
+   horizontal center of the browser.
+
+   Keep the floating controls in the bottom-right instead.
+*/
+
+.sticky-cta {
+  position: fixed !important;
+
+  right: 18px !important;
+  left: auto !important;
+
+  bottom: 18px !important;
+
+  transform: none !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  align-items: stretch !important;
+  justify-content: flex-end !important;
+
+  gap: 10px !important;
+
+  z-index: 999 !important;
+}
+
+
+/* Individual sticky buttons */
+
+.sticky-cta a {
+  margin: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   LEGACY STICKY BUTTON WRAPPER
+   ---------------------------------------------------------- */
+
+.sticky-buttons {
+  position: fixed !important;
+
+  right: 18px !important;
+  left: auto !important;
+
+  bottom: 18px !important;
+
+  transform: none !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  gap: 10px !important;
+
+  z-index: 999 !important;
+}
+
+
+/* ----------------------------------------------------------
+   GENERIC FLOATING BUTTON WRAPPER
+   ---------------------------------------------------------- */
+
+.floating-buttons {
+  position: fixed !important;
+
+  right: 18px !important;
+  left: auto !important;
+
+  bottom: 18px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  gap: 10px !important;
+
+  z-index: 999 !important;
+}
+
+
+/* ----------------------------------------------------------
+   STANDARD WHATSAPP FLOAT
+   ---------------------------------------------------------- */
+
+.whatsapp-float {
+  position: fixed !important;
+
+  right: 20px !important;
+  left: auto !important;
+
+  bottom: 78px !important;
+
+  z-index: 999 !important;
+}
+
+
+/* ----------------------------------------------------------
+   MOBILE POSITIONING
+   ---------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .sticky-cta,
+  .sticky-buttons,
+  .floating-buttons {
+
+    right: 12px !important;
+    left: auto !important;
+
+    bottom: 12px !important;
+
+    transform: none !important;
+
+  }
+
+
+  .whatsapp-float {
+
+    right: 15px !important;
+    left: auto !important;
+
+    bottom: 70px !important;
+
+  }
+
+}
