@@ -5,16 +5,34 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
 
   <title>Terms of Use | Nanobricks</title>
 
   <meta name="description"
-        content="Terms of Use for the Nanobricks website and information provided through nanobricks.in.">
-
-  <meta name="robots" content="index, follow">
+        content="Terms governing use of the Nanobricks website and information provided through nanobricks.in.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/terms/">
+
+  <meta property="og:title"
+        content="Terms of Use | Nanobricks">
+
+  <meta property="og:description"
+        content="Terms governing access to the Nanobricks website and information made available through nanobricks.in.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/terms/">
+
+  <link href="/assets/img/nano-log.png" rel="icon">
+  <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -24,221 +42,202 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
   <style>
 
-    :root {
-      --nb-blue: #1267e5;
-      --nb-green: #2fc344;
-      --nb-dark: #111827;
-      --nb-text: #4b5563;
-      --nb-light: #f7f9fc;
-      --nb-border: #e5e7eb;
+    .legal-hero {
+      margin-top: 72px;
+      padding: 90px 0 65px;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
+      border-bottom: 1px solid #e7ece9;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--nb-dark);
-      background: #ffffff;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .main-navbar {
-      background: rgba(255,255,255,0.98);
-      border-bottom: 1px solid #edf0f4;
-      padding: 15px 0;
-      z-index: 9999;
-    }
-
-    .navbar-brand img {
-      height: 42px;
-      width: auto;
-    }
-
-    .navbar-nav .nav-link {
-      color: #374151;
-      font-weight: 500;
-      margin: 0 7px;
-      padding: 10px 8px !important;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: var(--nb-blue);
-    }
-
-    .nav-cta {
-      background: var(--nb-blue);
-      color: #fff !important;
-      padding: 11px 18px !important;
-      border-radius: 8px;
-      margin-left: 10px;
-    }
-
-    .nav-cta:hover {
-      background: #0d55c7;
-    }
-
-    .policy-hero {
-      padding: 150px 0 75px;
-      background:
-        radial-gradient(circle at top right,
-        rgba(18,103,229,0.10),
-        transparent 35%),
-        linear-gradient(135deg,#f8fbff,#ffffff);
-    }
-
-    .policy-badge {
+    .legal-label {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 8px 14px;
-      background: #eaf2ff;
-      color: var(--nb-blue);
-      border-radius: 50px;
+      color: #2fa93a;
       font-size: 14px;
       font-weight: 700;
-      margin-bottom: 18px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
     }
 
-    .policy-hero h1 {
-      font-size: 50px;
-      font-weight: 800;
-      letter-spacing: -1.5px;
-      margin-bottom: 18px;
+    .legal-hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 16px;
     }
 
-    .policy-hero p {
+    .legal-hero p {
       max-width: 760px;
-      color: var(--nb-text);
+      color: #647168;
       font-size: 18px;
-      line-height: 1.8;
+      line-height: 1.75;
     }
 
-    .policy-section {
+    .legal-section {
       padding: 75px 0;
     }
 
-    .policy-content {
+    .legal-content {
       max-width: 900px;
       margin: auto;
     }
 
-    .policy-content h2 {
-      font-size: 27px;
-      font-weight: 800;
+    .legal-content h2 {
+      color: #25372b;
+      font-size: 25px;
+      font-weight: 700;
       margin-top: 42px;
-      margin-bottom: 16px;
+      margin-bottom: 15px;
     }
 
-    .policy-content h2:first-child {
+    .legal-content h2:first-child {
       margin-top: 0;
     }
 
-    .policy-content p,
-    .policy-content li {
-      color: var(--nb-text);
+    .legal-content p,
+    .legal-content li {
+      color: #647168;
       font-size: 16px;
       line-height: 1.8;
     }
 
-    .policy-content ul {
+    .legal-content ul {
       padding-left: 22px;
     }
 
-    .policy-box {
-      background: var(--nb-light);
-      border: 1px solid var(--nb-border);
-      border-radius: 14px;
-      padding: 25px;
+    .legal-note {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-left: 4px solid #2fa93a;
+      border-radius: 12px;
+      padding: 24px;
       margin: 30px 0;
     }
 
-    .contact-box {
+    .contact-card {
       margin-top: 45px;
       padding: 30px;
+      border: 1px solid #e6ece7;
       border-radius: 16px;
-      border: 1px solid var(--nb-border);
       background: #ffffff;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
     }
 
-    .contact-box h3 {
-      font-weight: 800;
-      margin-bottom: 15px;
-    }
-
-    footer {
-      background: #111827;
-      color: #d1d5db;
-      padding: 55px 0 25px;
-    }
-
-    footer h3,
-    footer h5 {
-      color: #fff;
+    .contact-card h3 {
+      color: #25372b;
       font-weight: 700;
     }
 
-    footer a {
-      color: #d1d5db;
+    .contact-card a {
+      color: #1f6f2b;
+      text-decoration: none;
     }
 
-    footer a:hover {
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
       color: #fff;
+      text-decoration: none;
+      margin-bottom: 16px;
     }
 
-    .footer-bottom {
-      border-top: 1px solid #374151;
-      margin-top: 35px;
-      padding-top: 25px;
-      text-align: center;
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
       font-size: 14px;
     }
 
-    @media (max-width: 991px) {
-
-      .navbar-nav {
-        padding-top: 15px;
-      }
-
-      .nav-cta {
-        margin-left: 0;
-        margin-top: 8px;
-        display: inline-block;
-      }
-
-      .policy-hero {
-        padding: 125px 0 65px;
-      }
-
-      .policy-hero h1 {
-        font-size: 40px;
-      }
-
+    .footer-heading {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 17px;
     }
 
-    @media (max-width: 576px) {
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
 
-      .policy-hero h1 {
+    .footer-links-grid a,
+    .footer-contact a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links-grid a:hover,
+    .footer-contact a:hover {
+      color: #fff;
+    }
+
+    .footer-contact {
+      color: #aeb9c8;
+      font-size: 14px;
+    }
+
+    .footer-contact div {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact i {
+      color: #49c354;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media(max-width:768px) {
+
+      .legal-hero h1 {
         font-size: 34px;
       }
 
-      .policy-section {
-        padding: 55px 0;
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
       }
 
     }
@@ -250,89 +249,87 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-light main-navbar fixed-top">
+<header id="header"
+        class="fixed-top d-flex align-items-center">
 
-  <div class="container">
+  <div class="container d-flex align-items-center justify-content-between">
 
-    <a class="navbar-brand" href="/">
-      <img
-        src="/assets/img/nano-log.png"
-        alt="Nanobricks">
-    </a>
+    <div class="logo">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarMain"
-      aria-controls="navbarMain"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
+      <a href="/">
 
-      <span class="navbar-toggler-icon"></span>
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
 
-    </button>
+      </a>
 
-    <div class="collapse navbar-collapse" id="navbarMain">
+    </div>
 
-      <ul class="navbar-nav ms-auto align-items-lg-center">
 
-        <li class="nav-item">
-          <a class="nav-link" href="/">
-            Home
+    <nav id="navbar" class="navbar">
+
+      <ul>
+
+        <li><a href="/">Home</a></li>
+
+
+        <li class="dropdown">
+
+          <a href="/#services">
+            <span>Services</span>
+            <i class="bi bi-chevron-down"></i>
           </a>
+
+          <ul>
+
+            <li><a href="/services/managed-it/">Managed IT & AMC</a></li>
+            <li><a href="/services/business-it-setup/">Business IT Setup</a></li>
+            <li><a href="/services/cloud-services/">Cloud Services</a></li>
+            <li><a href="/services/cloud-security/">Cloud Security</a></li>
+            <li><a href="/services/devops-automation/">DevOps & Automation</a></li>
+            <li><a href="/services/cybersecurity/">Cybersecurity</a></li>
+            <li><a href="/services/web-software/">Web & Software</a></li>
+            <li><a href="/services/backup-continuity/">Backup & Continuity</a></li>
+            <li><a href="/services/it-consulting/">IT Consulting</a></li>
+
+          </ul>
+
         </li>
 
-        <li class="nav-item dropdown">
 
-          <a class="nav-link dropdown-toggle"
-             href="#"
-             role="button"
-             data-bs-toggle="dropdown">
-            Services
+        <li class="dropdown">
+
+          <a href="/tools/">
+            <span>Tools</span>
+            <i class="bi bi-chevron-down"></i>
           </a>
 
-          <ul class="dropdown-menu">
+          <ul>
+
+            <li><a href="/tools/">All Tools</a></li>
+            <li><a href="/tools/endpoint-assessment/">Endpoint Assessment</a></li>
+            <li><a href="/tools/pdf/">PDF Tools</a></li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/case-studies/">
+            <span>Case Studies</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+
+          <ul>
+
+            <li><a href="/case-studies/">All Case Studies</a></li>
 
             <li>
-              <a class="dropdown-item"
-                 href="/services/managed-it/">
-                Managed IT & AMC
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item"
-                 href="/services/cloud-services/">
-                Cloud Services
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item"
-                 href="/services/cloud-security/">
-                Cloud Security
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item"
-                 href="/services/devops-automation/">
-                DevOps & Automation
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item"
-                 href="/services/cybersecurity/">
-                Cybersecurity
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item"
-                 href="/services/web-software/">
-                Web & Software
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
               </a>
             </li>
 
@@ -340,59 +337,56 @@
 
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/academy/">
-            Academy
-          </a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#about">
-            About
-          </a>
-        </li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/company-story/">Company Story</a></li>
+        <li><a href="/academy/">Academy</a></li>
+        <li><a href="/#contact">Contact</a></li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#contact">
-            Contact
-          </a>
-        </li>
+        <li>
 
-        <li class="nav-item">
-          <a class="nav-link nav-cta"
-             href="/#enquiry">
+          <a class="getstarted"
+             href="/#it-assessment">
+
             Request IT Assessment
+
           </a>
+
         </li>
 
       </ul>
 
-    </div>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav>
 
   </div>
 
-</nav>
+</header>
 
 
-<section class="policy-hero">
+<section class="legal-hero">
 
   <div class="container">
 
-    <div class="policy-badge">
+    <div class="legal-label">
+
       <i class="bi bi-file-earmark-text"></i>
       Website Terms
+
     </div>
 
     <h1>Terms of Use</h1>
 
     <p>
-      These Terms of Use govern access to and use of the
-      Nanobricks website and the information made available
-      through nanobricks.in.
+
+      These Terms of Use govern access to and use of the Nanobricks
+      website and information made available through nanobricks.in.
+
     </p>
 
-    <p class="mt-3">
-      <strong>Last Updated:</strong> September 2026
+    <p class="mt-3 mb-0">
+      <strong>Last Updated:</strong> November 2026
     </p>
 
   </div>
@@ -400,133 +394,162 @@
 </section>
 
 
-<section class="policy-section">
+<main>
+
+<section class="legal-section">
 
   <div class="container">
 
-    <div class="policy-content">
+    <div class="legal-content">
 
 
       <h2>1. About These Terms</h2>
 
       <p>
+
         By accessing or using nanobricks.in, you agree to use
         the website in accordance with these Terms of Use and
         applicable laws.
+
       </p>
 
       <p>
-        If you do not agree with these terms, you should discontinue
-        use of the website.
+        If you do not agree with these terms, you should discontinue use of the website.
       </p>
 
 
       <h2>2. About Nanobricks</h2>
 
       <p>
+
         Nanobricks is a technology services business based in Hyderabad,
-        India. Services may include Managed IT, Cloud Services,
-        Cloud Security, Cybersecurity, DevOps, Software Solutions
-        and professional technology training through Nanobricks Academy.
+        India. Services may include Managed IT, Business IT,
+        Cloud Services, Cloud Security, Cybersecurity, DevOps,
+        Software Solutions, Backup & Continuity, IT Consulting
+        and technology learning through Nanobricks Academy.
+
       </p>
 
 
       <h2>3. Website Information</h2>
 
       <p>
+
         Information published on this website is provided for general
         informational and business communication purposes.
+
       </p>
 
       <p>
-        Nanobricks makes reasonable efforts to keep information accurate
-        and current, but website content may change and may not always
-        reflect the latest service availability, pricing, technology
-        capabilities or commercial terms.
+
+        Nanobricks makes reasonable efforts to keep information current,
+        but website content may change and may not always reflect the latest
+        service availability, pricing, technology capabilities or commercial terms.
+
       </p>
 
 
       <h2>4. No Automatic Service Agreement</h2>
 
       <p>
+
         Visiting the website, submitting an enquiry or communicating
         with Nanobricks does not automatically create a customer,
         consulting, employment, training or contractual relationship.
+
       </p>
 
       <p>
-        Commercial services are subject to mutually agreed proposals,
-        quotations, statements of work, service agreements or other
-        applicable documents.
+
+        Commercial services may be subject to mutually agreed proposals,
+        quotations, statements of work, service agreements or other documents.
+
       </p>
 
 
       <h2>5. Service Descriptions</h2>
 
       <p>
-        Services described on nanobricks.in are indicative of the
-        types of technology services Nanobricks may provide.
+
+        Services described on nanobricks.in indicate the types
+        of technology services Nanobricks may provide.
+
       </p>
 
       <p>
-        The exact scope, responsibilities, timelines, deliverables,
-        support hours and pricing depend on the specific engagement.
+
+        Exact scope, responsibilities, timelines, deliverables,
+        support expectations and pricing depend on the specific engagement.
+
       </p>
 
 
       <h2>6. Pricing and Quotations</h2>
 
       <p>
+
         Unless explicitly stated otherwise, website content should not
-        be considered a binding quotation or final commercial offer.
+        be considered a binding quotation or commercial offer.
+
       </p>
 
       <p>
-        Pricing may depend on factors such as project complexity,
-        infrastructure, number of users or systems, support requirements,
+
+        Pricing may depend on project complexity, infrastructure,
+        number of users or systems, support requirements,
         third-party costs and agreed deliverables.
+
       </p>
 
 
-      <h2>7. Technology and Third-Party Services</h2>
+      <h2>7. Third-Party Technology</h2>
 
       <p>
+
         Some Nanobricks services may involve third-party products,
-        cloud platforms, software, infrastructure providers or
-        external services.
+        cloud platforms, software, infrastructure providers or other services.
+
       </p>
 
       <p>
-        These third-party products and services may be governed by
-        their own terms, pricing, availability, licensing requirements
-        and privacy policies.
+
+        Third-party products and services may have their own pricing,
+        availability, licensing requirements, privacy policies and terms.
+
       </p>
 
       <p>
-        References to third-party technologies do not necessarily
+
+        Reference to a third-party technology does not necessarily
         imply partnership, endorsement or authorization unless
         explicitly stated.
+
       </p>
 
 
       <h2>8. Intellectual Property</h2>
 
       <p>
-        Unless otherwise indicated, website content including text,
-        design, branding, graphics, service descriptions and original
-        materials published by Nanobricks are owned by or licensed
-        for use by Nanobricks.
+
+        Unless otherwise indicated, original website content,
+        branding, design, service descriptions and materials published
+        by Nanobricks are owned by or licensed for use by Nanobricks.
+
       </p>
 
       <p>
-        You may view and use website information for legitimate
-        personal or business evaluation purposes.
+
+        Website information may be viewed for legitimate personal
+        or business evaluation purposes.
+
       </p>
 
       <p>
-        You should not reproduce, copy, republish, distribute or
-        commercially exploit substantial website content without
+
+        Substantial website content should not be reproduced,
+        republished, distributed or commercially exploited without
         appropriate permission.
+
       </p>
 
 
@@ -535,144 +558,169 @@
       <p>You agree not to use the website to:</p>
 
       <ul>
+
         <li>Attempt unauthorized access to systems or information</li>
         <li>Interfere with website functionality or security</li>
         <li>Upload or transmit malicious code</li>
         <li>Submit fraudulent or misleading information</li>
-        <li>Use automated systems in a way that disrupts the website</li>
+        <li>Disrupt the website using automated systems</li>
         <li>Use the website for unlawful activities</li>
+
       </ul>
 
 
       <h2>10. Security Information</h2>
 
       <p>
-        Information relating to cybersecurity, cloud security,
-        configurations or technology practices published on the
-        website is general information.
+
+        Cybersecurity, cloud security and technical information
+        published on the website is general information.
+
       </p>
 
       <p>
-        Security decisions should be evaluated in the context of the
-        specific environment, business requirements and technical risks.
+
+        Security decisions should be evaluated in the context
+        of the relevant environment, business requirements and risks.
+
       </p>
 
 
-      <h2>11. Academy Information</h2>
+      <h2>11. Nanobricks Academy</h2>
 
       <p>
-        Nanobricks Academy programs may have separate eligibility,
+
+        Academy programs may have separate eligibility,
         attendance, assessment, certification, internship,
         scheduling or payment requirements.
+
       </p>
 
       <p>
+
         Specific program terms communicated during registration
         or enrolment may apply in addition to these website terms.
+
       </p>
 
 
       <h2>12. External Links</h2>
 
       <p>
-        The website may contain links to external websites or
-        third-party platforms.
+
+        The website may contain links to third-party websites,
+        platforms or services.
+
       </p>
 
       <p>
+
         Nanobricks does not control those external services and
-        is not responsible for their content, availability or
-        privacy practices.
+        is not responsible for their content, availability or privacy practices.
+
       </p>
 
 
       <h2>13. Website Availability</h2>
 
       <p>
+
         Nanobricks may update, modify, suspend or discontinue
-        website content or functionality at any time.
+        website content or functionality.
+
       </p>
 
       <p>
-        We do not guarantee uninterrupted or error-free access
-        to the website.
+        We do not guarantee uninterrupted or error-free access.
       </p>
 
 
       <h2>14. Limitation of Website Information</h2>
 
       <p>
+
         To the extent permitted by applicable law, Nanobricks is not
         responsible for decisions made solely on the basis of general
-        information published on the website.
+        website information.
+
       </p>
 
       <p>
+
         Project-specific recommendations should be based on an agreed
-        assessment of the relevant technology environment and requirements.
+        assessment of the relevant environment and requirements.
+
       </p>
 
 
       <h2>15. Privacy</h2>
 
       <p>
-        Information submitted through the website is handled in
-        accordance with our Privacy Policy.
+
+        Information submitted through the website is handled
+        in accordance with the Nanobricks Privacy Policy.
+
       </p>
 
       <p>
-        You can review the Privacy Policy here:
-        <a href="/privacy-policy/">
-          Privacy Policy
-        </a>.
+
+        <a href="/privacy-policy/"
+           style="color:#1f6f2b;font-weight:600;">
+
+          View Privacy Policy
+
+        </a>
+
       </p>
 
 
       <h2>16. Changes to These Terms</h2>
 
       <p>
+
         Nanobricks may update these Terms of Use when services,
         website functionality or applicable requirements change.
+
       </p>
 
       <p>
-        The latest version will be published on this page together
-        with the revision date.
+        The latest version will be published on this page.
       </p>
 
 
       <h2>17. Applicable Law</h2>
 
       <p>
-        These website terms are intended to be governed by applicable
-        laws of India.
+
+        These website terms are intended to be governed by
+        applicable laws of India.
+
       </p>
 
       <p>
+
         Specific commercial agreements may contain their own
         governing-law, dispute-resolution or jurisdiction provisions.
+
       </p>
 
 
-      <div class="policy-box">
+      <div class="legal-note">
 
-        <p>
-          If Nanobricks enters into a separate written agreement with
-          a customer, institution or participant, the terms of that
-          agreement will govern the relevant engagement where they
-          differ from these general website terms.
-        </p>
+        Where Nanobricks enters into a separate written agreement
+        with a customer, institution or participant, the terms
+        of that agreement will govern the relevant engagement
+        where they differ from these general website terms.
 
       </div>
 
 
-      <div class="contact-box">
+      <div class="contact-card">
 
         <h3>Questions About These Terms</h3>
 
         <p>
-          If you have questions about these Terms of Use,
-          contact:
+          Contact Nanobricks:
         </p>
 
         <p>
@@ -681,17 +729,12 @@
         </p>
 
         <p>
+
           Email:
           <a href="mailto:info@nanobricks.in">
             info@nanobricks.in
           </a>
-        </p>
 
-        <p>
-          Website:
-          <a href="/">
-            www.nanobricks.in
-          </a>
         </p>
 
       </div>
@@ -702,70 +745,77 @@
 
 </section>
 
+</main>
 
-<footer>
+
+<footer class="footer-premium">
 
   <div class="container">
 
-    <div class="row g-4">
+    <div class="row gy-4">
 
       <div class="col-lg-4">
 
-        <h3>Nanobricks</h3>
+        <a href="/" class="footer-brand">
 
-        <p class="mt-3">
-          Technology services for growing businesses including
-          Managed IT, Cloud, Security, DevOps, Software Solutions
-          and professional technology training.
+          <img src="/assets/img/nano-log.png"
+               class="footer-logo"
+               alt="Nanobricks">
+
+          <span>Nanobricks</span>
+
+        </a>
+
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
+
         </p>
 
       </div>
 
 
-      <div class="col-lg-4">
+      <div class="col-lg-5">
 
-        <h5>Quick Links</h5>
+        <h4 class="footer-heading">Explore</h4>
 
-        <p class="mb-2">
-          <a href="/">Home</a>
-        </p>
+        <div class="footer-links-grid">
 
-        <p class="mb-2">
           <a href="/#services">Services</a>
-        </p>
-
-        <p class="mb-2">
-          <a href="/academy/">Nanobricks Academy</a>
-        </p>
-
-        <p class="mb-2">
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+          <a href="/#it-assessment">IT Assessment</a>
           <a href="/#contact">Contact</a>
-        </p>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+
+        </div>
 
       </div>
 
 
-      <div class="col-lg-4">
+      <div class="col-lg-3 footer-contact">
 
-        <h5>Legal</h5>
+        <h4 class="footer-heading">Contact</h4>
 
-        <p class="mb-2">
-          <a href="/privacy-policy/">
-            Privacy Policy
-          </a>
-        </p>
+        <div>
+          <i class="bi bi-geo-alt"></i>
+          Hyderabad, Telangana, India
+        </div>
 
-        <p class="mb-2">
-          <a href="/terms/">
-            Terms of Use
-          </a>
-        </p>
+        <div>
+          <i class="bi bi-telephone"></i>
+          <a href="tel:+917995720507">+91 79957 20507</a>
+        </div>
 
-        <p class="mb-2">
-          <a href="mailto:info@nanobricks.in">
-            info@nanobricks.in
-          </a>
-        </p>
+        <div>
+          <i class="bi bi-envelope"></i>
+          <a href="mailto:info@nanobricks.in">info@nanobricks.in</a>
+        </div>
 
       </div>
 
@@ -773,7 +823,10 @@
 
 
     <div class="footer-bottom">
-      © 2026 Nanobricks. All Rights Reserved.
+
+      <span>© 2026 Nanobricks. All Rights Reserved.</span>
+      <span>Terms of Use • Nanobricks</span>
+
     </div>
 
   </div>
@@ -781,9 +834,16 @@
 </footer>
 
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
+<a href="#"
+   class="back-to-top d-flex align-items-center justify-content-center">
+
+  <i class="bi bi-arrow-up-short"></i>
+
+</a>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 
