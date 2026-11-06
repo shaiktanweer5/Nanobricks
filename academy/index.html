@@ -4,35 +4,29 @@
 <head>
 
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
 
-  <title>
-    Nanobricks Academy | Cloud, Cybersecurity, DevOps & AI Training Hyderabad
-  </title>
+  <title>Nanobricks Academy | Cloud, Cybersecurity, DevOps & AI Training Hyderabad</title>
 
   <meta name="description"
-        content="Nanobricks Academy provides industry-focused training in Cloud, Cybersecurity, DevOps, AI and Python through hands-on labs, projects, workshops and internship opportunities in Hyderabad.">
-
-  <meta name="keywords"
-        content="Cloud Training Hyderabad, AWS Training Hyderabad, Cybersecurity Training Hyderabad, DevOps Training Hyderabad, AI Training Hyderabad, Python Training Hyderabad, Internship Program, Nanobricks Academy">
-
-  <meta property="og:title"
-        content="Nanobricks Academy | Industry-Focused Technology Training">
-
-  <meta property="og:description"
-        content="Practical learning programs in Cloud, Cybersecurity, DevOps, AI and Python for students, professionals, colleges and organizations.">
-
-  <meta property="og:url"
-        content="https://www.nanobricks.in/academy/">
-
-  <meta property="og:type"
-        content="website">
+        content="Nanobricks Academy provides practical training in Cloud, Cybersecurity, DevOps, AI and Python through hands-on labs, projects, workshops and internship programs in Hyderabad.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/academy/">
 
-  <!-- Google Analytics -->
+  <meta property="og:title"
+        content="Nanobricks Academy | Practical Technology Training">
+
+  <meta property="og:description"
+        content="Practical learning programs in Cloud, Cybersecurity, DevOps, AI and Python for students, professionals, colleges and organizations.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/academy/">
+
   <script async
           src="https://www.googletagmanager.com/gtag/js?id=G-MSKW1ESHK7">
   </script>
@@ -48,211 +42,507 @@
     gtag('config', 'G-MSKW1ESHK7');
   </script>
 
-  <!-- Favicons -->
   <link href="/assets/img/nano-log.png" rel="icon">
   <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
     rel="stylesheet">
 
-  <!-- Bootstrap -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <!-- Main CSS -->
-  <link
-    href="/assets/css/style.css"
-    rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
   <style>
 
-    /* Academy-specific small improvements */
-
-    #header .logo img {
-      max-height: 44px;
-      width: auto;
+    .academy-hero {
+      margin-top: 72px;
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
+      border-bottom: 1px solid #e7ece9;
     }
 
-    .academy-intro {
-      max-width: 900px;
-      margin: 0 auto;
+    .academy-hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #25372b;
+      line-height: 1.18;
+      margin-bottom: 18px;
     }
 
-    .academy-intro p {
-      text-align: center;
-      line-height: 1.8;
+    .academy-hero p {
+      font-size: 20px;
+      color: #647168;
+      line-height: 1.7;
+      max-width: 820px;
     }
 
-    .academy-benefits {
+    .academy-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #2fa93a;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .hero-icon {
+      width: 180px;
+      height: 180px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 60px rgba(0,0,0,.08);
+    }
+
+    .hero-icon i {
+      font-size: 75px;
+      color: #33bc3b;
+    }
+
+    .academy-section {
+      padding: 80px 0;
+    }
+
+    .academy-section.alt {
+      background: #f8faf9;
+    }
+
+    .academy-card,
+    .program-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+      transition: .25s ease;
+    }
+
+    .academy-card:hover,
+    .program-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0,0,0,.07);
+    }
+
+    .academy-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #eff9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .academy-icon i {
+      color: #2fa93a;
+      font-size: 26px;
+    }
+
+    .academy-card h3,
+    .program-card h3 {
+      color: #25372b;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .academy-card p,
+    .program-card p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .check-list {
       list-style: none;
-      padding-left: 0;
-      line-height: 2.1;
+      padding: 0;
+      margin: 0;
     }
 
-    .academy-benefits li {
-      margin-bottom: 5px;
+    .check-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 14px;
+      color: #647168;
+      line-height: 1.6;
     }
 
-    .academy-footer-link {
-      color: #ddd;
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #2fa93a;
+      font-weight: 700;
+    }
+
+    .trainer-box {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 18px;
+      padding: 38px;
+      box-shadow: 0 12px 36px rgba(0,0,0,.05);
+    }
+
+    .trainer-box h2 {
+      color: #25372b;
+      font-weight: 700;
+    }
+
+    .trainer-box p {
+      color: #647168;
+      line-height: 1.75;
+    }
+
+    .trainer-highlight {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .trainer-highlight h4 {
+      color: #25372b;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .trainer-highlight p {
+      color: #5e6d63;
+      margin-bottom: 11px;
+    }
+
+    .trainer-highlight i {
+      color: #33bc3b;
+      margin-right: 8px;
+    }
+
+    .faq-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 26px 30px;
+      margin-bottom: 16px;
+    }
+
+    .faq-card h3 {
+      color: #25372b;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .faq-card p {
+      color: #647168;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .academy-contact {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 18px;
+      padding: 35px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+    }
+
+    .academy-contact h3 {
+      color: #25372b;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .contact-line {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 18px;
+      color: #647168;
+    }
+
+    .contact-line i {
+      color: #2fa93a;
+      font-size: 20px;
+    }
+
+    .academy-cta {
+      background: #1f6f2b;
+      color: #ffffff;
+      padding: 80px 0;
+    }
+
+    .academy-cta h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .academy-cta p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+
+    /* PREMIUM FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
       text-decoration: none;
     }
 
-    .academy-footer-link:hover {
-      color: #fff;
+    .footer-social a:hover {
+      background: #1f6f2b;
+      border-color: #1f6f2b;
+      color: #ffffff;
     }
 
-    .academy-legal {
-      margin-top: 15px;
+    .footer-heading {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 4px 0 17px;
     }
 
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a,
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links-grid a:hover,
+    .footer-contact-item a:hover {
+      color: #ffffff;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-item i {
+      color: #49c354;
+    }
+
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer-whatsapp:hover {
       background: #25D366;
-      color: white;
-      font-size: 24px;
-      padding: 12px 16px;
-      border-radius: 50%;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      z-index: 999;
+      color: #ffffff;
     }
 
-    .whatsapp-float:hover {
-      color: #fff;
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media(max-width:768px) {
+
+      .academy-hero h1 {
+        font-size: 34px;
+      }
+
+      .academy-hero p {
+        font-size: 17px;
+      }
+
+      .hero-icon {
+        width: 140px;
+        height: 140px;
+      }
+
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
     }
 
   </style>
 
 </head>
 
-
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header id="header"
         class="fixed-top d-flex align-items-center">
 
   <div class="container d-flex align-items-center justify-content-between">
 
-
-    <!-- Logo -->
-
     <div class="logo">
 
       <a href="/">
-
-        <img
-          src="/assets/img/nano-log.png"
-          alt="Nanobricks"
-          height="40">
-
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
       </a>
 
     </div>
 
-
-    <!-- Navigation -->
 
     <nav id="navbar"
          class="navbar">
 
       <ul>
 
-
-        <!-- Home -->
-
         <li>
-
-          <a href="/">
-            Home
-          </a>
-
+          <a href="/">Home</a>
         </li>
 
 
-        <!-- Services Dropdown -->
-
         <li class="dropdown">
 
-          <a href="#">
+          <a href="/#services">
 
-            <span>
-              Services
-            </span>
-
+            <span>Services</span>
             <i class="bi bi-chevron-down"></i>
 
           </a>
 
+          <ul>
+
+            <li><a href="/services/managed-it/">Managed IT & AMC</a></li>
+            <li><a href="/services/business-it-setup/">Business IT Setup</a></li>
+            <li><a href="/services/cloud-services/">Cloud Services</a></li>
+            <li><a href="/services/cloud-security/">Cloud Security</a></li>
+            <li><a href="/services/devops-automation/">DevOps & Automation</a></li>
+            <li><a href="/services/cybersecurity/">Cybersecurity</a></li>
+            <li><a href="/services/web-software/">Web & Software</a></li>
+            <li><a href="/services/backup-continuity/">Backup & Continuity</a></li>
+            <li><a href="/services/it-consulting/">IT Consulting</a></li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/tools/">
+
+            <span>Tools</span>
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
 
           <ul>
 
-            <li>
+            <li><a href="/tools/">All Tools</a></li>
+            <li><a href="/tools/endpoint-assessment/">Endpoint Assessment</a></li>
+            <li><a href="/tools/pdf/">PDF Tools</a></li>
 
-              <a href="/services/managed-it/">
-                Managed IT & AMC
-              </a>
+          </ul>
 
-            </li>
-
-
-            <li>
-
-              <a href="/services/cloud-services/">
-                Cloud Services
-              </a>
-
-            </li>
+        </li>
 
 
-            <li>
+        <li class="dropdown">
 
-              <a href="/services/cloud-security/">
-                Cloud Security
-              </a>
+          <a href="/case-studies/">
 
-            </li>
+            <span>Case Studies</span>
+            <i class="bi bi-chevron-down"></i>
 
+          </a>
+
+          <ul>
+
+            <li><a href="/case-studies/">All Case Studies</a></li>
 
             <li>
-
-              <a href="/services/devops-automation/">
-                DevOps & Automation
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
               </a>
-
-            </li>
-
-
-            <li>
-
-              <a href="/services/cybersecurity/">
-                Cybersecurity
-              </a>
-
-            </li>
-
-
-            <li>
-
-              <a href="/services/web-software/">
-                Web & Software
-              </a>
-
             </li>
 
           </ul>
@@ -260,54 +550,20 @@
         </li>
 
 
-        <!-- Academy -->
+        <li>
+          <a href="/#about">About</a>
+        </li>
 
         <li>
-
           <a class="active"
              href="/academy/">
-
             Academy
-
           </a>
-
         </li>
-
-
-        <!-- Programs -->
 
         <li>
-
-          <a href="#training">
-            Programs
-          </a>
-
+          <a href="/#contact">Contact</a>
         </li>
-
-
-        <!-- Colleges -->
-
-        <li>
-
-          <a href="#colleges">
-            For Colleges
-          </a>
-
-        </li>
-
-
-        <!-- Contact -->
-
-        <li>
-
-          <a href="#contact">
-            Contact
-          </a>
-
-        </li>
-
-
-        <!-- CTA -->
 
         <li>
 
@@ -322,7 +578,6 @@
 
       </ul>
 
-
       <i class="bi bi-list mobile-nav-toggle"></i>
 
     </nav>
@@ -332,56 +587,121 @@
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
-
-<section id="hero"
-         class="d-flex align-items-center">
+<section class="academy-hero">
 
   <div class="container">
 
-    <div class="row align-items-center">
+    <div class="row align-items-center gy-4">
 
-      <div class="col-lg-7">
+      <div class="col-lg-8">
+
+        <div class="academy-label">
+
+          <i class="bi bi-mortarboard"></i>
+          Nanobricks Academy
+
+        </div>
 
         <h1>
           Learn Technology Through Practical Experience
         </h1>
 
-        <h2>
+        <p>
 
-          Industry-focused programs in Cloud, Cybersecurity,
-          DevOps, AI and Python with hands-on labs,
-          projects and expert guidance.
+          Industry-focused learning in Cloud, Cybersecurity,
+          DevOps, AI and Python through hands-on labs,
+          practical projects, workshops and guided learning.
 
-        </h2>
+        </p>
 
+        <div class="d-flex flex-wrap gap-3 mt-4">
 
-        <div class="mt-4">
-
-          <a href="#training"
-             class="btn btn-success">
+          <a href="#programs"
+             class="btn btn-success btn-lg">
 
             Explore Programs
 
           </a>
 
-
           <a href="#contact"
-             class="btn btn-outline-dark">
+             class="btn btn-outline-dark btn-lg">
 
-            Enquire Now
+            Academy Enquiry
 
           </a>
 
         </div>
 
+        <p class="mt-4 mb-0"
+           style="font-size:15px;">
 
-        <p class="mt-3">
+          Students • Fresh Graduates • Working Professionals • Colleges • Organizations
 
-          Students â€¢ Working Professionals â€¢
-          Colleges â€¢ Organizations
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-4 text-center">
+
+        <div class="hero-icon">
+          <i class="bi bi-mortarboard"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<main>
+
+
+<section class="academy-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        About Nanobricks Academy
+      </h2>
+
+      <p>
+        Practical technology education from the learning division of Nanobricks.
+      </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-9 text-center">
+
+        <p style="color:#647168;line-height:1.8;font-size:17px;">
+
+          Nanobricks Academy is the professional learning and
+          technology education division of Nanobricks.
+
+        </p>
+
+        <p style="color:#647168;line-height:1.8;font-size:17px;">
+
+          We help students, fresh graduates, working professionals,
+          colleges and organizations build practical technology skills
+          through structured training, hands-on labs, projects,
+          workshops and mentorship.
+
+        </p>
+
+        <p style="color:#647168;line-height:1.8;font-size:17px;">
+
+          Programs focus on modern technology areas including
+          Cloud Computing, Cybersecurity, DevOps, Artificial Intelligence
+          and Python.
 
         </p>
 
@@ -394,69 +714,7 @@
 </section>
 
 
-<main id="main">
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section id="about"
-         class="about">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>
-        About Nanobricks Academy
-      </h2>
-
-    </div>
-
-
-    <div class="academy-intro">
-
-      <p>
-
-        Nanobricks Academy is the professional learning
-        and technology education division of Nanobricks.
-
-      </p>
-
-
-      <p>
-
-        We help students, working professionals,
-        colleges and organizations build practical
-        technology skills through structured training,
-        hands-on labs, project-based learning,
-        workshops and mentorship.
-
-      </p>
-
-
-      <p>
-
-        Our programs focus on technologies used across
-        modern IT environments, including Cloud Computing,
-        Cybersecurity, DevOps, Artificial Intelligence
-        and Python.
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     LEARN BY DOING
-========================= -->
-
-<section class="services section-bg">
+<section class="academy-section alt">
 
   <div class="container">
 
@@ -475,20 +733,20 @@
 
     <div class="row gy-4">
 
-
       <div class="col-lg-4">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+
+          <h3>
             Hands-On Labs
-          </h4>
+          </h3>
 
           <p>
-
-            Practice cloud, security, DevOps and
-            automation concepts through guided technical labs.
-
+            Practice cloud, security, DevOps and automation concepts through guided technical labs.
           </p>
 
         </div>
@@ -498,17 +756,18 @@
 
       <div class="col-lg-4">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-kanban"></i>
+          </div>
+
+          <h3>
             Project-Based Learning
-          </h4>
+          </h3>
 
           <p>
-
-            Apply concepts through practical projects
-            and industry-relevant technical scenarios.
-
+            Apply concepts through practical projects and industry-relevant technical scenarios.
           </p>
 
         </div>
@@ -518,24 +777,23 @@
 
       <div class="col-lg-4">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
-            Expert Mentorship
-          </h4>
+          <div class="academy-icon">
+            <i class="bi bi-person-check"></i>
+          </div>
+
+          <h3>
+            Practical Mentorship
+          </h3>
 
           <p>
-
-            Learn with guidance from professionals
-            experienced in enterprise cloud and
-            security environments.
-
+            Learn with guidance built around real cloud, security and enterprise technology experience.
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -544,252 +802,40 @@
 </section>
 
 
-<!-- =========================
-     WHAT YOU GAIN
-========================= -->
-
-<section class="services">
+<section id="programs"
+         class="academy-section">
 
   <div class="container">
 
     <div class="section-title">
 
       <h2>
-        What You Gain
-      </h2>
-
-    </div>
-
-
-    <div class="row gy-4">
-
-
-      <div class="col-lg-6 text-center">
-
-        <ul class="academy-benefits">
-
-          <li>âœ” Hands-On Technical Labs</li>
-
-          <li>âœ” Project-Based Learning</li>
-
-          <li>âœ” Practical Assignments</li>
-
-          <li>âœ” Industry-Relevant Scenarios</li>
-
-        </ul>
-
-      </div>
-
-
-      <div class="col-lg-6 text-center">
-
-        <ul class="academy-benefits">
-
-          <li>âœ” Resume Guidance</li>
-
-          <li>âœ” Interview Preparation</li>
-
-          <li>âœ” Career Guidance</li>
-
-          <li>âœ” Program Completion Certificate</li>
-
-        </ul>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     TRAINER
-========================= -->
-
-<section class="services section-bg">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>
-        Learn From Industry Experience
-      </h2>
-
-    </div>
-
-
-    <div class="icon-box text-center">
-
-      <h4>
-        Tanweer Ahmed
-      </h4>
-
-
-      <p>
-
-        Tanweer Ahmed is a Cloud Security and Multi-Cloud
-        professional with nearly six years of IT experience
-        across AWS, Microsoft Azure and Google Cloud.
-
-      </p>
-
-
-      <p>
-
-        His experience includes Cloud Security, IAM,
-        CNAPP/CSPM, Terraform, cloud infrastructure,
-        DevSecOps and enterprise security environments.
-
-      </p>
-
-
-      <p>
-
-        He holds multiple industry-recognized cloud
-        certifications and focuses on practical,
-        scenario-based learning rather than theory alone.
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CAREER SUPPORT
-========================= -->
-
-<section class="services">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>
-        Career Growth Support
-      </h2>
-
-    </div>
-
-
-    <div class="row gy-4">
-
-
-      <div class="col-lg-4">
-
-        <div class="icon-box text-center">
-
-          <h4>
-            Resume Guidance
-          </h4>
-
-          <p>
-
-            Guidance to present your technical skills
-            and project experience effectively.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <div class="icon-box text-center">
-
-          <h4>
-            Interview Preparation
-          </h4>
-
-          <p>
-
-            Technical interview guidance,
-            practice questions and role-focused preparation.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4">
-
-        <div class="icon-box text-center">
-
-          <h4>
-            Career Guidance
-          </h4>
-
-          <p>
-
-            Guidance on technology roles, learning paths,
-            certifications and career preparation.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     LEARNING PROGRAMS
-========================= -->
-
-<section id="training"
-         class="services section-bg">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>
-        Our Learning Programs
+        Learning Programs
       </h2>
 
       <p>
-
-        Practical technology programs designed for students,
-        professionals and organizations.
-
+        Technology programs for learners at different stages of their career.
       </p>
 
     </div>
 
 
     <div class="row gy-4">
-
 
       <div class="col-lg-4 col-md-6">
 
-        <div class="icon-box h-100 text-center">
+        <div class="program-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
+          <h3>
             Cloud Computing
-          </h4>
+          </h3>
 
           <p>
-
-            AWS â€¢ Azure â€¢ Google Cloud â€¢ Networking â€¢
-            IAM â€¢ Compute â€¢ Storage
-
+            AWS • Microsoft Azure • Google Cloud • Networking • IAM • Compute • Storage
           </p>
 
         </div>
@@ -799,17 +845,18 @@
 
       <div class="col-lg-4 col-md-6">
 
-        <div class="icon-box h-100 text-center">
+        <div class="program-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-git"></i>
+          </div>
+
+          <h3>
             AWS & DevOps
-          </h4>
+          </h3>
 
           <p>
-
-            AWS â€¢ Linux â€¢ Git â€¢ CI/CD â€¢ Docker â€¢
-            Terraform â€¢ Automation
-
+            AWS • Linux • Git • CI/CD • Docker • Terraform • Automation
           </p>
 
         </div>
@@ -819,17 +866,18 @@
 
       <div class="col-lg-4 col-md-6">
 
-        <div class="icon-box h-100 text-center">
+        <div class="program-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-cloud-lock"></i>
+          </div>
+
+          <h3>
             Cloud Security
-          </h4>
+          </h3>
 
           <p>
-
-            IAM â€¢ CSPM â€¢ CNAPP â€¢ Vulnerability Management â€¢
-            Security Architecture
-
+            IAM • CSPM • CNAPP • Vulnerability Management • Security Architecture
           </p>
 
         </div>
@@ -839,17 +887,18 @@
 
       <div class="col-lg-4 col-md-6">
 
-        <div class="icon-box h-100 text-center">
+        <div class="program-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+
+          <h3>
             Cybersecurity Foundations
-          </h4>
+          </h3>
 
           <p>
-
-            Networking â€¢ Security Fundamentals â€¢
-            Vulnerabilities â€¢ IAM â€¢ Cloud Security
-
+            Networking • Security Fundamentals • Vulnerabilities • IAM • Cloud Security
           </p>
 
         </div>
@@ -859,17 +908,18 @@
 
       <div class="col-lg-4 col-md-6">
 
-        <div class="icon-box h-100 text-center">
+        <div class="program-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+
+          <h3>
             Python & Automation
-          </h4>
+          </h3>
 
           <p>
-
-            Python Fundamentals â€¢ Scripting â€¢
-            APIs â€¢ Cloud Automation
-
+            Python Fundamentals • Scripting • APIs • Cloud Automation
           </p>
 
         </div>
@@ -879,28 +929,28 @@
 
       <div class="col-lg-4 col-md-6">
 
-        <div class="icon-box h-100 text-center">
+        <div class="program-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-cpu"></i>
+          </div>
+
+          <h3>
             AI & Emerging Technologies
-          </h4>
+          </h3>
 
           <p>
-
-            Generative AI â€¢ AI Fundamentals â€¢
-            Cloud AI â€¢ Practical Use Cases
-
+            Generative AI • AI Fundamentals • Cloud AI • Practical Use Cases
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
 
-    <div class="text-center mt-4">
+    <div class="text-center mt-5">
 
       <a href="#contact"
          class="btn btn-success">
@@ -916,11 +966,162 @@
 </section>
 
 
-<!-- =========================
-     WHO CAN JOIN
-========================= -->
+<section class="academy-section alt">
 
-<section class="services">
+  <div class="container">
+
+    <div class="trainer-box">
+
+      <div class="row align-items-center gy-4">
+
+        <div class="col-lg-7">
+
+          <div class="academy-label">
+
+            <i class="bi bi-person-badge"></i>
+            Industry Experience
+
+          </div>
+
+          <h2>
+            Learn From Practical Cloud & Security Experience
+          </h2>
+
+          <p>
+
+            Academy programs are designed around practical scenarios,
+            hands-on exercises and technologies used in modern IT environments.
+
+          </p>
+
+          <p>
+
+            Training guidance covers areas such as cloud platforms,
+            cloud security, IAM, CNAPP/CSPM, Terraform,
+            infrastructure, DevOps and automation.
+
+          </p>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+          <div class="trainer-highlight">
+
+            <h4>
+              Learning Approach
+            </h4>
+
+            <p><i class="bi bi-check-circle-fill"></i> Hands-on technical labs</p>
+            <p><i class="bi bi-check-circle-fill"></i> Practical assignments</p>
+            <p><i class="bi bi-check-circle-fill"></i> Project-based learning</p>
+            <p><i class="bi bi-check-circle-fill"></i> Real-world scenarios</p>
+            <p><i class="bi bi-check-circle-fill"></i> Interview preparation</p>
+            <p><i class="bi bi-check-circle-fill"></i> Career guidance</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="academy-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Career Support
+      </h2>
+
+      <p>
+        Support beyond classroom learning.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+
+        <div class="academy-card">
+
+          <div class="academy-icon">
+            <i class="bi bi-file-earmark-person"></i>
+          </div>
+
+          <h3>
+            Resume Guidance
+          </h3>
+
+          <p>
+            Guidance to present technical skills, certifications and project experience clearly.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="academy-card">
+
+          <div class="academy-icon">
+            <i class="bi bi-chat-square-text"></i>
+          </div>
+
+          <h3>
+            Interview Preparation
+          </h3>
+
+          <p>
+            Technical interview guidance, practice questions and role-focused preparation.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="academy-card">
+
+          <div class="academy-icon">
+            <i class="bi bi-signpost-split"></i>
+          </div>
+
+          <h3>
+            Career Guidance
+          </h3>
+
+          <p>
+            Guidance on technology roles, learning paths, certifications and career preparation.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="academy-section alt">
 
   <div class="container">
 
@@ -931,10 +1132,7 @@
       </h2>
 
       <p>
-
-        Programs designed for learners at
-        different stages of their technology journey.
-
+        Programs designed for learners at different stages of their technology journey.
       </p>
 
     </div>
@@ -942,20 +1140,18 @@
 
     <div class="row gy-4">
 
-
       <div class="col-lg-3 col-md-6">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
-            Students
-          </h4>
+          <div class="academy-icon">
+            <i class="bi bi-book"></i>
+          </div>
+
+          <h3>Students</h3>
 
           <p>
-
-            Build practical technology skills
-            alongside academic learning.
-
+            Build practical technology skills alongside academic learning.
           </p>
 
         </div>
@@ -965,17 +1161,16 @@
 
       <div class="col-lg-3 col-md-6">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
-            Fresh Graduates
-          </h4>
+          <div class="academy-icon">
+            <i class="bi bi-mortarboard"></i>
+          </div>
+
+          <h3>Fresh Graduates</h3>
 
           <p>
-
-            Strengthen technical skills and prepare
-            for entry-level technology roles.
-
+            Strengthen technical skills and prepare for entry-level technology roles.
           </p>
 
         </div>
@@ -985,17 +1180,16 @@
 
       <div class="col-lg-3 col-md-6">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
-            Working Professionals
-          </h4>
+          <div class="academy-icon">
+            <i class="bi bi-briefcase"></i>
+          </div>
+
+          <h3>Professionals</h3>
 
           <p>
-
-            Upskill or transition into cloud,
-            security and DevOps roles.
-
+            Upskill or transition into cloud, security and DevOps roles.
           </p>
 
         </div>
@@ -1005,23 +1199,21 @@
 
       <div class="col-lg-3 col-md-6">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
-            Colleges & Organizations
-          </h4>
+          <div class="academy-icon">
+            <i class="bi bi-building"></i>
+          </div>
+
+          <h3>Institutions</h3>
 
           <p>
-
-            Customized workshops and technology
-            training programs.
-
+            Customized workshops and technology training programs.
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
@@ -1030,12 +1222,8 @@
 </section>
 
 
-<!-- =========================
-     COLLEGES
-========================= -->
-
 <section id="colleges"
-         class="services section-bg">
+         class="academy-section">
 
   <div class="container">
 
@@ -1046,11 +1234,7 @@
       </h2>
 
       <p>
-
-        Practical technology workshops and structured
-        learning programs designed for engineering
-        students and academic institutions.
-
+        Practical technology workshops and structured learning programs for students and institutions.
       </p>
 
     </div>
@@ -1058,21 +1242,20 @@
 
     <div class="row gy-4">
 
-
       <div class="col-lg-4">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-easel"></i>
+          </div>
+
+          <h3>
             Technical Workshops
-          </h4>
+          </h3>
 
           <p>
-
-            Cloud, Cybersecurity, DevOps, AI and
-            emerging technology workshops designed
-            around practical learning.
-
+            Cloud, Cybersecurity, DevOps, AI and emerging technology workshops built around practical learning.
           </p>
 
         </div>
@@ -1082,18 +1265,18 @@
 
       <div class="col-lg-4">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-person-workspace"></i>
+          </div>
+
+          <h3>
             Internship Programs
-          </h4>
+          </h3>
 
           <p>
-
-            Structured practical learning with
-            technical labs, assignments,
-            mentorship and project work.
-
+            Structured learning with technical labs, assignments, mentorship and project work.
           </p>
 
         </div>
@@ -1103,28 +1286,28 @@
 
       <div class="col-lg-4">
 
-        <div class="icon-box text-center">
+        <div class="academy-card">
 
-          <h4>
+          <div class="academy-icon">
+            <i class="bi bi-people"></i>
+          </div>
+
+          <h3>
             Faculty & Corporate Training
-          </h4>
+          </h3>
 
           <p>
-
-            Customized technology learning programs
-            based on institutional and organizational requirements.
-
+            Customized technology learning programs based on institutional and organizational requirements.
           </p>
 
         </div>
 
       </div>
-
 
     </div>
 
 
-    <div class="text-center mt-4">
+    <div class="text-center mt-5">
 
       <a href="#contact"
          class="btn btn-success">
@@ -1140,12 +1323,60 @@
 </section>
 
 
-<!-- =========================
-     FAQ
-========================= -->
+<section class="academy-section alt">
 
-<section id="faq"
-         class="faq">
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        What You Gain
+      </h2>
+
+      <p>
+        A practical learning experience focused on technology skills and career preparation.
+      </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-5">
+
+        <ul class="check-list">
+
+          <li>Hands-On Technical Labs</li>
+          <li>Project-Based Learning</li>
+          <li>Practical Assignments</li>
+          <li>Industry-Relevant Scenarios</li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="col-lg-5">
+
+        <ul class="check-list">
+
+          <li>Resume Guidance</li>
+          <li>Interview Preparation</li>
+          <li>Career Guidance</li>
+          <li>Program Completion Certificate where applicable</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="academy-section">
 
   <div class="container">
 
@@ -1162,159 +1393,87 @@
     </div>
 
 
-    <ul class="faq-list">
+    <div class="row justify-content-center">
 
+      <div class="col-lg-9">
 
-      <li>
+        <div class="faq-card">
 
-        <div
-          data-bs-toggle="collapse"
-          href="#faq1"
-          class="collapsed question">
-
-          Do I need prior experience?
-
-        </div>
-
-        <div id="faq1"
-             class="collapse">
+          <h3>
+            Do I need prior experience?
+          </h3>
 
           <p>
-
-            No. Beginner programs start with fundamentals
-            before progressing to practical labs and projects.
-
+            Beginner programs can start with fundamentals before progressing to practical labs and projects.
           </p>
 
         </div>
 
-      </li>
 
+        <div class="faq-card">
 
-      <li>
-
-        <div
-          data-bs-toggle="collapse"
-          href="#faq2"
-          class="collapsed question">
-
-          Are the programs suitable for students
-          and working professionals?
-
-        </div>
-
-        <div id="faq2"
-             class="collapse">
+          <h3>
+            Are programs suitable for students and working professionals?
+          </h3>
 
           <p>
-
-            Yes. Programs are designed for students,
-            fresh graduates and working professionals
-            at different learning levels.
-
+            Yes. Programs are designed for students, fresh graduates and working professionals at different learning levels.
           </p>
 
         </div>
 
-      </li>
 
+        <div class="faq-card">
 
-      <li>
-
-        <div
-          data-bs-toggle="collapse"
-          href="#faq3"
-          class="collapsed question">
-
-          Do participants receive a certificate?
-
-        </div>
-
-        <div id="faq3"
-             class="collapse">
+          <h3>
+            Do participants receive a certificate?
+          </h3>
 
           <p>
-
-            Eligible participants can receive a
-            Nanobricks Academy program completion
-            or internship certificate depending on the program.
-
+            Eligible participants may receive a Nanobricks Academy program completion or internship certificate depending on the program.
           </p>
 
         </div>
 
-      </li>
 
+        <div class="faq-card">
 
-      <li>
-
-        <div
-          data-bs-toggle="collapse"
-          href="#faq4"
-          class="collapsed question">
-
-          Do you provide training for colleges and institutions?
-
-        </div>
-
-        <div id="faq4"
-             class="collapse">
+          <h3>
+            Do you provide training for colleges and institutions?
+          </h3>
 
           <p>
-
-            Yes. Nanobricks Academy can provide workshops,
-            internship programs and customized technology
-            training for colleges and institutions.
-
+            Yes. Nanobricks Academy can provide workshops, internship programs and customized technology training for institutions.
           </p>
 
         </div>
 
-      </li>
 
+        <div class="faq-card">
 
-      <li>
-
-        <div
-          data-bs-toggle="collapse"
-          href="#faq5"
-          class="collapsed question">
-
-          How can I know the next batch schedule?
-
-        </div>
-
-        <div id="faq5"
-             class="collapse">
+          <h3>
+            How can I know the next batch schedule?
+          </h3>
 
           <p>
-
-            Contact Nanobricks Academy through WhatsApp
-            or email for current program and batch information.
-
+            Contact Nanobricks Academy through WhatsApp or email for current program and batch information.
           </p>
 
         </div>
 
-      </li>
+      </div>
 
-
-    </ul>
+    </div>
 
   </div>
 
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
-
 <section id="contact"
-         class="contact section-bg">
+         class="academy-section alt">
 
   <div class="container">
-
 
     <div class="section-title">
 
@@ -1323,11 +1482,7 @@
       </h2>
 
       <p>
-
-        Enquire about training programs,
-        internships, workshops and
-        institutional collaborations.
-
+        Enquire about training programs, internships, workshops and institutional collaborations.
       </p>
 
     </div>
@@ -1335,129 +1490,130 @@
 
     <div class="row gy-4">
 
+      <div class="col-lg-5">
 
-      <!-- Contact Details -->
+        <div class="academy-contact">
 
-      <div class="col-lg-5 d-flex align-items-stretch">
+          <h3>
+            Academy Contact
+          </h3>
 
-        <div class="info">
-
-
-          <div class="address">
+          <div class="contact-line">
 
             <i class="bi bi-geo-alt"></i>
 
-            <h4>
-              Location
-            </h4>
-
-            <p>
+            <span>
               Hyderabad, Telangana, India
-            </p>
+            </span>
 
           </div>
 
-
-          <div class="email">
+          <div class="contact-line">
 
             <i class="bi bi-envelope"></i>
 
-            <h4>
-              Email
-            </h4>
+            <a href="mailto:info@nanobricks.in"
+               style="color:#647168;text-decoration:none;">
 
-            <p>
               info@nanobricks.in
-            </p>
-
-          </div>
-
-
-          <div class="phone">
-
-            <i class="bi bi-phone"></i>
-
-            <h4>
-              Call / WhatsApp
-            </h4>
-
-            <p>
-              +91 7995720507
-            </p>
-
-          </div>
-
-
-          <div class="social-links">
-
-            <a
-              href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20Academy%20programs"
-              target="_blank"
-              rel="noopener">
-
-              <i class="bi bi-whatsapp"></i>
 
             </a>
 
           </div>
 
+          <div class="contact-line">
+
+            <i class="bi bi-phone"></i>
+
+            <a href="tel:+917995720507"
+               style="color:#647168;text-decoration:none;">
+
+              +91 79957 20507
+
+            </a>
+
+          </div>
 
         </div>
 
       </div>
 
 
-      <!-- CTA Box -->
+      <div class="col-lg-7">
 
-      <div class="col-lg-7 d-flex align-items-stretch">
+        <div class="academy-contact">
 
-        <div class="info"
-             style="border-top:3px solid #25D366;">
-
-
-          <h4>
+          <h3>
             Talk to Nanobricks Academy
-          </h4>
+          </h3>
 
+          <p style="color:#647168;line-height:1.7;">
 
-          <p>
-
-            Interested in a training program,
-            internship, workshop or institutional
-            collaboration? Contact us to discuss
-            the right learning program.
+            Interested in a training program, internship,
+            workshop or institutional collaboration?
+            Contact us to discuss the appropriate learning program.
 
           </p>
 
+          <div class="d-flex flex-wrap gap-3 mt-4">
 
-          <br>
+            <a href="#programs"
+               class="btn btn-success">
 
+              View Programs
 
-          <a href="#training"
-             class="btn btn-success mb-2"
-             style="width:100%;">
+            </a>
 
-            ðŸš€ View Programs
+            <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20Academy%20programs"
+               class="btn btn-outline-success"
+               target="_blank"
+               rel="noopener">
 
-          </a>
+              <i class="bi bi-whatsapp me-2"></i>
+              Chat on WhatsApp
 
+            </a>
 
-          <a
-            href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20Academy%20programs"
-            class="btn btn-outline-success"
-            style="width:100%;"
-            target="_blank"
-            rel="noopener">
-
-            ðŸ’¬ Chat on WhatsApp
-
-          </a>
-
+          </div>
 
         </div>
 
       </div>
 
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="academy-cta">
+
+  <div class="container text-center">
+
+    <h2>
+      Build Practical Technology Skills
+    </h2>
+
+    <p>
+      Explore practical learning in Cloud, Cybersecurity, DevOps, AI and Python.
+    </p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+
+      <a href="#programs"
+         class="btn btn-light btn-lg">
+
+        Explore Programs
+
+      </a>
+
+      <a href="#contact"
+         class="btn btn-outline-light btn-lg">
+
+        Academy Enquiry
+
+      </a>
 
     </div>
 
@@ -1469,260 +1625,144 @@
 </main>
 
 
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="cta text-center">
-
-  <div class="container">
-
-    <h2>
-      Build Practical Technology Skills
-    </h2>
-
-    <p>
-
-      Explore industry-focused learning in
-      Cloud, Cybersecurity, DevOps, AI and Python.
-
-    </p>
-
-    <a href="#training"
-       class="btn btn-success mt-3">
-
-      Explore Programs
-
-    </a>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer id="footer"
-        style="background:#111827;color:#fff;padding:60px 0 20px;">
+        class="footer-premium">
 
   <div class="container">
 
-    <div class="row gy-4">
-
-
-      <!-- Academy -->
+    <div class="row gy-4 align-items-start">
 
       <div class="col-lg-4 col-md-6">
 
-        <h3 style="color:#fff;">
-          Nanobricks Academy
-        </h3>
+        <a href="/"
+           class="footer-brand">
 
-        <p>
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks"
+               class="footer-logo">
 
-          The professional learning and technology
-          education division of Nanobricks, delivering
-          practical programs in Cloud, Cybersecurity,
-          DevOps, AI and modern IT technologies.
+          <span>Nanobricks</span>
+
+        </a>
+
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
 
         </p>
 
-      </div>
+        <div class="footer-social">
 
+          <a href="https://www.linkedin.com/company/nanobricks"
+             target="_blank"
+             rel="noopener"
+             aria-label="Nanobricks LinkedIn">
 
-      <!-- Quick Links -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <h4 style="color:#fff;">
-          Quick Links
-        </h4>
-
-        <ul style="list-style:none;padding-left:0;line-height:2.1;">
-
-
-          <li>
-
-            <a href="/"
-               class="academy-footer-link">
-
-              Nanobricks Home
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="/#services"
-               class="academy-footer-link">
-
-              Business Services
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="/academy/"
-               class="academy-footer-link">
-
-              Nanobricks Academy
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="#training"
-               class="academy-footer-link">
-
-              Learning Programs
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="#colleges"
-               class="academy-footer-link">
-
-              For Colleges
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="#faq"
-               class="academy-footer-link">
-
-              FAQ
-
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="#contact"
-               class="academy-footer-link">
-
-              Academy Enquiry
-
-            </a>
-
-          </li>
-
-
-        </ul>
-
-      </div>
-
-
-      <!-- Contact -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <h4 style="color:#fff;">
-          Contact
-        </h4>
-
-
-        <p>
-
-          ðŸ“ž
-
-          <a href="tel:+917995720507"
-             class="academy-footer-link">
-
-            +91 7995720507
-
-          </a>
-
-        </p>
-
-
-        <p>
-
-          ðŸ“§
-
-          <a href="mailto:info@nanobricks.in"
-             class="academy-footer-link">
-
-            info@nanobricks.in
-
-          </a>
-
-        </p>
-
-
-        <p>
-
-          ðŸ“ Hyderabad, Telangana, India
-
-        </p>
-
-
-        <div class="academy-legal">
-
-          <a href="/privacy-policy/"
-             class="academy-footer-link">
-
-            Privacy Policy
-
-          </a>
-
-          &nbsp; â€¢ &nbsp;
-
-          <a href="/terms/"
-             class="academy-footer-link">
-
-            Terms of Use
+            <i class="bi bi-linkedin"></i>
 
           </a>
 
         </div>
 
+      </div>
+
+
+      <div class="col-lg-5 col-md-6">
+
+        <h4 class="footer-heading">Explore</h4>
+
+        <div class="footer-links-grid">
+
+          <a href="/#services">Services</a>
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+          <a href="/#it-assessment">IT Assessment</a>
+          <a href="/#contact">Contact</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+
+        </div>
 
       </div>
 
 
+      <div class="col-lg-3 col-md-12">
+
+        <h4 class="footer-heading">Contact</h4>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-geo-alt"></i>
+          <span>Hyderabad, Telangana, India</span>
+
+        </div>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507">
+            +91 79957 20507
+          </a>
+
+        </div>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-envelope"></i>
+
+          <a href="mailto:info@nanobricks.in">
+            info@nanobricks.in
+          </a>
+
+        </div>
+
+        <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20Academy"
+           class="footer-whatsapp"
+           target="_blank"
+           rel="noopener">
+
+          <i class="bi bi-whatsapp"></i>
+          WhatsApp
+
+        </a>
+
+      </div>
+
     </div>
 
 
-    <hr style="border-color:#374151;margin:40px 0 20px;">
+    <div class="footer-bottom">
 
+      <span>
+        © 2026 Nanobricks. All Rights Reserved.
+      </span>
 
-    <div class="text-center">
-
-      <p style="color:#999;margin-bottom:0;">
-
-        Â© 2026 Nanobricks. All Rights Reserved.
-
-      </p>
+      <span>
+        Nanobricks Academy • Hyderabad, India
+      </span>
 
     </div>
-
 
   </div>
 
 </footer>
 
 
-<!-- Back To Top -->
+<a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20Academy%20programs"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   onclick="gtag('event','whatsapp_click');">
+
+  <i class="bi bi-whatsapp"></i>
+
+</a>
+
 
 <a href="#"
    class="back-to-top d-flex align-items-center justify-content-center">
@@ -1732,56 +1772,9 @@
 </a>
 
 
-<!-- Bootstrap JS -->
-
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-
-<!-- Main JS -->
-
-<script
-  src="/assets/js/main.js">
-</script>
-
-
-<!-- WhatsApp -->
-
-<a
-  href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20Academy%20programs"
-  class="whatsapp-float"
-  target="_blank"
-  rel="noopener"
-  onclick="gtag('event','whatsapp_click'); trackWhatsAppClick();">
-
-  <i class="bi bi-whatsapp"></i>
-
-</a>
-
-
-<script>
-
-  function trackWhatsAppClick() {
-
-    console.log("WhatsApp Clicked");
-
-    let count =
-      localStorage.getItem("wa_clicks") || 0;
-
-    count++;
-
-    localStorage.setItem(
-      "wa_clicks",
-      count
-    );
-
-  }
-
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 
 </html>
-
