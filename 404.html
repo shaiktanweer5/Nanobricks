@@ -6,9 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="robots" content="noindex, follow">
+
   <title>Page Not Found | Nanobricks</title>
 
-  <meta name="robots" content="noindex, follow">
+  <link href="/assets/img/nano-log.png" rel="icon">
+  <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -18,96 +25,39 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
   <style>
 
-    :root {
-      --nb-blue: #1267e5;
-      --nb-green: #2fc344;
-      --nb-dark: #111827;
-      --nb-text: #4b5563;
-      --nb-border: #e5e7eb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--nb-dark);
-      background: #ffffff;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .main-navbar {
-      background: rgba(255,255,255,0.98);
-      border-bottom: 1px solid #edf0f4;
-      padding: 15px 0;
-      z-index: 9999;
-    }
-
-    .navbar-brand img {
-      height: 42px;
-      width: auto;
-    }
-
-    .navbar-nav .nav-link {
-      color: #374151;
-      font-weight: 500;
-      margin: 0 7px;
-      padding: 10px 8px !important;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: var(--nb-blue);
-    }
-
-    .nav-cta {
-      background: var(--nb-blue);
-      color: #fff !important;
-      padding: 11px 18px !important;
-      border-radius: 8px;
-      margin-left: 10px;
-    }
-
     .error-section {
-      min-height: 100vh;
+      margin-top: 72px;
+      min-height: 72vh;
       display: flex;
       align-items: center;
-      background:
-        radial-gradient(circle at top right,
-        rgba(18,103,229,0.10),
-        transparent 35%),
-        linear-gradient(135deg,#f8fbff,#ffffff);
-      padding: 130px 0 70px;
+      padding: 90px 0;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
     }
 
     .error-code {
       font-size: 110px;
+      font-family: "Raleway", sans-serif;
       font-weight: 800;
       line-height: 1;
-      color: var(--nb-blue);
-      letter-spacing: -6px;
+      color: #2fa93a;
+      letter-spacing: -7px;
     }
 
     .error-section h1 {
+      color: #25372b;
       font-size: 42px;
-      font-weight: 800;
-      margin-top: 15px;
+      font-weight: 700;
+      margin-top: 18px;
     }
 
     .error-section p {
+      color: #647168;
       max-width: 650px;
       margin: 20px auto 0;
-      color: var(--nb-text);
       font-size: 18px;
       line-height: 1.8;
     }
@@ -120,49 +70,125 @@
       gap: 14px;
     }
 
-    .btn-main {
-      background: var(--nb-blue);
-      color: #fff;
-      padding: 13px 22px;
-      border-radius: 8px;
-      font-weight: 600;
+    .help-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 16px;
+      padding: 25px;
+      height: 100%;
+      text-align: left;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
     }
 
-    .btn-main:hover {
-      background: #0d55c7;
-      color: #fff;
+    .help-card i {
+      color: #2fa93a;
+      font-size: 26px;
     }
 
-    .btn-secondary-custom {
-      border: 1px solid #cbd5e1;
-      color: var(--nb-dark);
-      padding: 13px 22px;
-      border-radius: 8px;
+    .help-card h3 {
+      color: #25372b;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 14px;
+    }
+
+    .help-card p {
+      color: #647168;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .help-card a {
+      color: #1f6f2b;
       font-weight: 600;
+      text-decoration: none;
+    }
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
       background: #fff;
+      border-radius: 10px;
+      padding: 5px;
     }
 
-    .btn-secondary-custom:hover {
-      color: var(--nb-blue);
-      border-color: var(--nb-blue);
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
     }
 
-    footer {
-      background: #111827;
-      color: #d1d5db;
-      padding: 35px 0;
-      text-align: center;
+    .footer-description {
+      color: #94a3b8;
+      max-width: 340px;
+      font-size: 14px;
+      line-height: 1.7;
     }
 
-    footer a {
-      color: #d1d5db;
-    }
-
-    footer a:hover {
+    .footer-heading {
       color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 17px;
     }
 
-    @media (max-width: 576px) {
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a,
+    .footer-contact a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-contact {
+      color: #aeb9c8;
+      font-size: 14px;
+    }
+
+    .footer-contact div {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact i {
+      color: #49c354;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media(max-width:768px) {
 
       .error-code {
         font-size: 82px;
@@ -172,8 +198,12 @@
         font-size: 33px;
       }
 
-      .error-section p {
-        font-size: 16px;
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
       }
 
     }
@@ -185,66 +215,120 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-light main-navbar fixed-top">
+<header id="header"
+        class="fixed-top d-flex align-items-center">
 
-  <div class="container">
+  <div class="container d-flex align-items-center justify-content-between">
 
-    <a class="navbar-brand" href="/">
-      <img
-        src="/assets/img/nano-log.png"
-        alt="Nanobricks">
-    </a>
+    <div class="logo">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarMain"
-      aria-controls="navbarMain"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
+      <a href="/">
 
-      <span class="navbar-toggler-icon"></span>
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
 
-    </button>
+      </a>
 
-    <div class="collapse navbar-collapse" id="navbarMain">
+    </div>
 
-      <ul class="navbar-nav ms-auto align-items-lg-center">
 
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
+    <nav id="navbar" class="navbar">
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#services">Services</a>
-        </li>
+      <ul>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/academy/">Academy</a>
-        </li>
+        <li><a href="/">Home</a></li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#about">About</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#contact">Contact</a>
-        </li>
+        <li class="dropdown">
 
-        <li class="nav-item">
-          <a class="nav-link nav-cta" href="/#enquiry">
-            Request IT Assessment
+          <a href="/#services">
+            <span>Services</span>
+            <i class="bi bi-chevron-down"></i>
           </a>
+
+          <ul>
+
+            <li><a href="/services/managed-it/">Managed IT & AMC</a></li>
+            <li><a href="/services/business-it-setup/">Business IT Setup</a></li>
+            <li><a href="/services/cloud-services/">Cloud Services</a></li>
+            <li><a href="/services/cloud-security/">Cloud Security</a></li>
+            <li><a href="/services/devops-automation/">DevOps & Automation</a></li>
+            <li><a href="/services/cybersecurity/">Cybersecurity</a></li>
+            <li><a href="/services/web-software/">Web & Software</a></li>
+            <li><a href="/services/backup-continuity/">Backup & Continuity</a></li>
+            <li><a href="/services/it-consulting/">IT Consulting</a></li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/tools/">
+            <span>Tools</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+
+          <ul>
+
+            <li><a href="/tools/">All Tools</a></li>
+            <li><a href="/tools/endpoint-assessment/">Endpoint Assessment</a></li>
+            <li><a href="/tools/pdf/">PDF Tools</a></li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/case-studies/">
+            <span>Case Studies</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+
+          <ul>
+
+            <li><a href="/case-studies/">All Case Studies</a></li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li><a href="/#about">About</a></li>
+        <li><a href="/company-story/">Company Story</a></li>
+        <li><a href="/academy/">Academy</a></li>
+        <li><a href="/#contact">Contact</a></li>
+
+        <li>
+
+          <a class="getstarted"
+             href="/#it-assessment">
+
+            Request IT Assessment
+
+          </a>
+
         </li>
 
       </ul>
 
-    </div>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav>
 
   </div>
 
-</nav>
+</header>
 
 
 <section class="error-section">
@@ -255,26 +339,136 @@
       404
     </div>
 
-    <h1>Page Not Found</h1>
+    <h1>
+      We Couldn't Find That Page
+    </h1>
 
     <p>
-      The page you are looking for may have been moved,
-      renamed or is no longer available.
-      You can return to the Nanobricks homepage or explore
-      our technology services.
+
+      The page may have moved, the address may have changed,
+      or the link may no longer be available.
+      You can return to the Nanobricks homepage or continue
+      exploring our services and technology resources.
+
     </p>
+
 
     <div class="error-actions">
 
-      <a href="/" class="btn-main">
+      <a href="/"
+         class="btn btn-success btn-lg">
+
         <i class="bi bi-house me-2"></i>
         Back to Home
+
       </a>
 
       <a href="/#services"
-         class="btn-secondary-custom">
+         class="btn btn-outline-dark btn-lg">
+
         Explore Services
+
       </a>
+
+    </div>
+
+
+    <div class="row gy-4 mt-5 justify-content-center">
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="help-card">
+
+          <i class="bi bi-grid"></i>
+
+          <h3>Technology Services</h3>
+
+          <p>
+            Explore Managed IT, Cloud, Security, DevOps and Software Solutions.
+          </p>
+
+          <a href="/#services"
+             class="d-inline-block mt-3">
+
+            View Services →
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="help-card">
+
+          <i class="bi bi-tools"></i>
+
+          <h3>Nanobricks Tools</h3>
+
+          <p>
+            Access practical technology and browser-based utility tools.
+          </p>
+
+          <a href="/tools/"
+             class="d-inline-block mt-3">
+
+            Explore Tools →
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="help-card">
+
+          <i class="bi bi-journal-check"></i>
+
+          <h3>Case Studies</h3>
+
+          <p>
+            See practical examples of Nanobricks technology work.
+          </p>
+
+          <a href="/case-studies/"
+             class="d-inline-block mt-3">
+
+            View Case Studies →
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="help-card">
+
+          <i class="bi bi-mortarboard"></i>
+
+          <h3>Academy</h3>
+
+          <p>
+            Explore practical technology learning and training programs.
+          </p>
+
+          <a href="/academy/"
+             class="d-inline-block mt-3">
+
+            Visit Academy →
+
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -283,36 +477,107 @@
 </section>
 
 
-<footer>
+<footer class="footer-premium">
 
   <div class="container">
 
-    <p class="mb-2">
-      © 2026 Nanobricks. All Rights Reserved.
-    </p>
+    <div class="row gy-4">
 
-    <p class="mb-0">
+      <div class="col-lg-4">
 
-      <a href="/privacy-policy/">
-        Privacy Policy
-      </a>
+        <a href="/" class="footer-brand">
 
-      &nbsp; • &nbsp;
+          <img src="/assets/img/nano-log.png"
+               class="footer-logo"
+               alt="Nanobricks">
 
-      <a href="/terms/">
-        Terms of Use
-      </a>
+          <span>Nanobricks</span>
 
-    </p>
+        </a>
+
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
+
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-5">
+
+        <h4 class="footer-heading">Explore</h4>
+
+        <div class="footer-links-grid">
+
+          <a href="/#services">Services</a>
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+          <a href="/#it-assessment">IT Assessment</a>
+          <a href="/#contact">Contact</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 footer-contact">
+
+        <h4 class="footer-heading">Contact</h4>
+
+        <div>
+          <i class="bi bi-geo-alt"></i>
+          Hyderabad, Telangana, India
+        </div>
+
+        <div>
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507">
+            +91 79957 20507
+          </a>
+
+        </div>
+
+        <div>
+
+          <i class="bi bi-envelope"></i>
+
+          <a href="mailto:info@nanobricks.in">
+            info@nanobricks.in
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>© 2026 Nanobricks. All Rights Reserved.</span>
+
+      <span>
+        Technology Services • Hyderabad, India
+      </span>
+
+    </div>
 
   </div>
 
 </footer>
 
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 
