@@ -214,6 +214,210 @@
 
     }
 
+
+    /* PREMIUM COMPACT CORPORATE FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-premium .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-premium .footer-brand:hover {
+      color: #ffffff;
+    }
+
+    .footer-premium .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-premium .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin: 0 0 18px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 9px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
+      transition: .2s ease;
+    }
+
+    .footer-social a:hover {
+      color: #ffffff;
+      background: #1f6f2b;
+      border-color: #1f6f2b;
+      transform: translateY(-2px);
+    }
+
+    .footer-heading {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      margin: 4px 0 17px;
+    }
+
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    .footer-links-grid a:hover {
+      color: #ffffff;
+      transform: translateX(2px);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .footer-contact-item i {
+      color: #49c354;
+      font-size: 16px;
+      margin-top: 2px;
+    }
+
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+
+    .footer-contact-item a:hover {
+      color: #ffffff;
+    }
+
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: .2s ease;
+    }
+
+    .footer-whatsapp:hover {
+      background: #25D366;
+      border-color: #25D366;
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    .footer-bottom-note {
+      text-align: right;
+    }
+
+    @media (max-width: 991px) {
+
+      .footer-premium {
+        padding-top: 40px;
+      }
+
+      .footer-links-grid {
+        gap: 9px 18px;
+      }
+
+    }
+
+    @media (max-width: 767px) {
+
+      .footer-premium {
+        padding: 34px 0 16px;
+      }
+
+      .footer-links-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+
+      .footer-bottom {
+        margin-top: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+
+      .footer-bottom-note {
+        text-align: left;
+      }
+
+    }
+
+    @media (max-width: 420px) {
+
+      .footer-links-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
   </style>
 
 </head>
@@ -339,7 +543,7 @@
             </li>
 
             <li>
-              <a href="/tools/#pdf-tools">
+              <a href="/tools/pdf/">
                 PDF Tools
               </a>
             </li>
@@ -353,6 +557,38 @@
             <li>
               <a href="/tools/#cloud-security-tools">
                 Cloud Security Tools
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="#case-studies">
+
+            <span>
+              Case Studies
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+
+          <ul>
+
+            <li>
+              <a href="#case-studies">
+                All Case Studies
+              </a>
+            </li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
               </a>
             </li>
 
@@ -2010,241 +2246,149 @@
 
 <!-- FOOTER -->
 
-<footer id="footer"
-        style="background:#111827;color:#fff;padding:60px 0 20px;">
+<footer id="footer" class="footer-premium">
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="row gy-4 align-items-start">
 
+      <div class="col-lg-4 col-md-6">
 
-      <!-- COMPANY -->
+        <a href="/"
+           class="footer-brand">
 
-      <div class="col-lg-4">
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks"
+               class="footer-logo">
 
-        <h3 style="color:#fff;">
-          Nanobricks
-        </h3>
+          <span>Nanobricks</span>
 
-        <p style="color:#ddd;line-height:1.7;">
+        </a>
 
-          Technology services for growing businesses,
-          including Managed IT, Cloud, Cybersecurity,
-          DevOps, Software Solutions and IT Consulting.
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
 
         </p>
 
-        <a
-          href="https://www.linkedin.com/company/nanobricks"
-          target="_blank"
-          rel="noopener"
-          aria-label="Nanobricks LinkedIn"
-          style="color:#fff;font-size:22px;text-decoration:none;">
+        <div class="footer-social">
 
-          <i class="bi bi-linkedin"></i>
+          <a href="https://www.linkedin.com/company/nanobricks"
+             target="_blank"
+             rel="noopener"
+             aria-label="Nanobricks LinkedIn">
+
+            <i class="bi bi-linkedin"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5 col-md-6">
+
+        <h4 class="footer-heading">
+          Explore
+        </h4>
+
+        <div class="footer-links-grid">
+
+          <a href="/#services">Services</a>
+
+          <a href="/case-studies/small-business-it-standardization/">
+            Case Studies
+          </a>
+
+          <a href="/tools/">Tools</a>
+
+          <a href="/academy/">Academy</a>
+
+          <a href="/company-story/">Company Story</a>
+
+          <a href="/media/">Media & Press</a>
+
+          <a href="/#it-assessment">IT Assessment</a>
+
+          <a href="/#contact">Contact</a>
+
+          <a href="/privacy-policy/">Privacy Policy</a>
+
+          <a href="/terms/">Terms of Use</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-12">
+
+        <h4 class="footer-heading">
+          Contact
+        </h4>
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-geo-alt"></i>
+
+          <span>
+            Hyderabad, Telangana, India
+          </span>
+
+        </div>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507">
+            +91 79957 20507
+          </a>
+
+        </div>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-envelope"></i>
+
+          <a href="mailto:info@nanobricks.in">
+            info@nanobricks.in
+          </a>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Nanobricks%20services"
+          class="footer-whatsapp"
+          target="_blank"
+          rel="noopener">
+
+          <i class="bi bi-whatsapp"></i>
+          WhatsApp
 
         </a>
 
       </div>
 
-
-      <!-- QUICK LINKS -->
-
-      <div class="col-lg-4">
-
-        <h4 style="color:#fff;">
-          Quick Links
-        </h4>
-
-        <ul style="list-style:none;padding-left:0;line-height:2;">
-
-          <li>
-            <a href="/"
-               style="color:#ddd;text-decoration:none;">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a href="#services"
-               style="color:#ddd;text-decoration:none;">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a href="/company-story/"
-               style="color:#ddd;text-decoration:none;">
-              Company Story
-            </a>
-          </li>
-
-          <li>
-            <a href="/media/"
-               style="color:#ddd;text-decoration:none;">
-              Media & Press
-            </a>
-          </li>
-
-          <li>
-            <a href="/case-studies/small-business-it-standardization/"
-               style="color:#ddd;text-decoration:none;">
-              Case Studies
-            </a>
-          </li>
-
-          <li>
-            <a href="#industries"
-               style="color:#ddd;text-decoration:none;">
-              Industries
-            </a>
-          </li>
-
-          <li>
-            <a href="/academy/"
-               style="color:#ddd;text-decoration:none;">
-              Academy
-            </a>
-          </li>
-
-          <li>
-            <a href="#it-assessment"
-               style="color:#ddd;text-decoration:none;">
-              IT Assessment
-            </a>
-          </li>
-
-          <li>
-            <a href="#enquiry"
-               style="color:#ddd;text-decoration:none;">
-              Enquiry
-            </a>
-          </li>
-
-          <li>
-            <a href="#contact"
-               style="color:#ddd;text-decoration:none;">
-              Contact
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="/assets/docs/Nanobricks-Company-Profile.pdf"
-              target="_blank"
-              rel="noopener"
-              onclick="gtag('event','company_profile_download');"
-              style="color:#ddd;text-decoration:none;">
-
-              Company Profile
-
-            </a>
-          </li>
-
-          <li>
-            <a href="/tools/"
-               style="color:#ddd;text-decoration:none;">
-              Tools
-            </a>
-          </li>
-
-          <li>
-            <a href="/privacy-policy/"
-               style="color:#ddd;text-decoration:none;">
-              Privacy Policy
-            </a>
-          </li>
-
-          <li>
-            <a href="/terms/"
-               style="color:#ddd;text-decoration:none;">
-              Terms of Use
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <!-- CONTACT -->
-
-      <div class="col-lg-4">
-
-        <h4 style="color:#fff;">
-          Contact
-        </h4>
-
-        <p>
-
-          <i class="bi bi-geo-alt me-2"></i>
-
-          Hyderabad, Telangana, India
-
-        </p>
-
-        <p>
-
-          <i class="bi bi-telephone me-2"></i>
-
-          <a
-            href="tel:+917995720507"
-            style="color:#ddd;text-decoration:none;">
-
-            +91 7995720507
-
-          </a>
-
-        </p>
-
-        <p>
-
-          <i class="bi bi-envelope me-2"></i>
-
-          <a
-            href="mailto:info@nanobricks.in"
-            style="color:#ddd;text-decoration:none;">
-
-            info@nanobricks.in
-
-          </a>
-
-        </p>
-
-        <p>
-
-          <a
-            href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Nanobricks%20services"
-            target="_blank"
-            rel="noopener"
-            style="color:#25D366;text-decoration:none;">
-
-            <i class="bi bi-whatsapp me-2"></i>
-            Chat on WhatsApp
-
-          </a>
-
-        </p>
-
-      </div>
-
-
     </div>
 
 
-    <hr style="border-color:#374151;margin:40px 0 20px;">
+    <div class="footer-bottom">
 
-
-    <div class="text-center">
-
-      <p style="color:#999;margin-bottom:0;">
-
+      <span>
         © 2026 Nanobricks. All Rights Reserved.
+      </span>
 
-      </p>
+      <span class="footer-bottom-note">
+        Technology Services • Hyderabad, India
+      </span>
 
     </div>
-
 
   </div>
 
