@@ -7,21 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
 
-  <title>
-    Web & Software Development Services | Nanobricks
-  </title>
+  <title>Web & Software Development Services | Nanobricks</title>
 
   <meta name="description"
-        content="Nanobricks provides website development, web applications, business portals, APIs, automation and custom software solutions for businesses and institutions.">
+        content="Nanobricks provides website development, web applications, business portals, APIs, system integration, workflow automation and custom software solutions for businesses and institutions.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/services/web-software/">
 
-  <link href="/assets/img/nano-log.png"
-        rel="icon">
+  <meta property="og:title"
+        content="Web & Software Development Services | Nanobricks">
 
-  <link href="/assets/img/nano-log.png"
-        rel="apple-touch-icon">
+  <meta property="og:description"
+        content="Business websites, web applications, portals, APIs, automation and custom software solutions from Nanobricks.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/services/web-software/">
+
+  <link href="/assets/img/nano-log.png" rel="icon">
+  <link href="/assets/img/nano-log.png" rel="apple-touch-icon">
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
@@ -35,9 +42,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     rel="stylesheet">
 
-  <link
-    href="/assets/css/style.css"
-    rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
   <style>
 
@@ -59,7 +64,7 @@
       font-size: 20px;
       color: #647168;
       line-height: 1.7;
-      max-width: 800px;
+      max-width: 820px;
     }
 
     .service-label {
@@ -77,12 +82,12 @@
       width: 180px;
       height: 180px;
       margin: auto;
-      background: #fff;
+      background: #ffffff;
       border-radius: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 18px 60px rgba(0,0,0,0.08);
+      box-shadow: 0 18px 60px rgba(0,0,0,.08);
     }
 
     .hero-icon i {
@@ -98,19 +103,21 @@
       background: #f8faf9;
     }
 
-    .service-card {
-      background: #fff;
+    .service-card,
+    .related-card {
+      background: #ffffff;
       border: 1px solid #e6ece7;
       border-radius: 14px;
       padding: 30px;
       height: 100%;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
-      transition: 0.25s;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+      transition: .25s ease;
     }
 
-    .service-card:hover {
+    .service-card:hover,
+    .related-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 16px 35px rgba(0,0,0,0.07);
+      box-shadow: 0 16px 35px rgba(0,0,0,.07);
     }
 
     .service-icon {
@@ -129,13 +136,16 @@
       font-size: 26px;
     }
 
-    .service-card h3 {
+    .service-card h3,
+    .related-card h3 {
+      color: #25372b;
       font-size: 20px;
       font-weight: 700;
-      color: #25372b;
+      margin-bottom: 12px;
     }
 
-    .service-card p {
+    .service-card p,
+    .related-card p {
       color: #647168;
       line-height: 1.7;
       margin-bottom: 0;
@@ -149,9 +159,10 @@
 
     .check-list li {
       position: relative;
-      padding-left: 28px;
+      padding-left: 30px;
       margin-bottom: 14px;
       color: #647168;
+      line-height: 1.6;
     }
 
     .check-list li::before {
@@ -163,7 +174,7 @@
     }
 
     .tech-card {
-      background: #fff;
+      background: #ffffff;
       border: 1px solid #e6ece7;
       border-radius: 12px;
       padding: 22px;
@@ -174,11 +185,12 @@
     }
 
     .process-card {
-      background: #fff;
+      background: #ffffff;
       border: 1px solid #e6ece7;
       border-radius: 14px;
       padding: 28px;
       height: 100%;
+      text-align: center;
     }
 
     .process-card span {
@@ -188,6 +200,7 @@
 
     .process-card h3 {
       margin-top: 10px;
+      color: #25372b;
       font-size: 20px;
       font-weight: 700;
     }
@@ -198,14 +211,65 @@
       margin-bottom: 0;
     }
 
+    .software-focus-box {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 18px;
+      padding: 38px;
+      box-shadow: 0 12px 36px rgba(0,0,0,.05);
+    }
+
+    .software-focus-box h2 {
+      color: #25372b;
+      font-weight: 700;
+    }
+
+    .software-focus-box p {
+      color: #647168;
+      line-height: 1.75;
+    }
+
+    .software-highlight {
+      background: #f8faf9;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .software-highlight h4 {
+      color: #25372b;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .software-highlight p {
+      color: #5e6d63;
+      margin-bottom: 11px;
+    }
+
+    .software-highlight i {
+      color: #33bc3b;
+      margin-right: 8px;
+    }
+
+    .faq-section .service-card {
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    .faq-section .service-card:hover {
+      transform: none;
+    }
+
     .service-cta {
       background: #1f6f2b;
-      color: white;
+      color: #ffffff;
       padding: 80px 0;
     }
 
     .service-cta h2 {
-      color: white;
+      color: #ffffff;
       font-weight: 700;
     }
 
@@ -214,28 +278,134 @@
       font-size: 18px;
     }
 
-    /* FAQ */
-    .faq-section .service-card {
-      height: auto;
-      min-height: 0;
+    /* PREMIUM FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
       margin-bottom: 16px;
     }
 
-    .faq-section .section-title h2 {
-      font-size: 32px;
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
       font-weight: 700;
-      color: #25372b;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      background: #1f6f2b;
+      border-color: #1f6f2b;
+      color: #ffffff;
+    }
+
+    .footer-heading {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 4px 0 17px;
+    }
+
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a,
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links-grid a:hover,
+    .footer-contact-item a:hover {
+      color: #ffffff;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
       margin-bottom: 12px;
     }
 
-    .faq-section .section-title p {
-      font-size: 17px;
-      font-weight: 400;
-      color: #647168;
-      margin-bottom: 0;
+    .footer-contact-item i {
+      color: #49c354;
     }
 
-    @media (max-width: 768px) {
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer-whatsapp:hover {
+      background: #25D366;
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media(max-width:768px) {
 
       .service-hero h1 {
         font-size: 34px;
@@ -250,6 +420,14 @@
         height: 140px;
       }
 
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
     }
 
   </style>
@@ -259,8 +437,6 @@
 <body>
 
 
-<!-- HEADER -->
-
 <header id="header"
         class="fixed-top d-flex align-items-center">
 
@@ -269,37 +445,28 @@
     <div class="logo">
 
       <a href="/">
-
-        <img
-          src="/assets/img/nano-log.png"
-          alt="Nanobricks"
-          height="40">
-
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
       </a>
 
     </div>
 
 
-    <nav id="navbar"
-         class="navbar">
+    <nav id="navbar" class="navbar">
 
       <ul>
 
         <li>
-          <a href="/">
-            Home
-          </a>
+          <a href="/">Home</a>
         </li>
+
 
         <li class="dropdown">
 
-          <a class="active"
-             href="/#services">
+          <a class="active" href="/#services">
 
-            <span>
-              Services
-            </span>
-
+            <span>Services</span>
             <i class="bi bi-chevron-down"></i>
 
           </a>
@@ -337,7 +504,8 @@
             </li>
 
             <li>
-              <a href="/services/web-software/">
+              <a class="active"
+                 href="/services/web-software/">
                 Web & Software
               </a>
             </li>
@@ -346,22 +514,77 @@
 
         </li>
 
-        <li>
-          <a href="/#industries">
-            Industries
+
+        <li class="dropdown">
+
+          <a href="/tools/">
+
+            <span>Tools</span>
+            <i class="bi bi-chevron-down"></i>
+
           </a>
+
+          <ul>
+
+            <li>
+              <a href="/tools/">All Tools</a>
+            </li>
+
+            <li>
+              <a href="/tools/endpoint-assessment/">
+                Endpoint Assessment
+              </a>
+            </li>
+
+            <li>
+              <a href="/tools/pdf/">
+                PDF Tools
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/case-studies/">
+
+            <span>Case Studies</span>
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/case-studies/">
+                All Case Studies
+              </a>
+            </li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li>
+          <a href="/#about">About</a>
         </li>
 
         <li>
-          <a href="/academy/">
-            Academy
-          </a>
+          <a href="/academy/">Academy</a>
         </li>
 
         <li>
-          <a href="/#contact">
-            Contact
-          </a>
+          <a href="/#contact">Contact</a>
         </li>
 
         <li>
@@ -386,8 +609,6 @@
 </header>
 
 
-<!-- HERO -->
-
 <section class="service-hero">
 
   <div class="container">
@@ -399,7 +620,6 @@
         <div class="service-label">
 
           <i class="bi bi-code-slash"></i>
-
           Nanobricks Technology Services
 
         </div>
@@ -436,12 +656,11 @@
 
       </div>
 
+
       <div class="col-lg-4 text-center">
 
         <div class="hero-icon">
-
           <i class="bi bi-code-slash"></i>
-
         </div>
 
       </div>
@@ -455,8 +674,6 @@
 
 <main>
 
-
-<!-- INTRO -->
 
 <section class="service-section">
 
@@ -474,6 +691,7 @@
 
     </div>
 
+
     <div class="row gy-4">
 
       <div class="col-lg-4">
@@ -484,20 +702,16 @@
             <i class="bi bi-window"></i>
           </div>
 
-          <h3>
-            Professional Websites
-          </h3>
+          <h3>Professional Websites</h3>
 
           <p>
-
-            Responsive websites designed around
-            your services, brand and customer requirements.
-
+            Responsive websites designed around your services, brand and customer requirements.
           </p>
 
         </div>
 
       </div>
+
 
       <div class="col-lg-4">
 
@@ -507,20 +721,16 @@
             <i class="bi bi-laptop"></i>
           </div>
 
-          <h3>
-            Web Applications
-          </h3>
+          <h3>Web Applications</h3>
 
           <p>
-
-            Browser-based applications for
-            business workflows, portals and digital services.
-
+            Browser-based applications for business workflows, portals and digital services.
           </p>
 
         </div>
 
       </div>
+
 
       <div class="col-lg-4">
 
@@ -530,15 +740,10 @@
             <i class="bi bi-gear"></i>
           </div>
 
-          <h3>
-            Business Automation
-          </h3>
+          <h3>Business Automation</h3>
 
           <p>
-
-            Reduce repetitive manual work
-            with digital workflows and custom automation.
-
+            Reduce repetitive manual work with digital workflows and custom automation.
           </p>
 
         </div>
@@ -551,8 +756,6 @@
 
 </section>
 
-
-<!-- SERVICES -->
 
 <section id="software-services"
          class="service-section alt">
@@ -571,220 +774,155 @@
 
     </div>
 
+
     <div class="row gy-4">
 
-
       <div class="col-lg-4 col-md-6">
-
         <div class="service-card">
-
-          <div class="service-icon">
-            <i class="bi bi-globe"></i>
-          </div>
-
-          <h3>
-            Business Website Development
-          </h3>
-
-          <p>
-
-            Responsive websites for companies,
-            startups, institutions and professional services.
-
-          </p>
-
+          <div class="service-icon"><i class="bi bi-globe"></i></div>
+          <h3>Business Website Development</h3>
+          <p>Responsive websites for companies, startups, institutions and professional services.</p>
         </div>
-
       </div>
 
-
       <div class="col-lg-4 col-md-6">
-
         <div class="service-card">
-
-          <div class="service-icon">
-            <i class="bi bi-layout-text-window"></i>
-          </div>
-
-          <h3>
-            Landing Pages
-          </h3>
-
-          <p>
-
-            Focused pages for campaigns,
-            products, services, programs and lead generation.
-
-          </p>
-
+          <div class="service-icon"><i class="bi bi-layout-text-window"></i></div>
+          <h3>Landing Pages</h3>
+          <p>Focused pages for campaigns, products, services, programs and lead generation.</p>
         </div>
-
       </div>
 
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-window-stack"></i></div>
+          <h3>Web Applications</h3>
+          <p>Custom applications built around specific workflows and user requirements.</p>
+        </div>
+      </div>
 
       <div class="col-lg-4 col-md-6">
-
         <div class="service-card">
+          <div class="service-icon"><i class="bi bi-person-workspace"></i></div>
+          <h3>Business Portals</h3>
+          <p>Internal or customer-facing portals for information, workflows and services.</p>
+        </div>
+      </div>
 
-          <div class="service-icon">
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-braces"></i></div>
+          <h3>API Development</h3>
+          <p>API development and integration for connecting applications and business systems.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-arrow-left-right"></i></div>
+          <h3>System Integration</h3>
+          <p>Connect supported applications and platforms to improve information flow.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-robot"></i></div>
+          <h3>Workflow Automation</h3>
+          <p>Automate repetitive activities using APIs, scripts and custom workflows.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+          <h3>Cloud Deployment</h3>
+          <p>Deploy supported websites and applications to suitable cloud environments.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-tools"></i></div>
+          <h3>Website Maintenance & AMC</h3>
+          <p>Ongoing content updates, backup checks, SSL monitoring and minor website maintenance.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="service-section">
+
+  <div class="container">
+
+    <div class="software-focus-box">
+
+      <div class="row align-items-center gy-4">
+
+        <div class="col-lg-7">
+
+          <div class="service-label">
             <i class="bi bi-window-stack"></i>
+            Business-Focused Development
           </div>
 
-          <h3>
-            Web Applications
-          </h3>
+          <h2>
+            Build What the Business Actually Needs
+          </h2>
 
           <p>
 
-            Custom applications built around
-            specific workflows and user requirements.
+            Good software starts with understanding users,
+            business processes and the problem being solved.
 
           </p>
+
+          <p>
+
+            Nanobricks can help turn a requirement into a practical
+            website, portal, workflow, API integration or custom web application.
+
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+
+            <a href="/#enquiry"
+               class="btn btn-success">
+              Discuss Your Project
+            </a>
+
+            <a href="/services/devops-automation/"
+               class="btn btn-outline-success">
+              Explore DevOps
+            </a>
+
+          </div>
 
         </div>
 
-      </div>
 
+        <div class="col-lg-5">
 
-      <div class="col-lg-4 col-md-6">
+          <div class="software-highlight">
 
-        <div class="service-card">
+            <h4>
+              Solutions We Can Deliver
+            </h4>
 
-          <div class="service-icon">
-            <i class="bi bi-person-workspace"></i>
+            <p><i class="bi bi-check-circle-fill"></i> Business websites</p>
+            <p><i class="bi bi-check-circle-fill"></i> Web applications</p>
+            <p><i class="bi bi-check-circle-fill"></i> Customer portals</p>
+            <p><i class="bi bi-check-circle-fill"></i> Internal tools</p>
+            <p><i class="bi bi-check-circle-fill"></i> APIs & integrations</p>
+            <p><i class="bi bi-check-circle-fill"></i> Workflow automation</p>
+            <p><i class="bi bi-check-circle-fill"></i> Cloud deployment</p>
+
           </div>
-
-          <h3>
-            Business Portals
-          </h3>
-
-          <p>
-
-            Internal or customer-facing portals
-            for information, workflows and services.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            <i class="bi bi-braces"></i>
-          </div>
-
-          <h3>
-            API Development
-          </h3>
-
-          <p>
-
-            API development and integration
-            for connecting applications and business systems.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            <i class="bi bi-arrow-left-right"></i>
-          </div>
-
-          <h3>
-            System Integration
-          </h3>
-
-          <p>
-
-            Connect supported applications
-            and platforms to improve information flow.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            <i class="bi bi-robot"></i>
-          </div>
-
-          <h3>
-            Workflow Automation
-          </h3>
-
-          <p>
-
-            Automate repetitive activities
-            using APIs, scripts and custom workflows.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            <i class="bi bi-cloud-arrow-up"></i>
-          </div>
-
-          <h3>
-            Cloud Deployment
-          </h3>
-
-          <p>
-
-            Deploy supported websites
-            and applications to suitable cloud environments.
-
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="service-card">
-
-          <div class="service-icon">
-            <i class="bi bi-tools"></i>
-          </div>
-
-          <h3>
-            Website Maintenance & AMC
-          </h3>
-
-          <p>
-
-            Ongoing content updates,
-            backup checks, SSL monitoring
-            and minor website maintenance.
-
-          </p>
 
         </div>
 
@@ -797,13 +935,11 @@
 </section>
 
 
-<!-- SOLUTIONS -->
-
-<section class="service-section">
+<section class="service-section alt">
 
   <div class="container">
 
-    <div class="row gy-5 align-items-stretch">
+    <div class="row gy-5">
 
       <div class="col-lg-6">
 
@@ -815,47 +951,22 @@
 
           <ul class="check-list mt-4">
 
-            <li>
-              Corporate and business websites
-            </li>
-
-            <li>
-              Startup websites
-            </li>
-
-            <li>
-              College and institution websites
-            </li>
-
-            <li>
-              Customer portals
-            </li>
-
-            <li>
-              Internal business tools
-            </li>
-
-            <li>
-              Lead and enquiry systems
-            </li>
-
-            <li>
-              Dashboard applications
-            </li>
-
-            <li>
-              API-based integrations
-            </li>
-
-            <li>
-              Workflow automation
-            </li>
+            <li>Corporate and business websites</li>
+            <li>Startup websites</li>
+            <li>College and institution websites</li>
+            <li>Customer portals</li>
+            <li>Internal business tools</li>
+            <li>Lead and enquiry systems</li>
+            <li>Dashboard applications</li>
+            <li>API-based integrations</li>
+            <li>Workflow automation</li>
 
           </ul>
 
         </div>
 
       </div>
+
 
       <div class="col-lg-6">
 
@@ -867,33 +978,13 @@
 
           <ul class="check-list mt-4">
 
-            <li>
-              Startups launching a digital presence
-            </li>
-
-            <li>
-              SMEs modernizing business websites
-            </li>
-
-            <li>
-              Institutions requiring digital portals
-            </li>
-
-            <li>
-              Businesses replacing manual workflows
-            </li>
-
-            <li>
-              Teams requiring custom internal tools
-            </li>
-
-            <li>
-              Organizations integrating existing systems
-            </li>
-
-            <li>
-              Businesses requiring ongoing website support
-            </li>
+            <li>Startups launching a digital presence</li>
+            <li>SMEs modernizing business websites</li>
+            <li>Institutions requiring digital portals</li>
+            <li>Businesses replacing manual workflows</li>
+            <li>Teams requiring custom internal tools</li>
+            <li>Organizations integrating existing systems</li>
+            <li>Businesses requiring ongoing website support</li>
 
           </ul>
 
@@ -908,17 +999,13 @@
 </section>
 
 
-<!-- TECHNOLOGIES -->
-
-<section class="service-section alt">
+<section class="service-section">
 
   <div class="container">
 
     <div class="section-title">
 
-      <h2>
-        Technologies & Platforms
-      </h2>
+      <h2>Technologies & Platforms</h2>
 
       <p>
         Technology choices depend on project requirements and scalability needs.
@@ -926,67 +1013,19 @@
 
     </div>
 
+
     <div class="row gy-3 justify-content-center">
 
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          HTML5
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          CSS3
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          JavaScript
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Bootstrap
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Python
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          APIs
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          GitHub
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          AWS
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Microsoft Azure
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-4 col-6">
-        <div class="tech-card">
-          Google Cloud
-        </div>
-      </div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">HTML5</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">CSS3</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">JavaScript</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">Bootstrap</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">Python</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">APIs</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">GitHub</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">AWS</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">Microsoft Azure</div></div>
+      <div class="col-lg-2 col-md-4 col-6"><div class="tech-card">Google Cloud</div></div>
 
     </div>
 
@@ -995,9 +1034,7 @@
 </section>
 
 
-<!-- PROCESS -->
-
-<section class="service-section">
+<section class="service-section alt">
 
   <div class="container">
 
@@ -1013,94 +1050,70 @@
 
     </div>
 
-    <div class="row gy-4 text-center">
+
+    <div class="row gy-4">
 
       <div class="col-lg-3 col-md-6">
 
         <div class="process-card">
 
-          <span>
-            01
-          </span>
+          <span>01</span>
 
-          <h3>
-            Understand
-          </h3>
+          <h3>Understand</h3>
 
           <p>
-
-            Understand business goals,
-            users, features and technical requirements.
-
+            Understand business goals, users, features and technical requirements.
           </p>
 
         </div>
 
       </div>
 
+
       <div class="col-lg-3 col-md-6">
 
         <div class="process-card">
 
-          <span>
-            02
-          </span>
+          <span>02</span>
 
-          <h3>
-            Design
-          </h3>
+          <h3>Design</h3>
 
           <p>
-
-            Plan the solution structure,
-            user experience and technical approach.
-
+            Plan the solution structure, user experience and technical approach.
           </p>
 
         </div>
 
       </div>
 
+
       <div class="col-lg-3 col-md-6">
 
         <div class="process-card">
 
-          <span>
-            03
-          </span>
+          <span>03</span>
 
-          <h3>
-            Build
-          </h3>
+          <h3>Build</h3>
 
           <p>
-
-            Develop, configure and integrate
-            the agreed solution.
-
+            Develop, configure and integrate the agreed solution.
           </p>
 
         </div>
 
       </div>
 
+
       <div class="col-lg-3 col-md-6">
 
         <div class="process-card">
 
-          <span>
-            04
-          </span>
+          <span>04</span>
 
-          <h3>
-            Deploy & Support
-          </h3>
+          <h3>Deploy & Support</h3>
 
           <p>
-
-            Deploy the solution and provide
-            agreed maintenance or ongoing support.
-
+            Deploy the solution and provide agreed maintenance or ongoing support.
           </p>
 
         </div>
@@ -1114,9 +1127,7 @@
 </section>
 
 
-<!-- ENGAGEMENT -->
-
-<section class="service-section alt">
+<section class="service-section">
 
   <div class="container">
 
@@ -1132,6 +1143,7 @@
 
     </div>
 
+
     <div class="row gy-4">
 
       <div class="col-lg-4">
@@ -1142,20 +1154,16 @@
             <i class="bi bi-globe"></i>
           </div>
 
-          <h3>
-            Website Project
-          </h3>
+          <h3>Website Project</h3>
 
           <p>
-
-            Design and development of a professional,
-            responsive business or institutional website.
-
+            Design and development of a professional, responsive business or institutional website.
           </p>
 
         </div>
 
       </div>
+
 
       <div class="col-lg-4">
 
@@ -1165,20 +1173,16 @@
             <i class="bi bi-window-stack"></i>
           </div>
 
-          <h3>
-            Custom Software
-          </h3>
+          <h3>Custom Software</h3>
 
           <p>
-
-            Build a custom web application,
-            portal or workflow based on your business requirements.
-
+            Build a custom web application, portal or workflow based on business requirements.
           </p>
 
         </div>
 
       </div>
+
 
       <div class="col-lg-4">
 
@@ -1188,15 +1192,10 @@
             <i class="bi bi-tools"></i>
           </div>
 
-          <h3>
-            Website AMC
-          </h3>
+          <h3>Website AMC</h3>
 
           <p>
-
-            Ongoing updates, backup checks,
-            SSL monitoring and minor maintenance support.
-
+            Ongoing updates, backup checks, SSL monitoring and minor maintenance support.
           </p>
 
         </div>
@@ -1210,17 +1209,110 @@
 </section>
 
 
-<!-- FAQ -->
-
-<section class="service-section alt faq-section">
+<section class="service-section alt">
 
   <div class="container">
 
     <div class="section-title">
 
       <h2>
-        Frequently Asked Questions
+        Related Nanobricks Services
       </h2>
+
+      <p>
+        Connect development with cloud deployment, DevOps and ongoing IT support.
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
+          <h3>Cloud Services</h3>
+
+          <p>
+            Deploy and operate supported applications across AWS, Azure and Google Cloud.
+          </p>
+
+          <a href="/services/cloud-services/"
+             class="btn btn-outline-success mt-4">
+            Explore Cloud Services
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-git"></i>
+          </div>
+
+          <h3>DevOps & Automation</h3>
+
+          <p>
+            Automate builds, deployments and infrastructure using CI/CD and Infrastructure as Code.
+          </p>
+
+          <a href="/services/devops-automation/"
+             class="btn btn-outline-success mt-4">
+            Explore DevOps
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="related-card">
+
+          <div class="service-icon">
+            <i class="bi bi-tools"></i>
+          </div>
+
+          <h3>Managed IT & AMC</h3>
+
+          <p>
+            Extend websites and software solutions with ongoing business technology support.
+          </p>
+
+          <a href="/services/managed-it/"
+             class="btn btn-outline-success mt-4">
+            Explore Managed IT
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="service-section faq-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Frequently Asked Questions</h2>
 
       <p>
         Common questions about Nanobricks Web & Software Services.
@@ -1228,111 +1320,39 @@
 
     </div>
 
+
     <div class="row justify-content-center">
 
       <div class="col-lg-9">
 
-
-        <div class="service-card mb-3">
-
-          <h3>
-            Do you build business websites?
-          </h3>
-
-          <p>
-
-            Yes. Nanobricks can develop responsive
-            business, startup and institutional websites
-            based on agreed requirements.
-
-          </p>
-
+        <div class="service-card">
+          <h3>Do you build business websites?</h3>
+          <p>Yes. Nanobricks can develop responsive business, startup and institutional websites based on agreed requirements.</p>
         </div>
-
-
-        <div class="service-card mb-3">
-
-          <h3>
-            Can you build custom web applications?
-          </h3>
-
-          <p>
-
-            Yes. Custom web applications,
-            portals and business workflow tools
-            can be developed based on project scope.
-
-          </p>
-
-        </div>
-
-
-        <div class="service-card mb-3">
-
-          <h3>
-            Do you provide website maintenance?
-          </h3>
-
-          <p>
-
-            Yes. Website AMC services can include
-            content updates, backup checks,
-            SSL monitoring and minor maintenance.
-
-          </p>
-
-        </div>
-
-
-        <div class="service-card mb-3">
-
-          <h3>
-            Can you integrate APIs?
-          </h3>
-
-          <p>
-
-            Yes. API integrations can be implemented
-            for supported systems and platforms
-            based on technical feasibility.
-
-          </p>
-
-        </div>
-
-
-        <div class="service-card mb-3">
-
-          <h3>
-            Can you deploy applications in the cloud?
-          </h3>
-
-          <p>
-
-            Yes. Supported websites and applications
-            can be deployed to AWS, Microsoft Azure
-            or Google Cloud depending on requirements.
-
-          </p>
-
-        </div>
-
 
         <div class="service-card">
+          <h3>Can you build custom web applications?</h3>
+          <p>Yes. Custom web applications, portals and business workflow tools can be developed based on project scope.</p>
+        </div>
 
-          <h3>
-            How is software development pricing calculated?
-          </h3>
+        <div class="service-card">
+          <h3>Do you provide website maintenance?</h3>
+          <p>Yes. Website AMC can include content updates, backup checks, SSL monitoring and minor maintenance.</p>
+        </div>
 
-          <p>
+        <div class="service-card">
+          <h3>Can you integrate APIs?</h3>
+          <p>Yes. API integrations can be implemented for supported systems and platforms based on technical feasibility.</p>
+        </div>
 
-            Pricing depends on scope,
-            number of pages or features,
-            integrations, hosting requirements,
-            complexity and ongoing support needs.
+        <div class="service-card">
+          <h3>Can you deploy applications in the cloud?</h3>
+          <p>Yes. Supported websites and applications can be deployed to AWS, Microsoft Azure or Google Cloud depending on requirements.</p>
+        </div>
 
-          </p>
-
+        <div class="service-card">
+          <h3>How is software development pricing calculated?</h3>
+          <p>Pricing depends on scope, pages or features, integrations, hosting requirements, complexity and ongoing support needs.</p>
         </div>
 
       </div>
@@ -1343,8 +1363,6 @@
 
 </section>
 
-
-<!-- CTA -->
 
 <section class="service-cta">
 
@@ -1355,27 +1373,19 @@
     </h2>
 
     <p>
-
-      Tell us what your business needs.
-      Nanobricks can help turn the requirement
-      into a practical digital solution.
-
+      Tell us what your business needs. Nanobricks can help turn the requirement into a practical digital solution.
     </p>
 
-    <div class="d-flex justify-content-center flex-wrap gap-3">
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
 
       <a href="/#it-assessment"
          class="btn btn-light btn-lg">
-
         Discuss Your Project
-
       </a>
 
       <a href="/#enquiry"
          class="btn btn-outline-light btn-lg">
-
         Submit Enquiry
-
       </a>
 
     </div>
@@ -1388,138 +1398,111 @@
 </main>
 
 
-<!-- FOOTER -->
-
 <footer id="footer"
-        style="background:#111827;color:#fff;padding:60px 0 20px;">
+        class="footer-premium">
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="row gy-4 align-items-start">
 
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6">
 
-        <h3 style="color:#fff;">
-          Nanobricks
-        </h3>
+        <a href="/" class="footer-brand">
 
-        <p>
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks"
+               class="footer-logo">
 
-          Technology services for growing businesses,
-          including Managed IT, Cloud, Cybersecurity,
-          DevOps, Software Solutions and Professional Training.
+          <span>Nanobricks</span>
 
+        </a>
+
+        <p class="footer-description">
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
         </p>
+
+        <div class="footer-social">
+
+          <a href="https://www.linkedin.com/company/nanobricks"
+             target="_blank"
+             rel="noopener"
+             aria-label="Nanobricks LinkedIn">
+
+            <i class="bi bi-linkedin"></i>
+
+          </a>
+
+        </div>
 
       </div>
 
-      <div class="col-lg-4">
 
-        <h4 style="color:#fff;">
-          Quick Links
-        </h4>
+      <div class="col-lg-5 col-md-6">
 
-        <ul style="list-style:none;padding-left:0;line-height:2;">
+        <h4 class="footer-heading">Explore</h4>
 
-          <li>
-            <a href="/" style="color:#ddd;">
-              Home
-            </a>
-          </li>
+        <div class="footer-links-grid">
 
-          <li>
-            <a href="/#services" style="color:#ddd;">
-              Services
-            </a>
-          </li>
+          <a href="/#services">Services</a>
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+          <a href="/#it-assessment">IT Assessment</a>
+          <a href="/#contact">Contact</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
 
-          <li>
-            <a href="/#industries" style="color:#ddd;">
-              Industries
-            </a>
-          </li>
-
-          <li>
-            <a href="/academy/" style="color:#ddd;">
-              Academy
-            </a>
-          </li>
-
-          <li>
-            <a href="/#contact" style="color:#ddd;">
-              Contact
-            </a>
-          </li>
-
-        </ul>
+        </div>
 
       </div>
 
-      <div class="col-lg-4">
 
-        <h4 style="color:#fff;">
-          Contact
-        </h4>
+      <div class="col-lg-3 col-md-12">
 
-        <p>
+        <h4 class="footer-heading">Contact</h4>
 
-          <a href="tel:+917995720507"
-             style="color:#ddd;">
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt"></i>
+          <span>Hyderabad, Telangana, India</span>
+        </div>
 
-            +91 7995720507
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone"></i>
+          <a href="tel:+917995720507">+91 79957 20507</a>
+        </div>
 
-          </a>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope"></i>
+          <a href="mailto:info@nanobricks.in">info@nanobricks.in</a>
+        </div>
 
-        </p>
+        <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Web%20and%20Software%20services"
+           class="footer-whatsapp"
+           target="_blank"
+           rel="noopener">
 
-        <p>
+          <i class="bi bi-whatsapp"></i>
+          WhatsApp
 
-          <a href="mailto:info@nanobricks.in"
-             style="color:#ddd;">
-
-            info@nanobricks.in
-
-          </a>
-
-        </p>
-
-        <p>
-          Hyderabad, Telangana, India
-        </p>
-
-        <p>
-
-          <a href="/privacy-policy/"
-             style="color:#ddd;">
-
-            Privacy Policy
-
-          </a>
-
-          &nbsp; • &nbsp;
-
-          <a href="/terms/"
-             style="color:#ddd;">
-
-            Terms of Use
-
-          </a>
-
-        </p>
+        </a>
 
       </div>
 
     </div>
 
-    <hr style="border-color:#374151;margin:40px 0 20px;">
 
-    <div class="text-center">
+    <div class="footer-bottom">
 
-      <p style="color:#999;margin-bottom:0;">
-
+      <span>
         © 2026 Nanobricks. All Rights Reserved.
+      </span>
 
-      </p>
+      <span>
+        Web & Software Solutions • Hyderabad, India
+      </span>
 
     </div>
 
@@ -1528,20 +1511,15 @@
 </footer>
 
 
-<!-- WHATSAPP -->
-
-<a
-  href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Web%20and%20Software%20Services"
-  class="whatsapp-float"
-  target="_blank"
-  rel="noopener">
+<a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20Web%20and%20Software%20services"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener">
 
   <i class="bi bi-whatsapp"></i>
 
 </a>
 
-
-<!-- BACK TO TOP -->
 
 <a href="#"
    class="back-to-top d-flex align-items-center justify-content-center">
@@ -1551,14 +1529,8 @@
 </a>
 
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-<script
-  src="/assets/js/main.js">
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 
