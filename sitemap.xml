@@ -52,6 +52,18 @@
   </url>
 
   <url>
+    <loc>https://www.nanobricks.in/case-studies/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nanobricks.in/case-studies/small-business-it-standardization/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.nanobricks.in/academy/</loc>
     <priority>0.8</priority>
   </url>
@@ -83,8 +95,5 @@
     <loc>https://www.nanobricks.in/terms/</loc>
     <priority>0.3</priority>
   </url>
-  <url>
-  <loc>https://www.nanobricks.in/case-studies/small-business-it-standardization/</loc>
-</url>
 
 </urlset>
