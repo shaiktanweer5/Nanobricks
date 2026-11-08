@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+
+  <title>
+    Mid-Size Business IT Standardization | Nanobricks
+  </title>
+
+  <meta name="description"
+        content="Explore the Nanobricks approach to standardizing IT for mid-size businesses across endpoints, identity, networking, security, cloud, backup and IT operations.">
+
+  <link rel="canonical"
+        href="https://www.nanobricks.in/case-studies/mid-size-business-it-standardization/">
+
+  <meta property="og:title"
+        content="Mid-Size Business IT Standardization | Nanobricks">
+
+  <meta property="og:description"
+        content="A practical Nanobricks blueprint for building a standardized, secure and support-ready IT environment for growing mid-size businesses.">
+
+  <meta property="og:type"
+        content="article">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/case-studies/mid-size-business-it-standardization/">
+
+  <meta property="og:image"
+        content="https://www.nanobricks.in/assets/img/nano-log.png">
+
+  <link href="/assets/img/nano-log.png"
+        rel="icon">
+
+  <link href="/assets/img/nano-log.png"
+        rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <link
+    href="/assets/css/style.css"
+    rel="stylesheet">
+
+
+  <style>
+
+    .case-hero {
+      margin-top: 72px;
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg,#f8fbf8,#f3f8ff);
+      border-bottom: 1px solid #e7ece9;
+    }
+
+    .case-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #2fa93a;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .case-hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #25372b;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .case-hero p {
+      font-size: 20px;
+      color: #647168;
+      line-height: 1.7;
+      max-width: 820px;
+    }
+
+    .hero-icon {
+      width: 180px;
+      height: 180px;
+      margin: auto;
+      background: #fff;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 18px 60px rgba(0,0,0,.08);
+    }
+
+    .hero-icon i {
+      font-size: 72px;
+      color: #33bc3b;
+    }
+
+    .case-section {
+      padding: 80px 0;
+    }
+
+    .case-section.alt {
+      background: #f8faf9;
+    }
+
+    .case-section h2 {
+      color: #25372b;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .case-section p,
+    .case-section li {
+      color: #647168;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .summary-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 28px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+    }
+
+    .summary-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: #eff9f0;
+      color: #2fa93a;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .summary-card h3 {
+      color: #25372b;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .solution-card {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 14px;
+      padding: 28px;
+      height: 100%;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+    }
+
+    .solution-card h3 {
+      color: #25372b;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .solution-card i {
+      color: #33bc3b;
+      margin-right: 8px;
+    }
+
+    .architecture-box {
+      background: #ffffff;
+      border: 1px solid #e6ece7;
+      border-radius: 18px;
+      padding: 36px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.04);
+    }
+
+    .architecture-item {
+      background: #f8faf9;
+      border: 1px solid #e5ece7;
+      border-radius: 14px;
+      padding: 24px;
+      height: 100%;
+      text-align: center;
+    }
+
+    .architecture-item i {
+      color: #2fa93a;
+      font-size: 34px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .architecture-item strong {
+      color: #25372b;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .principle-box {
+      background: #f3f8ff;
+      border: 1px solid #dfe8f5;
+      border-radius: 14px;
+      padding: 30px;
+    }
+
+    .case-cta {
+      background: #1f6f2b;
+      color: #ffffff;
+      padding: 80px 0;
+    }
+
+    .case-cta h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .case-cta p {
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+    }
+
+
+    /* PREMIUM FOOTER */
+
+    .footer-premium {
+      background: #0d1726;
+      color: #cbd5e1;
+      padding: 46px 0 18px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .footer-brand span {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .footer-description {
+      max-width: 340px;
+      color: #94a3b8;
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: #e2e8f0;
+      border-radius: 9px;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      background: #1f6f2b;
+      border-color: #1f6f2b;
+      color: #ffffff;
+    }
+
+    .footer-heading {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 4px 0 17px;
+    }
+
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px 24px;
+    }
+
+    .footer-links-grid a,
+    .footer-contact-item a {
+      color: #aeb9c8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links-grid a:hover,
+    .footer-contact-item a:hover {
+      color: #ffffff;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      color: #aeb9c8;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-item i {
+      color: #49c354;
+    }
+
+    .footer-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid rgba(73,195,84,.35);
+      background: rgba(73,195,84,.08);
+      color: #67d970;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer-whatsapp:hover {
+      background: #25D366;
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #718096;
+      font-size: 12.5px;
+    }
+
+    @media (max-width: 768px) {
+
+      .case-hero h1 {
+        font-size: 34px;
+      }
+
+      .case-hero p {
+        font-size: 17px;
+      }
+
+      .hero-icon {
+        width: 140px;
+        height: 140px;
+      }
+
+      .footer-links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header id="header"
+        class="fixed-top d-flex align-items-center">
+
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+
+      <a href="/">
+
+        <img src="/assets/img/nano-log.png"
+             alt="Nanobricks"
+             height="40">
+
+      </a>
+
+    </div>
+
+
+    <nav id="navbar"
+         class="navbar">
+
+      <ul>
+
+        <li>
+          <a href="/">
+            Home
+          </a>
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/#services">
+
+            <span>Services</span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li><a href="/services/managed-it/">Managed IT & AMC</a></li>
+            <li><a href="/services/business-it-setup/">Business IT Setup</a></li>
+            <li><a href="/services/cloud-services/">Cloud Services</a></li>
+            <li><a href="/services/cloud-security/">Cloud Security</a></li>
+            <li><a href="/services/devops-automation/">DevOps & Automation</a></li>
+            <li><a href="/services/cybersecurity/">Cybersecurity</a></li>
+            <li><a href="/services/web-software/">Web & Software</a></li>
+            <li><a href="/services/backup-continuity/">Backup & Continuity</a></li>
+            <li><a href="/services/it-consulting/">IT Consulting</a></li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a href="/tools/">
+
+            <span>Tools</span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li><a href="/tools/">All Tools</a></li>
+            <li><a href="/tools/endpoint-assessment/">Endpoint Assessment</a></li>
+            <li><a href="/tools/pdf/">PDF Tools</a></li>
+
+          </ul>
+
+        </li>
+
+
+        <li class="dropdown">
+
+          <a class="active"
+             href="/case-studies/">
+
+            <span>Case Studies</span>
+
+            <i class="bi bi-chevron-down"></i>
+
+          </a>
+
+          <ul>
+
+            <li>
+              <a href="/case-studies/">
+                All Case Studies
+              </a>
+            </li>
+
+            <li>
+              <a href="/case-studies/small-business-it-standardization/">
+                Small Business IT Standardization
+              </a>
+            </li>
+
+            <li>
+              <a class="active"
+                 href="/case-studies/mid-size-business-it-standardization/">
+                Mid-Size Business IT Standardization
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+        <li>
+          <a href="/#about">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="/company-story/">
+            Company Story
+          </a>
+        </li>
+
+        <li>
+          <a href="/academy/">
+            Academy
+          </a>
+        </li>
+
+        <li>
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+
+        <li>
+
+          <a class="getstarted"
+             href="/#it-assessment">
+
+            Request IT Assessment
+
+          </a>
+
+        </li>
+
+      </ul>
+
+
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<section class="case-hero">
+
+  <div class="container">
+
+    <div class="row align-items-center gy-4">
+
+
+      <div class="col-lg-8">
+
+        <div class="case-label">
+
+          <i class="bi bi-diagram-3"></i>
+
+          Nanobricks Solution Blueprint
+
+        </div>
+
+
+        <h1>
+          Mid-Size Business IT Standardization
+        </h1>
+
+
+        <p>
+
+          A practical approach for growing organizations that need
+          stronger consistency across endpoints, users, networking,
+          security, cloud services, backups and ongoing IT operations.
+
+        </p>
+
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+
+          <a href="/#it-assessment"
+             class="btn btn-success btn-lg">
+
+            Request IT Assessment
+
+          </a>
+
+          <a href="/services/managed-it/"
+             class="btn btn-outline-dark btn-lg">
+
+            Explore Managed IT Services
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4 text-center">
+
+        <div class="hero-icon">
+
+          <i class="bi bi-buildings"></i>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<main>
+
+
+<section class="case-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        When Businesses Outgrow Basic IT
+      </h2>
+
+      <p>
+
+        As organizations grow, informal IT practices become harder
+        to manage and support consistently.
+
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="summary-card">
+
+          <div class="summary-icon">
+            <i class="bi bi-pc-display"></i>
+          </div>
+
+          <h3>
+            More Endpoints
+          </h3>
+
+          <p>
+            Growing numbers of desktops, laptops and business devices.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="summary-card">
+
+          <div class="summary-icon">
+            <i class="bi bi-people"></i>
+          </div>
+
+          <h3>
+            More Users
+          </h3>
+
+          <p>
+            Multiple teams, departments and access requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="summary-card">
+
+          <div class="summary-icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
+          <h3>
+            More Services
+          </h3>
+
+          <p>
+            Cloud, collaboration, storage and business applications.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="summary-card">
+
+          <div class="summary-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+
+          <h3>
+            More Risk
+          </h3>
+
+          <p>
+            Greater security, access and business-continuity requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="case-section alt">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Standardization Areas
+      </h2>
+
+      <p>
+
+        Nanobricks can help build a consistent IT baseline across
+        the main layers of a growing business environment.
+
+      </p>
+
+    </div>
+
+
+    <div class="row gy-4">
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-pc-display-horizontal"></i>
+            Endpoint Standardization
+          </h3>
+
+          <p>
+
+            Standard device naming, operating-system baselines,
+            security settings, business applications and update practices.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-person-lock"></i>
+            Identity & Access
+          </h3>
+
+          <p>
+
+            User accounts, administrator controls, role-based access
+            and appropriate permissions for business information.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-diagram-3"></i>
+            Network Standardization
+          </h3>
+
+          <p>
+
+            Structured local networking, shared resources,
+            device connectivity and controlled access between systems.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-shield-lock"></i>
+            Endpoint Security
+          </h3>
+
+          <p>
+
+            Endpoint protection, firewall controls, security updates
+            and practical hardening based on business requirements.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-cloud-check"></i>
+            Cloud & Collaboration
+          </h3>
+
+          <p>
+
+            Structured use of cloud storage, email, collaboration
+            and business applications with appropriate access controls.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-database-check"></i>
+            Backup & Continuity
+          </h3>
+
+          <p>
+
+            Identify critical business information and define
+            appropriate backup, recovery and continuity practices.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-router"></i>
+            Business Connectivity
+          </h3>
+
+          <p>
+
+            Review office connectivity, shared devices,
+            printers and network-dependent business workflows.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="solution-card">
+
+          <h3>
+            <i class="bi bi-clipboard-check"></i>
+            IT Documentation
+          </h3>
+
+          <p>
+
+            Maintain practical records for devices, software,
+            responsibilities, access requirements and support processes.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="case-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>
+        Practical IT Architecture
+      </h2>
+
+      <p>
+
+        Standardization creates a clearer operating model
+        instead of a collection of independently managed devices.
+
+      </p>
+
+    </div>
+
+
+    <div class="architecture-box">
+
+      <div class="row gy-4">
+
+
+        <div class="col-lg-3 col-md-6">
+
+          <div class="architecture-item">
+
+            <i class="bi bi-people"></i>
+
+            <strong>
+              Users & Teams
+            </strong>
+
+            <span class="text-muted">
+              Controlled access
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+
+          <div class="architecture-item">
+
+            <i class="bi bi-pc-display"></i>
+
+            <strong>
+              Standard Endpoints
+            </strong>
+
+            <span class="text-muted">
+              Consistent baseline
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+
+          <div class="architecture-item">
+
+            <i class="bi bi-diagram-3"></i>
+
+            <strong>
+              Business Network
+            </strong>
+
+            <span class="text-muted">
+              Managed connectivity
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+
+          <div class="architecture-item">
+
+            <i class="bi bi-cloud"></i>
+
+            <strong>
+              Cloud & Data
+            </strong>
+
+            <span class="text-muted">
+              Services and backup
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="case-section alt">
+
+  <div class="container">
+
+    <div class="row align-items-center gy-4">
+
+
+      <div class="col-lg-6">
+
+        <h2>
+          Built Around Business Requirements
+        </h2>
+
+        <p>
+
+          Mid-size businesses do not need unnecessary complexity.
+          They need an IT environment that can grow without becoming
+          difficult to manage.
+
+        </p>
+
+        <p>
+
+          Nanobricks focuses on practical improvements based on
+          the organization's users, devices, data and operational needs.
+
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-6">
+
+        <div class="principle-box">
+
+          <ul class="mb-0">
+
+            <li>
+              Standard device configurations.
+            </li>
+
+            <li>
+              Clear identity and access controls.
+            </li>
+
+            <li>
+              Structured networking.
+            </li>
+
+            <li>
+              Practical security controls.
+            </li>
+
+            <li>
+              Cloud and collaboration readiness.
+            </li>
+
+            <li>
+              Backup and recovery planning.
+            </li>
+
+            <li>
+              Hardware lifecycle planning.
+            </li>
+
+            <li>
+              Support-ready documentation.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="case-cta">
+
+  <div class="container text-center">
+
+    <h2>
+      Is Your IT Environment Growing Faster Than Your IT Processes?
+    </h2>
+
+    <p>
+
+      Nanobricks can assess your current environment and help build
+      a cleaner, more secure and support-ready IT baseline.
+
+    </p>
+
+
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+
+      <a href="/#it-assessment"
+         class="btn btn-light btn-lg">
+
+        Request IT Assessment
+
+      </a>
+
+
+      <a href="/services/it-consulting/"
+         class="btn btn-outline-light btn-lg">
+
+        Explore IT Consulting
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<footer id="footer"
+        class="footer-premium">
+
+  <div class="container">
+
+    <div class="row gy-4 align-items-start">
+
+
+      <div class="col-lg-4 col-md-6">
+
+        <a href="/"
+           class="footer-brand">
+
+          <img src="/assets/img/nano-log.png"
+               alt="Nanobricks"
+               class="footer-logo">
+
+          <span>
+            Nanobricks
+          </span>
+
+        </a>
+
+
+        <p class="footer-description">
+
+          Practical technology services for growing businesses across
+          Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
+
+        </p>
+
+
+        <div class="footer-social">
+
+          <a href="https://www.linkedin.com/company/nanobricks"
+             target="_blank"
+             rel="noopener"
+             aria-label="Nanobricks LinkedIn">
+
+            <i class="bi bi-linkedin"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5 col-md-6">
+
+        <h4 class="footer-heading">
+          Explore
+        </h4>
+
+        <div class="footer-links-grid">
+
+          <a href="/#services">Services</a>
+          <a href="/case-studies/">Case Studies</a>
+
+          <a href="/tools/">Tools</a>
+          <a href="/academy/">Academy</a>
+
+          <a href="/company-story/">Company Story</a>
+          <a href="/media/">Media & Press</a>
+
+          <a href="/#it-assessment">IT Assessment</a>
+          <a href="/#contact">Contact</a>
+
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Use</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-12">
+
+        <h4 class="footer-heading">
+          Contact
+        </h4>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-geo-alt"></i>
+
+          <span>
+            Hyderabad, Telangana, India
+          </span>
+
+        </div>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-telephone"></i>
+
+          <a href="tel:+917995720507">
+            +91 79957 20507
+          </a>
+
+        </div>
+
+
+        <div class="footer-contact-item">
+
+          <i class="bi bi-envelope"></i>
+
+          <a href="mailto:info@nanobricks.in">
+            info@nanobricks.in
+          </a>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20business%20IT%20standardization"
+          class="footer-whatsapp"
+          target="_blank"
+          rel="noopener">
+
+          <i class="bi bi-whatsapp"></i>
+
+          WhatsApp
+
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Nanobricks. All Rights Reserved.
+      </span>
+
+      <span>
+        Mid-Size Business IT Standardization
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<a
+  href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20discuss%20business%20IT%20standardization"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener">
+
+  <i class="bi bi-whatsapp"></i>
+
+</a>
+
+
+<a href="#"
+   class="back-to-top d-flex align-items-center justify-content-center">
+
+  <i class="bi bi-arrow-up-short"></i>
+
+</a>
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
