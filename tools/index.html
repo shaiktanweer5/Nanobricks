@@ -5,21 +5,35 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="robots" content="index, follow">
 
   <title>
-    Free Technology Tools | Nanobricks
+    Free Technology Tools | PDF, Endpoint & IT Utilities | Nanobricks
   </title>
 
   <meta name="description"
-        content="Explore free technology tools from Nanobricks including Windows endpoint assessment, browser-based PDF tools and upcoming image, IT and cloud security utilities.">
+        content="Explore free Nanobricks technology tools including Windows Endpoint Assessment and browser-based PDF tools for PDF to Word, merge, split, rotate, extract, watermark, page numbering and image conversion.">
 
   <meta name="keywords"
-        content="Nanobricks Tools, Free IT Tools, Windows Endpoint Assessment, PDF Tools, Cloud Security Tools, Image Tools, Technology Utilities">
+        content="Nanobricks Tools, Free IT Tools, Windows Endpoint Assessment, PDF to Word, Merge PDF, Split PDF, Watermark PDF, PDF Tools, Cloud Security Tools, IT Utilities">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/tools/">
+
+  <meta property="og:title"
+        content="Free Technology Tools | Nanobricks">
+
+  <meta property="og:description"
+        content="Free practical technology tools from Nanobricks including Windows Endpoint Assessment and browser-based PDF utilities.">
+
+  <meta property="og:type"
+        content="website">
+
+  <meta property="og:url"
+        content="https://www.nanobricks.in/tools/">
+
+  <meta property="og:image"
+        content="https://www.nanobricks.in/assets/img/nano-log.png">
 
   <link href="/assets/img/nano-log.png"
         rel="icon">
@@ -69,6 +83,24 @@
   </script>
 
 
+  <!-- Tools Collection Schema -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Nanobricks Technology Tools",
+    "url": "https://www.nanobricks.in/tools/",
+    "description": "Free practical technology tools from Nanobricks including Windows Endpoint Assessment and browser-based PDF utilities.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nanobricks",
+      "url": "https://www.nanobricks.in/"
+    }
+  }
+  </script>
+
+
   <style>
 
     #header .logo img {
@@ -107,7 +139,7 @@
       font-size: 19px;
       color: #647168;
       line-height: 1.8;
-      max-width: 760px;
+      max-width: 780px;
     }
 
 
@@ -150,7 +182,7 @@
 
     .section-title p {
       color: #647168;
-      max-width: 760px;
+      max-width: 780px;
       margin: 12px auto 0;
       line-height: 1.7;
     }
@@ -241,6 +273,55 @@
     }
 
 
+    .feature-list {
+      margin: 0 0 22px;
+      padding: 0;
+      list-style: none;
+    }
+
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      color: #5f6e64;
+      font-size: 14px;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+
+    .feature-list i {
+      color: #2fa93a;
+      margin-top: 2px;
+    }
+
+
+    .pdf-feature-card {
+      border: 2px solid #d9ecdc;
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #f8fcf9
+        );
+    }
+
+
+    .tool-count {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #1f6f2b;
+      background: #edf8ef;
+      padding: 6px 11px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+    }
+
+
     .why-tools {
       background: #ffffff;
       border: 1px solid #e5ece7;
@@ -268,6 +349,43 @@
       color: #647168;
       line-height: 1.7;
       margin-bottom: 0;
+    }
+
+
+    .tools-highlight {
+      background: #eff9f1;
+      border: 1px solid #d9ecdc;
+      border-radius: 18px;
+      padding: 38px;
+    }
+
+
+    .tools-highlight h2 {
+      color: #25372b;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+
+    .tools-highlight p {
+      color: #647168;
+      line-height: 1.75;
+      margin-bottom: 22px;
+    }
+
+
+    .tools-highlight-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      color: #4f6155;
+    }
+
+
+    .tools-highlight-item i {
+      color: #2fa93a;
+      flex-shrink: 0;
+      margin-top: 3px;
     }
 
 
@@ -612,7 +730,8 @@
           <ul>
 
             <li>
-              <a href="/tools/">
+              <a class="active"
+                 href="/tools/">
                 All Tools
               </a>
             </li>
@@ -646,6 +765,7 @@
 
           </a>
 
+
           <ul>
 
             <li>
@@ -657,6 +777,12 @@
             <li>
               <a href="/case-studies/small-business-it-standardization/">
                 Small Business IT Standardization
+              </a>
+            </li>
+
+            <li>
+              <a href="/case-studies/mid-size-business-it-standardization/">
+                Growing Business IT Modernization
               </a>
             </li>
 
@@ -735,17 +861,16 @@
 
 
         <h1>
-          Practical Technology Tools
-          From Nanobricks
+          Practical Technology Tools From Nanobricks
         </h1>
 
 
         <p>
 
-          A growing collection of lightweight tools designed
-          to help businesses, IT teams, professionals and
-          everyday users complete common technology tasks
-          simply and efficiently.
+          A growing collection of free technology utilities
+          for businesses, IT professionals and everyday users —
+          including Windows endpoint assessment and a complete
+          browser-based PDF toolkit.
 
         </p>
 
@@ -756,6 +881,13 @@
              class="btn btn-success btn-lg me-2">
 
             Explore Tools
+
+          </a>
+
+          <a href="/tools/pdf/"
+             class="btn btn-outline-success btn-lg me-2">
+
+            Open PDF Tools
 
           </a>
 
@@ -803,8 +935,8 @@
 
       <p>
 
-        Free utilities focused on practical IT,
-        productivity and security requirements.
+        Free utilities focused on practical productivity,
+        IT operations, document processing and security requirements.
 
       </p>
 
@@ -813,6 +945,8 @@
 
     <div class="row gy-4">
 
+
+      <!-- ENDPOINT ASSESSMENT -->
 
       <div class="col-lg-4 col-md-6">
 
@@ -837,13 +971,41 @@
 
           <p>
 
-            Review Windows endpoint configuration,
-            operating system information, memory,
-            disk capacity, Microsoft Defender,
-            Firewall, Windows Update,
-            Microsoft Office and local accounts.
+            Review important Windows endpoint configuration
+            and security information using a lightweight
+            assessment tool.
 
           </p>
+
+
+          <ul class="feature-list">
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Windows & device information
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Memory & disk capacity
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Microsoft Defender
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Firewall & Windows Update
+            </li>
+
+            <li>
+              <i class="bi bi-check-circle-fill"></i>
+              Microsoft Office & local accounts
+            </li>
+
+          </ul>
 
 
           <a href="/tools/endpoint-assessment/"
@@ -860,14 +1022,25 @@
       </div>
 
 
-      <div class="col-lg-4 col-md-6"
+      <!-- PDF TOOLS -->
+
+      <div class="col-lg-8 col-md-6"
            id="pdf-tools">
 
-        <div class="tools-card">
+        <div class="tools-card pdf-feature-card">
 
           <span class="status-badge status-live">
             Available Now
           </span>
+
+
+          <div class="tool-count">
+
+            <i class="bi bi-grid"></i>
+
+            11 PDF Tools
+
+          </div>
 
 
           <div class="tools-icon">
@@ -884,20 +1057,103 @@
 
           <p>
 
-            Merge, split, rotate, remove and reorder
-            PDF pages, convert JPG or PNG images to PDF,
-            and convert PDF pages to PNG images
-            directly in your browser.
+            A browser-based PDF toolkit for common document tasks.
+            Convert PDF text to Word, merge and split PDFs,
+            extract pages, rotate or reorder pages,
+            add watermarks and page numbers,
+            convert images to PDF and convert PDF pages to PNG.
 
           </p>
 
 
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <ul class="feature-list">
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  PDF to Word
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Merge PDF
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Split PDF
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Extract PDF Pages
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Remove PDF Pages
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Reorder PDF Pages
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+              <ul class="feature-list">
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Rotate PDF
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Watermark PDF
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Add Page Numbers
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  JPG / PNG to PDF
+                </li>
+
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  PDF to PNG
+                </li>
+
+                <li>
+                  <i class="bi bi-shield-check"></i>
+                  Browser-based processing
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+
           <a href="/tools/pdf/"
-             class="tools-link">
+             class="btn btn-success mt-2">
 
-            Open PDF Tools
+            <i class="bi bi-file-earmark-pdf me-2"></i>
 
-            <i class="bi bi-arrow-right"></i>
+            Open All PDF Tools
 
           </a>
 
@@ -905,6 +1161,8 @@
 
       </div>
 
+
+      <!-- IMAGE TOOLS -->
 
       <div class="col-lg-4 col-md-6"
            id="image-tools">
@@ -946,6 +1204,8 @@
       </div>
 
 
+      <!-- CLOUD SECURITY -->
+
       <div class="col-lg-4 col-md-6"
            id="cloud-security-tools">
 
@@ -970,9 +1230,8 @@
 
           <p>
 
-            Practical cloud security utilities
-            focused on configuration review,
-            security posture awareness
+            Practical utilities focused on cloud configuration,
+            security posture awareness, IAM review
             and common cloud security checks.
 
           </p>
@@ -986,6 +1245,8 @@
 
       </div>
 
+
+      <!-- IT UTILITIES -->
 
       <div class="col-lg-4 col-md-6">
 
@@ -1026,6 +1287,8 @@
       </div>
 
 
+      <!-- MORE -->
+
       <div class="col-lg-4 col-md-6">
 
         <div class="tools-card">
@@ -1050,8 +1313,8 @@
           <p>
 
             Nanobricks Tools will continue to expand
-            with practical utilities based on common
-            technology and business requirements.
+            with practical utilities based on
+            common business and technology requirements.
 
           </p>
 
@@ -1072,7 +1335,121 @@
 </section>
 
 
+<!-- PDF HIGHLIGHT -->
+
 <section class="tools-section">
+
+  <div class="container">
+
+    <div class="row align-items-center gy-4">
+
+
+      <div class="col-lg-7">
+
+        <div class="tools-highlight">
+
+          <h2>
+            Browser-Based PDF Tools
+          </h2>
+
+
+          <p>
+
+            Nanobricks PDF Tools provides common document utilities
+            directly through a modern web browser without requiring
+            additional desktop software or a Nanobricks account.
+
+          </p>
+
+
+          <div class="tools-highlight-item">
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Convert selectable PDF text into an editable Word DOCX file.
+            </span>
+
+          </div>
+
+
+          <div class="tools-highlight-item">
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Merge, split, extract, remove, reorder and rotate PDF pages.
+            </span>
+
+          </div>
+
+
+          <div class="tools-highlight-item">
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Add text watermarks and page numbers to PDF documents.
+            </span>
+
+          </div>
+
+
+          <div class="tools-highlight-item">
+
+            <i class="bi bi-check-circle-fill"></i>
+
+            <span>
+              Convert JPG and PNG images to PDF or PDF pages to PNG.
+            </span>
+
+          </div>
+
+
+          <div class="tools-highlight-item">
+
+            <i class="bi bi-shield-check"></i>
+
+            <span>
+              Current PDF processing is designed to happen locally in the browser.
+            </span>
+
+          </div>
+
+
+          <a href="/tools/pdf/"
+             class="btn btn-success mt-3">
+
+            Use PDF Tools
+
+            <i class="bi bi-arrow-right ms-2"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-5 text-center">
+
+        <i class="bi bi-file-earmark-pdf"
+           style="font-size:150px;color:#2fa93a;opacity:.82;">
+        </i>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY TOOLS -->
+
+<section class="tools-section tools-section-alt">
 
   <div class="container">
 
@@ -1171,6 +1548,8 @@
 </section>
 
 
+<!-- CTA -->
+
 <section class="tools-cta">
 
   <div class="container text-center">
@@ -1179,21 +1558,34 @@
       Need Help Beyond the Free Tools?
     </h2>
 
+
     <p>
 
       Nanobricks provides Managed IT, Cloud,
-      Cybersecurity, DevOps and technology
-      consulting services for businesses.
+      Cybersecurity, DevOps, Software
+      and technology consulting services for businesses.
 
     </p>
 
 
-    <a href="/#contact"
-       class="btn btn-light btn-lg mt-3">
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
 
-      Contact Nanobricks
+      <a href="/#it-assessment"
+         class="btn btn-light btn-lg">
 
-    </a>
+        Request IT Assessment
+
+      </a>
+
+
+      <a href="/#contact"
+         class="btn btn-outline-light btn-lg">
+
+        Contact Nanobricks
+
+      </a>
+
+    </div>
 
   </div>
 
@@ -1210,6 +1602,7 @@
 
     <div class="row gy-4 align-items-start">
 
+
       <div class="col-lg-4 col-md-6">
 
         <a href="/"
@@ -1225,12 +1618,14 @@
 
         </a>
 
+
         <p class="footer-description">
 
           Practical technology services for growing businesses across
           Managed IT, Cloud, Cybersecurity, DevOps and Software Solutions.
 
         </p>
+
 
         <div class="footer-social">
 
@@ -1254,22 +1649,48 @@
           Explore
         </h4>
 
+
         <div class="footer-links-grid">
 
-          <a href="/#services">Services</a>
-          <a href="/case-studies/">Case Studies</a>
+          <a href="/#services">
+            Services
+          </a>
 
-          <a href="/tools/">Tools</a>
-          <a href="/academy/">Academy</a>
+          <a href="/case-studies/">
+            Case Studies
+          </a>
 
-          <a href="/company-story/">Company Story</a>
-          <a href="/media/">Media & Press</a>
+          <a href="/tools/">
+            Tools
+          </a>
 
-          <a href="/#it-assessment">IT Assessment</a>
-          <a href="/#contact">Contact</a>
+          <a href="/academy/">
+            Academy
+          </a>
 
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <a href="/terms/">Terms of Use</a>
+          <a href="/company-story/">
+            Company Story
+          </a>
+
+          <a href="/media/">
+            Media & Press
+          </a>
+
+          <a href="/#it-assessment">
+            IT Assessment
+          </a>
+
+          <a href="/#contact">
+            Contact
+          </a>
+
+          <a href="/privacy-policy/">
+            Privacy Policy
+          </a>
+
+          <a href="/terms/">
+            Terms of Use
+          </a>
 
         </div>
 
@@ -1282,6 +1703,7 @@
           Contact
         </h4>
 
+
         <div class="footer-contact-item">
 
           <i class="bi bi-geo-alt"></i>
@@ -1291,6 +1713,7 @@
           </span>
 
         </div>
+
 
         <div class="footer-contact-item">
 
@@ -1302,6 +1725,7 @@
 
         </div>
 
+
         <div class="footer-contact-item">
 
           <i class="bi bi-envelope"></i>
@@ -1312,12 +1736,14 @@
 
         </div>
 
+
         <a href="https://wa.me/917995720507?text=Hi%20I%20would%20like%20to%20know%20more%20about%20Nanobricks%20tools"
            class="footer-whatsapp"
            target="_blank"
            rel="noopener">
 
           <i class="bi bi-whatsapp"></i>
+
           WhatsApp
 
         </a>
@@ -1368,7 +1794,8 @@
 </script>
 
 
-<script src="/assets/js/main.js"></script>
+<script src="/assets/js/main.js">
+</script>
 
 
 </body>
