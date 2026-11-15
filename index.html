@@ -2626,28 +2626,64 @@
       "submit",
       function () {
 
-        const form =
-          this;
-
-        const message =
-          document.getElementById(
-            "enquiry-success"
+        const responseFrame =
+          document.querySelector(
+            'iframe[name="enquiry-response-frame"]'
           );
 
 
-        setTimeout(
-          function () {
+        if (
+          typeof gtag === "function"
+        ) {
 
-            if (message) {
-              message.style.display =
-                "block";
+          gtag(
+            "event",
+            "enquiry_submit",
+            {
+              event_category:
+                "lead_generation",
+
+              event_label:
+                "homepage_enquiry"
             }
+          );
 
-            form.reset();
+        }
 
-          },
-          1200
-        );
+
+        if (responseFrame) {
+
+          let redirectHandled = false;
+
+
+          const redirectToThankYou =
+            function () {
+
+              if (redirectHandled) {
+                return;
+              }
+
+              redirectHandled = true;
+
+              window.location.href =
+                "/thank-you/?source=enquiry";
+
+            };
+
+
+          responseFrame.addEventListener(
+            "load",
+            redirectToThankYou,
+            { once: true }
+          );
+
+
+          setTimeout(
+            redirectToThankYou,
+            5000
+          );
+
+        }
 
       }
     );
