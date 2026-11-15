@@ -2880,49 +2880,46 @@
         }
 
 
-        setTimeout(
-          function () {
-
-            const formCard =
-              document.getElementById(
-                "assessment-form-card"
-              );
+        const responseFrame =
+          document.querySelector(
+            'iframe[name="assessment-response-frame"]'
+          );
 
 
-            const successMessage =
-              document.getElementById(
-                "assessment-success"
-              );
+        if (responseFrame) {
+
+          let redirectHandled = false;
 
 
-            assessmentForm.style.display =
-              "none";
+          const redirectToThankYou =
+            function () {
 
-
-            successMessage.style.display =
-              "block";
-
-
-            formCard.scrollIntoView(
-              {
-                behavior: "smooth",
-                block: "center"
+              if (redirectHandled) {
+                return;
               }
-            );
+
+              redirectHandled = true;
+
+              window.location.href =
+                "/thank-you/?source=it-assessment";
+
+            };
 
 
-            submitButton.disabled =
-              false;
+          responseFrame.addEventListener(
+            "load",
+            redirectToThankYou,
+            { once: true }
+          );
 
-            submitText.style.display =
-              "inline";
 
-            submitLoading.style.display =
-              "none";
+          setTimeout(
+            redirectToThankYou,
+            5000
+          );
 
-          },
-          1500
-        );
+        }
+
 
       }
     );
