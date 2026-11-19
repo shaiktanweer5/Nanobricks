@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Endpoint360 Beta | Nanobricks</title>
+
+  <meta name="description"
+        content="Nanobricks Endpoint360 is an upcoming Windows endpoint security, compliance and system health assessment tool.">
+
+  <link rel="icon" href="/assets/img/nano-log.png">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1463eb;
+      --dark: #0d1729;
+      --muted: #64748b;
+      --background: #f5f8fc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--background);
+      color: var(--dark);
+    }
+
+    .navbar {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 18px 0;
+    }
+
+    .brand {
+      font-size: 23px;
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--dark);
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    .nav-link-custom {
+      color: #334155;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 100px 20px 85px;
+      background:
+        linear-gradient(135deg, #0d1729, #153a70);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .beta-badge {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #64a8ff;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: 0 auto 30px;
+      color: #d6e4f5;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .btn-primary-custom {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 9px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .btn-primary-custom:hover {
+      background: #0b4fc5;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      font-size: 34px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 720px;
+      margin: 0 auto 45px;
+      line-height: 1.7;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 30px rgba(15,23,42,0.04);
+    }
+
+    .feature-card i {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 19px;
+      font-weight: 750;
+      margin-bottom: 12px;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .notice {
+      background: #eaf2ff;
+      border: 1px solid #c7ddff;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .notice h3 {
+      font-weight: 800;
+      font-size: 23px;
+      margin-bottom: 15px;
+    }
+
+    .notice p {
+      color: #40516b;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: #0d1729;
+      color: #cbd5e1;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 75px 20px;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <a href="/" class="brand">
+        Nano<span>bricks</span>
+      </a>
+
+      <a href="/tools/" class="nav-link-custom">
+        <i class="bi bi-arrow-left"></i>
+        All Tools
+      </a>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+
+        <div class="beta-badge">
+          <i class="bi bi-shield-check"></i>
+          IN DEVELOPMENT
+        </div>
+
+        <h1>
+          Nanobricks <span>Endpoint360</span>
+        </h1>
+
+        <p>
+          A Windows endpoint assessment platform designed
+          to help businesses understand device security,
+          operating system health, configuration risks
+          and compliance readiness.
+        </p>
+
+        <a href="#features" class="btn-primary-custom">
+          Explore Planned Features
+          <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+
+        <h2 class="section-title">
+          One Endpoint. Complete Visibility.
+        </h2>
+
+        <p class="section-subtitle">
+          Endpoint360 is being developed to bring
+          Windows security, compliance and system health
+          information into a structured assessment.
+        </p>
+
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <i class="bi bi-windows"></i>
+              <h3>Windows Health</h3>
+              <p>
+                Review operating system information,
+                Windows updates, activation status,
+                system configuration and readiness.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <i class="bi bi-shield-lock"></i>
+              <h3>Security Assessment</h3>
+              <p>
+                Assess Microsoft Defender,
+                firewall configuration, security
+                controls and endpoint protection posture.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <i class="bi bi-cpu"></i>
+              <h3>Hardware Inventory</h3>
+              <p>
+                Collect system hardware details,
+                processor information, memory,
+                storage capacity and device identity.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <i class="bi bi-person-lock"></i>
+              <h3>User & Access Review</h3>
+              <p>
+                Review local accounts,
+                administrator memberships,
+                account settings and access risks.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <i class="bi bi-arrow-repeat"></i>
+              <h3>Update & Software Review</h3>
+              <p>
+                Review installed applications,
+                software versions, Windows update
+                status and pending reboot indicators.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <i class="bi bi-file-earmark-bar-graph"></i>
+              <h3>Compliance Reporting</h3>
+              <p>
+                Generate structured findings,
+                risk summaries and practical
+                remediation recommendations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+
+        <div class="notice">
+
+          <h3>
+            <i class="bi bi-tools me-2"></i>
+            Free Beta Coming Soon
+          </h3>
+
+          <p>
+            Nanobricks Endpoint360 is currently under
+            development. The initial beta will focus on
+            read-only Windows endpoint assessments.
+            No automatic system changes are planned.
+            Downloads will be enabled after testing
+            and release verification.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <p class="mb-2">
+        &copy; <span id="year"></span> Nanobricks.
+        All rights reserved.
+      </p>
+
+      <p class="mb-0">
+        <a href="/">Home</a>
+        &nbsp; | &nbsp;
+        <a href="/tools/">Tools</a>
+        &nbsp; | &nbsp;
+        <a href="/privacy-policy/">Privacy Policy</a>
+        &nbsp; | &nbsp;
+        <a href="/terms/">Terms</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
