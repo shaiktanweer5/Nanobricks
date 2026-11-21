@@ -9,14 +9,14 @@
         content="width=device-width, initial-scale=1">
 
   <meta name="robots"
-        content="noindex, follow">
+        content="index, follow">
 
   <title>
     Nanobricks Endpoint360 | Windows Security & Compliance Assessment
   </title>
 
   <meta name="description"
-        content="Explore Nanobricks Endpoint360, an upcoming Windows endpoint security, compliance, system health and configuration assessment utility.">
+        content="Download Nanobricks Endpoint360 Free v0.5.0 Public Beta. A read-only Windows security, software, health, network and compliance assessment with a local dashboard.">
 
   <link rel="canonical"
         href="https://www.nanobricks.in/tools/endpoint360/">
@@ -25,7 +25,7 @@
         content="Nanobricks Endpoint360 | Windows Endpoint Assessment">
 
   <meta property="og:description"
-        content="Endpoint360 is an upcoming Nanobricks tool for Windows security, compliance and system health assessments.">
+        content="Endpoint360 Free v0.5.0 Public Beta is available now. Download the read-only Windows security and compliance assessment with seven modules and a local dashboard.">
 
   <meta property="og:url"
         content="https://www.nanobricks.in/tools/endpoint360/">
@@ -617,57 +617,42 @@
 </header>
 
 <!-- HERO -->
-
 <section class="tool-hero">
   <div class="container text-center">
-
     <div class="tool-badge">
       <i class="bi bi-shield-check"></i>
-      Windows Utility &nbsp;•&nbsp; In Development
+      Windows Utility &nbsp;•&nbsp; Free Public Beta &nbsp;•&nbsp; v0.5.0
     </div>
-
-    <h1>
-      Complete Visibility Into Your Windows Endpoint
-    </h1>
-
+    <h1>Understand Your Windows Endpoint Security &amp; Compliance</h1>
     <p class="lead">
-      Nanobricks Endpoint360 is being developed to provide
-      a detailed view of Windows security configuration,
-      device health, software inventory, user access
-      and compliance readiness in one assessment.
+      Nanobricks Endpoint360 Free assesses Windows security configuration,
+      device health, installed software, available updates, user access and
+      network security. Explore findings in a local browser dashboard with
+      17 evidence-based compliance controls.
     </p>
-
     <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-      <a href="#features"
-         class="btn btn-success btn-lg">
-        <i class="bi bi-grid me-2"></i>
-        Explore Planned Features
+      <a href="https://github.com/shaiktanweer5/nanobricks-endpoint360/releases/download/v0.5.0/Nanobricks-Endpoint360-Free-v0.5.0-Windows.zip" class="btn btn-success btn-lg"
+         onclick="if (typeof gtag === 'function') gtag('event','endpoint360_download');">
+        <i class="bi bi-download me-2"></i>Download Free Beta for Windows
       </a>
-
-      <a href="/tools/endpoint-assessment/"
+      <a href="https://github.com/shaiktanweer5/nanobricks-endpoint360" target="_blank" rel="noopener noreferrer"
          class="btn btn-outline-success btn-lg">
-        <i class="bi bi-download me-2"></i>
-        Try Existing Free Tool
+        <i class="bi bi-github me-2"></i>View Source on GitHub
+      </a>
+      <a href="#features" class="btn btn-outline-success btn-lg">
+        <i class="bi bi-grid me-2"></i>Explore Features
       </a>
     </div>
-
     <div class="hero-trust">
-      <span>
-        <i class="bi bi-shield-lock"></i>
-        Read-only assessment planned
-      </span>
-
-      <span>
-        <i class="bi bi-pc-display"></i>
-        Windows endpoints
-      </span>
-
-      <span>
-        <i class="bi bi-file-earmark-text"></i>
-        Detailed reporting planned
-      </span>
+      <span><i class="bi bi-shield-lock"></i>Read-only assessment</span>
+      <span><i class="bi bi-pc-display"></i>Windows 64-bit</span>
+      <span><i class="bi bi-file-earmark-text"></i>Reports saved locally</span>
+      <span><i class="bi bi-github"></i>Source publicly available</span>
     </div>
-
+    <p class="text-muted small mt-3">
+      Public beta tested on Windows 11. Extract the complete ZIP before running.
+      Some checks may require administrator access.
+    </p>
   </div>
 </section>
 
@@ -681,11 +666,11 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>What Endpoint360 Is Being Built to Check</h2>
+      <h2>What Endpoint360 Free Assesses</h2>
       <p>
-        The following assessment modules are planned for
-        the Endpoint360 beta. Availability and coverage
-        will be confirmed when the software is released.
+        Seven read-only assessment modules examine Windows configuration,
+        security, installed applications, updates, device health and network posture.
+        Availability of individual checks depends on Windows permissions and system capabilities.
       </p>
     </div>
 
@@ -696,9 +681,8 @@
           <i class="bi bi-windows"></i>
           <h4>Windows OS & Updates</h4>
           <p>
-            Operating system edition, version, build,
-            activation indicators, update history,
-            pending patches and reboot requirements.
+            Operating system information, update history,
+            pending Windows updates and reboot requirements.
           </p>
         </div>
       </div>
@@ -768,9 +752,8 @@
           <i class="bi bi-hdd-network"></i>
           <h4>Network & Remote Access</h4>
           <p>
-            Remote Desktop, WinRM,
-            selected remote access settings,
-            listening ports and relevant network exposure.
+            Remote Desktop configuration, network adapters,
+            firewall profiles, listening ports and SMB settings.
           </p>
         </div>
       </div>
@@ -792,9 +775,8 @@
           <i class="bi bi-file-earmark-bar-graph"></i>
           <h4>Assessment Reports</h4>
           <p>
-            Structured technical findings,
-            executive summaries, assessment evidence
-            and exportable reports.
+            Combined assessment data, control-level findings,
+            practical recommendations and locally saved JSON reports.
           </p>
         </div>
       </div>
@@ -816,9 +798,10 @@
         </h2>
 
         <p class="text-muted mb-4">
-          Endpoint360 is planned to provide individual
-          assessment results with supporting evidence,
-          severity and recommended next steps.
+          Endpoint360 provides results for 17 security controls,
+          with available supporting evidence, risk levels and
+          practical recommendations. A check may be Not Assessed
+          when Windows permissions prevent collection.
         </p>
 
         <div class="feature-check">
@@ -864,7 +847,7 @@
         <div class="report-preview">
 
           <p class="text-muted small mb-2">
-            Concept preview — not an actual assessment
+            Illustrative examples — not your device results
           </p>
 
           <h4 class="fw-bold mb-4">
@@ -892,8 +875,8 @@
           </div>
 
           <p class="text-muted small mt-3 mb-0">
-            Illustrative results only.
-            The assessment engine is still in development.
+            Results shown are examples. Your dashboard uses
+            evidence collected from your own Windows PC.
           </p>
 
         </div>
@@ -903,107 +886,78 @@
   </div>
 </section>
 
-<!-- DEVELOPMENT STATUS -->
-
-<section class="tool-section"
-         id="beta">
-
+<!-- DOWNLOAD & BETA STATUS -->
+<section class="tool-section" id="beta">
   <div class="container">
-
     <div class="section-title">
-      <h2>Endpoint360 Development Status</h2>
-      <p>
-        We're preparing an initial Windows assessment beta.
-        No Endpoint360 executable is available for download yet.
-      </p>
+      <h2>Download Endpoint360 Free v0.5.0</h2>
+      <p>The first public beta is available for Windows. No Python installation is required to run the packaged application.</p>
     </div>
-
     <div class="row gy-4">
-
       <div class="col-lg-6">
         <div class="tool-card">
-
-          <i class="bi bi-tools"></i>
-          <h4>Currently in Development</h4>
-
+          <i class="bi bi-download"></i>
+          <h4>Get Started</h4>
           <p>
-            The assessment collector, security checks,
-            compliance evaluation and reporting features
-            are planned for the first development phase.
-            Functionality will be tested before public release.
+            Download the ZIP, extract all files, open the
+            <strong>Endpoint360-Free</strong> folder and double-click
+            <strong>Endpoint360Runtime.exe</strong>. Wait for the
+            assessment, then view the local dashboard at
+            <strong>127.0.0.1:8765</strong>.
           </p>
-
+          <a class="btn btn-success mt-3" href="https://github.com/shaiktanweer5/nanobricks-endpoint360/releases/download/v0.5.0/Nanobricks-Endpoint360-Free-v0.5.0-Windows.zip">
+            <i class="bi bi-download me-2"></i>Download Windows ZIP (8.83 MB)
+          </a>
         </div>
       </div>
-
       <div class="col-lg-6">
         <div class="tool-card">
-
           <i class="bi bi-shield-lock"></i>
-          <h4>Privacy & Safety by Design</h4>
-
+          <h4>Privacy &amp; Beta Notes</h4>
           <p>
-            The initial assessment is intended to be
-            read-only and run with the device owner's
-            authorization. No automatic remediation
-            or silent configuration changes are planned.
+            Assessment is read-only and reports are saved locally.
+            Reports may include usernames, network and device details;
+            review before sharing. Some security checks require
+            administrator access. The executable is unsigned, so
+            Windows may show a SmartScreen warning.
+            Use only on devices you own or are authorized to assess.
           </p>
-
+          <a class="tools-link d-inline-block mt-3" href="https://github.com/shaiktanweer5/nanobricks-endpoint360/issues"
+             target="_blank" rel="noopener noreferrer">
+            Report an issue on GitHub <i class="bi bi-box-arrow-up-right ms-1"></i>
+          </a>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <!-- BUSINESS CTA -->
-
 <section class="tool-section alt">
   <div class="container">
-
     <div class="business-box">
-
       <div class="row gy-4 align-items-center">
-
         <div class="col-lg-8">
-
-          <p class="text-uppercase fw-bold small mb-2"
-             style="color:#a9e6b1;">
+          <p class="text-uppercase fw-bold small mb-2" style="color:#a9e6b1;">
             NANOBRICKS TECHNOLOGY TOOLS
           </p>
-
-          <h2>
-            Need an Endpoint Assessment Today?
-          </h2>
-
+          <h2>Free Tools. Professional IT Support When You Need It.</h2>
           <p class="mb-3">
-            While Endpoint360 is in development,
-            you can use the existing free
-            Nanobricks Endpoint Assessment V3.0.1.
+            Start with Endpoint360 Free for a detailed local assessment,
+            or use our lightweight Endpoint Assessment v3.0.1.
           </p>
-
           <p class="mb-0">
-            Businesses can also contact Nanobricks
-            for multi-PC assessments, Windows
-            configuration reviews and managed IT support.
+            For business-wide reviews, multiple endpoints and managed IT
+            support, contact Nanobricks.
           </p>
-
         </div>
-
         <div class="col-lg-4 text-lg-end">
-
-          <a href="/tools/endpoint-assessment/"
-             class="btn btn-light btn-lg">
-            <i class="bi bi-arrow-right-circle me-2"></i>
-            Explore Free Tool
+          <a href="/tools/endpoint-assessment/" class="btn btn-light btn-lg">
+            <i class="bi bi-arrow-right-circle me-2"></i>Explore Basic Assessment
           </a>
-
         </div>
-
       </div>
     </div>
-
   </div>
 </section>
 
@@ -1023,37 +977,36 @@
           <div class="faq-item">
             <h4>Is Endpoint360 available to download?</h4>
             <p>
-              Not yet. Endpoint360 is currently in development.
-              The download will be added after the initial
-              application has been tested and released.
+              Yes. Endpoint360 Free v0.5.0 Public Beta is available
+              for download. Extract the Windows ZIP and launch
+              Endpoint360Runtime.exe from the extracted folder.
             </p>
           </div>
 
           <div class="faq-item">
             <h4>Is Endpoint360 different from V3.0.1?</h4>
             <p>
-              Yes. Endpoint360 is planned as a more detailed
-              Windows endpoint assessment tool.
-              The existing Endpoint Assessment V3.0.1
-              remains available separately.
+              Yes. Endpoint360 provides seven assessment modules,
+              a local dashboard and 17 compliance controls.
+              Endpoint Assessment v3.0.1 remains available
+              as a lightweight alternative.
             </p>
           </div>
 
           <div class="faq-item">
             <h4>Will Endpoint360 change my Windows settings?</h4>
             <p>
-              The initial beta is planned as a read-only
-              assessment tool. Automatic remediation
-              is not part of the initial scope.
+              No. Endpoint360 Free v0.5.0 performs read-only
+              checks and does not install updates or change
+              Windows security settings.
             </p>
           </div>
 
           <div class="faq-item">
             <h4>Does Endpoint360 provide official compliance certification?</h4>
             <p>
-              No. Planned configuration assessments
-              are informational and will not constitute
-              official CIS, Microsoft or regulatory certification.
+              No. The assessment is informational and does not
+              constitute official CIS, Microsoft or regulatory certification.
             </p>
           </div>
 
@@ -1074,40 +1027,24 @@
 </section>
 
 <!-- FINAL CTA -->
-
 <section class="cta-section">
   <div class="container text-center">
-
-    <h2>
-      Better Endpoint Visibility Starts Here
-    </h2>
-
+    <h2>Better Endpoint Visibility Starts Here</h2>
     <p class="mt-3">
-      Nanobricks helps businesses assess Windows
-      environments, identify security gaps
-      and plan practical improvements.
+      Try Endpoint360 Free on your Windows PC and explore
+      device health, security posture and compliance findings.
     </p>
-
     <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-
-      <a href="/tools/endpoint-assessment/"
-         class="btn btn-light btn-lg">
-        <i class="bi bi-pc-display me-2"></i>
-        Explore Endpoint Assessment
+      <a href="https://github.com/shaiktanweer5/nanobricks-endpoint360/releases/download/v0.5.0/Nanobricks-Endpoint360-Free-v0.5.0-Windows.zip" class="btn btn-light btn-lg">
+        <i class="bi bi-download me-2"></i>Download Endpoint360 Free
       </a>
-
-      <a
-        href="https://wa.me/917995720507?text=Hi%20Nanobricks%2C%20I%20would%20like%20to%20know%20more%20about%20Endpoint360."
-        target="_blank"
-        rel="noopener"
-        class="btn btn-outline-light btn-lg"
-        onclick="gtag('event','endpoint360_enquiry');">
-        <i class="bi bi-whatsapp me-2"></i>
-        Talk to Nanobricks
+      <a href="https://wa.me/917995720507?text=Hi%20Nanobricks%2C%20I%20would%20like%20to%20know%20more%20about%20Endpoint360."
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn-outline-light btn-lg"
+         onclick="if (typeof gtag === 'function') gtag('event','endpoint360_enquiry');">
+        <i class="bi bi-whatsapp me-2"></i>Talk to Nanobricks
       </a>
-
     </div>
-
   </div>
 </section>
 
